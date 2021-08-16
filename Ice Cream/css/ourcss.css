@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Hentimps Circlet;
+  src: url('../fonts/Hentimps_Circlet.ttf');
+}
+@font-face {
+  font-family: Duke Plus;
+  src: url('../fonts/dukeplus.ttf');
+}
+@font-face {
+  font-family: Kingscross Regular;
+  src: url('../fonts/kingscross.regular.ttf');
+}
+@font-face {
+  font-family: Goudy-initialen Regular;
+  src: url('../fonts/goudy-initialen.regular.ttf');
+}
+@font-face {
+  font-family: Beyond-wonderland Regular;
+  src: url('../fonts/beyond-wonderland.regular.ttf');
+}
+body{
+  height:100vh;
+  overflow: hidden;
+  margin:auto;
+
+  margin-left: 12%;
+  margin-right: 10%;
+  font-family: Hentimps Circlet;
+  background-image: url("../imgs/Backgrounds/dsvvs-99c2d3ba-661b-4765-82d7-8d2112c6586f.jpg");
+  background-image: url("../imgs/Backgrounds/5834855181_4a2518aa3a_b.jpg");
+  background-image:url("../imgs/Backgrounds/kisspng-paper-text-picture-frame-brown-pattern-medieval-european-border-background-5a7a63eb39d991.342732511517970411237.jpg");
+  background-image: url("../imgs/Backgrounds/medieval_paper_1_by_jojo_ojoj-d8hoqp0.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: url("FeatherQuill.cur"), pointer;
+}
+.article{
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:justify;
+  height:80vh;
+  margin:auto;
+  padding:2em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+
+
+::first-letter{
+  font-size: 200%;
+}
+p::first-letter{
+  float:left;
+  font-size:600%;
+  color: red;
+    font-family: Goudy-initialen Regular;
+    font-weight:normal;
+    line-height: 0.75;
+}
+
+img{
+  max-width: -webkit-fill-available;
+}
+
+.navbar{
+  padding-left: 10%;
+  padding-right:10%;
+  padding-top: 2em;
+  /*background-color: rgba(50, 50, 50, 0.5);*/
+}

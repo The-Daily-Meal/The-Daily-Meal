@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Hentimps Circlet;
+  src: url('fonts/Hentimps_Circlet.ttf');
+}
+@font-face {
+  font-family: Duke Plus;
+  src: url('fonts/dukeplus.ttf');
+}
+@font-face {
+  font-family: Kingscross Regular;
+  src: url('fonts/kingscross.regular.ttf');
+}
+@font-face {
+  font-family: Goudy-initialen Regular;
+  src: url('fonts/goudy-initialen.regular.ttf');
+}
+@font-face {
+  font-family: Beyond-wonderland Regular;
+  src: url('fonts/beyond-wonderland.regular.ttf');
+}
+
+body{
+  font-family: Hentimps Circlet;
+  background-image:url("imgs/5834855181_4a2518aa3a_b.jpg");
+  background-size:cover;
+  overflow:hidden;
+  margin:10%;
+  padding-top:10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+::first-letter{
+  font-family: Goudy-initialen Regular;
+  font-size: 150%;
+  font-weight:normal;
+}
