@@ -33,6 +33,9 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  cursor: url("Feather Quill Writing.cur"), pointer;
+}
+a:hover{
   cursor: url("FeatherQuill.cur"), pointer;
 }
 .article{
