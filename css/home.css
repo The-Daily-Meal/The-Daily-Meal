@@ -1,0 +1,91 @@
+.navbar-nav .btn {
+  background-color: white;
+  color: black;
+}
+
+.navbar-nav .btn:hover {
+  background-color: yellow;
+}
+
+
+.carousel-item {
+  height: 90vh;
+  min-height:300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+  padding: 100px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:left;
+  height:80vh;
+  margin:auto;
+  padding: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 30px;
+}
+
+.carousel-caption h2 {
+  font-size: 20px;
+}
+
+#maintitle {
+  font-size: 50px;
+}
+
+.carousel-caption p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  background-color: red;
+  color: white;
+  border-radius: 0;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.slider-btn .btn-2 {
+  color: black;
+  background-color: white;
+}
