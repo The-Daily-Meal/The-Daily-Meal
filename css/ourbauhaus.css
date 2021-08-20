@@ -18,13 +18,13 @@
     font-display: swap;
 }
 
+.navbar-nav #searchbutton:hover {
+  background-color: rgb(190, 30, 45);
+}
+
 #navbar {
    background-color: rgb(190, 30, 45);
    border: 3px solid black;
-}
-
-.navbar-light {
-  background-color: white;
 }
 
 
@@ -50,6 +50,7 @@
 
  #search {
    border: 3px solid black;
+   background-color: transparent;
  }
 
 body {
