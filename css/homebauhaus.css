@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Futura Bk';
+    src: url('../fonts/bauhaus/Futura-Book.woff2') format('woff2'),
+        url('../fonts/bauhaus/Futura-Book.woff') format('woff'),
+				url('../fonts/bauhaus/Futura Book.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('../fonts/bauhaus/Bauhaus.woff2') format('woff2'),
+        url('../fonts/bauhaus/Bauhaus.woff') format('woff'),
+				url('../fonts/bauhaus/Bauhaus.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+#navbar {
+   background-color: rgb(190, 30, 45);
+   border: 3px solid black;
+}
+
+
+#home {
+  background-color: rgb(33, 64, 154);
+  border: 3px solid black;
+}
+
+#link {
+  background-color: rgb(255, 222, 23);
+  border: 3px solid black;
+}
+
+#navbarDropdown {
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+ #searchbutton {
+   color: black;
+   border: 3px solid black;
+ }
+
+ #searchbutton:hover {
+   background-color: rgb(190, 30, 45);
+ }
+
+ #search {
+   border: 3px solid black;
+   background-color: transparent;
+ }
+
+.item_heading {
+  	font-family: 'Bauhaus';
+    text-transform: lowercase;
+}
+
+
+.navbar-nav .btn {
+  background-color: white;
+  color: black;
+}
+
+.navbar-nav .btn:hover {
+  background-color: yellow;
+}
+
+.navbar {
+  padding-left: 5%;
+  padding-right:5%;
+  padding-top: 1em;
+  font-family: 'Bauhaus';
+  text-transform: lowercase;
+  background-image: url("https://image.shutterstock.com/image-photo/beige-background-paper-canvas-fabric-260nw-569380774.jpg");
+}
+
+.navbar .nav-link {
+  margin: 2px;
+}
+
+
+.carousel-item {
+  height: 90vh;
+  min-height:300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: 'Futura Bk';
+}
+
+#thedailymeal {
+  background:   rgb(190, 30, 45);;
+}
+
+#issues {
+  background: rgb(255, 222, 23);
+}
+
+#documentation {
+  background: rgb(33, 64, 154);
+}
+
+#team {
+  background: black;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  background-image:  url("https://cdn.hovia.com/app/uploads/Colourful-Geometric-Shapes-Modern-Bauhaus-Wallpaper-Mural-Plain.jpg");
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+  padding: 100px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:left;
+  height:80vh;
+  margin:auto;
+  padding: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 30px;
+}
+
+.carousel-caption h2 {
+  font-size: 20px;
+}
+
+#maintitle {
+  font-size: 60px;
+}
+
+.carousel-caption p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  background-color: red;
+  color: white;
+  border-radius: 0;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.slider-btn .btn-2 {
+  color: black;
+  background-color: white;
+}
