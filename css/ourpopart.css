@@ -69,11 +69,31 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Smile Candy';
+    src: url('../fonts/popart/SmileCandy.woff2') format('woff2'),
+        url('../fonts/popart/SmileCandy.woff') format('woff'),
+        url('../fonts/popart/SmileCandy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sweaty Belvin';
+    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
+        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
+        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .navbar{
   padding-left: 5%;
   padding-right:5%;
   padding-top: 1em;
-  font-family: 'Shaka Pow Upright';
+  font-family: 'BadaBoom BB';
 }
 
 #navbar {
@@ -114,8 +134,6 @@
   margin: auto;
   padding: 1em;
   background-color: #FED715;
-  background-image: url('../imgs/popartbackgrounds/pop7.jpg');
-  background-size: contain;
 }
 
 body {
@@ -164,25 +182,23 @@ body {
   display: grid;
   background-image: url('../imgs/popartbackgrounds/pop8.jpg');
   background-size: cover;
-  
+
 }
 
 .header h1 {
   font-family: 'BadaBoom BB';
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
-  background-image: url('../imgs/popartbackgrounds/pop3.jpg');
-  background-size: contain;
 }
 
 .header h2 {
-  font-family: 'comic andy';
+  font-family: 'BadaBoom BB';
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .header h3 {
-  font-family: 'P22 Pop Art Comic';
+  font-family: 'Sweaty Belvin';
   font-size: 20px;
   text-align: center;
 }
