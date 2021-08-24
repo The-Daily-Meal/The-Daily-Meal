@@ -20,11 +20,11 @@ body{
   margin-right: 11%;
   font-family: GlassAntiqua;
   font-size: 18px;
-  background-image: url("/imgs/belleepoquebackgrounds/04. SNL_TOUR_1773.jpg");
+  /*background-image: url("");
   background-size: 160px;
   background-repeat: repeat;
   background-attachment: fixed;
-  cursor: url(""), pointer;
+  cursor: url(""), pointer;*/
   /*padding-top: 2em;*/
 
 
@@ -51,8 +51,7 @@ h1 {
   font-size:28px;
 	border:2px solid;
 	padding:10px;
-	background:##8B0000;
-	border-bottom-right-radius:2em;
+	background:;
 }
 h2{
   font-size: 22px;
@@ -131,7 +130,7 @@ img{
   padding-bottom: 2%;
   padding-top: 2%;
   font-family: RampartOne;
-  background-image: url("");
+  background-colour: green;
 
 
 }
