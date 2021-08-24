@@ -26,9 +26,9 @@
 }
 @font-face {
   font-family: FloralCapsNouveau;
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
+  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
+  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
+  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
 }
 
 body{
