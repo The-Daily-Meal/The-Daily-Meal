@@ -1,34 +1,34 @@
 @font-face {
   font-family: GlassAntiqua;
-  src: url('css/fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff') format('woff');
-  src: url('css/fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff2') format('woff2');
+  src: url('./fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.ttf') format('ttf');
+  src: url('./fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff') format('woff');
+  src: url('./fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff2') format('woff2');
 
 }
 @font-face {
   font-family: Milonga;
-  src: url('css/fonts/belleepoque/Milonga/Milonga-Regular.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/Milonga/Milonga-Regular.woff') format('woff');
-  src: url('css/fonts/belleepoque/Milonga/Milonga-Regular.woff2') format('woff2');
+  src: url('./fonts/belleepoque/Milonga/Milonga-Regular.ttf') format('ttf');
+  src: url('./fonts/belleepoque/Milonga/Milonga-Regular.woff') format('woff');
+  src: url('./fonts/belleepoque/Milonga/Milonga-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: Amarante;
-  src: url('css/fonts/belleepoque/Amarante/Amarante-Regular.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/Amarante/Amarante-Regular.woff') format('woff');
-  src: url('css/fonts/belleepoque/Amarante/Amarante-Regular.woff2') format('woff2');
+  src: url('./fonts/belleepoque/Amarante/Amarante-Regular.ttf') format('ttf');
+  src: url('./fonts/belleepoque/Amarante/Amarante-Regular.woff') format('woff');
+  src: url('./fonts/belleepoque/Amarante/Amarante-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: BoecklinsUniverse;
-  src: url('css/fonts/belleepoque/boecklins-universe/Boecklins Universe.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff') format('woff');
-  src: url('css/fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff2') format('woff2');
+  src: url('./fonts/belleepoque/boecklins-universe/Boecklins Universe.ttf') format('ttf');
+  src: url('./fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff') format('woff');
+  src: url('./fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff2') format('woff2');
 }
 @font-face {
   font-family: FloralCapsNouveau;
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
-  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
+  src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
+  src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
+  src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
 }
 
 body{
