@@ -16,6 +16,7 @@ body{
   height:100vh;
   overflow: hidden;
   margin: auto;
+  margin-left: 11%;
   font-family: DidactGothic;
   font-size: 18px;
   background-color: #8BEE03;
