@@ -26,9 +26,9 @@
 }
 @font-face {
   font-family: FloralCapsNouveau;
-  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
-  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
-  src: url('./css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
+  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
+  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
+  src: url('css/fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');
 }
 
 body{
@@ -39,7 +39,7 @@ body{
   margin-right: 11%;
   font-family: GlassAntiqua;
   font-size: 18px;
-  background-image: url("imgs/belleepoquebackgrounds/04. SNL_TOUR_1773.jpg");
+  background-image: url("./imgs/belleepoquebackgrounds/04. SNL_TOUR_1773.jpg");
   /*background-image: url("imgs/belleepoquebackgrounds/194151.jpeg");*/
   background-size: 160px;
   background-repeat: repeat;
@@ -56,7 +56,7 @@ body{
   background-color:#FEF3CE;
   padding: 2em;
   margin: auto;
-  background-image: url("imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
+  background-image: url("./imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   padding-bottom:2em;
 }
 
@@ -151,7 +151,7 @@ img{
   padding-bottom: 2%;
   padding-top: 2%;
   font-family: BoecklinsUniverse;
-  background-image: url("imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
+  background-image: url("./imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   border-bottom: 8px solid #8B0000;
   border-radius: 5px;
 
