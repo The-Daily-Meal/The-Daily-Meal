@@ -43,14 +43,14 @@ body{
 h1,h2,h3,h4{
   font-family: ArchivoBlack;
   text-transform: uppercase;
-  color: #0093FF;
+  color: #0088EC;
   text-align: left;
   background-color: pink;
 
 }
 h1 {
   font-size:28px;
-	border:2px solid #FF0DC8;
+	border:5px solid #FF0DC8;
 	padding:10px;
 	background:;
 }
@@ -64,7 +64,7 @@ h3 {
 h5{
   font-family: ArchivoBlack;
   text-transform: uppercase;
-  color: #8B0000;
+  color: #0088EC;
   font-size:15px;
   text-align: left;
 
