@@ -78,9 +78,6 @@ h5{
   padding:1em;
 }
 
-#article2,#article3{
-  border-left: thin solid #8B0000;
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -114,10 +111,10 @@ h5{
 p::first-letter{
   float:left;
   font-size:200%;
-  color: pink;
-    font-family: ArchivoBlack;
-    font-weight:normal;
-    line-height: 0.75;
+  color: #FF0DC8;
+  font-family: ArchivoBlack;
+  font-weight: normal;
+  line-height: 0.75;
 }
 
 img{
@@ -130,13 +127,13 @@ img{
   padding-bottom: 2%;
   padding-top: 2%;
   font-family: RampartOne;
-  background-colour: green;
+  background-colour: #8BEE03;
 
 
 }
 
 button{
-  color: #BDE18B;
+  color: #8BEE03;
 }
 /*.collapse{
   border-left: 2px solid plum;
@@ -152,7 +149,7 @@ button{
   padding: 10px;
   padding-left: 5px;
   filter: grayscale(80%);
-  border: 2px solid green;
+  border: 5px solid #8BEE03;
 }
 
 
