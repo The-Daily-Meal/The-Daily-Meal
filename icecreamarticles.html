@@ -10,35 +10,48 @@
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/ourcss.css">
-    <link rel="stylesheet" href="css/medievalstyle.css">
+    <link rel="stylesheet" href="css/medievalstyle.css" id="whichstyle">
+
+    <script type="text/javascript">
+    function changestyle(name) {
+      document.getElementById('whichstyle').setAttribute("href", "css/"+name);
+    }
+    </script>
 
     <title>Journal page</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="navbar">Navbar</a>
+        <a class="navbar-brand" href="#" id="navbar">The Daily Meal</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" id="home" href="#">Home</a>
+              <a class="nav-link" aria-current="page" id="home" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="link">Link</a>
+              <a class="nav-link" href="#" id="link">Documentation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Issues
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="hamburgerarticles.html">Hamburger</a></li>
+                <li><a class="dropdown-item" href="IssuePastaExample.html">Pasta</a></li>
+                <li><a class="dropdown-item" href="#">Ice cream</a></li>
               </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button class="btn" type="button" name="medieval" onclick="changestyle('medievalstyle.css')">1480</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="bauhaus" onclick="changestyle('ourbauhaus.css')">1920</button>
             </li>
           </ul>
           <form class="d-flex">
