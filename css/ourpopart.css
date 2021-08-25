@@ -250,7 +250,6 @@ body {
 .header h2 b {
   font-family: 'BadaBoom BB';
   color: #d50037;
-
 }
 
 .header h3 {
@@ -271,7 +270,10 @@ body {
 
 .subsection_heading {
   font-family: 'Sweaty Belvin';
-  font-size: 20px;
+  font-size: 25px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
 }
 
 
