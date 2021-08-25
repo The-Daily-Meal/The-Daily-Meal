@@ -89,6 +89,8 @@
     font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
 
 
 .navbar{
@@ -101,34 +103,46 @@
 }
 
 #navbar {
-
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
 }
 
 
 #home {
-
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
 }
 
 #link {
-
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
+color: black;
 }
 
 #navbarDropdown {
+  transform: rotate(-5deg);
+
 }
 
  #searchbutton {
   color: black;
-  border: 1px solid rgb(25, 152, 203);
+  transform: rotate(-5deg);
+  border: none;
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
  }
 
  #searchbutton:hover {
-   background-color: rgb(25, 152, 203);
+   background-color: #008ee7;
  }
 
  #search {
-   background-image: url('../imgs/popartbackgrounds/pop7.jpg');
-   background-size: contain;
-   border: 1px solid rgb(25, 152, 203);
+   background-image: url('../imgs/popartbackgrounds/pop3.jpg');
+   background-size: cover;
+   border: none;
  }
 
 
@@ -164,7 +178,6 @@ body {
   background-attachment: fixed;
   cursor: url(""), pointer;
   font-family: 'P22 Pop Art Comic';
-
 }
 
 .text {
@@ -221,6 +234,7 @@ body {
   border-radius: 25px 30px 40px 20px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  transform: rotate(-5deg);
 }
 
 
@@ -229,18 +243,41 @@ body {
   font-family: 'BadaBoom BB';
   font-size: 20px;
   text-align: left;
-  text-shadow: 1px 1px 0px black;
-  color:  #e6427a;
+  color:  black;
+  transform: rotate(-5deg);
+}
+
+.header h2 b {
+  font-family: 'BadaBoom BB';
+  color: #00a19b;
   -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
 }
 
 .header h3 {
   font-family: 'Sweaty Belvin';
   font-size: 20px;
   text-align: right;
+  transform: rotate(-5deg);
 }
 
+.section_heading {
+  font-family: 'BadaBoom BB';
+  font-size: 25px;
+  color: white;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+
+
+.section_abstract {
+  padding: 1em;
+  font-size: 10px;
+  border: 3px solid black;
+  margin-bottom: 2em;
+  border-radius: 25px 30px 40px 20px;
+}
 
 
   img {
@@ -258,6 +295,7 @@ p::first-letter{
   font-family: 'BadaBoom BB';
   font-weight: normal;
   line-height: 0.5;
+  margin-right: 8px;
   border-radius: 25px 30px 40px 20px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
