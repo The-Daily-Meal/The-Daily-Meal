@@ -1,16 +1,19 @@
 @font-face {
   font-family: ArchivoBlack;
-  src: url('/fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
 
 }
 @font-face {
   font-family: DidactGothic;
-  src: url('/fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: RampartOne;
-  src: url('/fonts/cioèfonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.woff') format('woff');
 }
 body{
   height:100vh;
@@ -19,12 +22,6 @@ body{
   font-family: DidactGothic;
   font-size: 18px;
   background-color: #8BEE03;
-  /*
-  background-size: 160px;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  cursor: url(""), pointer;*/
-  /*padding-top: 2em;*/
 
 
 }
@@ -35,8 +32,10 @@ body{
   background-color: white;
   padding: 2em;
   margin: auto;
-  background-image: url("");
-  padding-bottom:2em;
+  background-image: url("../imgs/cioèbackgrounds/depositphotos_3146312-stock-photo-white-paper.jpeg");
+  filter: brightness(105%); -webkit-filter: brightness(105%);
+
+  /*padding-bottom:2em;*/
 }
 
 h1,h2,h3,h4{
@@ -50,14 +49,21 @@ h1,h2,h3,h4{
 h1 {
   font-size:28px;
 	border:5px solid #FF0DC8;
+  border-radius: 10px 10px 10px 10px;
 	padding:10px;
-	background:;
+
 }
+
 h2{
   font-size: 22px;
+  border: 3px solid;
+  background-color: #DAF7A6;
 }
 h3 {
-  font-size:15px;
+  font-size:18px;
+  background-color:#FF6CF8;
+  border: 2px solid;
+  border-radius: 0px 10px 0px 0px;
 
 }
 h5{
@@ -66,6 +72,7 @@ h5{
   color: #0088EC;
   font-size:15px;
   text-align: left;
+
 
 }
 
@@ -110,7 +117,7 @@ h5{
 
 p::first-letter{
   float:left;
-  font-size:200%;
+  font-size:250%;
   color: #FF0DC8;
   font-family: ArchivoBlack;
   font-weight: normal;
@@ -124,33 +131,47 @@ img{
 .navbar{
   padding-left: 5%;
   padding-right: 4%;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   font-family: RampartOne;
-  background-image: url("/imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
-  background-image: url("/imgs/cioèbackgrounds/istockphoto-1069280558-170667a.jpeg");
+  background-image: url("../imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
+  border-bottom: 3px solid purple;
 
 }
 
-button{
-  color: #8BEE03;
-}
-/*.collapse{
-  border-left: 2px solid plum;
-
-  border: 2px solid lightcoral;
-
-  border-right: 2px solid aquamarine;
-}*/
-
-
-
-.images{
+.nav-item{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
   padding: 10px;
-  padding-left: 5px;
-  filter: grayscale(80%);
+
+}
+
+#navbar{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 17px;
+}
+
+#search{
+  border: double black;
+  background-image: url("../imgs/cioèbackgrounds/depositphotos_441294958-stock-illustration-gradient-mesh-abstract-background-rainbow.jpeg")
+}
+#searchbutton{
+  border: double black;
+  color: black;
+  background-color: #8100D5;
+}
+.images{
   border: 5px solid #8BEE03;
+  transform: rotate(12deg);
+  margin: 6%;
+}
+
+.images_hist{
+  border: 5px solid #FE745B;
 }
 
 
@@ -161,7 +182,22 @@ button{
   text-align: left;
 }
 
+tr:nth-child(odd){
+    background-color: #8BFFDC;
+}
+
+tr:nth-child(even){
+  background-color: #DAF7A6;
+}
+
 th{
-  background-color:#C17B67;
+  background-color:#FF1B9E;
   font-weight: 400;
+  font-family: RampartOne;
+}
+
+div#3b-references{
+  background-color: #F9FE5B;
+  border: 5px solid #F9FE5B;
+  border-radius: 10px 10px 10px 10px;
 }
