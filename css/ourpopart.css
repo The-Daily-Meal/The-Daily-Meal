@@ -249,9 +249,8 @@ body {
 
 .header h2 b {
   font-family: 'BadaBoom BB';
-  color: #00a19b;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  color: #d50037;
+
 }
 
 .header h3 {
@@ -269,6 +268,12 @@ body {
   -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: black;
 }
+
+.subsection_heading {
+  font-family: 'Sweaty Belvin';
+  font-size: 20px;
+}
+
 
 
 .section_abstract {
