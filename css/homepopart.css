@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'P22 Pop Art Comic';
+    src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
+    url('../fonts/popart/P22PopArtComic.woff2') format('woff2'),
+        url('../fonts/popart/P22PopArtComic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BadaBoom BB';
+    src: url('../fonts/popart/BADABB_.ttf') format('ttf'),
+    url('../fonts/popart/BadaBoomBB.woff2') format('woff2'),
+        url('../fonts/popart/BadaBoomBB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Pop Art';
+    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
+        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
+        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sweaty Belvin';
+    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
+        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
+        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'P22 Pop Art Comic';
+    src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
+    url('../fonts/popart/P22PopArtComic.woff2') format('woff2'),
+        url('../fonts/popart/P22PopArtComic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'BadaBoom BB';
+    src: url('../fonts/popart/BADABB_.ttf') format('ttf'),
+    url('../fonts/popart/BadaBoomBB.woff2') format('woff2'),
+        url('../fonts/popart/BadaBoomBB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Pop Art';
+    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
+        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
+        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sweaty Belvin';
+    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
+        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
+        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.navbar{
+  padding-left: 5%;
+  padding-right:5%;
+  padding-top: 1em;
+  font-family: 'BadaBoom BB';
+  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  background-size: cover;
+}
+
+#navbar {
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
+}
+
+
+#home {
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
+}
+
+#link {
+transform: rotate(-5deg);
+background-image: url('../imgs/popartbackgrounds/bubble3.png');
+background-size: cover;
+color: black;
+}
+
+#navbarDropdown {
+  transform: rotate(-5deg);
+}
+
+ #searchbutton {
+  color: black;
+  transform: rotate(-5deg);
+  border: none;
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
+ }
+
+ #searchbutton:hover {
+   background-color: #008ee7;
+ }
+
+ #search {
+   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../imgs/popartbackgrounds/pop0.png');
+   background-size: cover;
+   border: none;
+}
+
+ .item_heading {
+   	font-family: 'BadaBoom BB';
+    color: black;
+    font-size: 200px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    transform: rotate(-5deg);
+ }
+
+.carousel-item {
+  height: 90vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: 'P22 Pop Art Comic';
+}
+
+#thedailymeal {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home2.jpg');
+  background-size: cover;
+}
+
+#maintitle {
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#issues {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home4.jpeg');
+  background-size: cover;
+}
+
+#documentation {
+  background: rgb(33, 64, 154);
+}
+
+#team {
+  background: black;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-caption {
+  color: black;
+  margin-bottom: 100px;
+  padding: 100px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:left;
+  height:80vh;
+  margin:auto;
+  padding: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 30px;
+}
+
+.carousel-caption h2 {
+  font-size: 20px;
+}
+
+
+.carousel-caption p {
+  font-size: 15px;
+  text-align: justify;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 25px 30px 40px 20px;
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  background-color: red;
+  color: white;
+  border-radius: 0;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.slider-btn .btn-2 {
+  color: black;
+  background-color: white;
+}
