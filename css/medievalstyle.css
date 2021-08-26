@@ -1,60 +1,85 @@
 @font-face {
   font-family: Hentimps Circlet;
-  src: url('../fonts/Hentimps_Circlet.ttf');
-}
-@font-face {
-  font-family: Duke Plus;
-  src: url('../fonts/dukeplus.ttf');
-}
-@font-face {
-  font-family: Kingscross Regular;
-  src: url('../fonts/kingscross.regular.ttf');
+  src: url('../fonts/medieval/Hentimps_Circlet.ttf');
 }
 @font-face {
   font-family: Goudy-initialen Regular;
-  src: url('../fonts/goudy-initialen.regular.ttf');
-}
-@font-face {
-  font-family: Beyond-wonderland Regular;
-  src: url('../fonts/beyond-wonderland.regular.ttf');
+  src: url('../fonts/medieval/goudy-initialen.regular.ttf');
 }
 body{
-  margin-left: 12%;
-  margin-right: 10%;
+  margin-left:5%;
+  margin-right:5%;
   font-family: Hentimps Circlet;
-  background-image: url("../imgs/Backgrounds/dsvvs-99c2d3ba-661b-4765-82d7-8d2112c6586f.jpg");
-  background-image: url("../imgs/Backgrounds/5834855181_4a2518aa3a_b.jpg");
-  background-image:url("../imgs/Backgrounds/kisspng-paper-text-picture-frame-brown-pattern-medieval-european-border-background-5a7a63eb39d991.342732511517970411237.jpg");
-  background-image: url("../imgs/Backgrounds/medieval_paper_1_by_jojo_ojoj-d8hoqp0.png");
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  cursor: url("FeatherQuillWriting.cur"), pointer;
-}
-a:hover{
   cursor: url("FeatherQuill.cur"), pointer;
 }
-
-
-::first-letter{
-  font-size: 200%;
+a:hover{
+  cursor: url("Feather Quill Writing.cur"), pointer;
 }
+
+img{
+  border: solid black;
+  max-width: -webkit-fill-available;
+}
+.border-medieval{
+  background-image: url("../imgs/MedievalBackgrounds/test2.jpg");
+  background-size:cover;
+  height:90vh;
+  border:solid black;
+  border-top:none;
+}
+h1, h2, h3, h4{
+  font-size: inherit;
+  color: red;
+  margin:0;
+}
+h1{
+  font-size:200%;
+}
+
 p::first-letter{
   float:left;
-  font-size:600%;
-  color: red;
+  font-size:150%;
+  color: #1D50F7;
     font-family: Goudy-initialen Regular;
     font-weight:normal;
     line-height: 0.75;
 }
 
-img{
-  max-width: -webkit-fill-available;
-}
 
+.container{
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  max-width:100%;
+}
+.row{
+  margin:auto;
+}
 .navbar{
-  padding-left: 10%;
-  padding-right:10%;
-  padding-top: 2em;
-  /*background-color: rgba(50, 50, 50, 0.5);*/
+  margin-top:1em;
+  padding-bottom:1em;
+  background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
+  background-repeat: repeat;
+  background-size:contain;
+  border: solid black;
+}
+.navbar-brand, .nav-item, #searchbutton, #search{
+  border: solid black;
+  border-radius:5px;
+  margin-left:1em;
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+}
+table, th, td{
+  border:1px solid black;
+}
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+.text{
+  margin-top:2em;
 }
