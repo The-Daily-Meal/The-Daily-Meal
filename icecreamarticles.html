@@ -12,16 +12,13 @@
     <link rel="stylesheet" href="css/ourcss.css">
     <link rel="stylesheet" href="css/medievalstyle.css" id="whichstyle">
 
-    <script type="text/javascript">
-    function changestyle(name) {
-      document.getElementById('whichstyle').setAttribute("href", "css/"+name);
-    }
-    </script>
+    <!--Our Javascript file -->
+    <script src="js/dailymeal.js"></script>
 
     <title>Journal page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" id="navbar">The Daily Meal</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +33,7 @@
               <a class="nav-link" href="#" id="link">Documentation</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Issues
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,27 +48,35 @@
               <button class="btn" type="button" name="medieval" onclick="changestyle('medievalstyle.css')">1480</button>
             </li>
             <li class="nav-item">
+              <button class="btn" type="button" name="belleepoque" onclick="changestyle('belleepoquestyle.css')">1880</button>
+            </li>
+            <li class="nav-item">
               <button class="btn" type="button" name="bauhaus" onclick="changestyle('ourbauhaus.css')">1920</button>
             </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="popart" onclick="changestyle('ourpopart.css')">1960</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="cioè" onclick="changestyle('cioèstyle.css')">2000</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="futuristic" onclick="changestyle('ourbauhaus.css')">2030</button>
+            </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit" id="searchbutton">Search</button>
-          </form>
         </div>
       </div>
     </nav>
     <div class="container">
         <div class="row">
-          <div class="col-lg-2 d-none d-lg-block border-medieval">
+          <div class="col-lg-2 d-none d-lg-block border-medieval" id="col1">
           </div>
-          <div class="col-4 col-lg-3">
+          <div class="col-4 col-lg-3" id="col2">
             <div class="article">
               <div class="header" id="ic1-header">
                 <h1 data-src="https://www.ift.org/news-and-publications/food-technology-magazine/issues/2016/april/columns/ingredients-ice-cream-ingredients" class="thing1_title">The Inside Scoop on <span class=
                   "mention food" about="iceCream" id="ic1-0">Ice Cream</span> Ingredients</h1>
                 <h2 class="thing2_authors"><span class="mention person" about="KarenNachay" id="ic1-01">Karen Nachay</span></h2>
-                <img src="imgs/MedievalBackgrounds/th.jpg" alt="">
+                <img class="" src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">
                 <h3 class="thing4_publisher">Food Technology Magazine</h3>
                 <h4 class="thing5_rightsordate"><time class="publicationDate" datetime="2016-04-01">April 1, 2016</time></h4>
                 <b class="vertical_bar1"></b>
@@ -172,14 +177,14 @@
               </div>
             </div>
           </div>
-          <div class="col-4 col-lg-3">
+          <div class="col-4 col-lg-3" id="col3">
             <div class="article">
               <div class="header" id="ic2-header">
                 <h1 class="thing1_title" data-src="https://www.sciencedirect.com/science/article/pii/B9780123849472003846?via%3Dihub"><span class="mention food" about="iceCream" id="ic2-1">Ice Cream</span>: Uses and Method of Manufacture</h1>
                 <h2 class="thing2_authors"><b><span class="mention person" about="SSDeosarkar" id="ic2-500">SS Deosarkar</span> and <span class="mention person" about="CDKhedkar" id="ic2-501">CD Khedkar</span></b>, <span class="mention place" about="CollegeofDairyTechnology" id="ic2-502" data-wikidata-id="Q30601641" data-label="College of Dairy Technology">College of Dairy Technology, Pusad, India</span></h2>
                 <h2 class="thing2_authors"><b><span class="mention person" about="SDKalyankar" id="ic2-503">SD Kalyankar</span></b>, Government College of Dairy Technology, <span class="mention place" about="Udgir" id="ic2-504" data-wikidata-id="Q934153" data-label="Udgir">Udgir, India</span> </h2>
                 <h2 class="thing2_authors"><b><span class="mention person" about="ARSarode" id="ic2-505">AR Sarode</span></b>,<span class="mention place" about="CollegeofDairyTechnology" id="ic2-506" data-wikidata-id="Q30601641" data-label="College of Dairy Technology">College of Dairy Technology, Pusad, India</span></h2>
-                <img src="imgs/MedievalBackgrounds/th (1).jpg" alt="">
+                <img class="" src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">
                 <h3 class="thing4_publisher">The Encyclopedia of Food and Health, (2016), vol. 3, pp. 391-397</h3>
                 <h3 class="thing5_rightsordate">&#169; <time datetime="2016" class="publicationDate">2016</time> Elsevier Ltd. All rights reserved.</h3>
                 <b class="vertical_bar1"></b>
@@ -543,12 +548,12 @@
               </div>
             </div>
           </div>
-          <div class="col-4 col-lg-3">
+          <div class="col-4 col-lg-3" id="col4">
             <div class="article">
               <div class="header" id="ic3-header">
                 <h1 class="thing1_title" data-src="https://www.acs.org/content/acs/en/education/resources/highschool/chemmatters/past-issues/archive-2013-2014/ice-cream-chemistry.html"><span class="mention food ingredient" about="ice" id="ic3-0">Ice</span>, <span class="mention food ingredient" about="cream" id="ic3-1">Cream</span>... and Chemistry</h1>
                 <h2 class="thing2_authors">By <span class="mention person" about="BrianRohrig" id="ic3-2">Brian Rohrig</span></h2>
-                <img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="">
+                <img class="" src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">
                 <h3 class="thing4_publisher">ChemMatters</h3>
                 <h3 class="thing5_rightsordate"><time datetime="2014-02" class="publicationDate">February 2014</time></h3>
                 <b class="vertical_bar1"></b>
@@ -658,7 +663,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-1 d-none d-lg-block border-medieval">
+          <div class="col-lg-1 d-none d-lg-block border-medieval" id="col5">
           </div>
         </div>
       </div>
