@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Hentimps Circlet;
+  src: url('../fonts/medieval/Hentimps_Circlet.ttf');
+}
+@font-face {
+  font-family: Goudy-initialen Regular;
+  src: url('../fonts/medieval/goudy-initialen.regular.ttf');
+}
+body{
+  font-family: Hentimps Circlet;
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: url("HandWithQuill.png"), url("FeatherQuill.cur"), pointer;
+}
+a:hover{
+  cursor: url("Feather Quill Writing.cur"), pointer;
+}
+
+.navbar{
+  padding-bottom:1em;
+  background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
+  background-repeat: repeat;
+  background-size:contain;
+  border: solid black;
+}
+.navbar-brand, .nav-item, #searchbutton, #search{
+  border: solid black;
+  border-radius:5px;
+  margin-left:1em;
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+}
+.carousel-item {
+  background-color:transparent;
+}
+.carousel-item::before {
+  opacity:0.2;
+}
+.carousel .carousel-control-prev-icon {
+  background-image: url("../imgs/MedievalBackgrounds/pointing_hand.svg");
+  width:200%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.carousel .carousel-control-next-icon {
+  background-image: url("../imgs/MedievalBackgrounds/pointing_hand.svg");
+  width:200%;
+}
