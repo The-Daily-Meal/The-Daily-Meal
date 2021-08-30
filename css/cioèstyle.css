@@ -25,6 +25,9 @@ body{
 
 
 }
+/*a:hover{
+  cursor: url("../css/Normal Select.cur"), pointer;
+}*/
 
 .container{
   display: grid;
