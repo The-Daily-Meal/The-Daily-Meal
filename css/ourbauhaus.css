@@ -293,10 +293,5 @@ h4 {
   img {
   height: auto;
   max-width: -webkit-fill-available;
-  filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: gray;
+  filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
 }
