@@ -71,10 +71,11 @@
 .navbar {
   padding-left: 5%;
   padding-right:5%;
-  padding-top: 1em;
   font-family: 'Bauhaus';
   text-transform: lowercase;
-  background-image: url("https://image.shutterstock.com/image-photo/beige-background-paper-canvas-fabric-260nw-569380774.jpg");
+  background-image: url('../imgs/bauhaushome/navbar.png');
+  background-size: cover;
+  font-size: 15px;
 }
 
 .navbar .nav-link {
@@ -92,19 +93,31 @@
 }
 
 #thedailymeal {
-  background:   rgb(190, 30, 45);;
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/sfondo5.jpg');
+  background-size: cover;
+}
+
+#maintitle {
+  font-size: 200px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 #issues {
-  background: rgb(255, 222, 23);
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo9.jpg');
+  background-size: contain;
 }
 
 #documentation {
-  background: rgb(33, 64, 154);
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo8.jpg');
+  background-size: contain;
 }
 
 #team {
-  background: black;
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo5.jpg');
+  background-size: cover;
 }
 
 .carousel-item::before {
@@ -115,8 +128,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.2;
-  background-image:  url("https://cdn.hovia.com/app/uploads/Colourful-Geometric-Shapes-Modern-Bauhaus-Wallpaper-Mural-Plain.jpg");
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/sfondo5.jpg');
+  background-size: cover;
 }
 
 .carousel-caption {
@@ -147,11 +160,14 @@
 }
 
 .carousel-caption h1 {
-  font-size: 30px;
+  font-size: 50px;
+  color: black;
 }
 
 .carousel-caption h2 {
   font-size: 20px;
+  color: black;
+  font-family: 'Bauhaus';
 }
 
 #maintitle {
@@ -161,6 +177,10 @@
 .carousel-caption p {
   font-size: 15px;
   text-align: justify;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  border: 3px solid black;
 }
 
 .slider-btn {

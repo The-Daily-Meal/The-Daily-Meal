@@ -108,10 +108,11 @@ body {
 .navbar{
   padding-left: 5%;
   padding-right:5%;
-  padding-top: 1em;
   font-family: 'Bauhaus';
   text-transform: lowercase;
-  background-image: url("https://image.shutterstock.com/image-photo/beige-background-paper-canvas-fabric-260nw-569380774.jpg");
+  background-image: url('../imgs/bauhaushome/navbar.png');
+  background-size: cover;
+  font-size: 15px;
 }
 
 .navbar .nav-link {
