@@ -157,7 +157,7 @@ h4 {
 }
 .header .thing2_authors {
   font-size: 15px;
-  grid-column: 2 / span 7;
+  grid-column: 2 / span 6;
   grid-row: 3 / span 4;
 }
 .header .thing3 {
