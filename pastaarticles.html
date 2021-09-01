@@ -16,34 +16,50 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="navbar">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="TDM" data-bs-toggle="dropdown" aria-expanded="false">
+            The Daily Meal
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a class="dropdown-item" href="#">Documentation</a></li>
+            <li><a class="dropdown-item" href="#">Team</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="issues" data-bs-toggle="dropdown" aria-expanded="false">
+            Issues
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Hamburger</a></li>
+            <li><a class="dropdown-item" href="#">Pasta</a></li>
+            <li><a class="dropdown-item" href="#">Ice cream</a></li>
+          </ul>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" id="home" href="#">Home</a>
+              <button class="btn" type="button" name="medieval" onclick="changestyle('medievalstyle.css')">1480</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="link">Link</a>
+              <button class="btn" type="button" name="belleepoque" onclick="changestyle('belleepoquestyle.css')">1880</button>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <button class="btn" type="button" name="bauhaus" onclick="changestyle('ourbauhaus.css')">1920</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="popart" onclick="changestyle('ourpopart.css')">1960</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="cioè" onclick="changestyle('cioèstyle.css')">2000</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn" type="button" name="futuristic" onclick="changestyle('ourbauhaus.css')">2030</button>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit" id="searchbutton">Search</button>
-          </form>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-nav me-md-2" type="button" id="searchbox">Search box</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -597,7 +613,7 @@
           <div class="col-4">
             <div class="article" id="article2">
               <div class="header" id="2p-header">
-                <h1 class="thing1_title"data-src="https://journals.lww.com/nutritiontodayonline/fulltext/2019/09000/pasta_s_history_and_role_in_healthful_diets.7.aspx">Pasta’s History and Role in Healthful Diets</h1>
+                <h1 class="thing1_title"data-src="https://journals.lww.com/nutritiontodayonline/fulltext/2019/09000/pasta_s_history_and_role_in_healthful_diets.7.aspx">Pasta’s History and Role in Healthful Diets </h1>
                 <h2 class="thing2_authors"><b><span class="mention person" about="DensieWebb" id="2p-613">Densie Webb</span></b>, PhD, RD </h2>
                 <h3 class="thing4_publisher">Nutrition Today: Volume 54, Number 5, September/October 2019</h2>
                 <h3 class="thing5_rightsordate">Copyright &copy; 2019 Wolters Kluwer Health, Inc. All rights reserved.</h3>
