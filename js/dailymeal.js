@@ -13,6 +13,8 @@ function changestyle(name) {
     $("div.header img").remove();
   }
   else{
+    $("div").remove(".border-medieval");
+    $("div.header img").remove();
     $(".row").prepend("<div class='col-lg-2 d-none d-lg-block border-medieval'></div>");
     $(".row").append("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
     $("div.col-4").addClass("col-lg-3");
