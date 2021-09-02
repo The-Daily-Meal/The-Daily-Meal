@@ -18,55 +18,73 @@
     font-display: swap;
 }
 
-#navbar {
+#TDM {
+  color: black;
    background-color: rgb(190, 30, 45);
    border: 3px solid black;
 }
 
 
-#home {
+
+#issues {
+  color: white;
   background-color: rgb(33, 64, 154);
   border: 3px solid black;
 }
 
-#link {
+.nav-item {
+  margin-right: 1em;
+}
+
+.dropdown {
+  padding-right: 1em;
+}
+
+
+button[name="medieval"] {
+  color: black;
   background-color: rgb(255, 222, 23);
   border: 3px solid black;
 }
 
-#navbarDropdown {
-  background-color: black;
+
+button[name="belleepoque"] {
   color: white;
+  background-color: black;
   border: 3px solid black;
 }
- #searchbutton {
-   color: black;
-   border: 3px solid black;
- }
 
- #searchbutton:hover {
+button[name="bauhaus"] {
+  color: black;
+  background-color: rgb(190, 30, 45);
+  border: 3px solid black;
+}
+
+
+button[name="popart"] {
+  color: white;
+  background-color: rgb(33, 64, 154);
+  border: 3px solid black;
+}
+
+button[name="cioè"] {
+  color: white;
+  background-color: black;
+  border: 3px solid black;
+}
+
+button[name="futuristic"] {
+  color: black;
    background-color: rgb(190, 30, 45);
- }
-
- #search {
    border: 3px solid black;
-   background-color: transparent;
- }
+}
+
 
 .item_heading {
   	font-family: 'Bauhaus';
     text-transform: lowercase;
 }
 
-
-.navbar-nav .btn {
-  background-color: white;
-  color: black;
-}
-
-.navbar-nav .btn:hover {
-  background-color: yellow;
-}
 
 .navbar {
   padding-left: 5%;
@@ -105,6 +123,7 @@
   -webkit-text-stroke-color: black;
 }
 
+/*
 #issues {
   background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo9.jpg');
   background-size: contain;
@@ -119,6 +138,7 @@
   background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo5.jpg');
   background-size: cover;
 }
+*/
 
 .carousel-item::before {
   content: "";
@@ -128,8 +148,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/sfondo5.jpg');
-  background-size: cover;
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/sfondo8.jpg');
+  background-size: contain;
 }
 
 .carousel-caption {
