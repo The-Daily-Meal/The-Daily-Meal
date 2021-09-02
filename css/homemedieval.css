@@ -12,9 +12,11 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  cursor: url("HandWithQuill.png"), url("FeatherQuill.cur"), pointer;
+  cursor: url("FeatherQuill.cur"), pointer;
+  color:#4D3D23;
+  height:100vh;
 }
-a:hover{
+a:hover, button:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover{
   cursor: url("Feather Quill Writing.cur"), pointer;
 }
 
@@ -31,8 +33,13 @@ a:hover{
   margin-left:1em;
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
 }
+.carousel{
+  height: calc(100vh - 72px);
+}
+
 .carousel-item {
   background-color:transparent;
+  height: calc(100vh - 72px);
 }
 .carousel-item::before {
   opacity:0.2;
@@ -46,4 +53,34 @@ a:hover{
 .carousel .carousel-control-next-icon {
   background-image: url("../imgs/MedievalBackgrounds/pointing_hand.svg");
   width:200%;
+}
+.carousel-caption {
+  text-align:center;
+  color:#4D3D23;
+}
+.carousel-indicators [data-bs-target]{
+  background-image: url("../imgs/MedievalBackgrounds/Flourishly-Frame-2.svg");
+  height:20px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
+}
+.border-medieval{
+  background-image: url("../imgs/MedievalBackgrounds/test2.jpg");
+  background-size:cover;
+  height:80vh;
+  border:solid black;
+}
+h1{
+  font-size: 400%;
+}
+.row{
+  margin:0;
+}
+p::first-letter{
+  float:left;
+  font-size:200%;
+    font-family: Goudy-initialen Regular;
+    font-weight:normal;
+    line-height: 0.75;
 }

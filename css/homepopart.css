@@ -114,7 +114,8 @@ color: black;
 }
 
 #navbarDropdown {
-  transform: rotate(-5deg);
+  text-transform: rotate(-5deg);
+  margin-left: 1em;
 }
 
  #searchbutton {
@@ -167,16 +168,18 @@ color: black;
 }
 
 #issues {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home4.jpeg');
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/issues.jpg');
   background-size: cover;
 }
 
 #documentation {
-  background: rgb(33, 64, 154);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/documentation.jpg');
+  background-size: cover;
 }
 
 #team {
-  background: black;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/pop9.jpg');
+  background-size: cover;
 }
 
 .carousel-item::before {
