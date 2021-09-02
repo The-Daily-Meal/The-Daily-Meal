@@ -326,3 +326,19 @@ blockquote {
   max-width: 95%;
   filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
 }
+
+.container1 {
+  display: fixed;
+}
+
+.panel-heading, .panel-body {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+.panel-body {
+  padding: 50px;
+  display: none;
+}
