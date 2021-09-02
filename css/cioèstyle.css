@@ -22,12 +22,12 @@ body{
   font-family: DidactGothic;
   font-size: 18px;
   background-color: #8BEE03;
-
+  cursor: url("../css/Pizza.cur"), pointer;
 
 }
-/*a:hover{
-  cursor: url("../css/Normal Select.cur"), pointer;
-}*/
+a:hover{
+  cursor: url("Hamburger.cur"), pointer;
+}
 
 .container{
   display: grid;
@@ -58,12 +58,12 @@ h1 {
 }
 
 h2{
-  font-size: 22px;
+  font-size: 20px;
   border: 3px solid;
   background-color: #DAF7A6;
 }
 h3 {
-  font-size:18px;
+  font-size:17px;
   background-color:#FF6CF8;
   border: 2px solid;
   border-radius: 0px 10px 0px 0px;
@@ -73,7 +73,7 @@ h5{
   font-family: ArchivoBlack;
   text-transform: uppercase;
   color: #0088EC;
-  font-size:15px;
+  font-size:14px;
   text-align: left;
 
 
@@ -88,6 +88,10 @@ h5{
   padding:1em;
 }
 
+p{
+  column-count: 2;
+  word-wrap: break-word;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -111,20 +115,13 @@ h5{
   border-radius: 10px;
 }
 
-/*.article {
-  border-right-color: brown;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-last: none;
-}*/
-
 p::first-letter{
   float:left;
   font-size:250%;
   color: #FF0DC8;
   font-family: ArchivoBlack;
   font-weight: normal;
-  line-height: 0.75;
+  line-height: 0.6;
 }
 
 img{
@@ -199,8 +196,8 @@ th{
   font-family: RampartOne;
 }
 
-div#3b-references{
-  background-color: #F9FE5B;
-  border: 5px solid #F9FE5B;
+sup{
+  background-color: #E5C8FF;
+  border: 3px solid #E5C8FF;
   border-radius: 10px 10px 10px 10px;
 }

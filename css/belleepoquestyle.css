@@ -31,6 +31,10 @@
   /*src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');*/
 }
 
+html{
+  cursor: url("Red rose.cur"), pointer;
+}
+
 body{
   height:100vh;
   overflow: hidden;
@@ -40,14 +44,17 @@ body{
   font-family: GlassAntiqua;
   font-size: 18px;
   background-image: url("../imgs/belleepoquebackgrounds/04. SNL_TOUR_1773.jpg");
-  /*background-image: url("imgs/belleepoquebackgrounds/194151.jpeg");*/
-  background-size: 160px;
-  background-repeat: repeat;
+  background-image: url("../imgs/belleepoquebackgrounds/fiori-serie copia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  cursor: url(""), pointer;
   /*padding-top: 2em;*/
 
 
+}
+
+a:hover{
+  cursor: url("pink rose.cur"), pointer;
 }
 
 .container{
@@ -151,24 +158,13 @@ img{
   padding-bottom: 2%;
   padding-top: 2%;
   font-family: BoecklinsUniverse;
+  text-transform: uppercase;
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   border-bottom: 8px solid #8B0000;
   border-radius: 5px;
 
 
 }
-
-button{
-  color: #BDE18B;
-}
-/*.collapse{
-  border-left: 2px solid plum;
-
-  border: 2px solid lightcoral;
-
-  border-right: 2px solid aquamarine;
-}*/
-
 
 
 .images{
