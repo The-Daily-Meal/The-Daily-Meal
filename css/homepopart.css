@@ -94,7 +94,7 @@
 }
 
 #TDM {
-transform: rotate(-5deg);
+color: black;
 background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../imgs/popartbackgrounds/pop0.png');
 background-size: cover;
 border: none;
@@ -102,8 +102,9 @@ border: none;
 
 
 #issuesnav {
-transform: rotate(-5deg);
-background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  color: black;
+  border: none;
+background-image: url('../imgs/popartbackgrounds/navbar.png');
 background-size: cover;
 }
 
