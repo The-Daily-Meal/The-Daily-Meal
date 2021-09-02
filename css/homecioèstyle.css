@@ -1,0 +1,199 @@
+@font-face {
+  font-family: ArchivoBlack;
+  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
+
+}
+@font-face {
+  font-family: DidactGothic;
+  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: RampartOne;
+  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
+  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: HiddencocktailsItalicshadow;
+  src: url('../fonts/cioèfonts/HiddencocktailsItalicshadow-lgL7V.ttf') format('ttf');
+  src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff') format('woff');
+  src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
+}
+
+body{
+  cursor: url("Pizza.cur"), pointer;
+}
+a:hover{
+  cursor: url("Hamburger.cur"), pointer;
+}
+.navbar{
+  padding-left: 5%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-family: RampartOne;
+  background-image: url("../imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
+  background-size: cover;
+  border-bottom: 3px solid purple;
+}
+
+.nav-item{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+#navbar{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 17px;
+}
+
+#search{
+  border: double black;
+  background-image: url("../imgs/cioèbackgrounds/depositphotos_441294958-stock-illustration-gradient-mesh-abstract-background-rainbow.jpeg")
+}
+#searchbutton{
+  border: double black;
+  color: black;
+  background-color: #8100D5;
+}
+
+.navbar-nav .btn {
+  background-color: white;
+  color: black;
+}
+
+.navbar-nav .btn:hover {
+  background-color: yellow;
+}
+.carousel-item {
+  height: 90vh;
+  min-height:300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-image: url("../imgs/cioèbackgrounds/pizza party.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*background: #8BEE03;*/
+  opacity: 0;
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+  padding: 100px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:left;
+  height:80vh;
+  margin:auto;
+  padding: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 60px;
+  text-align: left;
+  border: double 3px black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #86FF62;
+  background-size: cover;
+  background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
+  font-family: HiddencocktailsItalicShadow;
+  color: #E80019;;
+  margin-right: 60%;
+}
+
+.carousel-caption h2 {
+  font-size: 40px;
+  font-family: DidactGothic;
+  text-align: left;
+}
+
+p{
+  font-size: 30px;
+  font-family: DidactGothic;
+  color: black;
+  margin-right: 60%;
+}
+button{
+  margin-right: 60%;
+}
+#maintitle {
+  font-size: 110px;
+  background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
+  background-size: cover;
+  font-style: HiddencocktailsItalicShadow;
+}
+
+.carousel-caption p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  /*background-color: #00D6EF;*/
+  color: transparent;
+  border-radius: 50%;
+  padding: 2em 2rem;
+  font-size: 1.5rem;
+  font-style: RampartOne;
+  text: hidden;
+  border: ridge 6px #FF00EC;
+}
+
+.slider-btn .btn-2 {
+  color: transparent;
+  /*background-color: white;*/
+  background-image: url('../imgs/cioèbackgrounds/pastaaa.28.43-removebg-preview.png');
+  background-size: 120px;
+  background-repeat: no-repeat;
+  margin-right: 50%;
+}
+
+.btn-1{
+  background-image: url('../imgs/cioèbackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-right: 65%;
+}
+.btn-3{
+  background-image: url('../imgs/cioèbackgrounds/Progetto_senza_titolo__2_-removebg-preview.png');
+  background-size: 140px;
+  background-repeat: no-repeat;
+  margin-right: 65%;
+}
