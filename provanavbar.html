@@ -25,17 +25,17 @@
             <li><a class="dropdown-item" href="#">Team</a></li>
           </ul>
         </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="issues" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="issues" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: left">
             Issues
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item" href="#">Hamburger</a></li>
             <li><a class="dropdown-item" href="#">Pasta</a></li>
             <li><a class="dropdown-item" href="#">Ice cream</a></li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <button class="btn" type="button" name="medieval" onclick="changestyle('medievalstyle.css')">1480</button>
@@ -56,9 +56,6 @@
               <button class="btn" type="button" name="futuristic" onclick="changestyle('ourbauhaus.css')">2030</button>
             </li>
           </ul>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-nav me-md-2" type="button" id="searchbox">Search box</button>
-          </div>
         </div>
       </div>
     </nav>
