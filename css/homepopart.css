@@ -218,24 +218,13 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
-.carousel-item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
 .carousel-caption {
   color: black;
-  margin-bottom: 100px;
-  padding: 100px;
   overflow-y:scroll;
   overflow-x:hidden;
-  text-align:left;
-  height:80vh;
+  text-align:center;
+  height:75vh;
   margin:auto;
   padding: 0px;
 }

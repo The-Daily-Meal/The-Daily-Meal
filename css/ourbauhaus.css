@@ -23,6 +23,7 @@
   color: black;
    background-color: rgb(190, 30, 45);
    border: 3px solid black;
+   text-transform: lowercase;
 }
 
 
@@ -31,6 +32,7 @@
   color: white;
   background-color: rgb(33, 64, 154);
   border: 3px solid black;
+  text-transform: lowercase;
 }
 
 .nav-item {
