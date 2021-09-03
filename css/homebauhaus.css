@@ -18,6 +18,18 @@
     font-display: swap;
 }
 
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image:url('../imgs/bauhaushome/navbar.png');
+  background-image: url('../imgs/bauhaushome/navbar.png');
+  background-size: contain;
+}
+
 #TDM {
   color: black;
    background-color: rgb(190, 30, 45);
@@ -34,10 +46,12 @@
 
 .nav-item {
   margin-right: 1em;
+  text-transform: lowercase;
 }
 
 .dropdown {
   padding-right: 1em;
+  text-transform: lowercase;
 }
 
 
@@ -87,18 +101,15 @@ button[name="futuristic"] {
 
 
 .navbar {
-  padding-left: 5%;
-  padding-right:5%;
-  font-family: 'Bauhaus';
   text-transform: lowercase;
+  padding-left: 0%;
+  padding-right:0%;
+  font-family: 'Bauhaus';
   background-image: url('../imgs/bauhaushome/navbar.png');
   background-size: cover;
   font-size: 15px;
 }
 
-.navbar .nav-link {
-  margin: 2px;
-}
 
 
 .carousel-item {
@@ -111,7 +122,7 @@ button[name="futuristic"] {
 }
 
 #thedailymeal {
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/sfondo5.jpg');
+  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/navbar.png');
   background-size: cover;
 }
 
@@ -222,9 +233,10 @@ button[name="futuristic"] {
 }
 
 .carousel-indicators [data-bs-target]{
-  background-image: url("../imgs/bauhaushome/circle-svgrepo-com.svg");
+  background-image: url("../imgs/bauhaushome/triangle.svg");
   height:20px;
   width:40px;
-  background-size:contain;
+  background-size: contain;
   background-color: transparent;
+  margin-right: 1em;
 }

@@ -83,10 +83,20 @@
     font-display: swap;
 }
 
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image:url('../imgs/popartbackgrounds/navbar.png');
+  background-size: contain;
+}
+
 
 .navbar{
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 0px;
+  padding-right:0px;
   padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
@@ -257,7 +267,7 @@ button[name="futuristic"] {
 
 .carousel-caption p {
   font-size: 15px;
-  text-align: justify;
+  text-align: center;
   color: black;
   font-weight: bold;
   background-color: white;
