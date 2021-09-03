@@ -93,47 +93,73 @@
   background-size: cover;
 }
 
-#navbar {
-transform: rotate(-5deg);
-background-image: url('../imgs/popartbackgrounds/bubble3.png');
-background-size: cover;
-}
-
-
-#home {
-transform: rotate(-5deg);
-background-image: url('../imgs/popartbackgrounds/bubble3.png');
-background-size: cover;
-}
-
-#link {
-transform: rotate(-5deg);
-background-image: url('../imgs/popartbackgrounds/bubble3.png');
-background-size: cover;
+#TDM {
 color: black;
+background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../imgs/popartbackgrounds/pop0.png');
+background-size: cover;
+border: none;
 }
 
-#navbarDropdown {
-  text-transform: rotate(-5deg);
-  margin-left: 1em;
+
+#issuesnav {
+  color: black;
+  border: none;
+background-image: url('../imgs/popartbackgrounds/navbar.png');
+background-size: cover;
 }
 
- #searchbutton {
+
+.nav-item {
+  margin-right: 1em;
+}
+
+.dropdown {
+  padding-right: 1em;
+}
+
+
+button[name="medieval"] {
   color: black;
   transform: rotate(-5deg);
-  border: none;
   background-image: url('../imgs/popartbackgrounds/bubble3.png');
   background-size: cover;
- }
+}
 
- #searchbutton:hover {
-   background-color: #008ee7;
- }
 
- #search {
-   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../imgs/popartbackgrounds/pop0.png');
-   background-size: cover;
-   border: none;
+button[name="belleepoque"] {
+  color: black;
+  transform: rotate(-5deg);
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
+}
+
+button[name="bauhaus"] {
+  color: black;
+  transform: rotate(-5deg);
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
+}
+
+
+button[name="popart"] {
+  color: black;
+  transform: rotate(-5deg);
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
+}
+
+button[name="cioè"] {
+  color: black;
+  transform: rotate(-5deg);
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
+}
+
+button[name="futuristic"] {
+  color: black;
+  transform: rotate(-5deg);
+  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-size: cover;
 }
 
  .item_heading {

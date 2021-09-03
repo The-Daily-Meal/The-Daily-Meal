@@ -25,19 +25,16 @@ function changestyle(name) {
   };
   if (name == "immerseave.css"){
     $(".content").addClass("d-none");
-    $("body").prepend('<div class="container loadingscreen d-block"><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
+    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
 
     $("#os-phrases > h2")
       .css('opacity', 1).lettering( 'words' )
       .children( "span" ).lettering()
       .children( "span" ).lettering();
-     var t = setTimeout(function(){
-        $(".loadingscreen").addClass('d-none');
+     setTimeout(function(){
+        document.getElementById('loadingscreen').style.opacity=0;
         $(".content").removeClass("d-none");
       }, 12000);
-      $("body").click(function(){
-        clearTimeout(t);
-      })
   }
   else{
     $(".loadingscreen").remove();
