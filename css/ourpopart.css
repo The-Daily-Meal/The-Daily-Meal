@@ -225,7 +225,7 @@ button[name="futuristic"] {
 }
 
 
-p::first-letter{
+.text p::first-letter{
   float:left;
   font-size:500%;
   color: #d50037;
@@ -308,8 +308,27 @@ p::first-letter{
 }
 
 .panel-body {
-  padding: 50px;
+  padding: 5px;
+  height: auto;
   display: none;
+  text-align: left;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:50vh;
+}
+
+.head-sections {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+.body-sections {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
 }
 
 /* end metadata panel */
