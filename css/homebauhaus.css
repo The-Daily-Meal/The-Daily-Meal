@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
     font-family: 'Futura Bk';
     src: url('../fonts/bauhaus/Futura-Book.woff2') format('woff2'),
@@ -18,6 +20,9 @@
     font-display: swap;
 }
 
+/* end fonts */
+
+/* body and navbar */
 
 body {
   height: 100vh;
@@ -95,13 +100,6 @@ button[name="futuristic"] {
    border: 3px solid black;
 }
 
-
-.item_heading {
-  	font-family: 'Bauhaus';
-    text-transform: lowercase;
-}
-
-
 .navbar {
   text-transform: lowercase;
   padding-left: 0%;
@@ -112,7 +110,15 @@ button[name="futuristic"] {
   font-size: 15px;
 }
 
+/* end body and navbar */
 
+
+/* carousel settings */
+
+.item_heading {
+  	font-family: 'Bauhaus';
+    text-transform: lowercase;
+}
 
 .carousel-item {
   height: 90vh;
@@ -123,35 +129,6 @@ button[name="futuristic"] {
   font-family: 'Futura Bk';
 }
 
-#thedailymeal {
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)),url('../imgs/bauhaushome/navbar.png');
-  background-size: cover;
-}
-
-#maintitle {
-  font-size: 200px;
-  text-align: center;
-  color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-/*
-#issues {
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo9.jpg');
-  background-size: contain;
-}
-
-#documentation {
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo8.jpg');
-  background-size: contain;
-}
-
-#team {
-  background: linear-gradient(rgba(246,242,230, .5), rgba(246,242,230, .5)), url('../imgs/bauhaushome/sfondo5.jpg');
-  background-size: cover;
-}
-*/
 
 .carousel-item::before {
   content: "";
@@ -171,7 +148,7 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:left;
-  height:80vh;
+  height:75vh;
   margin:auto;
   padding: 0px;
 }
@@ -203,9 +180,15 @@ button[name="futuristic"] {
   font-family: 'Bauhaus';
 }
 
+
 #maintitle {
-  font-size: 60px;
+  font-size: 80px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
+
 
 .carousel-caption p {
   font-size: 15px;
@@ -215,6 +198,19 @@ button[name="futuristic"] {
   display: inline-block;
   border: 3px solid black;
 }
+
+.carousel-indicators [data-bs-target]{
+  background-image: url("../imgs/bauhaushome/triangle.svg");
+  height:20px;
+  width:40px;
+  background-size: contain;
+  background-color: transparent;
+  margin-right: 1em;
+}
+
+/* end carousel settings */
+
+/* buttons slider issues */
 
 .slider-btn {
   margin-top: 30px;
@@ -234,11 +230,4 @@ button[name="futuristic"] {
   background-color: white;
 }
 
-.carousel-indicators [data-bs-target]{
-  background-image: url("../imgs/bauhaushome/triangle.svg");
-  height:20px;
-  width:40px;
-  background-size: contain;
-  background-color: transparent;
-  margin-right: 1em;
-}
+/* end buttons slider issues */

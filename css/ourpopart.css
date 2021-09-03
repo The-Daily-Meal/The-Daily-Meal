@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
     font-family: 'P22 Pop Art Comic';
     src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
@@ -41,6 +42,23 @@
     font-display: swap;
 }
 
+/* end fonts */
+
+/* body and navbar */
+
+body {
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../imgs/popartbackgrounds/pop11.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+  cursor: url(""), pointer;
+  font-family: 'P22 Pop Art Comic';
+  font-weight: bold;
+}
 
 .navbar{
   padding-left: 5%;
@@ -120,6 +138,9 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
+/*end body and navbar */
+
+/*articles structure */
 
 .article{
   overflow-y:scroll;
@@ -139,22 +160,6 @@ button[name="futuristic"] {
   margin: auto;
 }
 
-
-
-
-body {
-  font-size: 15px;
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('../imgs/popartbackgrounds/pop11.jpg');
-  background-size: contain;
-  background-attachment: fixed;
-  cursor: url(""), pointer;
-  font-family: 'P22 Pop Art Comic';
-  font-weight: bold;
-}
 
 .text {
   text-align: justify;
@@ -176,7 +181,6 @@ body {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
 
 /* Handle */
@@ -185,55 +189,7 @@ body {
   border-radius: 10px;
 }
 
-.header {
-  width: 100%;
-  height: 70%;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: #FED715;
-  background-size: cover;
-  border: 20px solid transparent;
-  padding: 15px;
-  border-image-source: url('../imgs/popartbackgrounds/pop3.jpg');
-  border-image-repeat: round;
-  border-image-slice: 100;
-
-}
-
-.header h1 {
-  font-family: 'BadaBoom BB';
-  font-size: 40px;
-  text-align: center;
-  text-shadow: 2px 2px 0px black;
-  color: white;
-  background-color:  #d50037;
-  border-radius: 25px 30px 40px 20px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  transform: rotate(-5deg);
-}
-
-
-
-.header h2 {
-  font-family: 'BadaBoom BB';
-  font-size: 20px;
-  text-align: left;
-  color:  black;
-  transform: rotate(-5deg);
-}
-
-.header h2 b {
-  font-family: 'BadaBoom BB';
-  color: #d50037;
-}
-
-.header h3 {
-  font-family: 'Sweaty Belvin';
-  font-size: 20px;
-  text-align: right;
-  transform: rotate(-5deg);
-}
+/*articles settings */
 
 .section_heading {
   font-family: 'BadaBoom BB';
@@ -251,8 +207,6 @@ body {
   -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: black;
 }
-
-
 
 .section_abstract {
   padding: 1em;
@@ -284,3 +238,78 @@ p::first-letter{
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 0px black;
 }
+
+/* end articles */
+
+
+/* header */
+.header {
+  width: 100%;
+  height: 70%;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #FED715;
+  background-size: cover;
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image-source: url('../imgs/popartbackgrounds/pop3.jpg');
+  border-image-repeat: round;
+  border-image-slice: 100;
+
+}
+
+.header h1 {
+  font-family: 'BadaBoom BB';
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 0px black;
+  color: white;
+  background-color:  #d50037;
+  border-radius: 25px 30px 40px 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(-5deg);
+}
+
+.header h2 {
+  font-family: 'BadaBoom BB';
+  font-size: 20px;
+  text-align: left;
+  color:  black;
+  transform: rotate(-5deg);
+}
+
+.header h2 b {
+  font-family: 'BadaBoom BB';
+  color: #d50037;
+}
+
+.header h3 {
+  font-family: 'Sweaty Belvin';
+  font-size: 20px;
+  text-align: right;
+  transform: rotate(-5deg);
+}
+
+/* end header */
+
+
+/* metadata panel */
+
+.container1 {
+  display: fixed;
+}
+
+.panel-heading, .panel-body {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+.panel-body {
+  padding: 50px;
+  display: none;
+}
+
+/* end metadata panel */

@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
     font-family: 'P22 Pop Art Comic';
     src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
@@ -18,7 +20,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Pop Art';
     src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
@@ -28,7 +29,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 
 @font-face {
     font-family: 'Sweaty Belvin';
@@ -40,48 +40,9 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'P22 Pop Art Comic';
-    src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
-    url('../fonts/popart/P22PopArtComic.woff2') format('woff2'),
-        url('../fonts/popart/P22PopArtComic.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+/* end fonts */
 
-
-@font-face {
-    font-family: 'BadaBoom BB';
-    src: url('../fonts/popart/BADABB_.ttf') format('ttf'),
-    url('../fonts/popart/BadaBoomBB.woff2') format('woff2'),
-        url('../fonts/popart/BadaBoomBB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Pop Art';
-    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
-        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
-        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Sweaty Belvin';
-    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
-        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
-        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+/* body and navbar */
 
 body {
   height: 100vh;
@@ -91,6 +52,7 @@ body {
   margin-right: 5%;
   background-image:url('../imgs/popartbackgrounds/navbar.png');
   background-size: contain;
+  font-family: 'P22 Pop Art Comic';
 }
 
 
@@ -172,6 +134,10 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
+/* end body and navbar */
+
+/* carousel settings */
+
  .item_heading {
    	font-family: 'BadaBoom BB';
     color: black;
@@ -195,13 +161,6 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
-#maintitle {
-  font-size: 100px;
-  text-align: center;
-  color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
 
 #issues {
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/issues.jpg');
@@ -242,7 +201,6 @@ button[name="futuristic"] {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
 
 .carousel-caption h1 {
@@ -265,6 +223,17 @@ button[name="futuristic"] {
   border-radius: 25px 30px 40px 20px;
 }
 
+#maintitle {
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+/* end carousel settings */
+/* buttons slider issues */
+
 .slider-btn {
   margin-top: 30px;
 }
@@ -282,3 +251,5 @@ button[name="futuristic"] {
   color: black;
   background-color: white;
 }
+
+/* end buttons slider issues */
