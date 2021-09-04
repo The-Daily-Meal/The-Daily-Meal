@@ -1,3 +1,5 @@
+/* fonts */
+
 @font-face {
     font-family: 'P22 Pop Art Comic';
     src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
@@ -18,7 +20,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Pop Art';
     src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
@@ -28,7 +29,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 
 @font-face {
     font-family: 'Sweaty Belvin';
@@ -40,53 +40,25 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'P22 Pop Art Comic';
-    src: url('../fonts/popart/P22 Pop Art Comic Regular.ttf') format('ttf'),
-    url('../fonts/popart/P22PopArtComic.woff2') format('woff2'),
-        url('../fonts/popart/P22PopArtComic.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+/* end fonts */
 
+/* body and navbar */
 
-@font-face {
-    font-family: 'BadaBoom BB';
-    src: url('../fonts/popart/BADABB_.ttf') format('ttf'),
-    url('../fonts/popart/BadaBoomBB.woff2') format('woff2'),
-        url('../fonts/popart/BadaBoomBB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Pop Art';
-    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
-        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
-        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Sweaty Belvin';
-    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
-        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
-        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image:url('../imgs/popartbackgrounds/navbar.png');
+  background-size: contain;
+  font-family: 'P22 Pop Art Comic';
 }
 
 
 .navbar{
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 0px;
+  padding-right:0px;
   padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
@@ -162,6 +134,10 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
+/* end body and navbar */
+
+/* carousel settings */
+
  .item_heading {
    	font-family: 'BadaBoom BB';
     color: black;
@@ -185,13 +161,6 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
-#maintitle {
-  font-size: 100px;
-  text-align: center;
-  color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
 
 #issues {
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/issues.jpg');
@@ -208,24 +177,13 @@ button[name="futuristic"] {
   background-size: cover;
 }
 
-.carousel-item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
 .carousel-caption {
   color: black;
-  margin-bottom: 100px;
-  padding: 100px;
   overflow-y:scroll;
   overflow-x:hidden;
-  text-align:left;
-  height:80vh;
+  text-align:center;
+  height:75vh;
   margin:auto;
   padding: 0px;
 }
@@ -243,11 +201,10 @@ button[name="futuristic"] {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
 
 .carousel-caption h1 {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .carousel-caption h2 {
@@ -257,7 +214,7 @@ button[name="futuristic"] {
 
 .carousel-caption p {
   font-size: 15px;
-  text-align: justify;
+  text-align: center;
   color: black;
   font-weight: bold;
   background-color: white;
@@ -265,6 +222,17 @@ button[name="futuristic"] {
   border: 1px solid black;
   border-radius: 25px 30px 40px 20px;
 }
+
+#maintitle {
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+/* end carousel settings */
+/* buttons slider issues */
 
 .slider-btn {
   margin-top: 30px;
@@ -283,3 +251,5 @@ button[name="futuristic"] {
   color: black;
   background-color: white;
 }
+
+/* end buttons slider issues */
