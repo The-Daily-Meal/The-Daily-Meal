@@ -78,19 +78,19 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   border-radius: 5px;
 }
 
-.nav-item, .dropdown-item{
+.nav-item, .dropdown-menu, .dropdown-item{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #A7C39A;
   color: white;
 }
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus{
+.dropdown-menu:hover, .dropdown-menu:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-item:hover, .dropdown-item:focus{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
 background-size: cover;
 background-color: #A7C39A;
 color: #C28400;
+}
 
-  }
 .btn{
   color: white;
 }
@@ -112,7 +112,7 @@ color: #C28400;
   min-height:300px;
   background: no-repeat scroll center scroll;
   -webkit-background-size: cover;
-  margin-left: 20%;
+  margin-left: 20.5%;
   background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
   border: double 5px #8B0000;
 }
@@ -143,19 +143,19 @@ color: #C28400;
 }
 
 .carousel-indicators [data-bs-target]{
-  background-image: url('..');
-  height:40px;
+  background-image: url('../imgs/belleepoquebackgrounds/a5a1013beecfcb8fd9322a74eff5edd9-removebg-preview (2).png');
+  height:20px;
   width:40px;
-  background-size:contain;
   background-color: transparent;
+  background-size:cover;
 }
 
 .carousel-indicators [aria-current]{
-  background-image: url('..');
-  height:40px;
-  width:40px;
-  background-size:contain;
+  background-image: url('../imgs/belleepoquebackgrounds/a5a1013beecfcb8fd9322a74eff5edd9-removebg-preview.png');
+  height:20px;
+  width:55px;
   background-color: transparent;
+  background-size:cover;
 }
 
 /* width */
@@ -229,16 +229,11 @@ p{
   color: black;
   filter: brightness(90%);
 }
-.btn:hover{
-}
-.slider-btn .btn-2{
+
+.slider-btn:hover, .slider-btn:focus, .btn:hover, .btn:focus{
+  color: #D3A900;
 }
 
-.btn-1{
-
-}
-.btn-3{
-}
 .carousel-control-prev-icon{
   background-image: url('../imgs/belleepoquebackgrounds/png-clipart-eight-assorted-logos-collage-ornament-art-nouveau-art-deco-miscellaneous-heart-thumbnail.png');
   transform: rotate(90deg);
