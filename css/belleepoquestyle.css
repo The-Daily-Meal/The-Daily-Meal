@@ -185,12 +185,7 @@ color: #D1B100;
 .btn:hover, .btn:focus{
   color: #D1B100;
 }
-.collapse{
-  background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');
-  background-size: 300px;
-  background-position: center;
-  background-repeat: repeat;
-}
+
 
 .images{
   padding: 10px;
