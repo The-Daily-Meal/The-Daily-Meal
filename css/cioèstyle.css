@@ -25,7 +25,7 @@ body{
   cursor: url("../css/Pizza.cur"), pointer;
 
 }
-a:hover{
+a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("Hamburger.cur"), pointer;
 }
 

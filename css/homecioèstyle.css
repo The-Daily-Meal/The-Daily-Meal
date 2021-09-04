@@ -22,7 +22,7 @@
   src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
 }
 
-body{
+html{
   cursor: url("Pizza.cur"), pointer;
 }
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -103,7 +103,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 #team{
-  background-image: url('../imgs/cioèbackgrounds/teamcover.png');
+  background-image: url('../imgs/cioèbackgrounds/teamcover1.png');
 }
 
 .carousel-item::before {
@@ -127,6 +127,22 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   height:80vh;
   margin:auto;
   padding: 0px;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-image: url('../imgs/cioèbackgrounds/icons-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
+}
+
+.carousel-indicators [aria-current]{
+  background-image: url('../imgs/cioèbackgrounds/icons8-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
 }
 
 /* width */

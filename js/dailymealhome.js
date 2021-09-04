@@ -28,7 +28,7 @@ function changestyle(name){
     document.getElementById("maintitle").innerHTML = 'The Daily Meal';
   };
 
-  if (name == 'homepopart.css' || name == 'homebauhaus.css'){
+  if (name == 'homepopart.css' || name == 'homebauhaus.css' || name == 'homecioèstyle.css'){
     document.getElementById('homestylebase').setAttribute("href", "");
   }
   else{
