@@ -101,7 +101,7 @@ p::first-letter{
   background-size:contain;
   border: solid black;
 }
-.navbar-brand, .nav-item, #searchbutton, #search{
+.navbar .btn{
   border: solid black;
   border-radius:5px;
   margin-left:1em;
