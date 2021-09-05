@@ -6,6 +6,8 @@ function passintro() {
 };
 function getIssue(name){
   $('#article1').load(name+" #article1 *");
+  $('#article2').load(name+" #article2 *");
+  $('#article3').load(name+" #article3 *");
 }
 function makeitrain(){
   if(document.getElementById("rain").getAttribute("rain")=="no"){
