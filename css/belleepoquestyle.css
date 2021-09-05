@@ -166,13 +166,13 @@ img{
 
 }
 
-.nav-item, .dropdown-item{
+.nav-item, .dropdown-item, .dropdown-menu{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #8B0000;
   color: white;
 }
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus{
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-menu:hover, .dropdown-menu:focus{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
 background-size: cover;
 background-color: #8B0000;
