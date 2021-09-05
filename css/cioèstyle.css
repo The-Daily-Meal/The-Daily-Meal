@@ -25,7 +25,7 @@ body{
   cursor: url("../css/Pizza.cur"), pointer;
 
 }
-a:hover{
+a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("Hamburger.cur"), pointer;
 }
 
@@ -127,8 +127,7 @@ p::first-letter{
 img{
   max-width: -webkit-fill-available;
 }
-
-.navbar{
+.navbar {
   padding-left: 5%;
   padding-right: 4%;
   padding-bottom: 1%;
@@ -137,15 +136,48 @@ img{
   background-image: url("../imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
   border-bottom: 3px solid purple;
-
 }
-
-.nav-item{
+.dropdown-item{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
   padding: 10px;
+}
+.dropdown-item:hover{
+  background-color: #FF00EC;
+  color: yellow;
+}
+.dropdown-item:focus{
+  background-color: #FF00EC;
+}
+.dropdown-toggle, .dropdown-menu{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
+.btn:hover{
+  background-color: #FF00EC;
+  color: yellow;
+}
 
+.dropdown-toggle:hover{
+  background-color: #FF00EC;
+}
+.dropdown-toggle:focus, .dropdown-menu:focus{
+  background-color: #FF00EC;
+  color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: #8BEE03;
+}
+.nav-item {
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
 }
 
 #navbar{
@@ -155,14 +187,9 @@ img{
   padding: 17px;
 }
 
-#search{
-  border: double black;
-  background-image: url("../imgs/cioèbackgrounds/depositphotos_441294958-stock-illustration-gradient-mesh-abstract-background-rainbow.jpeg")
-}
-#searchbutton{
-  border: double black;
+.btn{
+  background-color: yellow;
   color: black;
-  background-color: #8100D5;
 }
 .images{
   border: 5px solid #8BEE03;

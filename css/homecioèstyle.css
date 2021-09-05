@@ -22,7 +22,7 @@
   src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
 }
 
-body{
+html{
   cursor: url("Pizza.cur"), pointer;
 }
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -46,29 +46,34 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 .dropdown-item:hover{
   background-color: #FF00EC;
-  color: black;
+  color: yellow;
 }
 .dropdown-item:focus{
   background-color: #FF00EC;
 }
-.dropdown-toggle{
+.dropdown-toggle, .dropdown-menu{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
   padding: 10px;
   color: black;
 }
-.navbar-nav .btn:hover {
+.btn:hover {
   background-color: #FF00EC;
+  color: yellow; 
 }
 
 .dropdown-toggle:hover{
   background-color: #FF00EC;
   color: black;
 }
-.dropdown-toggle:focus{
+.dropdown-toggle:focus, .dropdown-menu:focus{
   background-color: #FF00EC;
   color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: #8BEE03;
 }
 .nav-item {
   border: double black;
@@ -84,7 +89,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   padding: 17px;
 }
 
-.navbar-nav .btn {
+.btn{
   background-color: yellow;
   color: black;
 }
@@ -103,7 +108,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 #team{
-  background-image: url('../imgs/cioèbackgrounds/teamcover.png');
+  background-image: url('../imgs/cioèbackgrounds/teamcover1.png');
 }
 
 .carousel-item::before {
@@ -127,6 +132,22 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   height:80vh;
   margin:auto;
   padding: 0px;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-image: url('../imgs/cioèbackgrounds/icons-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
+}
+
+.carousel-indicators [aria-current]{
+  background-image: url('../imgs/cioèbackgrounds/icons8-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
 }
 
 /* width */
@@ -169,7 +190,7 @@ p{
   font-family: DidactGothic;
   color: black;
   margin-right: 60%;
-  padding: 10px;
+  /*padding: 8px;*/
 }
 
 #maintitle {
