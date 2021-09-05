@@ -8,6 +8,31 @@
   font-family:MontserratAlternates-SemiBold;
   src: url("../fonts/immerseave/MontserratAlternates-SemiBold.ttf");
 }
+@font-face{
+  font-family:MontserratSubrayada;
+  src: url("../fonts/immerseave/MontserratSubrayada-Regular.ttf");
+}
+@font-face{
+  font-family:Montserrat;
+  src: url("../fonts/immerseave/Montserrat-Regular.ttf");
+}
+@font-face{
+  font-family:Montserrat-Italic;
+  src: url("../fonts/immerseave/Montserrat-Italic.ttf");
+}
+@font-face{
+  font-family:Montserrat-SemiBold;
+  src: url("../fonts/immerseave/Montserrat-SemiBold.ttf");
+}
+@font-face{
+  font-family:ShaddedSouth;
+  src: url("../fonts/immerseave/Shadded South Personal Use.ttf");
+}
+@font-face{
+  font-family:AeroviasBrasil;
+  src: url("../fonts/immerseave/AeroviasBrasilNF.ttf");
+}
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
@@ -26,7 +51,7 @@ html{
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height:85vh;
+  height:90vh;
   margin:auto;
   padding:2em;
 }
@@ -70,12 +95,13 @@ body{
   background-size:cover;
   background-repeat:no-repeat;
   height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  color: #
 }
-.content h1 {
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 a {
 	color: #f0f0f0;
 	text-decoration: none;
@@ -346,20 +372,182 @@ a:hover {
 .os-phrases h2:first-child .word3,
 .os-phrases h2:nth-child(2) .word2,.word3,.word4,
 .os-phrases h2:nth-child(4) .word2 {
-	font-family:MontserratAlternates-SemiBold;
+	font-family:Montserrat-Italic;
 }
 
-.col-4{
+.article{
   transition: all .2s ease-in-out;
   opacity: 0.7;
   background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
   padding:0
   margin:2em;
+  border-radius:20px;
+  box-shadow: 0.5em 0.3em 1em #33ccff;
 }
-.col-4:hover{
+.article:hover{
   transform: scale(1.1);
   opacity: 1.0;
 }
+
 .navbar{
-  background: linear-gradient(to bottom, #000000 0%, #0066ff 100%);
+  background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
+  padding-left: 5%;
+  padding-right: 5%;
 }
+.navbar .btn{
+  background-image: linear-gradient(
+   to right,
+   #462523 0,
+           #cb9b51 22%,
+   #f6e27a 45%,
+   #f6f2c0 50%,
+   #f6e27a 55%,
+   #cb9b51 78%,
+   #462523 100%
+   );
+   color:transparent;
+     -webkit-background-clip:text;
+}
+.navbar a, .navbar .btn[name="belleepoque"], .navbar .btn[name="popart"], .navbar .btn[name="futuristic"]{
+  background-image: linear-gradient(101deg, rgba(57,57,57,1) 0%, rgba(187,185,185,1) 30%, rgba(251,251,251,1) 50%, rgba(187,185,185,1) 70%, rgba(98,98,98,1) 100%);
+  color:transparent;
+    -webkit-background-clip:text;}
+.navbar .btn:hover, .navbar li:hover, .navbar a:hover{
+  color:#fff;
+}
+.text img{
+  max-width: -webkit-fill-available;
+  transition: all .2s ease-in-out;
+  margin-bottom: 1em;
+  border-radius: 20px;
+  box-shadow: 0.5em 0.3em 1em #33ccff;
+}
+.text img:hover{
+  transform: scale(1.1);
+}
+.dropdown{
+  margin-right:1em;
+}
+#TDM, #issuesnav, #makeitrain {
+  background-color:rgba(65,72,234,0.5);
+  border: none;
+}
+.header h1 {
+  font-size: 35px;
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+   color:transparent;
+     -webkit-background-clip:text;
+  transition: all .2s ease-in-out;
+  text-align:center;
+  font-family: ShaddedSouth;
+}
+.header .thing5_rightsordate{
+  text-align: right;
+  font-family: Montserrat-Italic;
+}
+#article1{
+  margin-top:1.5em;
+  transform: skewY(-9deg);
+}
+#article3{
+  margin-top:1.5em;
+  transform: skewY(9deg);
+}
+#article1:hover, #article3:hover{
+  transform: skewY(0deg);
+  margin-top:inherit;
+}
+.header h1:hover{
+  transform: scale(0.9);
+}
+.header{
+ margin-bottom: 1.5em;
+}
+.row{
+  margin-top:1em;
+}
+.dropdown-menu{
+  background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
+ }
+ .header h2{
+   text-align: left;
+   font-family: AeroviasBrasil;
+   font-size: 20px;
+   color: #9853b7;
+ }
+ .header h3{
+   font-size: 15px;
+   color:#c34d96;
+   font-family: AeroviasBrasil;
+ }
+ .text h1, .text h2, .text h3, .text h4{
+   font-family:MontserratAlternates-Regular;
+ }
+ .text {
+   font-family: Montserrat;
+ }
+ .text i{
+   font-family: Montserrat-Italic;
+ }
+ .rain
+ {
+  background: url("../imgs/immerseave/rain.png");
+  animation: rain .5s linear infinite;
+  z-index:9;
+  pointer-events: none;
+ }
+ .rain:before {
+  content:'';
+  position:absolute;
+  width:100%;
+  height: 100%;
+  background: #fff;
+  animation: lighting 3s linear infinite;
+  opacity: 0;
+
+ }
+ @keyframes rain
+ {
+  0% {
+   background-position: 0% 0%;
+  }
+  100%{
+   background-position: 20% 100%;
+  }
+ }
+ @keyframes lighting
+ {
+  0% {
+   opacity:  1;
+  }
+  10%{
+   opacity:  0;
+  }
+  11%{
+   opacity:  0;
+  }
+  14%{
+   opacity:  1;
+  }
+  20%{
+   opacity:  0;
+  }
+  21%{
+   opacity:  0;
+  }
+  24%{
+   opacity:  0;
+  }
+  104%{
+   opacity:  0;
+  }
+
+ }
+
+ #makeitrain:focus{
+   outline:0;
+ }
+ .table{
+   color:#fff;
+   text-align:left;
+ }
