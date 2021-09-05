@@ -5,7 +5,7 @@ function passintro() {
   clearTimeout(timeout);
 };
 function getIssue(name){
-  $('#article1').load(name+" #article1");
+  $('#article1').load(name+" #article1 *");
 }
 function makeitrain(){
   if(document.getElementById("rain").getAttribute("rain")=="no"){
