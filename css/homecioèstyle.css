@@ -22,13 +22,13 @@
   src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
 }
 
-body{
+html{
   cursor: url("Pizza.cur"), pointer;
 }
-a:hover{
+a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("Hamburger.cur"), pointer;
 }
-.navbar{
+.navbar {
   padding-left: 5%;
   padding-right: 4%;
   padding-bottom: 1%;
@@ -38,8 +38,39 @@ a:hover{
   background-size: cover;
   border-bottom: 3px solid purple;
 }
+.dropdown-item{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+}
+.dropdown-item:hover{
+  background-color: #FF00EC;
+  color: black;
+}
+.dropdown-item:focus{
+  background-color: #FF00EC;
+}
+.dropdown-toggle{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
+.navbar-nav .btn:hover {
+  background-color: #FF00EC;
+}
 
-.nav-item{
+.dropdown-toggle:hover{
+  background-color: #FF00EC;
+  color: black;
+}
+.dropdown-toggle:focus{
+  background-color: #FF00EC;
+  color: black;
+}
+.nav-item {
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
@@ -53,24 +84,13 @@ a:hover{
   padding: 17px;
 }
 
-#search{
-  border: double black;
-  background-image: url("../imgs/cioèbackgrounds/depositphotos_441294958-stock-illustration-gradient-mesh-abstract-background-rainbow.jpeg")
-}
-#searchbutton{
-  border: double black;
-  color: black;
-  background-color: #8100D5;
-}
-
 .navbar-nav .btn {
-  background-color: white;
+  background-color: yellow;
   color: black;
 }
 
-.navbar-nav .btn:hover {
-  background-color: yellow;
-}
+
+
 .carousel-item {
   height: 90vh;
   min-height:300px;
@@ -80,6 +100,10 @@ a:hover{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#team{
+  background-image: url('../imgs/cioèbackgrounds/teamcover1.png');
 }
 
 .carousel-item::before {
@@ -105,6 +129,22 @@ a:hover{
   padding: 0px;
 }
 
+.carousel-indicators [data-bs-target]{
+  background-image: url('../imgs/cioèbackgrounds/icons-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
+}
+
+.carousel-indicators [aria-current]{
+  background-image: url('../imgs/cioèbackgrounds/icons8-star-256.png');
+  height:40px;
+  width:40px;
+  background-size:contain;
+  background-color: transparent;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -123,14 +163,14 @@ a:hover{
 
 .carousel-caption h1 {
   font-size: 60px;
-  text-align: left;
+  text-align: center;
   border: double 3px black;
   border-radius: 10px 10px 10px 10px;
   background-color: #86FF62;
   background-size: cover;
   background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
   font-family: HiddencocktailsItalicShadow;
-  color: #E80019;;
+  color: #C10055;
   margin-right: 60%;
 }
 
@@ -145,10 +185,9 @@ p{
   font-family: DidactGothic;
   color: black;
   margin-right: 60%;
+  padding: 10px;
 }
-button{
-  margin-right: 60%;
-}
+
 #maintitle {
   font-size: 110px;
   background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
@@ -157,7 +196,7 @@ button{
 }
 
 .carousel-caption p {
-  font-size: 15px;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -166,34 +205,53 @@ button{
 }
 
 .slider-btn .btn {
-  /*background-color: #00D6EF;*/
   color: transparent;
+  background-color: #001BE0;;
   border-radius: 50%;
   padding: 2em 2rem;
   font-size: 1.5rem;
   font-style: RampartOne;
   text: hidden;
   border: ridge 6px #FF00EC;
-}
-
-.slider-btn .btn-2 {
-  color: transparent;
-  /*background-color: white;*/
-  background-image: url('../imgs/cioèbackgrounds/pastaaa.28.43-removebg-preview.png');
-  background-size: 120px;
-  background-repeat: no-repeat;
   margin-right: 50%;
+  margin-left: 10%;
+}
+.btn:hover{
+  color: yellow;
+}
+.slider-btn .btn-2{
+  padding: 2em 2rem;
+  background-color: #00DEB9;
+  background-image: url('../imgs/cioèbackgrounds/pastaaa.28.43-removebg-preview.png');
+  background-size: 135px;
+  background-repeat: no-repeat;
+  margin-left: 20%;
+  background-position: center;
 }
 
 .btn-1{
+  background-color: #010CFF;
+  padding: 2em 2rem;
   background-image: url('../imgs/cioèbackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
   background-size: 200px;
   background-repeat: no-repeat;
-  margin-right: 65%;
+  margin-right: 50%;
+
 }
 .btn-3{
-  background-image: url('../imgs/cioèbackgrounds/Progetto_senza_titolo__2_-removebg-preview.png');
+  padding: 2em 2rem;
+  background-image: url('../imgs/cioèbackgrounds/rainbow-colored-ice-cream-neon-sign_1262-19630.jpeg');
   background-size: 140px;
   background-repeat: no-repeat;
   margin-right: 65%;
+}
+.carousel-control-prev-icon{
+  background-image: url('../imgs/cioèbackgrounds/icons8-next-200.png');
+  transform: rotate(180deg);
+  background-blend-mode: hard-light;
+}
+.carousel-control-next-icon{
+
+    background-image: url('../imgs/cioèbackgrounds/icons8-next-200.png');
+    background-blend-mode: hard-light;
 }

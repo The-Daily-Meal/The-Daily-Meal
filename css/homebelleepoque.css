@@ -1,0 +1,247 @@
+@font-face {
+  font-family: GlassAntiqua;
+  src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.ttf') format('ttf');
+  src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff') format('woff');
+
+}
+@font-face {
+  font-family: Milonga;
+  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.ttf') format('ttf');
+  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Amarante;
+  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.ttf') format('ttf');
+  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: BoecklinsUniverse;
+  src: url('../fonts/belleepoque/boecklins-universe/Boecklins Universe.ttf') format('ttf');
+  src: url('../fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff') format('woff');
+}
+@font-face {
+  font-family: FloralCapsNouveau;
+  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
+  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
+}
+@font-face {
+  font-family: Legrand;
+  src: url('../fonts/belleepoque/Legrand-0l8d.ttf') format('ttf');
+  src: url('../fonts/belleepoque/Legrand.woff') format('woff');
+  src: url('../fonts/belleepoque/Legrand.woff2') format('woff2');
+}
+
+html{
+  cursor: url("Red rose.cur"), pointer;
+}
+
+a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
+  cursor: url("pink rose.cur"), pointer;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+
+.navbar{
+  padding-left: 5%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-family: BoecklinsUniverse;
+  color: white;
+  text-transform: uppercase;
+  background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
+  background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');
+  border: 5px solid #8B0000;
+  border-radius: 5px;
+}
+
+.nav-item, .dropdown-menu, .dropdown-item{
+  background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
+  background-size: cover;
+  background-color: #A7C39A;
+  color: white;
+}
+.dropdown-menu:hover, .dropdown-menu:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-item:hover, .dropdown-item:focus{
+background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
+background-size: cover;
+background-color: #A7C39A;
+color: #C28400;
+}
+
+.btn{
+  color: white;
+}
+.btn:hover, .btn:focus{
+  color: #C28400;
+}
+
+.collapse{
+  /*background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');*/
+  background-size: 300px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+
+.carousel-item {
+  height: 90vh;
+  width: 116vh;
+  min-height:300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  margin-left: 20.5%;
+  background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
+  border: double 5px #8B0000;
+}
+.carousel-inner{
+  background-image: url('../imgs/belleepoquebackgrounds/sfondo.png');
+  background-size: cover;
+}
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+  padding: 100px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:left;
+  height:80vh;
+  margin:auto;
+  padding: 0px;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-image: url('../imgs/belleepoquebackgrounds/a5a1013beecfcb8fd9322a74eff5edd9-removebg-preview (2).png');
+  height:20px;
+  width:40px;
+  background-color: transparent;
+  background-size:cover;
+}
+
+.carousel-indicators [aria-current]{
+  background-image: url('../imgs/belleepoquebackgrounds/a5a1013beecfcb8fd9322a74eff5edd9-removebg-preview.png');
+  height:20px;
+  width:55px;
+  background-color: transparent;
+  background-size:cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
+.carousel-caption h1 {
+  font-size: 60px;
+  font-family: Legrand;
+  color: #8B0000;
+  text-align: center;
+}
+
+.carousel-caption h2 {
+  font-size: 50px;
+  font-family: Legrand;
+  text-align: center;
+  color: #8B0000;
+}
+
+p{
+  font-size: 30px;
+  font-family: Legrand;
+  color: black;
+  padding: 10px;
+  margin: 5%;
+  text-align: center;
+  border: double 5px #8B0000;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#maintitle {
+  font-size: 100px;
+  color: #A88E00;
+  color: #D3A900;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Legrand;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 5px;
+  margin: 5%;
+  border: double 3px #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/6183495e67cee9cea1c31c9c71f5d039-removebg-preview (1).png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #8B0000;
+  bacground-size: 150px;
+}
+
+.slider-btn .btn {
+  width: 20vh;
+  height: 30vh;
+  background-image: url('../imgs/belleepoquebackgrounds/c54796ca2c705661effbd1b45b8a335d.jpeg');
+  background-size: cover;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  margin-left: 5%;
+  font-family: Legrand;
+  color: black;
+  filter: brightness(90%);
+}
+
+.slider-btn:hover, .slider-btn:focus, .btn:hover, .btn:focus{
+  color: #D3A900;
+}
+
+.carousel-control-prev-icon{
+  background-image: url('../imgs/belleepoquebackgrounds/png-clipart-eight-assorted-logos-collage-ornament-art-nouveau-art-deco-miscellaneous-heart-thumbnail.png');
+  transform: rotate(90deg);
+  background-blend-mode: hard-light;
+}
+.carousel-control-next-icon{
+
+    background-image: url('../imgs/belleepoquebackgrounds/png-clipart-eight-assorted-logos-collage-ornament-art-nouveau-art-deco-miscellaneous-heart-thumbnail.png');
+    background-blend-mode: hard-light;
+    transform: rotate(270deg);
+}
