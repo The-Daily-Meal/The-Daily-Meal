@@ -4,6 +4,9 @@ function passintro() {
   alert("hey");
   clearTimeout(timeout);
 };
+function getIssue(name){
+  $('#article1').load(name+" #article1");
+}
 function makeitrain(){
   if(document.getElementById("rain").getAttribute("rain")=="no"){
     $("#content").css("background-image", "url('imgs/immerseave/storm.gif')");
