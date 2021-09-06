@@ -4,11 +4,32 @@ function passintro() {
   alert("hey");
   clearTimeout(timeout);
 };
-function getIssue(name){
+/*function getIssue(name){
   $('#article1').load(name+" #article1 *");
   $('#article2').load(name+" #article2 *");
   $('#article3').load(name+" #article3 *");
+}*/
+function getIssue(name){
+  $('div.container').load(name+ "article1 *");
+  $('div.container').load(name+ "article-p1 *");
+  $('div.container').load(name+ "article1 *");
 }
+
+/*$(document).ready(function(){
+  $("a#1").click(function(){
+    $('#article1').insertAfter("hamburgerarticles.html");
+  });
+});
+$(document).ready(function(){
+  $("a#2").click(function(){
+    $('#article2').insertAfter("pastaarticles.html");
+  });
+});
+$(document).ready(function(){
+  $("a#3").click(function(){
+    $('#article3').insertAfter("icecreamarticles.html");
+  });
+});*/
 function makeitrain(){
   if(document.getElementById("rain").getAttribute("rain")=="no"){
     $("#content").css("background-image", "url('imgs/immerseave/storm.gif')");
