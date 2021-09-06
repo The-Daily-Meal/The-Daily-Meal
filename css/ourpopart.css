@@ -239,6 +239,11 @@ button[name="futuristic"] {
   text-shadow: 2px 2px 0px black;
 }
 
+.text p {
+  column-count: 2;
+  text-align: left;
+}
+
 /* end articles */
 
 
@@ -329,6 +334,161 @@ button[name="futuristic"] {
   height: auto;
   display: none;
   text-align: left;
+}
+
+.head-food {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  background-color:  #d50037;
+  border: solid 1px #c3c3c3;
+}
+
+.body-food {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+}
+
+.head-typesofpasta {
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  font-size: 12px;
+}
+
+.body-typesofpasta {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-ingredients {
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  font-size: 12px
+}
+
+.body-ingredients {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-person {
+  padding: 3px;
+  text-align: center;
+  background-color: #FED715;
+  border: none;
+}
+
+.head-flours {
+  padding: 3px;
+  color: black;
+  font-size: 12px;
+  border: solid 1px #c3c3c3;
+
+}
+
+.body-flours {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 10px;
+}
+
+.body-person {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-places {
+  padding: 3px;
+  text-align: center;
+  background-color: #008ee7;
+  border: none;
+}
+
+.body-places {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+
+.head-organizations {
+  padding: 3px;
+  text-align: center;
+  background-color: #d50037;
+  border: none;
+}
+
+.body-organizations {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-diseases {
+  padding: 3px;
+  text-align: center;
+  background-color: #FED715;
+  border: none;
+}
+
+.body-diseases {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-elements {
+  padding: 3px;
+  text-align: center;
+  background-color: #008ee7;
+  border: none;
+}
+
+.body-elements {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.head-justfood {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+
+}
+
+.body-justfood {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
 }
 
 /* end metadata panel */
