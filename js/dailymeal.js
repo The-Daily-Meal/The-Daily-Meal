@@ -4,17 +4,17 @@ function passintro() {
   alert("hey");
   clearTimeout(timeout);
 };
-/*function getIssue(name){
+function getIssue(name){
   $('#article1').load(name+" #article1 *");
   $('#article2').load(name+" #article2 *");
   $('#article3').load(name+" #article3 *");
-}*/
-function getIssue(name){
-  $('div.container').load(name+ "article1 *");
-  $('div.container').load(name+ "article-p1 *");
-  $('div.container').load(name+ "article1 *");
 }
-
+/*function getIssue(name){
+  $('div.container').html((getIssue(name));
+  $('div.container').html((getIssue(name));
+  $('div.container').html((getIssue(name));
+}
+*/
 /*$(document).ready(function(){
   $("a#1").click(function(){
     $('#article1').insertAfter("hamburgerarticles.html");
