@@ -1,19 +1,19 @@
 @font-face {
   font-family: ArchivoBlack;
-  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
 
 }
 @font-face {
   font-family: DidactGothic;
-  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: RampartOne;
-  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.woff') format('woff');
 }
 body{
   height:100vh;
@@ -35,7 +35,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: white;
   padding: 2em;
   margin: auto;
-  background-image: url("../imgs/cioèbackgrounds/depositphotos_3146312-stock-photo-white-paper.jpeg");
+  background-image: url("../imgs/cioebackgrounds/depositphotos_3146312-stock-photo-white-paper.jpeg");
   filter: brightness(105%); -webkit-filter: brightness(105%);
 
   /*padding-bottom:2em;*/
@@ -133,7 +133,7 @@ img{
   padding-bottom: 1%;
   padding-top: 1%;
   font-family: RampartOne;
-  background-image: url("../imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
+  background-image: url("../imgs/cioebackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
   border-bottom: 3px solid purple;
 }
