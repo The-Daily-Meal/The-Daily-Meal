@@ -9,11 +9,15 @@ function passintro() {
   $('#article2').load(name+" #article2 *");
   $('#article3').load(name+" #article3 *");
 }*/
-function getIssue(name){
-  $('div.container').open(name);
-  $('div.container').open(name);
-  $('div.container').open(name);
-}
+
+$(document).ready(function(){
+  $(".pasta").click(function(){
+    $.get("pastaarticles.html", function(data, status) {
+      $("div.container").html(data);
+      alert(status);
+    })
+  });
+});
 
 /*$(document).ready(function(){
   $("a#1").click(function(){
