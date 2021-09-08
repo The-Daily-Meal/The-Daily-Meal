@@ -52,11 +52,14 @@ body {
 }
 
 #disclaimer {
-  color: black;
+  color: white;
   background-color: none;
   text-transform: lowercase;
   margin-left: 1em;
   border-radius: 4px;
+  background-color: black;
+  border: 3px solid black;
+  padding: 7px;
 }
 
 
@@ -99,7 +102,8 @@ button[name="popart"] {
 
 button[name="cioe"] {
   color: white;
-  background-color: black;
+  color: black;
+  background-color: rgb(255, 222, 23);
   border: 3px solid black;
 }
 
