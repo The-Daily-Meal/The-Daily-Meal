@@ -1,25 +1,25 @@
 @font-face {
   font-family: ArchivoBlack;
-  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
 
 }
 @font-face {
   font-family: DidactGothic;
-  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: RampartOne;
-  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
-  src: url('../fonts/cioèfonts/Rampart_One/RampartOne-Regular.woff') format('woff');
+  src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.woff') format('woff');
 }
 @font-face {
   font-family: HiddencocktailsItalicshadow;
-  src: url('../fonts/cioèfonts/HiddencocktailsItalicshadow-lgL7V.ttf') format('ttf');
-  src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff') format('woff');
-  src:url('../fonts/cioèfonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
+  src: url('../fonts/cioefonts/HiddencocktailsItalicshadow-lgL7V.ttf') format('ttf');
+  src:url('../fonts/cioefonts/HiddenCocktails-ItalicShadow.woff') format('woff');
+  src:url('../fonts/cioefonts/HiddenCocktails-ItalicShadow.woff2') format('woff2');
 }
 
 html{
@@ -34,7 +34,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   padding-bottom: 1%;
   padding-top: 1%;
   font-family: RampartOne;
-  background-image: url("../imgs/cioèbackgrounds/comic-book-super-hero-background_105164-289.jpeg");
+  background-image: url("../imgs/cioebackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
   border-bottom: 3px solid purple;
 }
@@ -60,7 +60,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 .btn:hover {
   background-color: #FF00EC;
-  color: yellow; 
+  color: yellow;
 }
 
 .dropdown-toggle:hover{
@@ -101,14 +101,14 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   min-height:300px;
   background: no-repeat scroll center scroll;
   -webkit-background-size: cover;
-  background-image: url("../imgs/cioèbackgrounds/pizza party.png");
+  background-image: url("../imgs/cioebackgrounds/pizza party.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #team{
-  background-image: url('../imgs/cioèbackgrounds/teamcover1.png');
+  background-image: url('../imgs/cioebackgrounds/teamcover1.png');
 }
 
 .carousel-item::before {
@@ -135,7 +135,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 .carousel-indicators [data-bs-target]{
-  background-image: url('../imgs/cioèbackgrounds/icons-star-256.png');
+  background-image: url('../imgs/cioebackgrounds/icons-star-256.png');
   height:40px;
   width:40px;
   background-size:contain;
@@ -143,7 +143,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 .carousel-indicators [aria-current]{
-  background-image: url('../imgs/cioèbackgrounds/icons8-star-256.png');
+  background-image: url('../imgs/cioebackgrounds/icons8-star-256.png');
   height:40px;
   width:40px;
   background-size:contain;
@@ -173,7 +173,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   border-radius: 10px 10px 10px 10px;
   background-color: #86FF62;
   background-size: cover;
-  background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
+  background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
   font-family: HiddencocktailsItalicShadow;
   color: #C10055;
   margin-right: 60%;
@@ -195,7 +195,7 @@ p{
 
 #maintitle {
   font-size: 110px;
-  background-image: url('../imgs/cioèbackgrounds/4bh3oq2krtm31.png');
+  background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
   background-size: cover;
   font-style: HiddencocktailsItalicShadow;
 }
@@ -227,7 +227,7 @@ p{
 .slider-btn .btn-2{
   padding: 2em 2rem;
   background-color: #00DEB9;
-  background-image: url('../imgs/cioèbackgrounds/pastaaa.28.43-removebg-preview.png');
+  background-image: url('../imgs/cioebackgrounds/pastaaa.28.43-removebg-preview.png');
   background-size: 135px;
   background-repeat: no-repeat;
   margin-left: 20%;
@@ -237,7 +237,7 @@ p{
 .btn-1{
   background-color: #010CFF;
   padding: 2em 2rem;
-  background-image: url('../imgs/cioèbackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
+  background-image: url('../imgs/cioebackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
   background-size: 200px;
   background-repeat: no-repeat;
   margin-right: 50%;
@@ -245,18 +245,18 @@ p{
 }
 .btn-3{
   padding: 2em 2rem;
-  background-image: url('../imgs/cioèbackgrounds/rainbow-colored-ice-cream-neon-sign_1262-19630.jpeg');
+  background-image: url('../imgs/cioebackgrounds/rainbow-colored-ice-cream-neon-sign_1262-19630.jpeg');
   background-size: 140px;
   background-repeat: no-repeat;
   margin-right: 65%;
 }
 .carousel-control-prev-icon{
-  background-image: url('../imgs/cioèbackgrounds/icons8-next-200.png');
+  background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
   transform: rotate(180deg);
   background-blend-mode: hard-light;
 }
 .carousel-control-next-icon{
 
-    background-image: url('../imgs/cioèbackgrounds/icons8-next-200.png');
+    background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
     background-blend-mode: hard-light;
 }

@@ -16,7 +16,7 @@ body{
   color:#4D3D23;
   height:100vh;
 }
-a:hover, button:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover{
+a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover{
   cursor: url("Feather Quill Writing.cur"), pointer;
 }
 
@@ -27,11 +27,16 @@ a:hover, button:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .c
   background-size:contain;
   border: solid black;
 }
-.navbar-brand, .nav-item, #searchbutton, #search{
+.nav-item, .dropdown-toggle, .dropdown-menu{
   border: solid black;
   border-radius:5px;
   margin-left:1em;
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+  color:black;
+}
+.dropdown-item:hover{
+  color:white;
+  background-color:inherit;
 }
 .carousel{
   height: calc(100vh - 72px);
@@ -57,6 +62,7 @@ a:hover, button:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .c
 .carousel-caption {
   text-align:center;
   color:#4D3D23;
+  bottom:auto;
 }
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/MedievalBackgrounds/Flourishly-Frame-2.svg");
@@ -78,7 +84,6 @@ h1{
   margin:0;
 }
 p::first-letter{
-  float:left;
   font-size:200%;
     font-family: Goudy-initialen Regular;
     font-weight:normal;
