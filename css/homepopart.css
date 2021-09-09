@@ -120,7 +120,7 @@ button[name="popart"] {
   background-size: cover;
 }
 
-button[name="cioè"] {
+button[name="cioe"] {
   color: black;
   transform: rotate(-5deg);
   background-image: url('../imgs/popartbackgrounds/bubble3.png');
@@ -157,14 +157,14 @@ button[name="futuristic"] {
 }
 
 #thedailymeal {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home2.jpg');
+  background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home2.jpg');
   background-size: cover;
 }
 
 
 #issues {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/issues.jpg');
-  background-size: cover;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/pop7.jpg');
+  background-size: contain;
 }
 
 #documentation {
@@ -239,17 +239,31 @@ button[name="futuristic"] {
 }
 
 .slider-btn .btn {
-  background-color: red;
-  color: white;
-  border-radius: 0;
-  padding: 1.5rem 2rem;
-  font-size: 1rem;
-  margin-right: 15px;
+ color: transparent;
+}
+
+.slider-btn .btn-1 {
+  padding: 2em 2em;
+  background-image: url('../imgs/popartbackgrounds/hamburgerpop.jpg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider-btn .btn-2 {
-  color: black;
-  background-color: white;
+  padding: 2em 2em;
+  background-image: url('../imgs/popartbackgrounds/pastapop.jpg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-btn .btn-3 {
+  padding: 2em 2em;
+  background-image: url('../imgs/popartbackgrounds/icecreampop.jpg');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* end buttons slider issues */

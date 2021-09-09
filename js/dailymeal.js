@@ -80,7 +80,9 @@ function changestyle(name) {
     $("div").remove(".border-medieval");
     $("div.col-4").removeClass("col-lg-3");
 
-    $("div.header img").remove();
+    $("#medimg1").remove();
+    $("#medimg2").remove();
+    $("#medimg3").remove();
   }
   else{
     $("div").remove(".border-medieval");
@@ -89,9 +91,9 @@ function changestyle(name) {
     $(".row").append("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
     $("div.col-4").addClass("col-lg-3");
 
-    $("#ic1-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1">');
-    $("#ic2-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2">');
-    $("#ic3-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3">');
+    $("#ic1-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
+    $("#ic2-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
+    $("#ic3-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
   };
   if (name == "immerseave.css"){
     $(".loadingscreen").remove();
@@ -129,9 +131,9 @@ $(document).ready(function(){
     $(".row").append("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
     $("div.col-4").addClass("col-lg-3");
 
-    $("#ic1-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1">');
-    $("#ic2-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2">');
-    $("#ic3-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3">');
+    $("#ic1-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
+    $("#ic2-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
+    $("#ic3-header h2.thing2_authors:last").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
   }
   else if (document.getElementById("whichstyle").getAttribute("href")==".\css\ourbauhaus.css") {
     $("div.header").append('<b class="vertical_bar1"></b><b class="bottom_bar2"></b><b class="top_bar3"></b><b class="circle1"></b><b class="square"></b>');
