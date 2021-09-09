@@ -247,11 +247,10 @@ blockquote {
   grid-row: 3 / span 4;
 }
 .header .thing3 {
-  font-size: 1em;
-  grid-column: 3;
-  grid-row: 4 / span 3;
-  align-self: end;
-  writing-mode: vertical-rl;
+  font-size: 15px;
+  grid-column: 2 / span 3;
+  grid-row: 4 / span 5;
+  align-self: left;
 }
 .header .thing4_publisher {
   font-size: 10px;
