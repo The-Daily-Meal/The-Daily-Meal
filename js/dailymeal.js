@@ -18,6 +18,22 @@ $(document).ready(function(){
     })
   });
 });
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $.get("hamburgerarticles.html", function(data, status) {
+      $("div.container").html(data);
+      alert(status);
+    })
+  });
+});
+$(document).ready(function(){
+  $(".icecream").click(function(){
+    $.get("icecreamarticles.html", function(data, status) {
+      $("div.container").html(data);
+      alert(status);
+    })
+  });
+});
 
 /*$(document).ready(function(){
   $("a#1").click(function(){
