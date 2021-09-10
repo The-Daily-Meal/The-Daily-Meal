@@ -55,6 +55,16 @@ body {
    text-transform: lowercase;
 }
 
+#disclaimer {
+  color: white;
+  background-color: none;
+  text-transform: lowercase;
+  margin-left: 1em;
+  border-radius: 4px;
+  background-color: black;
+  border: 3px solid black;
+  padding: 7px;
+}
 
 
 #issuesnav {
