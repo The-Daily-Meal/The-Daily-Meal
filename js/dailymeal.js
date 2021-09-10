@@ -12,7 +12,7 @@ function passintro() {
 
 $(document).ready(function(){
   $(".pasta").click(function(){
-    $.get("the-daily-meal.github.io/pastaarticles.html#", function(data, status) {
+    $.get("/pastaarticles.html", function(data, status) {
       $("div.container").html(data);
       alert(status);
     })
@@ -28,7 +28,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $(".icecream").click(function(){
-    $.get("http:/icecreamarticles.html", function(data, status) {
+    $.get("the-daily-meal.github.io/icecreamarticles.html#", function(data, status) {
       $("div.container").html(data);
       alert(status);
     })
