@@ -13,7 +13,7 @@ function passintro() {
 $(document).ready(function(){
   $(".pasta").click(function(){
     $.get("pastaarticles.html", function(data, status) {
-      $("div.container").html(data);
+      $("body").html(data);
       alert(status);
     })
   });
@@ -21,15 +21,15 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".hamburger").click(function(){
     $.get("hamburgerarticles.html", function(data, status) {
-      $("div.container").html(data);
+      $("body").html(data);
       alert(status);
     })
   });
 });
 $(document).ready(function(){
   $(".icecream").click(function(){
-    $.get("http://icecreamarticles.html/", function(data, status) {
-      $("div.container").html(data);
+    $.get("icecreamarticles.html", function(data, status) {
+      $("body").html(data);
       alert(status);
     })
   });
