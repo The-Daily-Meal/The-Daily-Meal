@@ -35,3 +35,28 @@ function changestyle(name){
     document.getElementById('homestylebase').setAttribute("href", "./css/home.css");
   }
 };
+
+$(document).ready(function(){
+  $(".pasta").click(function(){
+    $.get("pastaarticles.html", function(data, status) {
+      $("body").html(data);
+      alert(status);
+    })
+  });
+});
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $.get("hamburgerarticles.html", function(data, status) {
+      $("body").html(data);
+      alert(status);
+    })
+  });
+});
+$(document).ready(function(){
+  $(".icecream").click(function(){
+    $.get("icecreamarticles.html", function(data, status) {
+      $("body").html(data);
+      alert(status);
+    })
+  });
+});
