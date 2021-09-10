@@ -28,7 +28,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $(".icecream").click(function(){
-    $.get("icecreamarticles.html", function(data, status) {
+    $.get("http://icecreamarticles.html/", function(data, status) {
       $("div.container").html(data);
       alert(status);
     })
