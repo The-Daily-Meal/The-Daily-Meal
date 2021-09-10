@@ -39,7 +39,7 @@ function changestyle(name){
 $(document).ready(function(){
   $(".pasta").click(function(){
     $.get("pastaarticles.html", function(data, status) {
-      $("body").html(data);
+      $("html").html(data);
       alert(status);
     })
   });
@@ -47,7 +47,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".hamburger").click(function(){
     $.get("hamburgerarticles.html", function(data, status) {
-      $("body").html(data);
+      $("html").html(data);
       alert(status);
     })
   });
@@ -55,7 +55,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".icecream").click(function(){
     $.get("icecreamarticles.html", function(data, status) {
-      $("body").html(data);
+      $("html").html(data);
       alert(status);
     })
   });
