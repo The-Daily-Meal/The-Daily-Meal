@@ -225,7 +225,7 @@ button[name="futuristic"] {
 }
 
 
-.text p::first-letter{
+.section p::first-letter{
   float:left;
   font-size:500%;
   color: #d50037;
@@ -244,13 +244,14 @@ button[name="futuristic"] {
   text-align: left;
 }
 
+
 /* end articles */
 
 
 /* header */
 .header {
   width: 100%;
-  height: 70%;
+  height: auto;
   padding: 1em;
   margin-bottom: 2em;
   background-color: #FED715;
@@ -284,6 +285,7 @@ button[name="futuristic"] {
   transform: rotate(-5deg);
 }
 
+
 .header h2 b {
   font-family: 'BadaBoom BB';
   color: #d50037;
@@ -296,8 +298,53 @@ button[name="futuristic"] {
   transform: rotate(-5deg);
 }
 
+
+.header h5 {
+  font-family: 'Sweaty Belvin';
+  font-size: 18px;
+  text-align: right;
+  transform: rotate(-5deg);
+}
+
+.header b {
+  font-family: 'BadaBoom BB';
+  color: #d50037;
+  transform: rotate(-5deg);
+}
+
+.header p {
+  font-size: 14px;
+  padding: 1em;
+  text-align: center;
+}
+
 /* end header */
 
+/* header2 */
+.header2  {
+  font-family: 'P22 Pop Art Comic';
+  font-size: 16px;
+  background-color: #FED715;
+  padding: 1em;
+  border-radius: 25px 30px 40px 20px;
+  margin: 1em;
+}
+
+.header2 h5 {
+  font-family: 'BadaBoom BB';
+  font-size: 20px;
+}
+
+.header2 h6 {
+  font-family: 'Sweaty Belvin';
+  font-size: 18px;
+}
+
+.header2 p {
+    font-family: 'P22 Pop Art Comic';
+}
+
+/* end header2 */
 
 /* metadata panel */
 
