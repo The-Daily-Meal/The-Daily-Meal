@@ -12,7 +12,7 @@ function passintro() {
 
 $(document).ready(function(){
   $(".pasta").click(function(){
-    $.get("ajax/pastaarticles.html", function(data, status) {
+    $.get("the-daily-meal.github.io/pastaarticles.html#", function(data, status) {
       $("div.container").html(data);
       alert(status);
     })
