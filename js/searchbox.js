@@ -5,8 +5,8 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#arthead-p1").click(function(){
-    $("#artbody-p1").slideToggle("slow");
+  $(".head-sectionsArt1").click(function(){
+    $(".body-sectionsArt1").slideToggle("slow");
   });
 });
 
@@ -22,65 +22,68 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+
 $(document).ready(function(){
-  $(".head-food").click(function(){
-    $(".body-food").slideToggle("slow");
+  $(".headArt1-1").click(function(){
+    $(".bodyArt1-1").slideToggle("slow");
   });
 });
 
 $(document).ready(function(){
-  $(".head-typesofpasta").click(function(){
-    $(".body-typesofpasta").slideToggle("slow");
+  $(".subHeadArt1-1").click(function(){
+    $(".subBodyArt1-1").slideToggle("slow");
+  });});
+
+$(document).ready(function(){
+  $(".subHeadArt1-2").click(function(){
+    $(".subBodyArt1-2").slideToggle("slow");
   });
 });
 
 $(document).ready(function(){
-  $(".head-ingredients").click(function(){
-    $(".body-ingredients").slideToggle("slow");
+  $(".subSubHeadArt1-1").click(function(){
+    $(".subSubBodyArt1-1").slideToggle("slow");
   });
 });
 
 $(document).ready(function(){
-  $(".head-person").click(function(){
-    $(".body-person").slideToggle("slow");
-  });
-});
-
-
-$(document).ready(function(){
-  $(".head-places").click(function(){
-    $(".body-places").slideToggle("slow");
+  $(".subHeadArt1-3").click(function(){
+    $(".subBodyArt1-3").slideToggle("slow");
   });
 });
 
 $(document).ready(function(){
-  $(".head-diseases").click(function(){
-    $(".body-diseases").slideToggle("slow");
-  });
-});
-
-
-$(document).ready(function(){
-  $(".head-organizations").click(function(){
-    $(".body-organizations").slideToggle("slow");
+  $(".headArt1-2").click(function(){
+    $(".bodyArt1-2").slideToggle("slow");
   });
 });
 
 
 $(document).ready(function(){
-  $(".head-elements").click(function(){
-    $(".body-elements").slideToggle("slow");
+  $(".headArt1-3").click(function(){
+    $(".bodyArt1-3").slideToggle("slow");
   });
 });
 
 $(document).ready(function(){
-  $(".head-justfood").click(function(){
-    $(".body-justfood").slideToggle("slow");
+  $(".headArt1-4").click(function(){
+    $(".bodyArt1-4").slideToggle("slow");
   });
 });
 
+
 $(document).ready(function(){
-  $(".head-flours").click(function(){
-    $(".body-flours").slideToggle("slow");
+  $(".headArt1-5").click(function(){
+    $(".headArt1-5").slideToggle("slow");
+  });
+});
+
+
+$(document).ready(function(){
+  $(".headArt1-6").click(function(){
+    $(".bodyArt1-6").slideToggle("slow");
   });
 });
