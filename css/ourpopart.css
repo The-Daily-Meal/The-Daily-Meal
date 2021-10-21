@@ -496,7 +496,6 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-
 .headArt1-4 {
   padding: 3px;
   text-align: center;
@@ -545,21 +544,21 @@ button[name="futuristic"] {
 /* end first article */
 /* second article */
 
-.head-sectionsArt1 {
+.head-sectionsArt2 {
   padding: 5px;
   text-align: center;
   background-color: white;
   border: solid 1px #c3c3c3;
 }
 
-.body-sectionsArt1 {
+.body-sectionsArt2 {
   padding: 5px;
   height: auto;
   display: none;
   text-align: left;
 }
 
-.headArt1-1 {
+.headArt2-1 {
   padding: 3px;
   text-align: center;
   color: black;
@@ -567,14 +566,14 @@ button[name="futuristic"] {
   border: solid 1px #c3c3c3;
 }
 
-.bodyArt1-1 {
+.bodyArt2-1 {
   padding: 5px;
   height: auto;
   display: none;
   text-align: left;
 }
 
-.subHeadArt1-1 {
+.subHeadArt2-1 {
   padding: 3px;
   text-align: center;
   background-color: white;
@@ -582,7 +581,7 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.subBodyArt1-1 {
+.subBodyArt2-1 {
   padding: 5px;
   height: auto;
   display: none;
@@ -590,7 +589,7 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.subHeadArt1-2 {
+.subHeadArt2-2 {
   padding: 3px;
   text-align: center;
   background-color: white;
@@ -598,7 +597,7 @@ button[name="futuristic"] {
   font-size: 12px
 }
 
-.subBodyArt1-2 {
+.subBodyArt2-2 {
   padding: 5px;
   height: auto;
   display: none;
@@ -606,7 +605,7 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.subSubHeadArt1-1 {
+.subSubHeadArt2-1 {
   padding: 3px;
   color: black;
   font-size: 12px;
@@ -614,7 +613,7 @@ button[name="futuristic"] {
 
 }
 
-.subSubBodyArt1-1 {
+.subSubBodyArt2-1 {
   padding: 5px;
   height: auto;
   display: none;
@@ -623,7 +622,7 @@ button[name="futuristic"] {
 }
 
 
-.subHeadArt1-3 {
+.subHeadArt2-3 {
   padding: 3px;
   text-align: center;
   color: black;
@@ -631,7 +630,7 @@ button[name="futuristic"] {
 
 }
 
-.subBodyArt1-3 {
+.subBodyArt2-3 {
   padding: 5px;
   height: auto;
   display: none;
@@ -640,14 +639,14 @@ button[name="futuristic"] {
 }
 
 
-.headArt1-2 {
+.headArt2-2 {
   padding: 3px;
   text-align: center;
   background-color: #FED715;
   border: none;
 }
 
-.bodyArt1-2 {
+.bodyArt2-2 {
   padding: 5px;
   height: auto;
   display: none;
@@ -655,14 +654,14 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.headArt1-3 {
+.headArt2-3 {
   padding: 3px;
   text-align: center;
   background-color: #008ee7;
   border: none;
 }
 
-.bodyArt1-3 {
+.bodyArt2-3 {
   padding: 5px;
   height: auto;
   display: none;
@@ -671,14 +670,14 @@ button[name="futuristic"] {
 }
 
 
-.headArt1-4 {
+.headArt2-4 {
   padding: 3px;
   text-align: center;
   background-color: #d50037;
   border: none;
 }
 
-.bodyArt1-4 {
+.bodyArt2-4 {
   padding: 5px;
   height: auto;
   display: none;
@@ -686,14 +685,14 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.headArt1-5 {
+.headArt2-5 {
   padding: 3px;
   text-align: center;
   background-color: #FED715;
   border: none;
 }
 
-.bodyArt1-5 {
+.bodyArt2-5 {
   padding: 5px;
   height: auto;
   display: none;
@@ -701,14 +700,61 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
-.headArt1-6 {
+.headArt2-6 {
   padding: 3px;
   text-align: center;
   background-color: #008ee7;
   border: none;
 }
 
-.bodyArt1-6 {
+.bodyArt2-6 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+/* end second article */
+/* third article */
+
+.head-sectionsArt3 {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+.body-sectionsArt3 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+}
+
+.headArt3-1 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  background-color:  #d50037;
+  border: solid 1px #c3c3c3;
+}
+
+.bodyArt3-1 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+}
+
+.subHeadArt3-1 {
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  font-size: 12px;
+}
+
+.subBodyArt3-1 {
   padding: 5px;
   height: auto;
   display: none;
@@ -716,4 +762,129 @@ button[name="futuristic"] {
   font-size: 12px;
 }
 
+.subHeadArt3-2 {
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  font-size: 12px
+}
+
+.subBodyArt3-2 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.subSubHeadArt3-1 {
+  padding: 3px;
+  color: black;
+  font-size: 12px;
+  border: solid 1px #c3c3c3;
+
+}
+
+.subSubBodyArt3-1 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 10px;
+}
+
+
+.subHeadArt3-3 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+
+}
+
+.subBodyArt3-3 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.headArt3-2 {
+  padding: 3px;
+  text-align: center;
+  background-color: #FED715;
+  border: none;
+}
+
+.bodyArt3-2 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.headArt3-3 {
+  padding: 3px;
+  text-align: center;
+  background-color: #008ee7;
+  border: none;
+}
+
+.bodyArt3-3 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+
+.headArt3-4 {
+  padding: 3px;
+  text-align: center;
+  background-color: #d50037;
+  border: none;
+}
+
+.bodyArt3-4 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.headArt3-5 {
+  padding: 3px;
+  text-align: center;
+  background-color: #FED715;
+  border: none;
+}
+
+.bodyArt3-5 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.headArt3-6 {
+  padding: 3px;
+  text-align: center;
+  background-color: #008ee7;
+  border: none;
+}
+
+.bodyArt3-6 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: justify;
+  font-size: 12px;
+}
+/* end third article */
 /* end metadata panel */
