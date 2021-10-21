@@ -84,3 +84,18 @@ $(document).ready(function(){
     $(".body-flours").slideToggle("slow");
   });
 });
+
+
+
+
+$(document).ready(function(){
+  var allListElements = $( "span" );
+  $( "span.mention food" ).find( allListElements );
+  });
+
+
+  $(function () {
+    $("div.searchbox").click(function(){
+      $( "span.mention food" ).find( allListElements );
+
+    });
