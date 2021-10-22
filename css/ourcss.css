@@ -33,3 +33,57 @@ body{
   background: grey;
   border-radius: 10px;
 }
+
+
+/* metadata panel */
+.container1 {
+  display: fixed;
+}
+
+.panel-heading, .panel-body {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+.panel-body {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:50vh;
+}
+
+/* articles */
+[class~=head-sections] {
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+}
+
+[class~=body-sections] {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+}
+
+[class~=headArt] {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  border: solid 1px #c3c3c3;
+}
+
+[class~=bodyArt]  {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+}
+
+/* articles */
