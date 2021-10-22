@@ -8,135 +8,128 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- Our CSS -->
-    <link href=".css\home.css" id="homestylebase">
+    <link href="css\home.css" id="homestylebase">
     <!-- CSS file with specific style -->
     <link href="css/homecioestyle.css" rel="stylesheet" id="whichstylehome">
-
-    <!-- jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-    <!--Our Javascript file -->
-    <script src="js/dailymealhome.js"></script>
-
     <title>Home page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="dropdown" id="dropdownMenuButton1">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="TDM" data-bs-toggle="dropdown" aria-expanded="false">
-            The Daily Meal
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#thedailymeal">Home</a></li>
-            <li><a class="dropdown-item" href="#documentation">Documentation</a></li>
-            <li><a class="dropdown-item" href="#team">Team</a></li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse dropdown" id="dropdownMenuButton2">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="issuesnav" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: left">
-            Issues
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <li><a class="dropdown-item hamburger" href="#">Hamburger</a></li>
-            <li><a class="dropdown-item pasta" href="#">Pasta</a></li>
-            <li><a class="dropdown-item icecream" href="#">Ice cream</a></li>
-          </ul>
+    <div class="content" id="contenthome">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="dropdown" id="dropdownMenuButton1">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="TDM" data-bs-toggle="dropdown" aria-expanded="false">
+              The Daily Meal
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" onclick="$('#carouselExampleCaptions').carousel(0)">Home</a></li>
+              <li><a class="dropdown-item" onclick="$('#carouselExampleCaptions').carousel(2)">Documentation</a></li>
+              <li><a class="dropdown-item" onclick="$('#carouselExampleCaptions').carousel(3)">Team</a></li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse dropdown" id="dropdownMenuButton2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="issuesnav" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: left">
+              Issues
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item hamburger" href="#">Hamburger</a></li>
+              <li><a class="dropdown-item pasta" href="#">Pasta</a></li>
+              <li><a class="dropdown-item icecream" href="#">Ice cream</a></li>
+            </ul>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" id="disclaimer" aria-current="page" href="#">Disclaimer</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" id="disclaimer" aria-current="page" href="#">Disclaimer</a>
+                <button class="btn" type="button" name="medieval" onclick="changestyle('homemedieval.css')">1480</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" type="button" name="belleepoque" onclick="changestyle('homebelleepoque.css')">1880</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" type="button" name="bauhaus" onclick="changestyle('homebauhaus.css')">1920</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" type="button" name="popart" onclick="changestyle('homepopart.css')">1960</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" type="button" name="cioe" onclick="changestyle('homecioestyle.css')">1990</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" type="button" name="futuristic" onclick="changestyle('homeimmerseave.css')">2030</button>
               </li>
             </ul>
           </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" id="thedailymeal">
+          <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-block">
+              <div id="mainhometext">
+                <h1 class="item_heading" id="maintitle">The Daily Meal</h1>
+                <p>Qualcosa di carino sul cibo, project created for the course in Information etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="issues">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="item_heading">Issues</h1>
+              <p>A seguire gli issues con tre immagini diverse che fungono da bottoni</p>
+              <div class="slider-btn">
+                <button class="btn btn-1">Issue 1</button>
+                <button class="btn btn-2">Issue 2</button>
+                <button class="btn btn-3">Issue 3</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="documentation">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="item_heading">Documentation</h1>
+              <h2>Styles</h2>
+              <p>Viva la pa-pa-pappa
+                Col po-po-po-po-po-po-pomodoro
+                Viva la pa-pa-pappa
+                Che è un capo-po-po-po-po-polavoro
+                Viva la pa pa-pa-pappa
+                Col po-po-pomodor
+                La storia del passato
+                Ormai ce l'ha insegnata
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" id="team">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="item_heading">Team</h1>
+              <p>Le nostre belle facce</p>
 
-        </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <button class="btn" type="button" name="medieval" onclick="changestyle('homemedieval.css')">1480</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button" name="belleepoque" onclick="changestyle('homebelleepoque.css')">1880</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button" name="bauhaus" onclick="changestyle('homebauhaus.css')">1920</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button" name="popart" onclick="changestyle('homepopart.css')">1960</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button" name="cioe" onclick="changestyle('homecioestyle.css')">1990</button>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button" name="futuristic" onclick="changestyle('homeimmerseave.css')">2030</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner" id="thedailymeal">
-        <div class="carousel-item active">
-          <div class="carousel-caption d-none d-md-block">
-            <div id="mainhometext">
-              <h1 class="item_heading" id="maintitle">The Daily Meal</h1>
-              <p>Qualcosa di carino sul cibo, project created for the course in Information etc.</p>
             </div>
           </div>
         </div>
-        <div class="carousel-item" id="issues">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="item_heading">Issues</h1>
-            <p>A seguire gli issues con tre immagini diverse che fungono da bottoni</p>
-            <div class="slider-btn">
-              <button class="btn btn-1">Issue 1</button>
-              <button class="btn btn-2">Issue 2</button>
-              <button class="btn btn-3">Issue 3</button>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" id="documentation">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="item_heading">Documentation</h1>
-            <h2>Styles</h2>
-            <p>Viva la pa-pa-pappa
-              Col po-po-po-po-po-po-pomodoro
-              Viva la pa-pa-pappa
-              Che è un capo-po-po-po-po-polavoro
-              Viva la pa pa-pa-pappa
-              Col po-po-pomodor
-              La storia del passato
-              Ormai ce l'ha insegnata
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item" id="team">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="item_heading">Team</h1>
-            <p>Le nostre belle facce</p>
-
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -144,5 +137,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <!--Our Javascript file -->
+    <script src="js/dailymealhome.js"></script>
   </body>
 </html>
