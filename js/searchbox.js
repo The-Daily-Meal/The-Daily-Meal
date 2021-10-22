@@ -32,6 +32,24 @@ $(document).ready(function(){
   $(".subHeadArt1-3").click(function(){
     $(".subBodyArt1-3").slideToggle("slow");
   });
+  $(".subHeadArt1-4").click(function(){
+    $(".subBodyArt1-4").slideToggle("slow");
+  });
+  $(".subHeadArt1-5").click(function(){
+    $(".subBodyArt1-5").slideToggle("slow");
+  });
+  $(".subHeadArt1-6").click(function(){
+    $(".subBodyArt1-6").slideToggle("slow");
+  });
+  $(".subHeadArt1-7").click(function(){
+    $(".subBodyArt1-7").slideToggle("slow");
+  });
+  $(".subHeadArt1-8").click(function(){
+    $(".subBodyArt1-8").slideToggle("slow");
+  });
+  $(".subHeadArt1-9").click(function(){
+    $(".subBodyArt1-9").slideToggle("slow");
+  });
   $(".headArt1-2").click(function(){
     $(".bodyArt1-2").slideToggle("slow");
   });
