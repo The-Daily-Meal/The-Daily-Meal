@@ -84,6 +84,24 @@ $(document).ready(function(){
   $(".subHeadArt2-3").click(function(){
     $(".subBodyArt2-3").slideToggle("slow");
   });
+  $(".subHeadArt2-4").click(function(){
+    $(".subBodyArt2-4").slideToggle("slow");
+  });
+  $(".subHeadArt2-5").click(function(){
+    $(".subBodyArt2-5").slideToggle("slow");
+  });
+  $(".subHeadArt2-6").click(function(){
+    $(".subBodyArt2-6").slideToggle("slow");
+  });
+  $(".subHeadArt2-7").click(function(){
+    $(".subBodyArt2-7").slideToggle("slow");
+  });
+  $(".subHeadArt2-8").click(function(){
+    $(".subBodyArt2-8").slideToggle("slow");
+  });
+  $(".subHeadArt2-9").click(function(){
+    $(".subBodyArt2-9").slideToggle("slow");
+  });
   $(".headArt2-2").click(function(){
     $(".bodyArt2-2").slideToggle("slow");
   });
@@ -117,6 +135,24 @@ $(document).ready(function(){
   });
   $(".subHeadArt3-3").click(function(){
     $(".subBodyArt3-3").slideToggle("slow");
+  });
+  $(".subHeadArt3-4").click(function(){
+    $(".subBodyArt3-4").slideToggle("slow");
+  });
+  $(".subHeadArt3-5").click(function(){
+    $(".subBodyArt3-5").slideToggle("slow");
+  });
+  $(".subHeadArt3-6").click(function(){
+    $(".subBodyArt3-6").slideToggle("slow");
+  });
+  $(".subHeadArt3-7").click(function(){
+    $(".subBodyArt3-7").slideToggle("slow");
+  });
+  $(".subHeadArt3-8").click(function(){
+    $(".subBodyArt3-8").slideToggle("slow");
+  });
+  $(".subHeadArt3-9").click(function(){
+    $(".subBodyArt3-9").slideToggle("slow");
   });
   $(".headArt3-2").click(function(){
     $(".bodyArt3-2").slideToggle("slow");

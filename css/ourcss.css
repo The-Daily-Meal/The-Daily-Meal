@@ -254,7 +254,7 @@ body{
 .headArt1-2 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
 
 .bodyArt1-2 {
@@ -268,7 +268,7 @@ body{
 .headArt1-3 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
 
 .bodyArt1-3 {
@@ -282,7 +282,7 @@ body{
 .headArt1-4 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
 
 .bodyArt1-4 {
@@ -296,7 +296,7 @@ body{
 .headArt1-5 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
 
 .bodyArt1-5 {
@@ -310,9 +310,8 @@ body{
 .headArt1-6 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt1-6 {
   padding: 5px;
   height: auto;
@@ -417,13 +416,102 @@ body{
   font-size: 12px;
 }
 
+.subHeadArt2-4 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-4 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt2-5 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-5 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt2-6 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-6 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt2-7 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-7 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt2-8 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-8 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt2-9 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt2-9 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
 
 .headArt2-2 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt2-2 {
   padding: 5px;
   height: auto;
@@ -435,9 +523,8 @@ body{
 .headArt2-3 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt2-3 {
   padding: 5px;
   height: auto;
@@ -450,9 +537,8 @@ body{
 .headArt2-4 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt2-4 {
   padding: 5px;
   height: auto;
@@ -464,9 +550,8 @@ body{
 .headArt2-5 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt2-5 {
   padding: 5px;
   height: auto;
@@ -478,9 +563,8 @@ body{
 .headArt2-6 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt2-6 {
   padding: 5px;
   height: auto;
@@ -509,7 +593,6 @@ body{
   padding: 3px;
   text-align: center;
   color: black;
-
   border: solid 1px #c3c3c3;
 }
 
@@ -574,7 +657,6 @@ body{
   text-align: center;
   color: black;
   font-size: 12px;
-
 }
 
 .subBodyArt3-3 {
@@ -585,12 +667,101 @@ body{
   font-size: 12px;
 }
 
+.subHeadArt3-4 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-4 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt3-5 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-5 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt3-6 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-6 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt3-7 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-7 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt3-8 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-8 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.subHeadArt3-9 {
+  padding: 3px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+
+.subBodyArt3-9 {
+  padding: 5px;
+  height: auto;
+  display: none;
+  text-align: left;
+  font-size: 12px;
+}
+
 .headArt3-2 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt3-2 {
   padding: 5px;
   height: auto;
@@ -602,9 +773,8 @@ body{
 .headArt3-3 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt3-3 {
   padding: 5px;
   height: auto;
@@ -617,9 +787,8 @@ body{
 .headArt3-4 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt3-4 {
   padding: 5px;
   height: auto;
@@ -631,9 +800,8 @@ body{
 .headArt3-5 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt3-5 {
   padding: 5px;
   height: auto;
@@ -645,9 +813,8 @@ body{
 .headArt3-6 {
   padding: 3px;
   text-align: center;
-  border: none;
+  border: solid 1px #c3c3c3;
 }
-
 .bodyArt3-6 {
   padding: 5px;
   height: auto;
