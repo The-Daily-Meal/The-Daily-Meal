@@ -1,86 +1,173 @@
+/* panel and sections of the articles */
 $(document).ready(function(){
   $(".panel-heading").click(function(){
     $(".panel-body").slideToggle("slow");
   });
-});
-
-$(document).ready(function(){
-  $("#arthead-p1").click(function(){
-    $("#artbody-p1").slideToggle("slow");
+  $(".head-sectionsArt1").click(function(){
+    $(".body-sectionsArt1").slideToggle("slow");
+  });
+  $(".head-sectionsArt2").click(function(){
+    $(".body-sectionsArt2").slideToggle("slow");
+  });
+  $(".head-sectionsArt3").click(function(){
+    $(".body-sectionsArt3").slideToggle("slow");
   });
 });
+/* end panel and sections */
 
+/* heads and body, first article */
 $(document).ready(function(){
-  $("#arthead-p2").click(function(){
-    $("#artbody-p2").slideToggle("slow");
+  $(".headArt1-1").click(function(){
+    $(".bodyArt1-1").slideToggle("slow");
+  });
+  $(".subHeadArt1-1").click(function(){
+    $(".subBodyArt1-1").slideToggle("slow");
+  });
+  $(".subHeadArt1-2").click(function(){
+    $(".subBodyArt1-2").slideToggle("slow");
+  });
+  $(".subSubHeadArt1-1").click(function(){
+    $(".subSubBodyArt1-1").slideToggle("slow");
+  });
+  $(".subHeadArt1-3").click(function(){
+    $(".subBodyArt1-3").slideToggle("slow");
+  });
+  $(".subHeadArt1-4").click(function(){
+    $(".subBodyArt1-4").slideToggle("slow");
+  });
+  $(".subHeadArt1-5").click(function(){
+    $(".subBodyArt1-5").slideToggle("slow");
+  });
+  $(".subHeadArt1-6").click(function(){
+    $(".subBodyArt1-6").slideToggle("slow");
+  });
+  $(".subHeadArt1-7").click(function(){
+    $(".subBodyArt1-7").slideToggle("slow");
+  });
+  $(".subHeadArt1-8").click(function(){
+    $(".subBodyArt1-8").slideToggle("slow");
+  });
+  $(".subHeadArt1-9").click(function(){
+    $(".subBodyArt1-9").slideToggle("slow");
+  });
+  $(".headArt1-2").click(function(){
+    $(".bodyArt1-2").slideToggle("slow");
+  });
+  $(".headArt1-3").click(function(){
+    $(".bodyArt1-3").slideToggle("slow");
+  });
+  $(".headArt1-4").click(function(){
+    $(".bodyArt1-4").slideToggle("slow");
+  });
+  $(".headArt1-5").click(function(){
+    $(".bodyArt1-5").slideToggle("slow");
+  });
+  $(".headArt1-6").click(function(){
+    $(".bodyArt1-6").slideToggle("slow");
   });
 });
-
+/* heads and body, end first article */
+/* heads and body, second article */
 $(document).ready(function(){
-  $("#arthead-p3").click(function(){
-    $("#artbody-p3").slideToggle("slow");
+  $(".headArt2-1").click(function(){
+    $(".bodyArt2-1").slideToggle("slow");
+  });
+  $(".subHeadArt2-1").click(function(){
+    $(".subBodyArt2-1").slideToggle("slow");
+  });
+  $(".subHeadArt2-2").click(function(){
+    $(".subBodyArt2-2").slideToggle("slow");
+  });
+  $(".subSubHeadArt2-1").click(function(){
+    $(".subSubBodyArt2-1").slideToggle("slow");
+  });
+  $(".subHeadArt2-3").click(function(){
+    $(".subBodyArt2-3").slideToggle("slow");
+  });
+  $(".subHeadArt2-4").click(function(){
+    $(".subBodyArt2-4").slideToggle("slow");
+  });
+  $(".subHeadArt2-5").click(function(){
+    $(".subBodyArt2-5").slideToggle("slow");
+  });
+  $(".subHeadArt2-6").click(function(){
+    $(".subBodyArt2-6").slideToggle("slow");
+  });
+  $(".subHeadArt2-7").click(function(){
+    $(".subBodyArt2-7").slideToggle("slow");
+  });
+  $(".subHeadArt2-8").click(function(){
+    $(".subBodyArt2-8").slideToggle("slow");
+  });
+  $(".subHeadArt2-9").click(function(){
+    $(".subBodyArt2-9").slideToggle("slow");
+  });
+  $(".headArt2-2").click(function(){
+    $(".bodyArt2-2").slideToggle("slow");
+  });
+  $(".headArt2-3").click(function(){
+    $(".bodyArt2-3").slideToggle("slow");
+  });
+  $(".headArt2-4").click(function(){
+    $(".bodyArt2-4").slideToggle("slow");
+  });
+  $(".headArt2-5").click(function(){
+    $(".bodyArt2-5").slideToggle("slow");
+  });
+  $(".headArt2-6").click(function(){
+    $(".bodyArt2-6").slideToggle("slow");
   });
 });
-
+/* heads and body, end second article */
+/* heads and body, third article */
 $(document).ready(function(){
-  $(".head-food").click(function(){
-    $(".body-food").slideToggle("slow");
+  $(".headArt3-1").click(function(){
+    $(".bodyArt3-1").slideToggle("slow");
+  });
+  $(".subHeadArt3-1").click(function(){
+    $(".subBodyArt3-1").slideToggle("slow");
+  });
+  $(".subHeadArt3-2").click(function(){
+    $(".subBodyArt3-2").slideToggle("slow");
+  });
+  $(".subSubHeadArt3-1").click(function(){
+    $(".subSubBodyArt3-1").slideToggle("slow");
+  });
+  $(".subHeadArt3-3").click(function(){
+    $(".subBodyArt3-3").slideToggle("slow");
+  });
+  $(".subHeadArt3-4").click(function(){
+    $(".subBodyArt3-4").slideToggle("slow");
+  });
+  $(".subHeadArt3-5").click(function(){
+    $(".subBodyArt3-5").slideToggle("slow");
+  });
+  $(".subHeadArt3-6").click(function(){
+    $(".subBodyArt3-6").slideToggle("slow");
+  });
+  $(".subHeadArt3-7").click(function(){
+    $(".subBodyArt3-7").slideToggle("slow");
+  });
+  $(".subHeadArt3-8").click(function(){
+    $(".subBodyArt3-8").slideToggle("slow");
+  });
+  $(".subHeadArt3-9").click(function(){
+    $(".subBodyArt3-9").slideToggle("slow");
+  });
+  $(".headArt3-2").click(function(){
+    $(".bodyArt3-2").slideToggle("slow");
+  });
+  $(".headArt3-3").click(function(){
+    $(".bodyArt3-3").slideToggle("slow");
+  });
+  $(".headArt3-4").click(function(){
+    $(".bodyArt3-4").slideToggle("slow");
+  });
+  $(".headArt3-5").click(function(){
+    $(".bodyArt3-5").slideToggle("slow");
+  });
+  $(".headArt3-6").click(function(){
+    $(".bodyArt3-6").slideToggle("slow");
   });
 });
-
-$(document).ready(function(){
-  $(".head-typesofpasta").click(function(){
-    $(".body-typesofpasta").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $(".head-ingredients").click(function(){
-    $(".body-ingredients").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $(".head-person").click(function(){
-    $(".body-person").slideToggle("slow");
-  });
-});
-
-
-$(document).ready(function(){
-  $(".head-places").click(function(){
-    $(".body-places").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $(".head-diseases").click(function(){
-    $(".body-diseases").slideToggle("slow");
-  });
-});
-
-
-$(document).ready(function(){
-  $(".head-organizations").click(function(){
-    $(".body-organizations").slideToggle("slow");
-  });
-});
-
-
-$(document).ready(function(){
-  $(".head-elements").click(function(){
-    $(".body-elements").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $(".head-justfood").click(function(){
-    $(".body-justfood").slideToggle("slow");
-  });
-});
-
-$(document).ready(function(){
-  $(".head-flours").click(function(){
-    $(".body-flours").slideToggle("slow");
-  });
-});
+/* heads and body, end third article */
