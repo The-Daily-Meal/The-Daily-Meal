@@ -35,21 +35,6 @@ $(document).ready(function(){
   });
 });
 
-/*$(document).ready(function(){
-  $("a#1").click(function(){
-    $('#article1').insertAfter("hamburgerarticles.html");
-  });
-});
-$(document).ready(function(){
-  $("a#2").click(function(){
-    $('#article2').insertAfter("pastaarticles.html");
-  });
-});
-$(document).ready(function(){
-  $("a#3").click(function(){
-    $('#article3').insertAfter("icecreamarticles.html");
-  });
-});*/
 function makeitrain(){
   if(document.getElementById("rain").getAttribute("rain")=="no"){
     $("#content").css("background-image", "url('imgs/immerseave/storm.gif')");
