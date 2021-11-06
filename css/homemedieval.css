@@ -34,6 +34,12 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
   color:black;
 }
+.navbar-nav .btn{
+  background-color:inherit;
+}
+.navbar-nav .btn:hover{
+  background-color:inherit;
+}
 .dropdown-item:hover{
   color:white;
   background-color:inherit;

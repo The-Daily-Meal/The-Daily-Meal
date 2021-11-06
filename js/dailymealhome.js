@@ -12,9 +12,9 @@ $(document).ready(function(){
             results = regex.exec(location.search);
         return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
-    
+
   /*$('#carouselExampleCaptions').carousel(parseInt(getParameterByName('slide')));
-  $('#whichstylehome').attr('href', 'css\home'+getParameterByName('style'));*/
+  /*$('#whichstylehome').attr('href', 'css\home'+getParameterByName('style'));*/
 });
 function changestyle(name){
 
@@ -37,14 +37,22 @@ function changestyle(name){
   };
 
   if (name == 'homeimmerseave.css'){
+    /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
     $(".loadingscreen").remove();
     $("#rain").remove();
     $('#makeitrain').remove();
-    $(".content").addClass("d-none");
-    $("body").prepend('<div class="content rain d-none" id="rain"></div>');
-    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
-    $("#dropdownMenuButton2").after('<div class="justify-content px-4"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="no" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+    $('#content').removeAttr("style");
 
+    /*adding an introductive loading screen, that contains the audio for this style*/
+    $(".content").addClass("d-none");
+    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
+    /*adding a button for the rain functionality*/
+    $("#dropdownMenuButton2").after('<div class="justify-content px-4"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="yes" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+    /*rain, initialized as not displayed*/
+    $("body").prepend('<div class="content rain d-none" id="rain"></div>');
+
+
+    /*opening sequence, pen by Sebastian Schepis on CodePen https://codepen.io/sschepis/pen/uiHmr*/
     $("#os-phrases > h2")
       .css('opacity', 1).lettering( 'words' )
       .children( "span" ).lettering()
@@ -54,6 +62,7 @@ function changestyle(name){
         $(".content").removeClass("d-none");
         $("#rain").addClass("d-none");
       }, 12000);
+    /*clearing the loadingscreen by a click of the user*/
     $(".loadingscreen").click(function(){
       clearTimeout(timeout);
       document.getElementById('loadingscreen').style.opacity=0;
@@ -61,12 +70,13 @@ function changestyle(name){
       $("#rain").addClass("d-none");
     });
   }
+  /*removing elements inherent to the immerseave style*/
   else{
     $(".loadingscreen").remove();
     $(".header hr").remove();
     $("#rain").remove();
     $('#makeitrain').remove();
-    $('#contenthome').removeAttr("style");
+    $('#content').removeAttr("style");
   }
   if (name == 'homepopart.css' || name == 'homebauhaus.css' || name == 'homecioestyle.css'){
     document.getElementById('homestylebase').setAttribute("href", "");
