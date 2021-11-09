@@ -54,7 +54,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('../imgs/popartbackgrounds/pop11.jpg');
+  background-image: url('../imgs/popartbackgrounds/puntini.jpg');
   background-size: contain;
   background-attachment: fixed;
   cursor: url(""), pointer;
@@ -148,11 +148,13 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height:90vh;
+  height: 90vh;
   margin: auto;
   padding: 1em;
   background-color: #008ee7;
 }
+
+
 
 .container{
   display: grid;
@@ -263,7 +265,6 @@ button[name="futuristic"] {
   border-image-source: url('../imgs/popartbackgrounds/pop3.jpg');
   border-image-repeat: round;
   border-image-slice: 100;
-
 }
 
 .header h1 {
@@ -271,8 +272,9 @@ button[name="futuristic"] {
   font-size: 40px;
   text-align: center;
   text-shadow: 2px 2px 0px black;
-  color: white;
-  background-color:  #d50037;
+  color: #d50037;
+  background-color: white;
+  border: 3px solid black;
   border-radius: 25px 30px 40px 20px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -353,6 +355,12 @@ button[name="futuristic"] {
 .container1 {
   display: fixed;
 }
+
+.panel-heading {
+background-color: white;
+
+}
+
 
 .panel-heading, .panel-body {
   padding: 5px;
