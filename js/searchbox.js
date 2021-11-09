@@ -29,6 +29,12 @@ $(document).ready(function(){
   $(".subSubHeadArt1-1").click(function(){
     $(".subSubBodyArt1-1").slideToggle("slow");
   });
+  $(".subSubHeadArt1-2").click(function(){
+    $(".subSubBodyArt1-2").slideToggle("slow");
+  });
+  $(".subSubHeadArt1-3").click(function(){
+    $(".subSubBodyArt1-3").slideToggle("slow");
+  });
   $(".subHeadArt1-3").click(function(){
     $(".subBodyArt1-3").slideToggle("slow");
   });
