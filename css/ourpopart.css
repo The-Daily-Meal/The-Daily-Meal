@@ -54,7 +54,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('../imgs/popartbackgrounds/puntini.jpg');
+  background-image: url('../imgs/popartbackgrounds/aiut.jpg');
   background-size: contain;
   background-attachment: fixed;
   cursor: url(""), pointer;
@@ -357,8 +357,7 @@ button[name="futuristic"] {
 }
 
 .panel-heading {
-background-color: white;
-
+background-color: black;
 }
 
 
