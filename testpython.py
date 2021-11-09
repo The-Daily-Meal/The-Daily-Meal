@@ -26,8 +26,23 @@ def searchmentions(document):
                 if not added:
                     my_dict[ment].append({about:1})
             added=False
+
+        print("FOR EACH CATEGORY: ALL THE 'ABOUT'S AND THE NUM OF TIMES THEY APPEAR")
         for key, el in sorted(my_dict.items()):
             print(key, el)
+
+        dictformentions={}
+        for el in listofmentions:
+            for element in el:
+                if element not in dictformentions:
+                    dictformentions[element]=1
+                else:
+                    dictformentions[element]+=1
+        print("")
+        print('NUMBER OF MENTIONS FOR EACH CATEGORY')
+        for key, el in sorted(dictformentions.items()):
+            print(key, el)
+
 
 if __name__ == '__main__':
     searchmentions("art1icecream.txt");
