@@ -447,15 +447,15 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   text-align: right;
   font-family: Montserrat-Italic;
 }
-#article1{
+.content>.container>.row:last-child>.col-4:first-child>.article{
   margin-top:1.5em;
   transform: skewY(-9deg);
 }
-#article3{
+.content>.container>.row:last-child>.col-4:last-child>.article{
   margin-top:1.5em;
   transform: skewY(9deg);
 }
-#article1:hover, #article3:hover{
+.content>.container>.row:last-child>.col-4:first-child>.article:hover, .content>.container>.row:last-child>.col-4:last-child>.article:hover{
   transform: skewY(0deg);
   margin-top:inherit;
 }
