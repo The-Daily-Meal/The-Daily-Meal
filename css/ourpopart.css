@@ -64,7 +64,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('../imgs/popartbackgrounds/aiut.jpg');
+  background-image: url('../imgs/popartbackgrounds/landscape-1964.jpg');
   background-size: contain;
   background-attachment: fixed;
   cursor: url(""), pointer;
@@ -109,7 +109,7 @@ background-size: cover;
 button[name="medieval"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -117,14 +117,14 @@ button[name="medieval"] {
 button[name="belleepoque"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="bauhaus"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -132,21 +132,21 @@ button[name="bauhaus"] {
 button[name="popart"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="cioe"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="futuristic"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -161,7 +161,7 @@ button[name="futuristic"] {
   height: 90vh;
   margin: auto;
   padding: 1em;
-  background-color: #008ee7;
+  background-color: #4759b3;
 }
 
 
@@ -169,7 +169,7 @@ button[name="futuristic"] {
 .container{
   display: grid;
   width: 100%;
-  background-color: #008ee7;
+  background-color: #4759b3;
   padding: 0px;
   margin: auto;
 }
@@ -268,11 +268,11 @@ button[name="futuristic"] {
   height: auto;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #FED715;
+  background-color: #f2e81c;
   background-size: cover;
   border: 20px solid transparent;
   padding: 15px;
-  border-image-source: url('../imgs/popartbackgrounds/pop3.jpg');
+  border-image-source: url('../imgs/popartbackgrounds/pop3y.jpg');
   border-image-repeat: round;
   border-image-slice: 100;
 }
@@ -281,11 +281,10 @@ button[name="futuristic"] {
   font-family: 'BadaBoom BB';
   font-size: 40px;
   text-align: center;
-  text-shadow: 2px 2px 0px black;
-  color: #d50037;
+  color: #df0107;
   background-color: white;
   border: 3px solid black;
-  border-radius: 25px 30px 40px 20px;
+  border-radius: 50px 50px 70px 80px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   transform: rotate(-5deg);
@@ -302,7 +301,9 @@ button[name="futuristic"] {
 
 .header h2 b {
   font-family: 'BadaBoom BB';
-  color: #d50037;
+  color: #df0107;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .header h3 {
