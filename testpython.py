@@ -43,6 +43,7 @@ def searchmentions(document):
         for key, el in sorted(dictformentions.items()):
             print(key, el)
 
+        print(my_dict['food'])
 
 if __name__ == '__main__':
     searchmentions("newyorker.txt");
