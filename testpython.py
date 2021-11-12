@@ -1,7 +1,7 @@
 import re
 
 def searchmentions(document):
-    with open(document, 'r', encoding='utf-8') as f:
+    with open(document, 'r') as f:
         contents= f.read()
         mentions = re.findall('class="mention [^>]*>', contents)
         my_dict={}
@@ -45,4 +45,4 @@ def searchmentions(document):
 
 
 if __name__ == '__main__':
-    searchmentions("art1icecream.txt");
+    searchmentions("newyorker.txt");
