@@ -140,10 +140,10 @@ button[name="futuristic"] {
 
  .item_heading {
    	font-family: 'BadaBoom BB';
-    color: black;
+    color: transparent;
     font-size: 200px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: transparent;
     transform: rotate(-5deg);
  }
 
@@ -163,17 +163,17 @@ button[name="futuristic"] {
 
 
 #issues {
-  background-image: url('../imgs/popartbackgrounds/door.jpg');
+  background-image: url('../imgs/popartbackgrounds/issues.jpg');
 }
 
 #documentation {
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op3.jpg');
-  background-size: 100%;
+  background-image: url('../imgs/popartbackgrounds/documentation.jpg');
 }
 
 #team {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/pop9.jpg');
-  background-size: cover;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op1.jpg');
+  background-image: url('../imgs/popartbackgrounds/team.jpg');
 }
 
 
