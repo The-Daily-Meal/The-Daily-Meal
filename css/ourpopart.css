@@ -241,7 +241,6 @@ button[name="futuristic"] {
 
 }
 
-
 .section p::first-letter{
   float:left;
   font-size:500%;
@@ -255,6 +254,7 @@ button[name="futuristic"] {
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 0px black;
 }
+
 
 .text p {
   column-count: 2;
@@ -391,7 +391,6 @@ button[name="futuristic"] {
    border-radius: 25px 30px 40px 20px;
    padding: 1em;
    column-count: 1;
-
  }
 
 
