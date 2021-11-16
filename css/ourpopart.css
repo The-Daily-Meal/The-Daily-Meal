@@ -162,6 +162,7 @@ button[name="futuristic"] {
   margin: auto;
   padding: 1em;
   background-color: #4759b3;
+  background-color: #008ee7;
 }
 
 
@@ -170,6 +171,7 @@ button[name="futuristic"] {
   display: grid;
   width: 100%;
   background-color: #4759b3;
+  background-color: #008ee7;
   padding: 0px;
   margin: auto;
 }
@@ -206,20 +208,16 @@ button[name="futuristic"] {
 /*articles settings */
 
 .section_heading {
-  font-family: 'BadaBoom BB';
-  font-size: 25px;
-  color: white;
-  text-align: left;
-  -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-}
-
-.subsection_heading {
   font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 25px;
   color: white;
-  -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
+  text-align: left;
+}
+
+.subsection_heading {
+  font-family: 'P22 Pop Art Comic';
+  color: white;
+  font-size: 20px;
 }
 
 .section_abstract {
@@ -228,12 +226,14 @@ button[name="futuristic"] {
   border: 3px solid black;
   margin-bottom: 2em;
   border-radius: 25px 30px 40px 20px;
+  background-color: white;
 }
 
 
+
   img {
+  width: 100%;
   height: auto;
-  max-width: -webkit-fill-available;
   border-radius: 25px 30px 40px 20px;
 
 }
@@ -257,6 +257,19 @@ button[name="futuristic"] {
   column-count: 2;
   text-align: left;
 }
+
+.text h5 {
+  font-size: 14px;
+}
+
+.blockquote {
+  background-color: white;
+  padding: 5px;
+  font-family: 'BadaBoom BB';
+  border: 3px solid black;
+  border-radius: 25px 30px 40px 20px;
+}
+
 
 
 /* end articles */
@@ -315,7 +328,7 @@ button[name="futuristic"] {
 
 
 .header h5 {
-  font-family: 'Sweaty Belvin';
+  font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 18px;
   text-align: right;
   transform: rotate(-5deg);
@@ -339,10 +352,15 @@ button[name="futuristic"] {
 .header2  {
   font-family: 'P22 Pop Art Comic';
   font-size: 16px;
-  background-color: #FED715;
-  padding: 1em;
-  border-radius: 25px 30px 40px 20px;
+  padding: 2em;
   margin: 1em;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image-source: url('../imgs/popartbackgrounds/pop2.jpg');
+  border-image-repeat: round;
+  border-image-slice: 100;
+  font-size: 13px;
+
 }
 
 .header2 h5 {
@@ -351,12 +369,34 @@ button[name="futuristic"] {
 }
 
 .header2 h6 {
-  font-family: 'Sweaty Belvin';
+  font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 18px;
 }
 
 .header2 p {
     font-family: 'P22 Pop Art Comic';
+}
+
+.table {
+  padding: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+tr:nth-child(odd){
+    background-color:white;
+    border: 2px solid black;
+}
+
+tr:nth-child(even){
+  background-color: white;
+  border: 2px solid black;
+}
+
+th{
+  background-color: #df0107;
+  border: 2px solid black;
 }
 
 /* end header2 */
@@ -367,8 +407,6 @@ button[name="futuristic"] {
   display: fixed;
 }
 
-
-
 .panel-heading, .panel-body {
   padding: 5px;
   text-align: center;
@@ -377,7 +415,9 @@ button[name="futuristic"] {
 }
 
 .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3 {
-  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  background-image: url('../imgs/popartbackgrounds/bluelich.png');
+  background-size: cover;
+  color: white;
 }
 
 .panel-body {
@@ -388,6 +428,7 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   height:50vh;
+  background-color: #f0fcfc;
 }
 
 /* first article */
@@ -550,5 +591,8 @@ button[name="futuristic"] {
   border: none;
 }
 
+#headp3-elements3 {
+  background-color: #df0107;
+}
 /* end third article */
 /* end metadata panel */
