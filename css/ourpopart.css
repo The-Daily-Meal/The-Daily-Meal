@@ -261,6 +261,15 @@ button[name="futuristic"] {
   text-align: left;
 }
 
+.no2columns {
+  column-count: 1;
+}
+
+a {
+  color: black;
+  column-count: 1;
+}
+
 .text h5 {
   font-size: 14px;
 }
