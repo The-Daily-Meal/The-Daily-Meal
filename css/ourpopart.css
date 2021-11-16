@@ -214,6 +214,10 @@ button[name="futuristic"] {
   text-align: left;
 }
 
+.section_abstract .section_heading {
+  color: black;
+}
+
 .subsection_heading {
   font-family: 'P22 Pop Art Comic';
   color: white;
@@ -234,7 +238,6 @@ button[name="futuristic"] {
   img {
   width: 100%;
   height: auto;
-  border-radius: 25px 30px 40px 20px;
 
 }
 
@@ -354,28 +357,43 @@ button[name="futuristic"] {
   font-size: 16px;
   padding: 2em;
   margin: 1em;
-  border: 10px solid transparent;
+  font-size: 13px;
+  background-color: #f2e81c;
+  border: 30px solid transparent;
   padding: 15px;
-  border-image-source: url('../imgs/popartbackgrounds/pop2.jpg');
+  border-image-source: url('../imgs/popartbackgrounds/blue.jpg');
   border-image-repeat: round;
   border-image-slice: 100;
-  font-size: 13px;
+}
 
+.header2 sup {
+  font-family: 'P22 Pop Art Comic';
+  font-size: 14px;
+  text-align: left;
 }
 
 .header2 h5 {
-  font-family: 'BadaBoom BB';
-  font-size: 20px;
+  font-family: 'P22 Pop Art Comic Bold Italic';
+  font-size: 15px;
 }
 
 .header2 h6 {
-  font-family: 'P22 Pop Art Comic Bold Italic';
-  font-size: 18px;
+  font-family: 'P22 Pop Art Comic';
+  font-size: 13px;
 }
 
-.header2 p {
-    font-family: 'P22 Pop Art Comic';
-}
+ .header2 p {
+   font-family: 'P22 Pop Art Comic';
+   font-size: 15px;
+   margin: 10px;
+   border: 3px solid black;
+   background-color: white;
+   border-radius: 25px 30px 40px 20px;
+   padding: 1em;
+   column-count: 1;
+
+ }
+
 
 .table {
   padding: 5px;
