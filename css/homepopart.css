@@ -50,7 +50,7 @@ body {
   margin: auto;
   margin-left: 5%;
   margin-right: 5%;
-  background-image:url('../imgs/popartbackgrounds/navbar.png');
+  background-image:url('../imgs/popartbackgrounds/speech-bubble.jpg');
   background-size: contain;
   font-family: 'P22 Pop Art Comic';
 }
@@ -158,7 +158,7 @@ button[name="futuristic"] {
 }
 
 #thedailymeal {
-  background-image: url('../imgs/popartbackgrounds/sun.jpg');
+  background-image: url('../imgs/popartbackgrounds/dailymeal.jpg');
   background-size: cover;
 }
 
@@ -231,7 +231,9 @@ button[name="futuristic"] {
   text-align: center;
   color: black;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: transparent;
+  color: transparent;
+
 }
 
 /* end carousel settings */
