@@ -154,6 +154,7 @@ button[name="futuristic"] {
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'P22 Pop Art Comic';
+  text-align: right;
 }
 
 #thedailymeal {
@@ -167,12 +168,13 @@ button[name="futuristic"] {
 }
 
 #documentation {
+  /* gradient
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op3.jpg');
+  */
   background-image: url('../imgs/popartbackgrounds/documentation.jpg');
 }
 
 #team {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op1.jpg');
   background-image: url('../imgs/popartbackgrounds/team.jpg');
 }
 
@@ -185,6 +187,7 @@ button[name="futuristic"] {
   height:75vh;
   margin:auto;
   padding: 0px;
+  text-align: right;
 }
 
 /* width */
@@ -220,6 +223,7 @@ button[name="futuristic"] {
   display: inline-block;
   border: 1px solid black;
   border-radius: 25px 30px 40px 20px;
+  text-align: right;
 }
 
 #maintitle {
