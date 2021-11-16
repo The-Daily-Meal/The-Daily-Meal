@@ -50,7 +50,8 @@ body {
   margin: auto;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: #eae967;
+  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  background-size: cover;
   font-family: 'P22 Pop Art Comic';
 }
 
