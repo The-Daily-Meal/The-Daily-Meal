@@ -50,8 +50,7 @@ body {
   margin: auto;
   margin-left: 5%;
   margin-right: 5%;
-  background-image:url('../imgs/popartbackgrounds/pop3y.jpg');
-  background-size: contain;
+  background-color: #eae967;
   font-family: 'P22 Pop Art Comic';
 }
 
@@ -244,12 +243,18 @@ button[name="futuristic"] {
 }
 
 .slider-btn .btn {
- color: transparent;
+ color: #df0107;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: black;
+ transform: rotate(-5deg);
+ font-family: 'BadaBoom BB';
+ font-size: 30px;
+
 }
 
 .slider-btn .btn-1 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/hamburgerpop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -257,7 +262,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-2 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/pastapop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,7 +270,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-3 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/icecreampop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
