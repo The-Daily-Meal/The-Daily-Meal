@@ -64,7 +64,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('../imgs/popartbackgrounds/aiut.jpg');
+  background-image: url('../imgs/popartbackgrounds/landscape-1964.jpg');
   background-size: contain;
   background-attachment: fixed;
   cursor: url(""), pointer;
@@ -109,7 +109,7 @@ background-size: cover;
 button[name="medieval"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -117,14 +117,14 @@ button[name="medieval"] {
 button[name="belleepoque"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="bauhaus"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -132,21 +132,21 @@ button[name="bauhaus"] {
 button[name="popart"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="cioe"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="futuristic"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -161,6 +161,7 @@ button[name="futuristic"] {
   height: 90vh;
   margin: auto;
   padding: 1em;
+  background-color: #4759b3;
   background-color: #008ee7;
 }
 
@@ -169,6 +170,7 @@ button[name="futuristic"] {
 .container{
   display: grid;
   width: 100%;
+  background-color: #4759b3;
   background-color: #008ee7;
   padding: 0px;
   margin: auto;
@@ -206,20 +208,20 @@ button[name="futuristic"] {
 /*articles settings */
 
 .section_heading {
-  font-family: 'BadaBoom BB';
-  font-size: 25px;
-  color: white;
-  text-align: left;
-  -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-}
-
-.subsection_heading {
   font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 25px;
   color: white;
-  -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
+  text-align: left;
+}
+
+.section_abstract .section_heading {
+  color: black;
+}
+
+.subsection_heading {
+  font-family: 'P22 Pop Art Comic';
+  color: white;
+  font-size: 20px;
 }
 
 .section_abstract {
@@ -228,16 +230,16 @@ button[name="futuristic"] {
   border: 3px solid black;
   margin-bottom: 2em;
   border-radius: 25px 30px 40px 20px;
+  background-color: white;
 }
+
 
 
   img {
+  width: 100%;
   height: auto;
-  max-width: -webkit-fill-available;
-  border-radius: 25px 30px 40px 20px;
 
 }
-
 
 .section p::first-letter{
   float:left;
@@ -253,10 +255,33 @@ button[name="futuristic"] {
   text-shadow: 2px 2px 0px black;
 }
 
+
 .text p {
   column-count: 2;
   text-align: left;
 }
+
+.no2columns {
+  column-count: 1;
+}
+
+a {
+  color: black;
+  column-count: 1;
+}
+
+.text h5 {
+  font-size: 14px;
+}
+
+.blockquote {
+  background-color: white;
+  padding: 5px;
+  font-family: 'BadaBoom BB';
+  border: 3px solid black;
+  border-radius: 25px 30px 40px 20px;
+}
+
 
 
 /* end articles */
@@ -268,11 +293,11 @@ button[name="futuristic"] {
   height: auto;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #FED715;
+  background-color: #f2e81c;
   background-size: cover;
   border: 20px solid transparent;
   padding: 15px;
-  border-image-source: url('../imgs/popartbackgrounds/pop3.jpg');
+  border-image-source: url('../imgs/popartbackgrounds/pop3y.jpg');
   border-image-repeat: round;
   border-image-slice: 100;
 }
@@ -281,11 +306,10 @@ button[name="futuristic"] {
   font-family: 'BadaBoom BB';
   font-size: 40px;
   text-align: center;
-  text-shadow: 2px 2px 0px black;
-  color: #d50037;
+  color: #df0107;
   background-color: white;
   border: 3px solid black;
-  border-radius: 25px 30px 40px 20px;
+  border-radius: 50px 50px 70px 80px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   transform: rotate(-5deg);
@@ -302,7 +326,9 @@ button[name="futuristic"] {
 
 .header h2 b {
   font-family: 'BadaBoom BB';
-  color: #d50037;
+  color: #df0107;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .header h3 {
@@ -314,7 +340,7 @@ button[name="futuristic"] {
 
 
 .header h5 {
-  font-family: 'Sweaty Belvin';
+  font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 18px;
   text-align: right;
   transform: rotate(-5deg);
@@ -338,24 +364,65 @@ button[name="futuristic"] {
 .header2  {
   font-family: 'P22 Pop Art Comic';
   font-size: 16px;
-  background-color: #FED715;
-  padding: 1em;
-  border-radius: 25px 30px 40px 20px;
+  padding: 2em;
   margin: 1em;
+  font-size: 13px;
+  background-color: #f2e81c;
+  border: 30px solid transparent;
+  padding: 15px;
+  border-image-source: url('../imgs/popartbackgrounds/blue.jpg');
+  border-image-repeat: round;
+  border-image-slice: 100;
+}
+
+.header2 sup {
+  font-family: 'P22 Pop Art Comic';
+  font-size: 14px;
+  text-align: left;
 }
 
 .header2 h5 {
-  font-family: 'BadaBoom BB';
-  font-size: 20px;
+  font-family: 'P22 Pop Art Comic Bold Italic';
+  font-size: 15px;
 }
 
 .header2 h6 {
-  font-family: 'Sweaty Belvin';
-  font-size: 18px;
+  font-family: 'P22 Pop Art Comic';
+  font-size: 13px;
 }
 
-.header2 p {
-    font-family: 'P22 Pop Art Comic';
+ .header2 p {
+   font-family: 'P22 Pop Art Comic';
+   font-size: 15px;
+   margin: 10px;
+   border: 3px solid black;
+   background-color: white;
+   border-radius: 25px 30px 40px 20px;
+   padding: 1em;
+   column-count: 1;
+ }
+
+
+.table {
+  padding: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+tr:nth-child(odd){
+    background-color:white;
+    border: 2px solid black;
+}
+
+tr:nth-child(even){
+  background-color: white;
+  border: 2px solid black;
+}
+
+th{
+  background-color: #df0107;
+  border: 2px solid black;
 }
 
 /* end header2 */
@@ -366,8 +433,6 @@ button[name="futuristic"] {
   display: fixed;
 }
 
-
-
 .panel-heading, .panel-body {
   padding: 5px;
   text-align: center;
@@ -376,7 +441,9 @@ button[name="futuristic"] {
 }
 
 .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3 {
-  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  background-image: url('../imgs/popartbackgrounds/bluelich.png');
+  background-size: cover;
+  color: white;
 }
 
 .panel-body {
@@ -387,6 +454,7 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   height:50vh;
+  background-color: #f0fcfc;
 }
 
 /* first article */
@@ -395,14 +463,14 @@ button[name="futuristic"] {
   padding: 3px;
   text-align: center;
   color: black;
-  background-color:  #d50037;
+  background-color: #df0107;
   border: solid 1px #c3c3c3;
 }
 
 .headArt1-2 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -418,14 +486,14 @@ button[name="futuristic"] {
 .headArt1-4 {
   padding: 3px;
   text-align: center;
-  background-color: #d50037;
+  background-color:  #df0107;
   border: none;
 }
 
 .headArt1-5 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -448,14 +516,14 @@ button[name="futuristic"] {
   padding: 3px;
   text-align: center;
   color: black;
-  background-color:  #d50037;
+  background-color: #df0107;
   border: solid 1px #c3c3c3;
 }
 
 .headArt2-2 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -471,7 +539,7 @@ button[name="futuristic"] {
 .headArt2-4 {
   padding: 3px;
   text-align: center;
-  background-color: #d50037;
+  background-color: #df0107;
   border: none;
 }
 
@@ -479,7 +547,7 @@ button[name="futuristic"] {
 .headArt2-5 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -498,7 +566,7 @@ button[name="futuristic"] {
   padding: 3px;
   text-align: center;
   color: black;
-  background-color:  #d50037;
+  background-color:  #df0107;
   border: solid 1px #c3c3c3;
 }
 
@@ -514,7 +582,7 @@ button[name="futuristic"] {
 .headArt3-2 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -530,7 +598,7 @@ button[name="futuristic"] {
 .headArt3-4 {
   padding: 3px;
   text-align: center;
-  background-color: #d50037;
+  background-color: #df0107;
   border: none;
 }
 
@@ -538,7 +606,7 @@ button[name="futuristic"] {
 .headArt3-5 {
   padding: 3px;
   text-align: center;
-  background-color: #FED715;
+  background-color: #f2e81c;
   border: none;
 }
 
@@ -549,5 +617,8 @@ button[name="futuristic"] {
   border: none;
 }
 
+#headp3-elements3 {
+  background-color: #df0107;
+}
 /* end third article */
 /* end metadata panel */

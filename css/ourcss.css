@@ -22,6 +22,8 @@ body{
 ::-webkit-scrollbar:hover{
   display:inherit;
 }
+
+
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
@@ -32,4 +34,9 @@ body{
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
+}
+
+img {
+width: 80%;
+height: auto;
 }

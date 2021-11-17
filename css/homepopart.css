@@ -50,8 +50,8 @@ body {
   margin: auto;
   margin-left: 5%;
   margin-right: 5%;
-  background-image:url('../imgs/popartbackgrounds/navbar.png');
-  background-size: contain;
+  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  background-size: cover;
   font-family: 'P22 Pop Art Comic';
 }
 
@@ -93,7 +93,7 @@ background-size: cover;
 button[name="medieval"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -101,14 +101,14 @@ button[name="medieval"] {
 button[name="belleepoque"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="bauhaus"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -116,21 +116,21 @@ button[name="bauhaus"] {
 button[name="popart"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="cioe"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
 button[name="futuristic"] {
   color: black;
   transform: rotate(-5deg);
-  background-image: url('../imgs/popartbackgrounds/bubble3.png');
+  background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
 
@@ -140,10 +140,10 @@ button[name="futuristic"] {
 
  .item_heading {
    	font-family: 'BadaBoom BB';
-    color: black;
+    color: transparent;
     font-size: 200px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: transparent;
     transform: rotate(-5deg);
  }
 
@@ -154,27 +154,28 @@ button[name="futuristic"] {
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'P22 Pop Art Comic';
+  text-align: right;
 }
 
 #thedailymeal {
-  background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home2.jpg');
+  background-image: url('../imgs/popartbackgrounds/sun.jpg');
   background-size: cover;
 }
 
 
 #issues {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/pop7.jpg');
-  background-size: contain;
+  background-image: url('../imgs/popartbackgrounds/issues.jpg');
 }
 
 #documentation {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/documentation.jpg');
-  background-size: cover;
+  /* gradient
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op3.jpg');
+  */
+  background-image: url('../imgs/popartbackgrounds/documentation.jpg');
 }
 
 #team {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/pop9.jpg');
-  background-size: cover;
+  background-image: url('../imgs/popartbackgrounds/team.jpg');
 }
 
 
@@ -186,6 +187,7 @@ button[name="futuristic"] {
   height:75vh;
   margin:auto;
   padding: 0px;
+  text-align: right;
 }
 
 /* width */
@@ -221,6 +223,7 @@ button[name="futuristic"] {
   display: inline-block;
   border: 1px solid black;
   border-radius: 25px 30px 40px 20px;
+  text-align: right;
 }
 
 #maintitle {
@@ -229,6 +232,8 @@ button[name="futuristic"] {
   color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  color: black;
+
 }
 
 /* end carousel settings */
@@ -239,12 +244,18 @@ button[name="futuristic"] {
 }
 
 .slider-btn .btn {
- color: transparent;
+ color: #df0107;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: black;
+ transform: rotate(-5deg);
+ font-family: 'BadaBoom BB';
+ font-size: 30px;
+
 }
 
 .slider-btn .btn-1 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/hamburgerpop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -252,7 +263,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-2 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/pastapop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -260,7 +271,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-3 {
   padding: 2em 2em;
-  background-image: url('../imgs/popartbackgrounds/icecreampop.jpg');
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
