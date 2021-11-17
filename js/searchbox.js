@@ -159,6 +159,9 @@ $(document).ready(function(){
   $(".headArt2-6").click(function(){
     $(".bodyArt2-6").slideToggle("slow");
   });
+  $(".headArt2-7").click(function(){
+    $(".bodyArt2-7").slideToggle("slow");
+  });
 });
 /* heads and body, end second article */
 /* heads and body, third article */
