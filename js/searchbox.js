@@ -104,6 +104,9 @@ $(document).ready(function(){
   $(".headArt1-9").click(function(){
     $(".bodyArt1-9").slideToggle("slow");
   });
+  $(".headArt1-10").click(function(){
+    $(".bodyArt1-10").slideToggle("slow");
+  });
 });
 /* heads and body, end first article */
 /* heads and body, second article */
