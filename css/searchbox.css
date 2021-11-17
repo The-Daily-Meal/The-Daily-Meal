@@ -36,18 +36,18 @@
   text-align: left;
 }
 
-.headArt1-1, .headArt1-2, .headArt1-3, .headArt1-4, .headArt1-5, .headArt1-6, .headArt1-7, .headArt1-8, .headArt1-9,
-.headArt2-1, .headArt2-2, .headArt2-3, .headArt2-4, .headArt2-5, .headArt2-6, .headArt2-7, .headArt2-8, .headArt2-9,
-.headArt3-1, .headArt3-2, .headArt3-3, .headArt3-4, .headArt3-5, .headArt3-6, .headArt3-7, .headArt3-8, .headArt3-9 {
+.headArt1-1, .headArt1-2, .headArt1-3, .headArt1-4, .headArt1-5, .headArt1-6, .headArt1-7, .headArt1-8, .headArt1-9,.headArt1-10
+.headArt2-1, .headArt2-2, .headArt2-3, .headArt2-4, .headArt2-5, .headArt2-6, .headArt2-7, .headArt2-8, .headArt2-9,.headArt2-10
+.headArt3-1, .headArt3-2, .headArt3-3, .headArt3-4, .headArt3-5, .headArt3-6, .headArt3-7, .headArt3-8, .headArt3-9, .headArt3-10{
   padding: 3px;
   text-align: center;
   color: black;
   border: solid 1px #c3c3c3;
 }
 
-.bodyArt1-1, .bodyArt1-2, .bodyArt1-3, .bodyArt1-4, .bodyArt1-5, .bodyArt1-6, .bodyArt1-7, .bodyArt1-8, .bodyArt1-9,
-.bodyArt2-1, .bodyArt2-2, .bodyArt2-3, .bodyArt2-4, .bodyArt2-5, .bodyArt2-6, .bodyArt2-7, .bodyArt2-8, .bodyArt2-9,
-.bodyArt3-1, .bodyArt3-2, .bodyArt3-3, .bodyArt3-4, .bodyArt3-5, .bodyArt3-6, .bodyArt3-7, .bodyArt3-8, .bodyArt3-9 {
+.bodyArt1-1, .bodyArt1-2, .bodyArt1-3, .bodyArt1-4, .bodyArt1-5, .bodyArt1-6, .bodyArt1-7, .bodyArt1-8, .bodyArt1-9, .bodyArt1-10,
+.bodyArt2-1, .bodyArt2-2, .bodyArt2-3, .bodyArt2-4, .bodyArt2-5, .bodyArt2-6, .bodyArt2-7, .bodyArt2-8, .bodyArt2-9, .bodyArt2-10,
+.bodyArt3-1, .bodyArt3-2, .bodyArt3-3, .bodyArt3-4, .bodyArt3-5, .bodyArt3-6, .bodyArt3-7, .bodyArt3-8, .bodyArt3-9, .bodyArt3-10,{
   padding: 5px;
   height: auto;
   display: none;
@@ -57,6 +57,7 @@
 
 
 .subHeadArt1-1, .subHeadArt1-2, .subHeadArt1-3, .subHeadArt1-4, .subHeadArt1-5, .subHeadArt1-6, .subHeadArt1-7, .subHeadArt1-8, .subHeadArt1-9,
+.subHeadArt1-10, .subHeadArt1-11, .subHeadArt1-12, .subHeadArt1-13, .subHeadArt1-14, .subHeadArt1-15, .subHeadArt1-16, .subHeadArt1-17,
 .subHeadArt2-1, .subHeadArt2-2, .subHeadArt2-3, .subHeadArt2-4, .subHeadArt2-5, .subHeadArt2-6, .subHeadArt2-7, .subHeadArt2-8, .subHeadArt2-9,
 .subHeadArt3-1, .subHeadArt3-2, .subHeadArt3-3, .subHeadArt3-4, .subHeadArt3-5, .subHeadArt3-6, .subHeadArt3-7, .subHeadArt3-8, .subHeadArt3-9, {
   padding: 3px;
