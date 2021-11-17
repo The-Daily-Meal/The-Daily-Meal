@@ -162,6 +162,9 @@ $(document).ready(function(){
   $(".headArt2-7").click(function(){
     $(".bodyArt2-7").slideToggle("slow");
   });
+  $(".headArt2-8").click(function(){
+    $(".bodyArt2-8").slideToggle("slow");
+  });
 });
 /* heads and body, end second article */
 /* heads and body, third article */
