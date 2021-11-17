@@ -5,7 +5,9 @@ function keepstyle(whichstyle){
   }
   sessionStorage.setItem("currentstyle", style);
 }
-
+function chooseslide(numslide){
+  sessionStorage.setItem("slide", numslide);
+}
 /*function dedicated to the rain functionality of the immerseave style - inspired by https://webdesigntips.blog/videos/pure-css-rain-animation-with-lighting-rain-effect-with-html5-and-css3-no-javascript/ by Amit Ghosh*/
 function makeitrain(){
   /*checking if the rain button is set on rain or not*/

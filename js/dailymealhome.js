@@ -10,7 +10,13 @@ $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = "css/home"+sessionStorage.getItem("currentstyle")+".css";
     document.getElementById('whichstylehome').setAttribute("href", style);
-    sessionStorage.clear();
+    sessionStorage.removeItem('currentstyle');
+  }
+
+  if (sessionStorage.getItem("slide")){
+    var num = sessionStorage.getItem("slide");
+    $('#carouselExampleCaptions').carousel(num);
+    sessionStorage.removeItem('slide');
   }
   if (document.getElementById("whichstylehome").getAttribute("href")=="css/homemedieval.css"){
    $("#mainhometext").wrap("<div class='row'></div>");
