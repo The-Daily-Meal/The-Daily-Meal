@@ -78,7 +78,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   border-radius: 5px;
 }
 
-.nav-item, .dropdown-menu, .dropdown-item, #disclaimer{
+.nav-item, .dropdown-menu, .dropdown-item, .nav-disclaimer{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #A7C39A;
