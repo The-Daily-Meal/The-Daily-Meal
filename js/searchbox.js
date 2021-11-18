@@ -165,6 +165,9 @@ $(document).ready(function(){
   $(".headArt2-8").click(function(){
     $(".bodyArt2-8").slideToggle("slow");
   });
+  $(".headArt2-9").click(function(){
+    $(".bodyArt2-9").slideToggle("slow");
+  });
 });
 /* heads and body, end second article */
 /* heads and body, third article */
@@ -216,6 +219,15 @@ $(document).ready(function(){
   });
   $(".headArt3-6").click(function(){
     $(".bodyArt3-6").slideToggle("slow");
+  });
+  $(".headArt3-7").click(function(){
+    $(".bodyArt3-7").slideToggle("slow");
+  });
+  $(".headArt3-8").click(function(){
+    $(".bodyArt3-8").slideToggle("slow");
+  });
+  $(".headArt3-9").click(function(){
+    $(".bodyArt3-9").slideToggle("slow");
   });
 });
 /* heads and body, end third article */
