@@ -45,6 +45,7 @@ body{
   background-position:center;
   background-repeat:no-repeat;
   background-color: black;
+  height:100vh;
 }
 .navbar{
   background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
@@ -84,12 +85,14 @@ body{
 }
 
 .carousel{
-  height: 85vh;
+  height: calc(100vh - 56px);
 }
 
 .carousel-item {
   background-color:transparent;
-  height: 85vh;
+    height: calc(100vh - 56px);
+
+    padding-top: 2em;
 }
 .carousel-item::before {
   opacity:0.2;
