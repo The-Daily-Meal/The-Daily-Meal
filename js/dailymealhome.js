@@ -13,11 +13,13 @@ $(document).ready(function(){
     sessionStorage.removeItem('currentstyle');
   }
 
-  if (sessionStorage.getItem("slide")){
+  /*if (sessionStorage.getItem("slide")){
     var num = sessionStorage.getItem("slide");
-    $('#carouselExampleCaptions').carousel(num);
+    $(function(){
+      $('#carouselExampleCaptions').carousel({to:num});
+    });
     sessionStorage.removeItem('slide');
-  }
+  }*/
   if (document.getElementById("whichstylehome").getAttribute("href")=="css/homemedieval.css"){
    $("#mainhometext").wrap("<div class='row'></div>");
    $("#mainhometext").wrap('<div class="col col-lg-9"></div>');

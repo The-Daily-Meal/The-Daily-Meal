@@ -1,7 +1,7 @@
 import re
 
 def searchmentions(document):
-    with open(document, 'r') as f:
+    with open(document, 'r', encoding="utf-8") as f:
         contents= f.read()
         mentions = re.findall('class="mention [^>]*>', contents)
         my_dict={}
