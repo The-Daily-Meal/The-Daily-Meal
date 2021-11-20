@@ -117,3 +117,12 @@ table{
 .text{
   margin-top:2em;
 }
+
+.panel-heading, .panel-body {
+  margin-top: 0.5em;
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+  border: solid black;
+}
+.panel-body{
+  background:transparent;
+}

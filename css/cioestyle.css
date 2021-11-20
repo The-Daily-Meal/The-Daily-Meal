@@ -15,6 +15,13 @@
   src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
   src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.woff') format('woff');
 }
+@font-face {
+  font-family: HelveticaComp;
+  src: url('../fonts/cioefonts/HelveticaComp.ttf') format('ttf');
+  src: url('../fonts/cioefonts/Helvetica-Compressed.woff') format('woff');
+  src: url('../fonts/cioefonts/Helvetica-Compressed.woff2') format('woff2');
+
+}
 body{
   height:100vh;
   overflow: hidden;
@@ -41,7 +48,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 h1,h2,h3,h4{
-  font-family: RampartOne;
+  font-family: ArchivoBlack;
   text-transform: uppercase;
   color: #0088EC;
   text-align: left;
@@ -136,25 +143,13 @@ img{
   background-size: cover;
   border-bottom: 3px solid purple;
 }
-.dropdown-item{
-  border: double black;
-  border-radius: 10px 10px 10px 10px;
-  background-color: yellow;
-  padding: 10px;
-}
+
 .dropdown-item:hover{
   background-color: #FF00EC;
   color: yellow;
 }
 .dropdown-item:focus{
   background-color: #FF00EC;
-}
-.dropdown-toggle, .dropdown-menu{
-  border: double black;
-  border-radius: 10px 10px 10px 10px;
-  background-color: yellow;
-  padding: 10px;
-  color: black;
 }
 .btn:hover{
   background-color: #FF00EC;
@@ -172,7 +167,7 @@ img{
 .dropdown-menu:hover{
   background-color: #8BEE03;
 }
-.nav-item {
+.nav-item{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
@@ -185,7 +180,19 @@ img{
   background-color: yellow;
   padding: 17px;
 }
-
+.dropdown-item{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+}
+.dropdown-toggle, .dropdown-menu, .nav-disclaimer{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
 .btn{
   background-color: yellow;
   color: black;

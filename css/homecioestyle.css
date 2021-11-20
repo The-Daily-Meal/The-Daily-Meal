@@ -51,7 +51,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 .dropdown-item:focus{
   background-color: #FF00EC;
 }
-.dropdown-toggle, .dropdown-menu{
+.dropdown-toggle, .dropdown-menu, .nav-disclaimer{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
