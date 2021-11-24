@@ -73,8 +73,8 @@ body {
 }
 
 .navbar{
-  padding-left: 5%;
-  padding-right:5%;
+  padding-left: 7%;
+  padding-right:7%;
   padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
@@ -632,6 +632,9 @@ th{
   border: none;
 }
 
+.subHeadArt1-3, .subHeadArt2-3, .subHeadArt3-3 {
+  text-align: center;
+}
 #headp3-elements3 {
   background-color: #df0107;
 }
