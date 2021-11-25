@@ -272,6 +272,10 @@ button[name="futuristic"] {
 }
 */
 
+a {
+  word-break: break-all;
+}
+
 .text p {
   column-count: 2;
   text-align: left;
@@ -383,12 +387,9 @@ a {
   padding: 2em;
   margin: 1em;
   font-size: 13px;
-  background-color: #f2e81c;
-  border: 30px solid transparent;
-  padding: 15px;
-  border-image-source: url('../imgs/popartbackgrounds/header2.jpg');
-  border-image-repeat: round;
-  border-image-slice: 100;
+  background-color: #D98FC5;
+  border: 3px solid black;
+
 }
 
 .header2 sup {
