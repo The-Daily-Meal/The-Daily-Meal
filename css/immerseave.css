@@ -378,8 +378,7 @@ a:hover {
   transition: all .2s ease-in-out;
   opacity: 0.7;
   background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
-  padding:0
-  margin:2em;
+  padding:2em;
   border-radius:20px;
   box-shadow: 0.5em 0.3em 1em #33ccff;
 }
@@ -433,7 +432,7 @@ a:hover {
 }
 .header h1 {
   font-size: 35px;
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
    color:transparent;
      -webkit-background-clip:text;
   transition: all .2s ease-in-out;
@@ -541,7 +540,6 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   104%{
    opacity:  0;
   }
-
  }
 
  #makeitrain:focus{
@@ -551,3 +549,30 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
    color:#fff;
    text-align:left;
  }
+ .panel-heading, .panel-body{
+   opacity: 0.7;
+   background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+   padding:0
+   margin:2em;
+   border-radius:20px;
+   box-shadow: 0.5em 0.3em 1em #33ccff;
+ }
+ .panel-heading:hover, .panel-body:hover{
+   transform: scale(1.1);
+   opacity: 1.0;
+ }
+ .panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
+   color: #9853b7;
+   font-family: AeroviasBrasil;
+ }
+.head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3, .headArt1-1, .headArt1-2, .headArt1-3, .headArt1-4, .headArt1-5, .headArt1-6, .headArt1-7, .headArt1-8, .headArt1-9,.headArt1-10,
+.headArt2-1, .headArt2-2, .headArt2-3, .headArt2-4, .headArt2-5, .headArt2-6, .headArt2-7, .headArt2-8, .headArt2-9,.headArt2-10,
+.headArt3-1, .headArt3-2, .headArt3-3, .headArt3-4, .headArt3-5, .headArt3-6, .headArt3-7, .headArt3-8, .headArt3-9, .headArt3-10, .subHeadArt1-1, .subHeadArt1-2, .subHeadArt1-3, .subHeadArt1-4, .subHeadArt1-5, .subHeadArt1-6, .subHeadArt1-7, .subHeadArt1-8, .subHeadArt1-9,
+.subHeadArt1-10, .subHeadArt1-11, .subHeadArt1-12, .subHeadArt1-13, .subHeadArt1-14, .subHeadArt1-15, .subHeadArt1-16, .subHeadArt1-17,
+.subHeadArt2-1, .subHeadArt2-2, .subHeadArt2-3, .subHeadArt2-4, .subHeadArt2-5, .subHeadArt2-6, .subHeadArt2-7, .subHeadArt2-8, .subHeadArt2-9,
+.subHeadArt3-1, .subHeadArt3-2, .subHeadArt3-3, .subHeadArt3-4, .subHeadArt3-5, .subHeadArt3-6, .subHeadArt3-7, .subHeadArt3-8, .subHeadArt3-9, .subSubHeadArt1-1, .subSubHeadArt1-2, .subSubHeadArt1-3, .subSubHeadArt2-1, .subSubHeadArt3-1{
+  border:none;
+  color: #9853b7;
+  font-family: AeroviasBrasil;
+  background-color: transparent;
+}
