@@ -95,3 +95,20 @@ p::first-letter{
     font-weight:normal;
     line-height: 0.75;
 }
+.slider-btn{
+  text-align:center;
+}
+.slider-btn .btn-1, .slider-btn .btn-2, .slider-btn .btn-3{
+  background-color:transparent;
+  background-image: url("../imgs/MedievalBackgrounds/H.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-size: 2em;
+}
+.slider-btn .btn-2{
+  background-image: url("../imgs/MedievalBackgrounds/P.png");
+}
+.slider-btn .btn-3{
+  background-image: url("../imgs/MedievalBackgrounds/I.png");
+}

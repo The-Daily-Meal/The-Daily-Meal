@@ -12,11 +12,9 @@ $(document).ready(function(){
   $(".head-sectionsArt3").click(function(){
     $(".body-sectionsArt3").slideToggle("slow");
   });
-});
 /* end panel and sections */
 
 /* heads and body, first article */
-$(document).ready(function(){
   $(".headArt1-1").click(function(){
     $(".bodyArt1-1").slideToggle("slow");
   });
@@ -107,10 +105,8 @@ $(document).ready(function(){
   $(".headArt1-10").click(function(){
     $(".bodyArt1-10").slideToggle("slow");
   });
-});
 /* heads and body, end first article */
 /* heads and body, second article */
-$(document).ready(function(){
   $(".headArt2-1").click(function(){
     $(".bodyArt2-1").slideToggle("slow");
   });
@@ -168,10 +164,8 @@ $(document).ready(function(){
   $(".headArt2-9").click(function(){
     $(".bodyArt2-9").slideToggle("slow");
   });
-});
 /* heads and body, end second article */
 /* heads and body, third article */
-$(document).ready(function(){
   $(".headArt3-1").click(function(){
     $(".bodyArt3-1").slideToggle("slow");
   });

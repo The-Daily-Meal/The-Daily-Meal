@@ -62,9 +62,9 @@ function changestyle(name) {
     $(".col-lg-9").after("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
 
     /*adding medieval images to the headers of articles*/
-    $(".content > .container > .row:last .col-4:first-of-type .thing1_title").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
-    $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
-    $(".content > .container > .row:last .col-4:nth-of-type(3) .thing1_title").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
+    $(".content > .container > .row:last .col-4:first-of-type .thing1_title").before('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
+    $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").before('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
+    $(".content > .container > .row:last .col-4:nth-of-type(3) .thing1_title").before('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
   }
   /*otherwise remove decorations linked to medieval style only*/
   else{
@@ -81,6 +81,7 @@ function changestyle(name) {
 
     /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
     $(".loadingscreen").remove();
+    $(".header hr").remove();
     $("#rain").remove();
     $('#makeitrain').remove();
     $('#content').removeAttr("style");
@@ -154,9 +155,9 @@ $(document).ready(function(){
     $(".col-lg-9").after("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
 
     /*adding medieval images to the headers of articles*/
-    $(".content > .container > .row:last .col-4:first-of-type .thing1_title").after('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
-    $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").after('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
-    $(".content > .container > .row:last .col-4:nth-of-type(3) .thing1_title").after('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
+    $(".content > .container > .row:last .col-4:first-of-type .thing1_title").before('<img src="imgs/MedievalBackgrounds/th.jpg" alt="medieval food image 1" id="medimg1">');
+    $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").before('<img src="imgs/MedievalBackgrounds/th (1).jpg" alt="medieval food image 2" id="medimg2">');
+    $(".content > .container > .row:last .col-4:nth-of-type(3) .thing1_title").before('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" alt="medieval food image 3" id="medimg3">');
   }
 
   /*for the bauhaus style, add decorations for the headers of the articles*/
