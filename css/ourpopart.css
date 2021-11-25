@@ -73,8 +73,8 @@ body {
 }
 
 .navbar{
-  padding-left: 7%;
-  padding-right:7%;
+  padding-left: 6%;
+  padding-right:6%;
   padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
@@ -256,7 +256,7 @@ button[name="futuristic"] {
   padding: 1em;
   background-color: white;
 }
-
+/*
 .section p::first-letter{
   float:left;
   font-size:500%;
@@ -270,7 +270,7 @@ button[name="futuristic"] {
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 0px black;
 }
-
+*/
 
 .text p {
   column-count: 2;
