@@ -63,7 +63,6 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   border-radius: 10px;
 }
 
-
 .navbar{
   padding-left: 5%;
   padding-right: 4%;
@@ -73,17 +72,21 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   color: white;
   text-transform: uppercase;
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
-  background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');
+  background-image: url('../imgs/belleepoquebackgrounds/194151.jpeg');
+  background-image: url('../imgs/belleepoquebackgrounds/cartadaparati.jpeg');
+  background-size: 350px;
+  background-repeat: repeat;
   border: 5px solid #8B0000;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
-.nav-item, .dropdown-menu, .dropdown-item, .nav-disclaimer{
+.nav-item, .btn, .dropdown-menu, .dropdown-item{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #A7C39A;
   color: white;
 }
+
 .dropdown-menu:hover, .dropdown-menu:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-item:hover, .dropdown-item:focus{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
 background-size: cover;
@@ -91,9 +94,7 @@ background-color: #A7C39A;
 color: #C28400;
 }
 
-.btn{
-  color: white;
-}
+
 .btn:hover, .btn:focus{
   color: #C28400;
 }
@@ -107,17 +108,22 @@ color: #C28400;
 
 .carousel-item {
   height: 90vh;
-  width: 114vh;
+  width: 130vh;
   min-height:300px;
+  margin-left: 13%;
   background: no-repeat scroll center scroll;
   -webkit-background-size: cover;
-  margin-left: 19%;
   background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
-  border: double 5px #8B0000;
+  background-size: cover;
+  border: solid 20px #FFFDEF;
 }
 .carousel-inner{
-  background-image: url('../imgs/belleepoquebackgrounds/sfondo.png');
-  background-size: cover;
+  background-image: url('../imgs/belleepoquebackgrounds/194151.jpeg');
+  background-image: url('../imgs/belleepoquebackgrounds/download.jpeg');
+  background-image: url('../imgs/belleepoquebackgrounds/cartadaparati.jpeg');
+  background-size: 450px;
+  background-repeat: repeat;
+
 }
 .carousel-item::before {
   content: "";
@@ -188,8 +194,8 @@ color: #C28400;
 }
 
 p{
-  font-size: 30px;
   font-family: Legrand;
+  font-size: 100px;
   color: black;
   padding: 10px;
   margin: 5%;
@@ -198,8 +204,8 @@ p{
   border-radius: 10px 10px 0px 0px;
 }
 
-#maintitle {
-  font-size: 100px;
+#maintitle{
+  font-size: 120px;
   color: #A88E00;
   color: #D3A900;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -213,23 +219,25 @@ p{
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #8B0000;
-  bacground-size: 150px;
+  background-size: 280px;
+  padding: 2%;
 }
 
-.slider-btn .btn {
+.btn-1, .btn-2, .btn-3{
   width: 20vh;
   height: 30vh;
   background-image: url('../imgs/belleepoquebackgrounds/c54796ca2c705661effbd1b45b8a335d.jpeg');
   background-size: cover;
   padding: 1rem 1rem;
   font-size: 1rem;
-  margin-left: 5%;
+  margin-left: 7%;
   font-family: Legrand;
   color: black;
   filter: brightness(90%);
 }
 
-.slider-btn:hover, .slider-btn:focus, .btn:hover, .btn:focus{
+
+.slider-btn:hover, .slider-btn:focus{
   color: #D3A900;
 }
 

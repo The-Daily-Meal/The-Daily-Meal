@@ -16,17 +16,16 @@
   src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: HelveticaComp;
-  src: url('../fonts/cioefonts/HelveticaComp.ttf') format('ttf');
-  src: url('../fonts/cioefonts/Helvetica-Compressed.woff') format('woff');
-  src: url('../fonts/cioefonts/Helvetica-Compressed.woff2') format('woff2');
+  font-family: Helvetica;
+  src: url('../fonts/cioefonts/Helvetica.ttf') format('ttf');
 
 }
 body{
   height:100vh;
   overflow: hidden;
   margin: auto;
-  font-family: DidactGothic;
+  font-family: Helvetica;
+  font-weight: lighter;
   font-size: 18px;
   background-color: #8BEE03;
   cursor: url("../css/Pizza.cur"), pointer;
@@ -49,6 +48,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 
 h1,h2,h3,h4{
   font-family: ArchivoBlack;
+  font-weight: lighter;
   text-transform: uppercase;
   color: #0088EC;
   text-align: left;
@@ -97,6 +97,8 @@ h5{
 p{
   column-count: 2;
   word-wrap: break-word;
+  line-height: 20px;
+  letter-spacing: -1px;
 }
 
 /* width */
@@ -122,12 +124,13 @@ p{
 }
 
 p::first-letter{
-  float:left;
-  font-size:250%;
-  color: #FF0DC8;
+  float: left;
+  font-style: normal;
+  font-size:350%;
+  color: #DB207E;
   font-family: ArchivoBlack;
-  font-weight: normal;
-  line-height: 0.6;
+  font-weight: lighter;
+  line-height: 0.65;
 }
 
 img{
@@ -143,7 +146,12 @@ img{
   background-size: cover;
   border-bottom: 3px solid purple;
 }
-
+.nav-link{
+  padding: 0;
+}
+.btn{
+  padding: 0;
+}
 .dropdown-item:hover{
   background-color: #FF00EC;
   color: yellow;
@@ -233,4 +241,17 @@ sup{
   background-color: #E5C8FF;
   border: 3px solid #E5C8FF;
   border-radius: 10px 10px 10px 10px;
+}
+.panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
+  background-color: #0088EC;
+  color: yellow;
+  font-weight: bold;
+}
+.panel-body{
+  background-color: pink;
+  color: #DB207E;
+  font-weight: bold;
+}
+.metadata h1{
+  background-color: #FF0DC8;
 }
