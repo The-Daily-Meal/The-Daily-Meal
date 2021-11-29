@@ -124,12 +124,12 @@ function changestyle(name){
     $('#makeitrain').remove();
     $('#content').removeAttr("style");
   }
-  if (name == 'homepopart.css' || name == 'homebauhaus.css' || name == 'homecioestyle.css'){
+  /*if (name == 'homepopart.css' || name == 'homebauhaus.css' || name == 'homecioestyle.css'){
     document.getElementById('homestylebase').setAttribute("href", "");
   }
   else{
     document.getElementById('homestylebase').setAttribute("href", "./css/home.css");
-  }
+  */
   document.getElementById('whichstylehome').setAttribute("href", "css/"+name);
 };
 /*function dedicated to the rain functionality of the immerseave style - inspired by https://webdesigntips.blog/videos/pure-css-rain-animation-with-lighting-rain-effect-with-html5-and-css3-no-javascript/ by Amit Ghosh*/
