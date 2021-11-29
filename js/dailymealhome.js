@@ -6,20 +6,28 @@ function keepstyle(whichstyle){
   sessionStorage.setItem("currentstyle", style);
 }
 
+function chooseslide(numslide){
+  sessionStorage.setItem("slide", numslide);
+}
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = "css/home"+sessionStorage.getItem("currentstyle")+".css";
     document.getElementById('whichstylehome').setAttribute("href", style);
     sessionStorage.removeItem('currentstyle');
   }
+  else{
+    document.getElementById('whichstylehome').setAttribute("href", 'css/home.css');
+  }
 
-  /*if (sessionStorage.getItem("slide")){
+  if (sessionStorage.getItem("slide")){
     var num = sessionStorage.getItem("slide");
-    $(function(){
-      $('#carouselExampleCaptions').carousel({to:num});
-    });
+    $('.carousel-item').removeClass("active");
+    $('.carousel-item:nth-of-type('+num+')').addClass("active");
+    $('.carousel-indicators > button').removeClass("active");
+    $('.carousel-indicators > button:nth-of-type('+num+')').addClass('active');
     sessionStorage.removeItem('slide');
-  }*/
+  }
+
   if (document.getElementById("whichstylehome").getAttribute("href")=="css/homemedieval.css"){
    $("#mainhometext").wrap("<div class='row'></div>");
    $("#mainhometext").wrap('<div class="col col-lg-9"></div>');
@@ -27,7 +35,7 @@ $(document).ready(function(){
    $("#thedailymeal .row").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
    document.getElementById("maintitle").innerHTML = '<span><img src="imgs/MedievalBackgrounds/T.png" alt=""></span>he Daily Meal';
  }
- else if (name == 'homeimmerseave.css'){
+ else if (document.getElementById("whichstylehome").getAttribute("href")=="css/homeimmerseave.css"){
    /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
    $(".loadingscreen").remove();
    $("#rain").remove();

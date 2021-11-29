@@ -1,5 +1,5 @@
 function keepstyle(whichstyle){
-  var style= document.getElementById(whichstyle).getAttribute("href").replace(/our|style|css\/|\.css/g, "");
+  var style= document.getElementById(whichstyle).getAttribute("href").replace(/ourcss|our|style|css\/|\.css/g, "");
   if (style == "cioe"){
     style+="style";
   }
