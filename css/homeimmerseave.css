@@ -431,3 +431,41 @@ h1, h2, h3, h4, h5{
 #makeitrain:focus{
   outline:0;
 }
+
+.slider-btn{
+  text-align:center;
+}
+.slider-btn .btn-1, .slider-btn .btn-2, .slider-btn .btn-3{
+  background-color:transparent;
+  background-image:url("../imgs/immerseave/hamburger.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family:AeroviasBrasil;
+  color: white;
+  transition: all .2s ease-in-out;
+  padding: 3em;
+  font-size: 2em;
+
+}
+.slider-btn .btn-2{
+  background-image: url("../imgs/immerseave/PikPng.com_pasta-png_833044.png");
+}
+.slider-btn .btn-3{
+  background-image: url("../imgs/immerseave/ice_cream_PNG5089.png");
+}
+.slider-btn .btn-1:hover, .slider-btn .btn-2:hover, .slider-btn .btn-3:hover{
+  transform: scale(1.1);
+  opacity:1;
+  color:
+}
+.carousel-control-prev-icon{
+  background-image: url('../imgs/immerseave/seascape-bubbles1.svg');
+  width: 150%;
+  transform: scaleX(-1);
+}
+.carousel-control-next-icon{
+  background-image: url('../imgs/immerseave/seascape-bubbles1.svg');
+  width:150%;
+}

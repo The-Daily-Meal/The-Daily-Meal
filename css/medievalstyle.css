@@ -18,6 +18,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: url("FeatherQuill.cur"), pointer;
+  line-height: 1em;
 }
 .article{
   overflow-y:scroll;
@@ -25,7 +26,7 @@ body{
   text-align:justify;
   height:85vh;
   margin:auto;
-  padding:2em;
+  padding:0.5em;
 }
 
 /* width */
@@ -82,7 +83,9 @@ p::first-letter{
     font-weight:normal;
     line-height: 0.75;
 }
-
+p, h1, h2, h3, h4, h5 {
+  margin-bottom: 0;
+}
 
 .container{
   margin-left:0;
@@ -92,6 +95,9 @@ p::first-letter{
 }
 .row{
   margin:auto;
+}
+.col-4{
+  padding:0;
 }
 .navbar{
   margin-top:1em;
