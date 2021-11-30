@@ -257,21 +257,7 @@ button[name="futuristic"] {
   padding: 1em;
   background-color: white;
 }
-/*
-.section p::first-letter{
-  float:left;
-  font-size:500%;
-  color: #d50037;
-  font-family: 'BadaBoom BB';
-  font-weight: normal;
-  line-height: 0.5;
-  margin-right: 8px;
-  border-radius: 25px 30px 40px 20px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 2px 2px 0px black;
-}
-*/
+
 
 a {
   word-break: break-all;
@@ -377,6 +363,10 @@ a {
   font-size: 14px;
   padding: 1em;
   text-align: center;
+}
+
+.header .thing4_publisher {
+  font-size: 15px;
 }
 
 /* end header */
