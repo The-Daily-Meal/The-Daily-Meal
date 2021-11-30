@@ -131,6 +131,7 @@ p::first-letter{
   font-family: ArchivoBlack;
   font-weight: lighter;
   line-height: 0.65;
+  padding: 5px;
 }
 
 img{
@@ -224,7 +225,7 @@ img{
 }
 
 tr:nth-child(odd){
-    background-color: #8BFFDC;
+  background-color: #8BFFDC;
 }
 
 tr:nth-child(even){
@@ -233,8 +234,10 @@ tr:nth-child(even){
 
 th{
   background-color:#FF1B9E;
-  font-weight: 400;
-  font-family: RampartOne;
+  font-weight: 300;
+  font-family: ArchivoBlack;
+  text-transform: uppercase;
+  color: pink;
 }
 
 sup{
