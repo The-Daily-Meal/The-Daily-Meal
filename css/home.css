@@ -81,7 +81,6 @@
 
 .slider-btn .btn {
   background-color: red;
-  color: white;
   border-radius: 0;
   padding: 1.5rem 2rem;
   font-size: 1rem;
@@ -89,6 +88,7 @@
 }
 
 .slider-btn .btn-2 {
-  color: black;
   background-color: white;
+
+  font-size: 1rem;
 }

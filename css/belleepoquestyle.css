@@ -30,6 +30,12 @@
   src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
   /*src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');*/
 }
+@font-face {
+  font-family: Legrand;
+  src: url('../fonts/belleepoque/Legrand-0l8d.ttf') format('ttf');
+  src: url('../fonts/belleepoque/Legrand.woff') format('woff');
+  src: url('../fonts/belleepoque/Legrand.woff2') format('woff2');
+}
 
 html{
   cursor: url("Red rose.cur"), pointer;
@@ -67,7 +73,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 h1,h2,h3,h4{
-  font-family: BoecklinsUniverse;
+  font-family: "Legrand";
   text-transform: uppercase;
   color: #8B0000;
   text-align: left;
@@ -87,7 +93,7 @@ h3 {
 
 }
 h5{
-  font-family: BoecklinsUniverse;
+  font-family: "Legrand";
   text-transform: uppercase;
   color: #8B0000;
   font-size:15px;
@@ -130,13 +136,6 @@ h5{
   border-radius: 10px;
 }
 
-/*.article {
-  border-right-color: brown;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-last: none;
-}*/
-
 p::first-letter{
   float:left;
   font-size:200%;
@@ -165,11 +164,15 @@ img{
 
 }
 
-.nav-item, .dropdown-item, .dropdown-menu, .nav-disclaimer{
+.nav-item, #disclaimer, .dropdown-item{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #8B0000;
   color: white;
+  border: solid 2px #DCBA00;
+}
+#disclaimer:hover, #disclaimer:focus{
+color: #DCBA00;
 }
 .dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-menu:hover, .dropdown-menu:focus{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
@@ -184,9 +187,14 @@ color: #DCBA00;
 .btn:hover, .btn:focus{
   color: #DCBA00;
 }
+.nav-item{
+  margin-right: 5px;
+}
 
-
-.images{
+.dropdown{
+  padding-right: 1em;
+}
+.images, .images_hist{
   padding: 10px;
   padding-left: 5px;
   filter: grayscale(85%);

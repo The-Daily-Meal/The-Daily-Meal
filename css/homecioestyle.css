@@ -51,14 +51,8 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 .dropdown-item:focus{
   background-color: #FF00EC;
 }
-.dropdown-toggle, .dropdown-menu, .nav-disclaimer{
-  border: double black;
-  border-radius: 10px 10px 10px 10px;
-  background-color: yellow;
-  padding: 10px;
-  color: black;
-}
-.btn:hover {
+
+.btn:hover{
   background-color: #FF00EC;
   color: yellow;
 }
@@ -75,7 +69,8 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 .dropdown-menu:hover{
   background-color: #8BEE03;
 }
-.nav-item {
+
+.nav-item{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
@@ -92,10 +87,19 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 .btn{
   background-color: yellow;
   color: black;
+  padding: 0;
+}
+.nav-link{
+  padding: 0;
 }
 
-
-
+.dropdown-toggle, .dropdown-menu, .nav-disclaimer{
+  border: double black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
 .carousel-item {
   height: 90vh;
   min-height:300px;
@@ -163,10 +167,9 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
 
-.carousel-caption h1 {
+.carousel-caption h1{
   font-size: 60px;
   text-align: center;
   border: double 3px black;
@@ -200,7 +203,7 @@ p{
   font-style: HiddencocktailsItalicShadow;
 }
 
-.carousel-caption p {
+.carousel-caption p{
   font-size: 18px;
   text-align: justify;
 }
@@ -209,20 +212,16 @@ p{
   margin-top: 30px;
 }
 
-.slider-btn .btn {
+.slider-btn .btn-2, .slider-btn .btn-1, .slider-btn .btn-3{
   color: transparent;
   background-color: #001BE0;;
   border-radius: 50%;
-  padding: 2em 2rem;
   font-size: 1.5rem;
   font-style: RampartOne;
   text: hidden;
   border: ridge 6px #FF00EC;
   margin-right: 50%;
   margin-left: 10%;
-}
-.btn:hover{
-  color: yellow;
 }
 .slider-btn .btn-2{
   padding: 2em 2rem;
@@ -234,22 +233,31 @@ p{
   background-position: center;
 }
 
-.btn-1{
+.slider-btn .btn-1{
   background-color: #010CFF;
   padding: 2em 2rem;
   background-image: url('../imgs/cioebackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
   background-size: 200px;
   background-repeat: no-repeat;
-  margin-right: 50%;
 
 }
-.btn-3{
+.slider-btn .btn-3{
   padding: 2em 2rem;
   background-image: url('../imgs/cioebackgrounds/rainbow-colored-ice-cream-neon-sign_1262-19630.jpeg');
   background-size: 140px;
   background-repeat: no-repeat;
-  margin-right: 65%;
 }
+
+.slider-btn .btn-1:hover{
+  color: yellow;
+}
+.slider-btn .btn-2:hover{
+  color: yellow;
+}
+.slider-btn .btn-3:hover{
+  color: yellow;
+}
+
 .carousel-control-prev-icon{
   background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
   transform: rotate(180deg);
