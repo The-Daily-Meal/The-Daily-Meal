@@ -13,6 +13,9 @@ body{
   padding:2em;
 }
 
+.navbar{
+  height:10vh;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

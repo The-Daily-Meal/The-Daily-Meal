@@ -6,6 +6,10 @@
   font-family: Goudy-initialen Regular;
   src: url('../fonts/medieval/goudy-initialen.regular.ttf');
 }
+@font-face {
+  font-family: Medieval Alphabet Regular;
+  src: url('../fonts/medieval/medievalalphabet.regular.ttf');
+}
 body{
   height:100vh;
   overflow: hidden;
@@ -24,7 +28,7 @@ body{
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height:85vh;
+  height: 85vh;
   margin:auto;
   padding:0.5em;
 }
@@ -72,16 +76,30 @@ h1, h2, h3, h4{
   margin:0;
 }
 h1{
-  font-size:200%;
+  font-size:1.5em;
 }
 
 p::first-letter{
   float:left;
-  font-size:150%;
-  color: #1D50F7;
-    font-family: Goudy-initialen Regular;
+  font-size:300%;
+  background-image: linear-gradient(
+   to right,
+   #ebd197 0,
+   #b48811 22%,
+   #a2790d 45%,
+   #bb9b49 50%,
+   #a2790d 55%,
+   #b48811  78%,
+   #ebd197 100%
+   );
+   color:transparent;
+     -webkit-background-clip:text;
+   color: gold;
+    -webkit-text-stroke-color: #5752FB;
+
+    font-family: Medieval Alphabet Regular;
     font-weight:normal;
-    line-height: 0.75;
+    line-height: 1;
 }
 p, h1, h2, h3, h4, h5 {
   margin-bottom: 0;
@@ -100,12 +118,13 @@ p, h1, h2, h3, h4, h5 {
   padding:0;
 }
 .navbar{
-  margin-top:1em;
   padding-bottom:1em;
+  padding-top: 1em;
   background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
   background-repeat: repeat;
   background-size:contain;
   border: solid black;
+  height: 10vh;
 }
 .navbar .btn{
   border: solid black;

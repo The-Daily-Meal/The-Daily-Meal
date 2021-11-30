@@ -375,6 +375,7 @@ a:hover {
 }
 
 .article{
+  height:80vh;
   transition: all .2s ease-in-out;
   opacity: 0.7;
   background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
@@ -391,6 +392,7 @@ a:hover {
   background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
   padding-left: 5%;
   padding-right: 5%;
+  height:10vh;
 }
 .navbar .btn{
   background-image: linear-gradient(
@@ -463,7 +465,7 @@ a:hover {
  margin-bottom: 1.5em;
 }
 .row{
-  margin-top:1em;
+  margin-top:0.5em;
 }
 .dropdown-menu{
   background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);

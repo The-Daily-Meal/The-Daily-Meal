@@ -161,8 +161,7 @@ img{
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   border-bottom: 8px solid #8B0000;
   border-radius: 5px;
-
-
+  height:10vh;
 }
 
 .nav-item, .dropdown-item, .dropdown-menu, .nav-disclaimer{

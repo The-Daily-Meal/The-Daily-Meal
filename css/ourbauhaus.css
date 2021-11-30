@@ -43,6 +43,7 @@ body {
   background-image: url('../imgs/bauhaushome/navbar.png');
   background-size: cover;
   font-size: 15px;
+  height: 10vh;
 }
 
 .navbar .nav-link {

@@ -145,6 +145,7 @@ img{
   background-image: url("../imgs/cioebackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
   border-bottom: 3px solid purple;
+  height:10vh;
 }
 .nav-link{
   padding: 0;
