@@ -149,12 +149,13 @@ img{
   max-width: 300px;
 }
 
+
 .navbar{
   padding-left: 5%;
   padding-right: 4%;
   padding-bottom: 2%;
   padding-top: 2%;
-  font-family: BoecklinsUniverse;
+  font-family: "BoecklinsUniverse";
   color: white;
   text-transform: uppercase;
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
@@ -164,7 +165,7 @@ img{
 
 }
 
-.nav-item, #disclaimer, .dropdown-item{
+.nav-item, #disclaimer, #TDM, #issuesnav{
   background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
   background-size: cover;
   background-color: #8B0000;
@@ -174,7 +175,10 @@ img{
 #disclaimer:hover, #disclaimer:focus{
 color: #DCBA00;
 }
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-menu:hover, .dropdown-menu:focus{
+#disclaimer{
+  border: solid 1px #DCBA00;
+}
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-menu:hover, .dropdown-menu:focus,  #TDM:focus, #issuesnav:focus, #TDM:hover, #issuesnav:hover{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
 background-size: cover;
 background-color: #8B0000;
@@ -189,10 +193,22 @@ color: #DCBA00;
 }
 .nav-item{
   margin-right: 5px;
+  margin-left: 5px;
 }
 
 .dropdown{
-  padding-right: 1em;
+  padding-right: 5px;
+}
+.dropdown-menu, .dropdown-item{
+  background-color: #8B0000;
+  color: white;
+}
+
+.collapse{
+  /*background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');*/
+  background-size: 300px;
+  background-position: center;
+  background-repeat: repeat;
 }
 .images, .images_hist{
   padding: 10px;

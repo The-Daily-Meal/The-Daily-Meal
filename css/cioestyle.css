@@ -46,7 +46,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   /*padding-bottom:2em;*/
 }
 
-h1,h2,h3,h4{
+h1,h2{
   font-family: ArchivoBlack;
   font-weight: lighter;
   text-transform: uppercase;
@@ -64,18 +64,18 @@ h1 {
 }
 
 h2{
-  font-size: 20px;
+  font-size: 18px;
   border: 3px solid;
   background-color: #DAF7A6;
 }
-h3 {
+h5, .section_heading {
   font-size:17px;
   background-color:#FF6CF8;
   border: 2px solid;
   border-radius: 0px 10px 0px 0px;
 
 }
-h5{
+h3{
   font-family: ArchivoBlack;
   text-transform: uppercase;
   color: #0088EC;
@@ -209,11 +209,12 @@ img{
 .images{
   border: 5px solid #8BEE03;
   transform: rotate(12deg);
-  margin: 6%;
+  margin: 7%;
 }
 
 .images_hist{
   border: 5px solid #FE745B;
+  margin: 5%;
 }
 
 
