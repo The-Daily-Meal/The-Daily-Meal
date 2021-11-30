@@ -54,7 +54,6 @@ body{
   background-size: 350px;
   background-repeat: repeat;
   background-attachment: fixed;
-  /*padding-top: 2em;*/
 
 
 }
@@ -107,7 +106,7 @@ h5{
   text-align:justify;
   height:80vh;
   margin: auto;
-  padding:1em;
+  padding: 1em;
 }
 
 #article2,#article3{
