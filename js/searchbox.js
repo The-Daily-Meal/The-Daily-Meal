@@ -224,4 +224,39 @@ $(document).ready(function(){
     $(".bodyArt3-9").slideToggle("slow");
   });
 });
-/* heads and body, end third article */
+
+
+
+
+$(document).ready(function(){
+    $('#article1body input[type="checkbox"]').click(function(){
+      var name = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article1 span[about="+name+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("span[about="+name+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article2body input[type="checkbox"]').click(function(){
+      var name = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article2 span[about="+name+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("span[about="+name+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article3body input[type="checkbox"]').click(function(){
+      var name = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article3 span[about="+name+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("span[about="+name+"]").css('background-color', 'transparent');
+        }
+    });
+});
