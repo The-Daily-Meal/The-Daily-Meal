@@ -229,7 +229,7 @@ img{
 
 
 .table {
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
   padding-right: 5px;
   font-size: 16px;
   text-align: left;
@@ -263,6 +263,10 @@ ul, ol{
   word-wrap: break-word;
   line-height: 20px;
   letter-spacing: -1px;
+}
+
+#ic2-referencesSection{
+  column-count: 1;
 }
 .panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
   background-color: #0088EC;
