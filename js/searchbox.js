@@ -257,3 +257,17 @@ $(document).ready(function(){
         }
     });
 });
+
+
+$(document).ready(function(){
+    $('#article1body input[type="checkbox"]').click(function(){
+      var scrollTo = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article1 [id="+scrollTo+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article1 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
+});
