@@ -68,7 +68,7 @@ h2{
   border: 3px solid;
   background-color: #DAF7A6;
 }
-.section_heading{
+.section_heading, h4{
   font-family: ArchivoBlack;
   font-size:18px;
   color: #0088EC;
@@ -87,7 +87,12 @@ h3{
 
 
 }
-
+h6{
+  font-family: ArchivoBlack;
+  color: #0088EC;
+  font-size:12px;
+  text-align: left;
+}
 .article{
   overflow-y:scroll;
   overflow-x: hidden;
@@ -246,10 +251,13 @@ th{
   color: pink;
 }
 
-sup{
+sup, ul, ol{
   background-color: #E5C8FF;
   border: 3px solid #E5C8FF;
   border-radius: 10px 10px 10px 10px;
+  word-wrap: break-word;
+  line-height: 20px;
+  letter-spacing: -1px;
 }
 .panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
   background-color: #0088EC;

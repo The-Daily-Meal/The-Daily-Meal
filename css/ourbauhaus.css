@@ -215,12 +215,12 @@ blockquote {
   text-align: center;
 }
 
-.tables {
+.table {
   padding: 1em;
   text-align: center;
 }
 
-.tables header {
+.table header {
   font-size: 12px;
 }
 
