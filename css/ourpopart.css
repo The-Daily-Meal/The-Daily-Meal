@@ -334,8 +334,11 @@ a {
 .header h2 b {
   font-family: 'BadaBoom BB';
   color: #df0107;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+}
+
+.thing3 {
+  font-family: 'BadaBoom BB';
+  color: #df0107;
 }
 
 .header h3 {
