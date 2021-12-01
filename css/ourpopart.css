@@ -388,7 +388,7 @@ a {
   text-align: left;
 }
 
-.header2 h5 {
+.header2 h5, h3 {
   font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 15px;
 }
@@ -408,6 +408,15 @@ a {
    padding: 1em;
    column-count: 1;
  }
+
+.beforeimage {
+   text-align: left;
+ }
+
+.afterimage {
+   text-align: right;
+ }
+
 
 
 .table {
