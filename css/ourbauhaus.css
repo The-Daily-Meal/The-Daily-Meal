@@ -344,6 +344,17 @@ blockquote {
  border: 3px solid black;
 }
 
+.header2 sup {
+  font-size: 10px;
+}
+.header2 h6 {
+  font-size: 10px;
+}
+.header2 h3 {
+  font-size: 15px;
+}
+
+
 /* end header */
 
 /* metadata panel */
