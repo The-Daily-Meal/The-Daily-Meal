@@ -251,13 +251,22 @@ th{
   color: pink;
 }
 
-sup, ul, ol{
+sup{
   background-color: #E5C8FF;
   border: 3px solid #E5C8FF;
   border-radius: 10px 10px 10px 10px;
   word-wrap: break-word;
   line-height: 20px;
   letter-spacing: -1px;
+}
+ul, ol{
+  word-wrap: break-word;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+#ic2-referencesSection{
+  column-count: 1;
 }
 .panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
   background-color: #0088EC;
