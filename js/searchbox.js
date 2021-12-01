@@ -260,18 +260,30 @@ $(document).ready(function(){
         if($(this).prop("checked") == false){
           $("#article1").css('opacity', '0.3');
           $("#article1body").css('opacity', '0.3');
-    };
+    }
+    else if($(this).prop("checked") == true){
+      $("#article1").css('opacity', '1');
+      $("#article1body").css('opacity', '1');
+    }
   });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
         $("#article2").css('opacity', '0.3');
         $("#article2body").css('opacity', '0.3');
-  };
+  }
+    else if($(this).prop("checked") == true){
+      $("#article2").css('opacity', '1');
+      $("#article2body").css('opacity', '1');
+  }
 });
     $('input[name="check3"]').click(function(){
     if($(this).prop("checked") == false){
       $("#article3").css('opacity', '0.3');
       $("#article3body").css('opacity', '0.3');
-};
+    }
+    else if($(this).prop("checked") == true){
+      $("#article3").css('opacity', '1');
+      $("#article3body").css('opacity', '1');
+}
 });
 });
