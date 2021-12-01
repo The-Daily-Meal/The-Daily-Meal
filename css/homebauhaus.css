@@ -237,8 +237,7 @@ button[name="futuristic"] {
 
 .slider-btn {
   margin-top: 250px;
-  text-align: right;
-  transform: rotate(-45deg);
+  text-align: center;
 }
 
 .slider-btn .btn {
@@ -251,7 +250,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-1 {
   padding: 2em 2em;
-  background-color: red;
+  background-color: rgb(190, 30, 45);
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -259,7 +258,7 @@ button[name="futuristic"] {
 
 .slider-btn .btn-2 {
   padding: 2em 2em;
-  background-color: yellow;
+  background-color: rgb(33, 64, 154);
   border-radius: 0%;
   width: 100px;
   height: 100px;
@@ -267,10 +266,14 @@ button[name="futuristic"] {
 
 .slider-btn .btn-3 {
   padding: 2em 2em;
-  background-color: blue;
+  background-color: rgb(255, 222, 23);
   border-radius: 100%;
   width: 100px;
   height: 100px;
+}
+
+.btn .btn-1 {
+  transform: rotate(45deg);
 }
 
 /* end buttons slider issues */

@@ -334,9 +334,8 @@ a {
 .header h2 b {
   font-family: 'BadaBoom BB';
   color: #df0107;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
+
 
 .header h3 {
   font-family: 'P22 Pop Art Comic Bold Italic';
