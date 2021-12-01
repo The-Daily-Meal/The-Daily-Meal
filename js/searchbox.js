@@ -224,10 +224,7 @@ $(document).ready(function(){
     $(".bodyArt3-9").slideToggle("slow");
   });
 });
-
-
-
-
+/* heads and body, end third article */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name");
