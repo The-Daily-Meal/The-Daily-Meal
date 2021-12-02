@@ -306,6 +306,26 @@ $(document).ready(function(){
           $("#article1 [id="+scrollTo+"]").css('background-color', 'transparent');
         }
     });
+    $('#article2body input[type="checkbox"]').click(function(){
+      var scrollTo = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article2 [id="+scrollTo+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article2 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article3body input[type="checkbox"]').click(function(){
+      var scrollTo = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article3 [id="+scrollTo+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article3 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
 });
 
 /* metadata: if I check a class, return me ALL the instances below that class */
