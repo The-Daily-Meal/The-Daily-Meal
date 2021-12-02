@@ -1,7 +1,7 @@
 import re
 
 def searchmentions(document):
-    with open(document, 'r') as f:
+    with open(document, 'r', encoding="utf-8") as f:
         contents= f.read()
         mentions = re.findall('class="mention [^>]*>', contents)
         my_dict={}
@@ -43,7 +43,7 @@ def searchmentions(document):
         for key, el in sorted(dictformentions.items()):
             print(key, el)
 
-        print(my_dict['food'])
+        print(my_dict['food ingredient'])
 
 if __name__ == '__main__':
-    searchmentions("gourmetburger.txt");
+    searchmentions("pasta.txt");
