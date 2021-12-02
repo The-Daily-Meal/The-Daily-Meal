@@ -34,19 +34,25 @@ $(document).ready(function(){
    $("#thedailymeal .row").prepend('<div class="col-lg-2 d-none d-lg-block border-medieval"></div>');
    $("#thedailymeal .row").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
    document.getElementById("maintitle").innerHTML = '<span><img src="imgs/MedievalBackgrounds/T.png" alt=""></span>he Daily Meal';
- }
- else if (document.getElementById("whichstylehome").getAttribute("href")=="css/homeimmerseave.css"){
+  }
+  else if (document.getElementById("whichstylehome").getAttribute("href")=="css/homeimmerseave.css"){
    /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
    $(".loadingscreen").remove();
    $("#rain").remove();
-   $('#makeitrain').remove();
+   $('#toremove1').remove();
+   $('#toremove2').remove();
    $('#content').removeAttr("style");
 
    /*adding an introductive loading screen, that contains the audio for this style*/
    $(".content").addClass("d-none");
    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
+   $("body").click(function(){
+     document.getElementById('wavessound').play();
+   });
    /*adding a button for the rain functionality*/
-   $("#dropdownMenuButton2").after('<div class="justify-content px-4"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="yes" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove1"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="no" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+   /*adding a button to mute the sound*/
+   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove2"><button  class="btn btn-secondary" type="button" id="turnsound" onclick="toggleSound()"><svg id="soundoff" display="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/></svg><svg id="soundon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg></button></div>');
    /*rain, initialized as not displayed*/
    $("body").prepend('<div class="content rain d-none" id="rain"></div>');
 
@@ -94,14 +100,17 @@ function changestyle(name){
     /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
     $(".loadingscreen").remove();
     $("#rain").remove();
-    $('#makeitrain').remove();
+    $('#toremove1').remove();
+    $('#toremove2').remove();
     $('#content').removeAttr("style");
 
     /*adding an introductive loading screen, that contains the audio for this style*/
     $(".content").addClass("d-none");
     $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
     /*adding a button for the rain functionality*/
-    $("#dropdownMenuButton2").after('<div class="justify-content px-4"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="yes" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+    $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove1"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="no" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+    /*adding a button to mute the sound*/
+    $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove2"><button  class="btn btn-secondary" type="button" id="turnsound" onclick="toggleSound()"><svg id="soundoff" display="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/></svg><svg id="soundon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg></button></div>');
     /*rain, initialized as not displayed*/
     $("body").prepend('<div class="content rain d-none" id="rain"></div>');
 
@@ -129,25 +138,20 @@ function changestyle(name){
     $(".loadingscreen").remove();
     $(".header hr").remove();
     $("#rain").remove();
-    $('#makeitrain').remove();
+    $('#toremove1').remove();
+    $('#toremove2').remove();
     $('#content').removeAttr("style");
   }
-  /*if (name == 'homepopart.css' || name == 'homebauhaus.css' || name == 'homecioestyle.css'){
-    document.getElementById('homestylebase').setAttribute("href", "");
-  }
-  else{
-    document.getElementById('homestylebase').setAttribute("href", "./css/home.css");
-  */
   document.getElementById('whichstylehome').setAttribute("href", "css/"+name);
 };
 /*function dedicated to the rain functionality of the immerseave style - inspired by https://webdesigntips.blog/videos/pure-css-rain-animation-with-lighting-rain-effect-with-html5-and-css3-no-javascript/ by Amit Ghosh*/
 function makeitrain(){
   /*checking if the rain button is set on rain or not*/
-  if(document.getElementById("rain").getAttribute("rain")=="no"){
+  if(document.getElementById("makeitrain").getAttribute("rain")=="no"){
     /*set the storm gif as background of the page*/
     $("#contenthome").css("background-image", "url('imgs/immerseave/storm.gif')");
     /*change the value of the rain button*/
-    document.getElementById("rain").setAttribute("rain", "yes");
+    document.getElementById("makeitrain").setAttribute("rain", "yes");
     /*display the rain*/
     $("#rain").removeClass("d-none");
     /*change the image displayed on the button and adapt its width*/
@@ -160,7 +164,7 @@ function makeitrain(){
     /*change the background gif back to quiet sea*/
     $("#contenthome").css("background-image", "url('imgs/immerseave/4TF4.gif')");
     /*change the value of the rain button*/
-    document.getElementById("rain").setAttribute("rain", "no");
+    document.getElementById("makeitrain").setAttribute("rain", "no");
     /*hide the rain*/
     $("#rain").addClass("d-none");
     /*change the image displayed on the button and adapt its width*/
@@ -169,4 +173,14 @@ function makeitrain(){
     /*change the ambient sound to sea*/
     document.getElementById("wavessound").setAttribute("src", "sounds/mixkit-small-waves-harbor-rocks-1208.wav");
   }
-}
+};
+function toggleSound(){
+  if(document.getElementById("wavessound").muted){
+    document.getElementById("wavessound").muted = false;
+  }
+  else{
+    document.getElementById("wavessound").muted = true;
+  }
+  $('#soundoff').toggle();
+  $('#soundon').toggle();
+};

@@ -415,14 +415,14 @@ a:hover {
 .navbar .btn:hover, .navbar li:hover, .navbar a:hover{
   color:#fff;
 }
-.text img{
+.article img{
   max-width: -webkit-fill-available;
   transition: all .2s ease-in-out;
   margin-bottom: 1em;
   border-radius: 20px;
   box-shadow: 0.5em 0.3em 1em #33ccff;
 }
-.text img:hover{
+.article img:hover{
   transform: scale(1.1);
 }
 .dropdown{
@@ -577,4 +577,11 @@ a:hover {
   color: #9853b7;
   font-family: AeroviasBrasil;
   background-color: transparent;
+}
+#turnsound{
+  color:black;
+  border:none;
+}
+#turnsound:hover{
+  color:white;
 }

@@ -63,6 +63,7 @@ body {
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
   background-size: cover;
+  height:10vh;
 }
 
 #TDM {
@@ -146,7 +147,9 @@ button[name="futuristic"] {
     -webkit-text-stroke-color: transparent;
     transform: rotate(-5deg);
  }
-
+.carousel {
+  height:90vh;
+}
 .carousel-item {
   height: 90vh;
   min-height: 300px;

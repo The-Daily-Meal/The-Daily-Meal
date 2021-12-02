@@ -21,11 +21,11 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
 }
 
 .navbar{
-  padding-bottom:1em;
   background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
   background-repeat: repeat;
   background-size:contain;
   border: solid black;
+  height:10vh;
 }
 .nav-item, .dropdown-toggle, .dropdown-menu{
   border: solid black;
@@ -45,12 +45,12 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   background-color:inherit;
 }
 .carousel{
-  height: calc(100vh - 72px);
+  height: 90vh;
 }
 
 .carousel-item {
   background-color:transparent;
-  height: calc(100vh - 72px);
+  height: 90vh;
 }
 .carousel-item::before {
   opacity:0.2;
@@ -69,6 +69,7 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   text-align:center;
   color:#4D3D23;
   bottom:auto;
+  height:80vh;
 }
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/MedievalBackgrounds/Flourishly-Frame-2.svg");

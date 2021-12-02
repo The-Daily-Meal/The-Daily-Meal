@@ -89,8 +89,7 @@ body{
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   border-bottom: 8px solid #8B0000;
   border-radius: 5px;
-
-
+  height: 10vh;
 }
 
 .nav-item, #disclaimer, #TDM, #issuesnav{
@@ -138,7 +137,9 @@ color: #DCBA00;
   background-position: center;
   background-repeat: repeat;
 }
-
+.carousel{
+  height:90vh;
+}
 .carousel-item {
   height: 90vh;
   min-height:300px;
