@@ -320,4 +320,24 @@ $(document).ready(function(){
           $("#article1 span[class~="+selectAll+"]").css('background-color', 'transparent');
         }
     });
+    $('#article2body input[type="checkbox"]').click(function(){
+      var selectAll = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article2 span[class~="+selectAll+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article2 span[class~="+selectAll+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article3body input[type="checkbox"]').click(function(){
+      var selectAll = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article3 span[class~="+selectAll+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article3 span[class~="+selectAll+"]").css('background-color', 'transparent');
+        }
+    });
 });
