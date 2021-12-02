@@ -226,11 +226,12 @@ $(document).ready(function(){
 });
 /* heads and body, end third article */
 
+
 /* metadata: change background color */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name");
-        if ($(this).prop("checked") == true)
+        if ($(this).prop("checked") == true) //replace(/ /g,''); to remove white spaces
           {
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         }
