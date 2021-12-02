@@ -270,13 +270,13 @@ $(document).ready(function(){
           $(".metadata1 input[type='checkbox']").attr("disabled", true);
           $(".metadata1 input[type='checkbox']").slideToggle("disabled", true);
     }
-    else if($(this).prop("checked") == true){
-      $("#article1").css('opacity', '1');
-      $("#article1body").css('opacity', '1');
-      $(".metadata1 input[type='checkbox']").attr("disabled", false);
-      $(".metadata1 input[type='checkbox']").slideToggle("disabled", false);
-    }
-  });
+        else if($(this).prop("checked") == true){
+          $("#article1").css('opacity', '1');
+          $("#article1body").css('opacity', '1');
+          $(".metadata1 input[type='checkbox']").attr("disabled", false);
+          $(".metadata1 input[type='checkbox']").slideToggle("disabled", false);
+        }
+      });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
         $("#article2").css('opacity', '0.3');
@@ -284,13 +284,13 @@ $(document).ready(function(){
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").slideToggle('blocked', true);
   }
-    else if($(this).prop("checked") == true){
-      $("#article2").css('opacity', '1');
-      $("#article2body").css('opacity', '1');
-      $(".metadata2 input[type='checkbox']").attr("disabled", false);
-      $(".metadata2 input[type='checkbox']").slideToggle('blocked', false);
-  }
-});
+      else if($(this).prop("checked") == true){
+        $("#article2").css('opacity', '1');
+        $("#article2body").css('opacity', '1');
+        $(".metadata2 input[type='checkbox']").attr("disabled", false);
+        $(".metadata2 input[type='checkbox']").slideToggle('blocked', false);
+    }
+  });
         $('input[name="check3"]').click(function(){
         if($(this).prop("checked") == false){
           $("#article3").css('opacity', '0.3');
