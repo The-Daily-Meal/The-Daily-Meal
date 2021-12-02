@@ -225,10 +225,13 @@ $(document).ready(function(){
   });
 });
 /* heads and body, end third article */
+
+
+/* metadata: change background color */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name");
-        if ($(this).prop("checked") == true)
+        if ($(this).prop("checked") == true) //replace(/ /g,''); to remove white spaces
           {
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         }
@@ -256,6 +259,10 @@ $(document).ready(function(){
           $("span[about="+name+"]").css('background-color', 'transparent');
         }
     });
+
+
+
+/* metadata: opacity on unselected articles */
     $('input[name="check1"]').click(function(){
         if($(this).prop("checked") == false){
           $("#article1").css('opacity', '0.3');
@@ -288,7 +295,7 @@ $(document).ready(function(){
 });
 });
 
-
+/* metadata: scroll to different section (work in progress) */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var scrollTo = $(this).attr("name");
@@ -298,6 +305,60 @@ $(document).ready(function(){
         }
         else if($(this).prop("checked") == false){
           $("#article1 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article2body input[type="checkbox"]').click(function(){
+      var scrollTo = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article2 [id="+scrollTo+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article2 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article3body input[type="checkbox"]').click(function(){
+      var scrollTo = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article3 [id="+scrollTo+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article3 [id="+scrollTo+"]").css('background-color', 'transparent');
+        }
+    });
+});
+
+/* metadata: if I check a class, return me ALL the instances below that class */
+$(document).ready(function(){
+    $('#article1body input[type="checkbox"]').click(function(){
+      var selectAll = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article1 span[class~="+selectAll+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article1 span[class~="+selectAll+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article2body input[type="checkbox"]').click(function(){
+      var selectAll = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article2 span[class~="+selectAll+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article2 span[class~="+selectAll+"]").css('background-color', 'transparent');
+        }
+    });
+    $('#article3body input[type="checkbox"]').click(function(){
+      var selectAll = $(this).attr("name");
+        if ($(this).prop("checked") == true)
+          {
+          $("#article3 span[class~="+selectAll+"]").css('background-color', 'yellow');
+        }
+        else if($(this).prop("checked") == false){
+          $("#article3 span[class~="+selectAll+"]").css('background-color', 'transparent');
         }
     });
 });
