@@ -120,6 +120,7 @@ button[name="futuristic"] {
   background-image: url('../imgs/bauhaushome/navbar.png');
   background-size: cover;
   font-size: 15px;
+  height:10vh;
 }
 
 /* end body and navbar */
@@ -131,7 +132,9 @@ button[name="futuristic"] {
   	font-family: 'Bauhaus';
     text-transform: lowercase;
 }
-
+.carousel {
+  height:90vh;
+}
 .carousel-item {
   height: 90vh;
   min-height:300px;
@@ -160,7 +163,7 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:left;
-  height:75vh;
+  height:80vh;
   margin:auto;
   padding: 0px;
 

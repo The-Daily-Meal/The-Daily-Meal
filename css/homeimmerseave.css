@@ -51,6 +51,7 @@ body{
   background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
   padding-left: 5%;
   padding-right: 5%;
+  height:10vh;
 }
 .navbar .btn{
   background-image: linear-gradient(
@@ -85,14 +86,13 @@ body{
 }
 
 .carousel{
-  height: calc(100vh - 56px);
+  height:90vh;
 }
 
 .carousel-item {
   background-color:transparent;
-    height: calc(100vh - 56px);
-
-    padding-top: 2em;
+  height: 90vh;
+  padding-top: 2em;
 }
 .carousel-item::before {
   opacity:0.2;
@@ -100,6 +100,7 @@ body{
 .carousel-caption {
   color:#4D3D23;
   bottom: auto;
+  height: 80vh;
 }
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/immerseave/trout-sillouette.svg");
@@ -468,4 +469,12 @@ h1, h2, h3, h4, h5{
 .carousel-control-next-icon{
   background-image: url('../imgs/immerseave/seascape-bubbles1.svg');
   width:150%;
+}
+
+#turnsound{
+  color:black;
+  border:none;
+}
+#turnsound:hover{
+  color:white;
 }

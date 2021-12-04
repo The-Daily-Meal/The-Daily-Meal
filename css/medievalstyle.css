@@ -3,12 +3,12 @@
   src: url('../fonts/medieval/Hentimps_Circlet.ttf');
 }
 @font-face {
-  font-family: Goudy-initialen Regular;
-  src: url('../fonts/medieval/goudy-initialen.regular.ttf');
+  font-family: Mayflower Antique;
+  src: url('../fonts/medieval/mayflower-antique.regular.ttf');
 }
 @font-face {
-  font-family: Medieval Alphabet Regular;
-  src: url('../fonts/medieval/medievalalphabet.regular.ttf');
+  font-family: Adine-Kirnberg Regular;
+  src: url('../fonts/medieval/adine-kirnberg.regular.ttf');
 }
 body{
   height:100vh;
@@ -22,13 +22,13 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: url("FeatherQuill.cur"), pointer;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 .article{
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height: 85vh;
+  height: 83vh;
   margin:auto;
   padding:0.5em;
 }
@@ -60,20 +60,23 @@ a:hover{
 }
 
 img{
-  border: solid black;
+  border: 1px solid black;
   max-width: -webkit-fill-available;
 }
 .border-medieval{
   background-image: url("../imgs/MedievalBackgrounds/test2.jpg");
   background-size:cover;
   height:90vh;
-  border:solid black;
+  border:1.5px solid black;
   border-top:none;
 }
 h1, h2, h3, h4{
   font-size: inherit;
-  color: red;
+  font-family:Mayflower Antique;
+  color: #E13030;
   margin:0;
+  text-transform: uppercase;
+  text-align: center;
 }
 h1{
   font-size:1.5em;
@@ -81,25 +84,15 @@ h1{
 
 p::first-letter{
   float:left;
-  font-size:300%;
-  background-image: linear-gradient(
-   to right,
-   #ebd197 0,
-   #b48811 22%,
-   #a2790d 45%,
-   #bb9b49 50%,
-   #a2790d 55%,
-   #b48811  78%,
-   #ebd197 100%
-   );
-   color:transparent;
-     -webkit-background-clip:text;
-   color: gold;
-    -webkit-text-stroke-color: #5752FB;
-
-    font-family: Medieval Alphabet Regular;
-    font-weight:normal;
-    line-height: 1;
+  font-size:400%;
+  letter-spacing:2px;
+  color: #E13030;
+  font-family: Mayflower Antique;
+  font-weight:normal;
+  line-height: 0.9;
+}
+p:nth-of-type(even)::first-letter{
+  color:#2727A8;
 }
 p, h1, h2, h3, h4, h5 {
   margin-bottom: 0;
@@ -123,14 +116,19 @@ p, h1, h2, h3, h4, h5 {
   background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
   background-repeat: repeat;
   background-size:contain;
-  border: solid black;
+  border: 1.5px solid black;
   height: 10vh;
 }
-.navbar .btn{
-  border: solid black;
+.nav-item, .dropdown-toggle, .dropdown-menu{
+  border: 1.5px solid black;
   border-radius:5px;
   margin-left:1em;
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+  color:black;
+}
+.dropdown-item:hover{
+  background-color: inherit;
+  color:white;
 }
 table, th, td{
   border:1px solid black;
@@ -143,11 +141,29 @@ table{
   margin-top:2em;
 }
 
-.panel-heading, .panel-body {
-  margin-top: 0.5em;
-  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
-  border: solid black;
+.panel-heading, .panel-body{
+  margin-top: 0.3em;
+  background-color:rgba(124, 80, 36, 0.2);
+  border-radius:5px;
+  border:none;
 }
-.panel-body{
+.panel-body *{
   background:transparent;
+  border:none;
+  color:#4F3317;
+  text-transform: uppercase;
+  font-family: Mayflower Antique;
+  font-size:0.9em;
+}
+.panel-body h1{
+  color: #E13030;
+}
+.panel-heading{
+  text-decoration: underline;
+  text-decoration-thickness:1px;
+  font-family:Adine-Kirnberg Regular;
+  font-size:2rem;
+}
+a{
+  color: #E13030;
 }

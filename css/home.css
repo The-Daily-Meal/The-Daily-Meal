@@ -1,3 +1,7 @@
+
+.navbar{
+  height:10vh;
+}
 .navbar-nav .btn{
   background-color: white;
   color: black;
@@ -8,7 +12,7 @@
 }
 
 .carousel{
-  height: calc(100vh - 54px);
+  height: 90vh;
 }
 .carousel-item {
   min-height:300px;
@@ -16,7 +20,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-color: black;
-  height: calc(100vh - 54px);
+  height: 90vh;
 }
 
 .carousel-item::before {
