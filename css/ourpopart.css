@@ -531,14 +531,14 @@ th{
   padding: 3px;
   text-align: center;
   color: black;
-  background-color: #df0107;
+  background-color: #df0107; /*red*/
   border: solid 1px #c3c3c3;
 }
 
 .headArt2-2 {
   padding: 3px;
   text-align: center;
-  background-color: #f2e81c;
+  background-color: #f2e81c; /*yellow*/
   border: none;
 }
 
@@ -546,7 +546,7 @@ th{
 .headArt2-3 {
   padding: 3px;
   text-align: center;
-  background-color: #008ee7;
+  background-color: #008ee7; /*blue*/
   border: none;
 }
 
@@ -637,6 +637,27 @@ th{
 }
 #headp3-elements3 {
   background-color: #df0107;
+  border: none;
 }
+#headp1-climatechange1, #headp1-animals1, #headp2-cuisinetype2 {
+  background-color: #df0107;
+  border: none;
+}
+
+#headp1-cuisinetype1, #headp2-diets2 {
+  background-color:#f2e81c;
+  border: none;
+}
+
+#headp1-diets1, #headp2-report2 {
+  background-color: #008ee7;
+  border: none;
+}
+
+
+
+
+
+
 /* end third article */
 /* end metadata panel */

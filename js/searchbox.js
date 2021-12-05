@@ -233,8 +233,7 @@ $(document).ready(function(){
       var name = $(this).attr("name").replace(/\s/g, "");
         if ($(this).prop("checked") == true)
           {
-          var e = $("#article1 span").attr("about").replace(/\s/g, "");
-          alert(e);
+          $("#article1 span").attr("about").replace(/\s/g, "");
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         }
         else if($(this).prop("checked") == false){
@@ -348,7 +347,7 @@ $(document).ready(function(){
 });
 
 /* metadata: if I check a class, return me ALL the instances below that class */
-/*$(document).ready(function(){
+$(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var selectAll = $(this).attr("name");
         if ($(this).prop("checked") == true)
@@ -379,4 +378,4 @@ $(document).ready(function(){
           $("#article3 span[class~="+selectAll+"]").css('background-color', 'transparent');
         }
     });
-});*/
+});
