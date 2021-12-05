@@ -212,8 +212,11 @@ p{
 }
 
 .carousel-caption p{
+  margin-top: 10%;
   font-size: 18px;
   text-align: justify;
+  border: ridge 5px #FF00EC;
+  background-color: #8FFE87;
 }
 
 .slider-btn {
