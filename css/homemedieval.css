@@ -6,6 +6,14 @@
   font-family: Goudy-initialen Regular;
   src: url('../fonts/medieval/goudy-initialen.regular.ttf');
 }
+@font-face {
+  font-family: Mayflower Antique;
+  src: url('../fonts/medieval/mayflower-antique.regular.ttf');
+}
+@font-face {
+  font-family: Adine-Kirnberg Regular;
+  src: url('../fonts/medieval/adine-kirnberg.regular.ttf');
+}
 body{
   font-family: Hentimps Circlet;
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
@@ -92,24 +100,45 @@ h1{
 }
 p::first-letter{
   font-size:200%;
-    font-family: Goudy-initialen Regular;
-    font-weight:normal;
-    line-height: 0.75;
+  font-family: Mayflower Antique;
+  color: #E13030;
+  line-height: 0.6;
 }
-.slider-btn{
-  text-align:center;
+h1, h2, h3, h4{
+  font-family:Mayflower Antique;
+  color: #E13030;
+  margin:0;
+  text-transform: uppercase;
+  text-align: center;
 }
-.slider-btn .btn-1, .slider-btn .btn-2, .slider-btn .btn-3{
-  background-color:transparent;
+.slider-btn .btn{
+  font-size: 1.5rem;
+}
+.slider-btn .btn-1::first-letter, .slider-btn .btn-2::first-letter, .slider-btn .btn-3::first-letter{
+  font-family: Goudy-initialen Regular ;
+  letter-spacing: -40px;
+  color:transparent;
   background-image: url("../imgs/MedievalBackgrounds/H.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  font-size: 2em;
+  font-size: 10rem;
+  vertical-align: -3rem;
 }
-.slider-btn .btn-2{
+.slider-btn .btn-2::first-letter{
   background-image: url("../imgs/MedievalBackgrounds/P.png");
 }
-.slider-btn .btn-3{
+.slider-btn .btn-3::first-letter{
   background-image: url("../imgs/MedievalBackgrounds/I.png");
+}
+#maintitle::first-letter{
+  background-image: url('../imgs/MedievalBackgrounds/T.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  color:transparent;
+  font-size: 11rem;
+  font-family:Hentimps Circlet;
+}
+#maintitle{
+  padding-top:2rem;
+  font-size:3rem;
 }
