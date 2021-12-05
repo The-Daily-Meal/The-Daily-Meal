@@ -99,6 +99,7 @@ button[name="belleepoque"] {
   border: 3px solid black;
 }
 
+
 button[name="bauhaus"] {
   color: black;
   background-color: rgb(190, 30, 45);
@@ -122,6 +123,10 @@ button[name="futuristic"] {
   color: black;
    background-color: rgb(190, 30, 45);
    border: 3px solid black;
+}
+
+button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
+  color: white;
 }
 /* end body and navbar */
 
