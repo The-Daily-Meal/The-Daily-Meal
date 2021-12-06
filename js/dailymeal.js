@@ -1,5 +1,5 @@
 function keepstyle(whichstyle){
-  var style= document.getElementById(whichstyle).getAttribute("href").replace(/ourcss|our|style|css\/|\.css/g, "");
+  var style= document.getElementById('whichstyle').getAttribute("href").replace(/ourcss|our|style|css\/|\.css/g, "");
   if (style == "cioe"){
     style+="style";
   }
@@ -75,6 +75,7 @@ function changestyle(name) {
     $(".content > .container > .row:last .col-4:first-of-type .thing1_title").before('<img src="imgs/MedievalBackgrounds/th.jpg" style="border-radius: 40% 40% 0% 0%;" alt="medieval food image 1" id="medimg1">');
     $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").before('<img src="imgs/MedievalBackgrounds/th (1).jpg" style="border-radius: 40% 40% 0% 0%;" alt="medieval food image 2" id="medimg2">');
     $(".content > .container > .row:last .col-4:nth-of-type(3) .thing1_title").before('<img src="imgs/MedievalBackgrounds/1648a031180fd7bb6f201c0534889b88.jpg" style="border-radius: 40% 40% 0% 0%;" alt="medieval food image 3" id="medimg3">');
+
   }
   /*otherwise remove decorations linked to medieval style only*/
   else{
