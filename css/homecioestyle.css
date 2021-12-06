@@ -120,7 +120,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 .carousel-item::before {
-  content: "";
+  text-align: left;
   display: block;
   position: absolute;
   top: 0;
@@ -181,7 +181,8 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: #86FF62;
   background-size: cover;
   background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
-  font-family: HiddencocktailsItalicShadow;
+  font-family: "HiddencocktailsItalicShadow";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: #C10055;
   color: red;
   margin-right: 60%;
@@ -203,39 +204,41 @@ p{
 
 #maintitle {
   font-size: 110px;
-  /*background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');*/
-  background-color: yellow;
+  background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
   background-size: cover;
   font-style: "HiddencocktailsItalicShadow";
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .carousel-caption p{
+  margin-top: 10%;
   font-size: 18px;
   text-align: justify;
+  border: ridge 5px #FF00EC;
+  background-color: #8FFE87;
 }
 
 .slider-btn {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .btn-2, .btn-1, .btn-3{
   color: transparent;
-  background-color: #001BE0;
   border-radius: 50%;
+  font-family: "RampartOne";
   text: hidden;
-  font-size: 8px;
-  border: ridge 6px #FF00EC;
-  margin-right: 50%;
-  margin-left: 30%;
+  font-size: 18px;
+  border: ridge 8px #FF00EC;
+  height: 150px;
+  width: 150px;
+  padding: 1rem;
 }
 .btn-2{
   background-color: #00DEB9;
   background-image: url('../imgs/cioebackgrounds/pastaaa.28.43-removebg-preview.png');
-  background-size: 135px;
+  background-size: 130px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50%;
 }
 
 .btn-1{
@@ -243,30 +246,26 @@ p{
   background-image: url('../imgs/cioebackgrounds/Progetto_senza_titolo__1_-removebg-preview.png');
   background-size: 200px;
   background-repeat: no-repeat;
-  border-radius: 50%;
-  margin-right: 50%;
-  margin-left: 30%;
+  margin-right: 95%;
+  margin-left: 15%;
 }
 .btn-3{
   background-image: url('../imgs/cioebackgrounds/rainbow-colored-ice-cream-neon-sign_1262-19630.jpeg');
   background-size: 140px;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  margin-right: 95%;
+  margin-left: 15%;
 }
-
-.slider-btn .btn-1:hover{
-  font-style: "RampartOne";
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-1:focus, .btn-2:focus, .btn-3:focus{
   color: yellow;
+  font-family: "RampartOne";
 }
-.slider-btn .btn-2:hover{
-  font-style: "RampartOne";
-  color: yellow;
+.btn-2:hover{
+  background-color: #00DEB9;
 }
-.slider-btn .btn-3:hover{
-  font-style: "RampartOne";
-  color: yellow;
+.btn-1:hover{
+  background-color: #010CFF;
 }
-
 .carousel-control-prev-icon{
   background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
   transform: rotate(180deg);
