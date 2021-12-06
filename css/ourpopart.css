@@ -248,8 +248,6 @@ button[name="futuristic"] {
    column-count: 1;
 }
 
-
-
   img {
   width: 100%;
   height: auto;
@@ -417,8 +415,6 @@ a {
    text-align: right;
  }
 
-
-
 .table {
   padding: 5px;
   padding-right: 5px;
@@ -437,13 +433,12 @@ tr:nth-child(even){
 }
 
 th{
-  background-color: #df0107;
+  background-color: #D98FC5;
   border: 2px solid black;
 }
 
 /* end header2 */
 /* metadata panel */
-
 
 .container1 {
   display: fixed;
@@ -474,115 +469,26 @@ th{
 
 /* first article */
 
-.headArt1-1 {
+.headArt1-1, .headArt1-4, .headArt2-1, .headArt2-4, .headArt3-1, .headArt3-4, .headArt3-6, #headic3-places3, #headp1-climatechange1, #headp1-animals1, #headp2-report2, #headp3-cuisinetype3, #headic3-places3  {
   padding: 3px;
   text-align: center;
   color: black;
   background-color: #df0107;
-  border: solid 1px #c3c3c3;
+  border: none;  /*red*/
 }
 
-.headArt1-2 {
+.headArt1-2, .headArt1-5, .headArt2-2, .headArt2-5, .headArt3-2, .headArt3-5, #headic3-companies3, #headp1-cuisinetype1, #headp2-cuisinetype2, #headp3-diets3 {
   padding: 3px;
   text-align: center;
   background-color: #f2e81c;
-  border: none;
+  border: none;   /*yellow*/
 }
 
-
-.headArt1-3 {
+.headArt1-3, .headArt1-6, .headArt2-3, .headArt2-6, .headArt3-3, #headic3-people2, #headp1-diets1, #headp2-diets2, #headb3-elements3, #headp3-report3 {
   padding: 3px;
   text-align: center;
   background-color: #008ee7;
-  border: none;
-}
-
-
-.headArt1-4 {
-  padding: 3px;
-  text-align: center;
-  background-color:  #df0107;
-  border: none;
-}
-
-.headArt1-5 {
-  padding: 3px;
-  text-align: center;
-  background-color: #f2e81c;
-  border: none;
-}
-
-
-.headArt1-6 {
-  padding: 3px;
-  text-align: center;
-  background-color: #008ee7;
-  border: none;
-}
-
-
-
-/* end first article */
-/* second article */
-
-
-
-.headArt2-1 {
-  padding: 3px;
-  text-align: center;
-  color: black;
-  background-color: #df0107; /*red*/
-  border: solid 1px #c3c3c3;
-}
-
-.headArt2-2 {
-  padding: 3px;
-  text-align: center;
-  background-color: #f2e81c; /*yellow*/
-  border: none;
-}
-
-
-.headArt2-3 {
-  padding: 3px;
-  text-align: center;
-  background-color: #008ee7; /*blue*/
-  border: none;
-}
-
-
-.headArt2-4 {
-  padding: 3px;
-  text-align: center;
-  background-color: #df0107;
-  border: none;
-}
-
-
-.headArt2-5 {
-  padding: 3px;
-  text-align: center;
-  background-color: #f2e81c;
-  border: none;
-}
-
-.headArt2-6 {
-  padding: 3px;
-  text-align: center;
-  background-color: #008ee7;
-  border: none;
-}
-
-/* end second article */
-/* third article */
-
-
-.headArt3-1 {
-  padding: 3px;
-  text-align: center;
-  color: black;
-  background-color:  #df0107;
-  border: solid 1px #c3c3c3;
+  border: none;/*blue*/
 }
 
 .subBodyArt3-1 {
@@ -593,71 +499,8 @@ th{
   font-size: 12px;
 }
 
-
-.headArt3-2 {
-  padding: 3px;
-  text-align: center;
-  background-color: #f2e81c;
-  border: none;
-}
-
-
-.headArt3-3 {
-  padding: 3px;
-  text-align: center;
-  background-color: #008ee7;
-  border: none;
-}
-
-
-.headArt3-4 {
-  padding: 3px;
-  text-align: center;
-  background-color: #df0107;
-  border: none;
-}
-
-
-.headArt3-5 {
-  padding: 3px;
-  text-align: center;
-  background-color: #f2e81c;
-  border: none;
-}
-
-.headArt3-6 {
-  padding: 3px;
-  text-align: center;
-  background-color: #008ee7;
-  border: none;
-}
-
 .subHeadArt1-3, .subHeadArt2-3, .subHeadArt3-3 {
   text-align: center;
 }
-#headp3-elements3 {
-  background-color: #df0107;
-  border: none;
-}
-#headp1-climatechange1, #headp1-animals1, #headp2-cuisinetype2 {
-  background-color: #df0107;
-  border: none;
-}
 
-#headp1-cuisinetype1, #headp2-diets2 {
-  background-color:#f2e81c;
-  border: none;
-}
-
-#headp1-diets1, #headp2-report2, #headp3-elements3,  {
-  background-color: #008ee7;
-  border: none;
-}
-
-
-
-
-
-
-/* end third article */
 /* end metadata panel */
