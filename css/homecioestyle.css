@@ -204,8 +204,7 @@ p{
 
 #maintitle {
   font-size: 110px;
-  /*background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');*/
-  background-color: yellow;
+  background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
   background-size: cover;
   font-style: "HiddencocktailsItalicShadow";
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
