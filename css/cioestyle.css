@@ -278,6 +278,19 @@ ul, ol{
   color: #DB207E;
   font-weight: bold;
 }
+.check1, .check2, .check3{
+  font-size: 6px; /*non va*/
+}
 .metadata h1{
   background-color: #FF0DC8;
+}
+
+.headArt1-1, .headArt2-2, .headArt3-3{
+  background-color: #94F489;
+}
+.headArt1-2, .headArt2-3, .headArt3-4{
+  background-color: #FFF56F;
+}
+.headArt1-3, .headArt2-4, .headArt3-5{
+  background-color: #D37CFF;
 }
