@@ -62,6 +62,12 @@ a:hover{
 img{
   border: 1px solid black;
   max-width: -webkit-fill-available;
+
+}
+figure img, .text img{
+    margin: 0 2em 0 2em;
+    opacity:0.8;
+    filter: sepia(20%);
 }
 .border-medieval{
   background-image: url("../imgs/MedievalBackgrounds/test2.jpg");
@@ -84,7 +90,7 @@ h1{
 
 p::first-letter{
   float:left;
-  font-size:400%;
+  font-size:380%;
   letter-spacing:2px;
   color: #E13030;
   font-family: Mayflower Antique;
