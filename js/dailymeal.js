@@ -71,11 +71,6 @@ function changestyle(name) {
     $(".col-lg-9").before("<div class='col-lg-2 d-none d-lg-block border-medieval'></div>");
     $(".col-lg-9").after("<div class='col-lg-1 d-none d-lg-block border-medieval'></div>");
 
-    /*$("img").each(function(){
-      var ref = $(this).attr("src").replace(".jpg","");
-      $(this).attr("src", ref+"med.jpg");
-    });*/
-
     /*adding medieval images to the headers of articles*/
     $(".content > .container > .row:last .col-4:first-of-type .thing1_title").before('<img src="imgs/MedievalBackgrounds/th.jpg" style="border-radius: 40% 40% 0% 0%;" alt="medieval food image 1" id="medimg1">');
     $(".content > .container > .row:last .col-4:nth-of-type(2) .thing1_title").before('<img src="imgs/MedievalBackgrounds/th (1).jpg" style="border-radius: 40% 40% 0% 0%;" alt="medieval food image 2" id="medimg2">');
