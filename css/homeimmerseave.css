@@ -101,6 +101,23 @@ body{
   color:#4D3D23;
   bottom: auto;
   height: 80vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
 }
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/immerseave/trout-sillouette.svg");

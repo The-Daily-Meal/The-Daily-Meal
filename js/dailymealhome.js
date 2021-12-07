@@ -80,8 +80,8 @@ function changestyle(name){
   if (name=='homemedieval.css' && document.getElementById('whichstylehome').getAttribute('href') != "css/homemedieval.css"){
     $("#mainhometext").wrap("<div class='row' id='rowmed'></div>");
     $("#mainhometext").wrap('<div class="col col-lg-9"></div>');
-    $("#thedailymeal .row").prepend('<div class="col-lg-2 d-none d-lg-block border-medieval"></div>');
-    $("#thedailymeal .row").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
+    $("#rowmed").prepend('<div class="col-lg-2 d-none d-lg-block border-medieval"></div>');
+    $("#rowmed").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
   }
   else if (document.getElementById("rowmed") && name!='homemedieval.css'){
     $(".border-medieval").remove();
