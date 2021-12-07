@@ -162,7 +162,7 @@ img{
 .btn{
   padding: 0;
 }
-.dropdown-item:hover{
+.dropdown-item:hover, #disclaimer:hover, #disclaimer:focus {
   background-color: #FF00EC;
   color: yellow;
 }
@@ -204,7 +204,7 @@ img{
   background-color: yellow;
   padding: 10px;
 }
-.dropdown-toggle, .dropdown-menu, .nav-disclaimer{
+.dropdown-toggle, .dropdown-menu{
   border: double black;
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
@@ -267,6 +267,15 @@ ul, ol{
 
 #ic2-referencesSection{
   column-count: 1;
+  word-wrap: break-word;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+#p1-seealso{
+  column-count: 1;
+  word-wrap: break-word;
+    line-height: 20px;
+    letter-spacing: -1px;
 }
 .panel-heading, .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3{
   background-color: #0088EC;

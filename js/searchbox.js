@@ -258,10 +258,17 @@ $(document).ready(function(){
         if ($(this).prop("checked") == true)
           {
           $("#article3 span[about="+name+"]").css('background-color', 'yellow');
-        }
+          }
         else if($(this).prop("checked") == false){
           $("#article3 span[about="+name+"]").css('background-color', 'transparent');
         }
+        //$('#body-sectionsArt1 input[type="checkbox"]').click(function(){
+          //  if ($(this).prop("checked") == true)
+          //    {
+          //    $('#body-sectionsArt1 input[type="checkbox"]').css('opacity', '0.3');
+          //  }
+          //});
+
     });
 
 
