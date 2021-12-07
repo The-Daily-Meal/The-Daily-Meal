@@ -2,7 +2,7 @@
 
 Repository dedicated to the Information Modeling and Web Technologies course taught by Prof. Fabio Vitali at the University of Bologna for the year 2020-2021.
 
-*[The Daily Meal](#https://the-daily-meal.github.io/)* is a magazine about food, with currently three issues, respectively about Pasta, Hamburger and Ice Cream. The magazine can adopt 6 different typographic styles, by clicking on each button of the navbar. For each issue, a metadata viewer allows the user to select topics and compare them among the articles. 
+*[The Daily Meal](https://the-daily-meal.github.io/)* is a magazine about food, with currently three issues, respectively about Pasta, Hamburger and Ice Cream. The magazine can adopt 6 different typographic styles, by clicking on each button of the navbar. For each issue, a metadata viewer allows the user to select topics and compare them among the articles. 
 
 The website is following the LLLL: Leisurely Luscious Literary Lens framework: 
 
