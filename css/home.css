@@ -19,8 +19,8 @@
   background: no-repeat scroll center scroll;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: black;
   height: 90vh;
+  background-color: #868B8E;
 }
 
 .carousel-item::before {
@@ -31,7 +31,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: #000;
+  background: #868B8E;
   opacity: 0.7;
 }
 
@@ -95,4 +95,7 @@
   background-color: white;
 
   font-size: 1rem;
+}
+.nav-link{
+  color:inherit;
 }

@@ -19,10 +19,10 @@ body{
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   cursor: url("FeatherQuill.cur"), pointer;
   color:#4D3D23;
   height:100vh;
+  overflow:hidden;
 }
 a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover{
   cursor: url("Feather Quill Writing.cur"), pointer;
@@ -32,7 +32,7 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   background-image: url("../imgs/MedievalBackgrounds/test4.jpg");
   background-repeat: repeat;
   background-size:contain;
-  border: solid black;
+  border: solid 1.5px black;
   height:10vh;
 }
 .nav-item, .dropdown-toggle, .dropdown-menu{
@@ -78,7 +78,25 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   color:#4D3D23;
   bottom:auto;
   height:80vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display:none;
+}
+
+::-webkit-scrollbar:hover{
+  display:inherit;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+
+}
+
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/MedievalBackgrounds/Flourishly-Frame-2.svg");
   height:20px;
@@ -90,7 +108,7 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   background-image: url("../imgs/MedievalBackgrounds/test2.jpg");
   background-size:cover;
   height:80vh;
-  border:solid black;
+  border:solid 1.5px black;
 }
 h1{
   font-size: 400%;

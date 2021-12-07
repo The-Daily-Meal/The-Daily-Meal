@@ -46,4 +46,4 @@ def searchmentions(document):
         print(my_dict['food ingredient'])
 
 if __name__ == '__main__':
-    searchmentions("scientificarticle.txt");
+    searchmentions("scientificarticle.txt")
