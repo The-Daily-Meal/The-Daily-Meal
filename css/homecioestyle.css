@@ -150,7 +150,8 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   text-align:left;
   height:80vh;
   margin:auto;
-  padding: 0px;
+  padding: 0;
+
 }
 
 .carousel-indicators [data-bs-target]{
@@ -339,4 +340,9 @@ p{
 #documentation h1, #documentation h2{
   margin-right: 30%;
   margin-left: 30%;
+}
+#documentation .carousel-caption{
+  height: 70vh;
+  top: 2rem;
+  bottom: 4.5rem;
 }
