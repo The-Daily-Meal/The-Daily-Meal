@@ -31,30 +31,7 @@
     font-display: swap;
 }
 
-
-@font-face {
-    font-family: 'Pop Art';
-    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
-        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
-        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Sweaty Belvin';
-    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
-        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
-        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 /* end fonts */
-
 /* body and navbar */
 
 body {
@@ -75,7 +52,6 @@ body {
 .navbar{
   padding-left: 6%;
   padding-right:6%;
-  padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
   background-size: cover;
@@ -159,14 +135,12 @@ button[name="futuristic"] {
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height: 84vh;
+  height: 85vh;
   margin: auto;
   padding: 1em;
   background-color: #008ee7;
   border: 3px solid black;
 }
-
-
 
 .container{
   display: grid;
@@ -180,13 +154,11 @@ button[name="futuristic"] {
 
 }
 
-
 .text {
   text-align: justify;
   width: 100%;
   height: 100%;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -256,7 +228,6 @@ button[name="futuristic"] {
   background-color: white;
 }
 
-
 a {
   word-break: break-all;
 }
@@ -266,9 +237,6 @@ a {
   text-align: left;
 }
 
-.no2columns {
-  column-count: 1;
-}
 
 a {
   color: black;
@@ -287,10 +255,7 @@ a {
   border-radius: 25px 30px 40px 20px;
 }
 
-
-
 /* end articles */
-
 
 /* header */
 .header {
@@ -377,7 +342,6 @@ a {
   font-size: 13px;
   background-color: #D98FC5;
   border: 3px solid black;
-
 }
 
 .header2 sup {
@@ -467,8 +431,7 @@ th{
   height:50vh;
 }
 
-/* first article */
-
+/* metadata panel */
 .headArt1-1, .headArt1-4, .headArt2-1, .headArt2-4, .headArt3-1, .headArt3-4, .headArt3-6, #headic3-places3, #headp1-climatechange1, #headp1-animals1, #headp2-report2, #headp3-cuisinetype3, #headic3-places3  {
   padding: 3px;
   text-align: center;
