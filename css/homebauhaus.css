@@ -191,9 +191,18 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
 }
 
 .carousel-caption h2 {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   font-family: 'Bauhaus';
+  margin-left: 200px;
+}
+
+.carousel-caption h3, h4 {
+  font-size: 20px;
+  font-family: "Bauhaus";
+  color: white;
+  background-color: black;
+  padding: 5px;
   margin-left: 200px;
 }
 
@@ -285,10 +294,46 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   text-align: center;
 }
 
-
-.nav-link {
-  text-align: right;
+#nav-tab {
+justify-content: end;
+border-bottom: transparent;
 }
 
 
+
+#nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
+  color: black;
+  font-family: "Bauhaus";
+}
+
+#nav-1480-tab:hover, #nav-1480-tab:focus {
+  background-color: rgb(255, 222, 23);
+  border: 3px solid black;
+}
+
+#nav-1880-tab:hover, #nav-1880-tab:focus {
+  color: white;
+  background-color: black;
+  border: 3px solid black;
+}
+
+#nav-1920-tab:hover, #nav-1920-tab:focus {
+  background-color: rgb(190, 30, 45);
+  border: 3px solid black;
+}
+#nav-1960-tab:hover, #nav-1960-tab:focus {
+  color: white;
+  background-color: rgb(33, 64, 154);
+  border: 3px solid black;
+}
+#nav-1990-tab:hover, #nav-1990-tab:focus {
+  color: white;
+  background-color: black;
+  border: 3px solid black;
+}
+
+#nav-2030-tab:hover, #nav-2030-tab:focus {
+  background-color: rgb(190, 30, 45);
+  border: 3px solid black;
+}
 /* end buttons slider issues */
