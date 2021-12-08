@@ -180,6 +180,10 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   border-radius: 10px;
 }
 
+.carousel-caption p{
+  border-left:0.3rem solid black;
+  padding-left:0.5rem;
+}
 .carousel-caption h1 {
   font-size: 50px;
   color: black;
@@ -244,6 +248,11 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
  a:hover {
    color: #bf3f34;
  }
+
+.palette {
+  padding: 1em;
+}
+
 
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");

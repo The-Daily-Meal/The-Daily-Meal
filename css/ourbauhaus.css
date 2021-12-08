@@ -255,6 +255,18 @@ figure {
 	font-size: 12px;
 }
 
+.section p:nth-child(odd) {
+  padding: 1em;
+  border-top: 0.4rem solid black;
+  border-left: 0.4rem solid black;
+}
+
+.section p:nth-child(even) {
+  padding: 1em;
+  border-top: 0.4rem solid black;
+  border-right: 0.4rem solid black;
+}
+
 .subsection_heading::before{
 content: '';
 display: inline-block;
