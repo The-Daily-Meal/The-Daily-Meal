@@ -38,7 +38,7 @@ body {
 
 #TDM {
   color: black;
-   background-color: rgb(190, 30, 45);
+   background-color: #BF3F34;
    border: 3px solid black;
 }
 
@@ -84,7 +84,7 @@ button[name="belleepoque"] {
 
 button[name="bauhaus"] {
   color: black;
-  background-color: rgb(190, 30, 45);
+  background-color: #BF3F34;
   border: 3px solid black;
 }
 
@@ -103,7 +103,7 @@ button[name="cioe"] {
 
 button[name="futuristic"] {
   color: black;
-   background-color: rgb(190, 30, 45);
+   background-color: #BF3F34;
    border: 3px solid black;
 }
 
@@ -269,7 +269,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
 
 .slider-btn .btn-1 {
   padding: 2em 2em;
-  background-color: rgb(190, 30, 45);
+  background-color: #BF3F34;
   border-radius: 100%;
   width: 150px;
   height: 150px;
@@ -318,7 +318,7 @@ border-bottom: transparent;
 }
 
 #nav-1920-tab:hover, #nav-1920-tab:focus {
-  background-color: rgb(190, 30, 45);
+  background-color: #BF3F34;
   border: 3px solid black;
 }
 #nav-1960-tab:hover, #nav-1960-tab:focus {
@@ -333,7 +333,7 @@ border-bottom: transparent;
 }
 
 #nav-2030-tab:hover, #nav-2030-tab:focus {
-  background-color: rgb(190, 30, 45);
+  background-color: #BF3F34;
   border: 3px solid black;
 }
 /* end buttons slider issues */
