@@ -20,6 +20,26 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Pop Art';
+    src: url('../fonts/popart/PopArt-Regular.woff2') format('woff2'),
+        url('../fonts/popart/PopArt-Regular.woff') format('woff'),
+        url('../fonts/popart/PopArt-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sweaty Belvin';
+    src: url('../fonts/popart/SweatyBelvinRegular.woff2') format('woff2'),
+        url('../fonts/popart/SweatyBelvinRegular.woff') format('woff'),
+        url('../fonts/popart/SweatyBelvinRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* end fonts */
 
 /* body and navbar */
@@ -37,6 +57,9 @@ body {
 
 
 .navbar{
+  padding-left: 0px;
+  padding-right:0px;
+  padding-top: 1em;
   font-family: 'BadaBoom BB';
   background-image: url('../imgs/popartbackgrounds/navbar.png');
   background-size: cover;
@@ -111,43 +134,19 @@ button[name="futuristic"] {
   background-image: url('../imgs/popartbackgrounds/bubble3.jpg');
   background-size: cover;
 }
+
 /* end body and navbar */
+
 /* carousel settings */
 
-
  .item_heading {
-    font-family: 'BadaBoom BB';
-    color: white;
-    margin-top: 50px;
+   	font-family: 'BadaBoom BB';
+    color: transparent;
     font-size: 200px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: transparent;
     transform: rotate(-5deg);
-    text-align: center;
  }
-
- #maintitle {
-   font-size: 110px;
-   text-align: center;
-   color: black;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
-   color: black;
- }
-
-#issuesheading, #teamheading {
-   color: transparent;
- }
-
- #documentationheading {
-   font-size: 80px;
-   text-align: center;
-   color: black;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
-   color: black;
- }
-
 .carousel {
   height:90vh;
 }
@@ -158,14 +157,11 @@ button[name="futuristic"] {
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'P22 Pop Art Comic';
-}
-
-#dmsection p {
-  text-align: center;
+  text-align: right;
 }
 
 #thedailymeal {
-  background-image: url('../imgs/popartbackgrounds/altrosun.jpg');
+  background-image: url('../imgs/popartbackgrounds/sun.jpg');
   background-size: cover;
 }
 
@@ -175,9 +171,6 @@ button[name="futuristic"] {
 }
 
 #documentation {
-  /* gradient
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op3.jpg');
-  */
   background-image: url('../imgs/popartbackgrounds/wow.jpg');
 }
 
@@ -233,6 +226,16 @@ button[name="futuristic"] {
   text-align: right;
 }
 
+#maintitle {
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
+
+}
+
 /* end carousel settings */
 /* buttons slider issues */
 
@@ -274,8 +277,6 @@ button[name="futuristic"] {
   background-position: center;
 }
 
-.tab-pane {
-  color: black;
-}
+
 
 /* end buttons slider issues */
