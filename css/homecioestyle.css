@@ -150,7 +150,8 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   text-align:left;
   height:80vh;
   margin:auto;
-  padding: 0px;
+  padding: 0;
+
 }
 
 .carousel-indicators [data-bs-target]{
@@ -230,7 +231,7 @@ p{
   text-align: justify;
   border: solid 5px #E469F7;;
   border-radius: 10px 10px 10px 10px;
-  background-color: #8FFE87;
+  background-color: #94F489;
 }
 
 .slider-btn {
@@ -292,4 +293,56 @@ p{
 
     background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
     background-blend-mode: hard-light;
+}
+/*documentation page*/
+
+#nav-1480-tab, #nav-1960-tab{
+
+    border: double black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #D37CFF;
+    padding: 10px;
+    color: black;
+    font-family: "RampartOne";
+}
+#nav-1880-tab, #nav-1990-tab{
+
+    border: double black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #FFF56F;
+    padding: 10px;
+    color: black;
+    font-family: "RampartOne";
+}
+#nav-1920-tab, #nav-2030-tab{
+
+    border: double black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #94F489;
+    padding: 10px;
+    color: black;
+    font-family: "RampartOne";
+}
+.tab-content p{
+  margin: 5%;
+}
+.nav-tabs{
+  border:none;
+  margin-left: 30%;
+}
+.tab-pane p{
+  margin: 5%;
+  margin-bottom: 10%;
+}
+#documentation p{
+  margin: 5%;
+}
+#documentation h1, #documentation h2{
+  margin-right: 30%;
+  margin-left: 30%;
+}
+#documentation .carousel-caption{
+  height: 70vh;
+  top: 2rem;
+  bottom: 4.5rem;
 }
