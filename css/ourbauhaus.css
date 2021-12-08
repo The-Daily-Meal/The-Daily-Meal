@@ -267,7 +267,13 @@ background-color: black;
 margin-right: 10px;
 }
 
+a {
+  color: black
+}
 
+a:hover {
+  color: #bf3f34;
+}
 
 /*end articles */
 

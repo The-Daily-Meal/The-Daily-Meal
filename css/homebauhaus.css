@@ -204,6 +204,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   background-color: black;
   padding: 5px;
   margin-left: 200px;
+  display: inline-block;
 }
 
 
@@ -221,13 +222,28 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
 
 }
 
-
 .carousel-caption p {
   font-size: 15px;
   text-align: justify;
   color: black;
   margin-left: 200px;
 }
+
+.fonts, .layout, .colors, .fonts{
+  margin: 0px;
+}
+
+.images {
+  padding: 10px;
+ }
+
+ a {
+   color: black
+ }
+
+ a:hover {
+   color: #bf3f34;
+ }
 
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");
