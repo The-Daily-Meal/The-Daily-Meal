@@ -122,6 +122,9 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   background-repeat: no-repeat;
   background-position: center;
 }
+#documentation{
+  background-image: url('../imgs/cioebackgrounds/documentationpage.png');
+}
 
 #team{
   background-image: url('../imgs/cioebackgrounds/teamcover1.png');
