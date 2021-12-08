@@ -171,10 +171,7 @@ button[name="futuristic"] {
 }
 
 #documentation {
-  /* gradient
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/op3.jpg');
-  */
-  background-image: url('../imgs/popartbackgrounds/documentation.jpg');
+  background-image: url('../imgs/popartbackgrounds/wow.jpg');
 }
 
 #team {
@@ -279,5 +276,7 @@ button[name="futuristic"] {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
 
 /* end buttons slider issues */
