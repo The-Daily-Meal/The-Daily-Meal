@@ -280,4 +280,8 @@ button[name="futuristic"] {
   background-position: center;
 }
 
+.tab-pane {
+  color: black;
+}
+
 /* end buttons slider issues */
