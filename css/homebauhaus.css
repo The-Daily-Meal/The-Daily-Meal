@@ -250,7 +250,11 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
  }
 
 .palette {
-  
+  padding: 1em;
+}
+
+img {
+  padding: 10px;
 }
 
 
