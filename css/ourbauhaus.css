@@ -52,7 +52,7 @@ body {
 #TDM {
   color: black;
    background-color: #BF3F34;
-   border: 3px solid black;
+   /* border: 3px solid black; */
    text-transform: lowercase;
 }
 
@@ -63,7 +63,7 @@ body {
   margin-left: 1em;
   border-radius: 4px;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   padding: 7px;
 }
 
@@ -71,7 +71,7 @@ body {
 #issuesnav {
   color: white;
   background-color: rgb(33, 64, 154);
-  border: 3px solid black;
+  /* border: 3px solid black; */
   text-transform: lowercase;
 }
 
@@ -87,40 +87,40 @@ body {
 button[name="medieval"] {
   color: black;
   background-color: rgb(255, 222, 23);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 
 button[name="belleepoque"] {
   color: white;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 
 button[name="bauhaus"] {
   color: black;
   background-color: #BF3F34;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 
 button[name="popart"] {
   color: white;
   background-color: rgb(33, 64, 154);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="cioe"] {
   color: white;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="futuristic"] {
   color: black;
    background-color: #BF3F34;
-   border: 3px solid black;
+   /* border: 3px solid black; */
 }
 
 button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
@@ -351,7 +351,7 @@ a:hover {
   background-color: rgb(33, 64, 154);
   grid-column: 1;
   grid-row: 3 / span 6;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 .header .bottom_bar2 {
   display: block;
@@ -362,7 +362,7 @@ a:hover {
   grid-row: 7;
   align-self: end;
   z-index: -1;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 .header .top_bar3 {
@@ -374,7 +374,7 @@ a:hover {
  grid-row: 1;
  align-self: end;
  z-index: -1;
- border: 3px solid black;
+ /* border: 3px solid black; */
 }
 
 .header .circle1 {
@@ -385,7 +385,7 @@ a:hover {
   grid-column: 6 / span 5;
   grid-row: 4;
   align-self: center;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   transform: rotate(-90deg);
 }
 
@@ -399,7 +399,7 @@ a:hover {
  grid-row: 4;
  align-self: center;
  z-index: -1;
- border: 3px solid black;
+ /* border: 3px solid black; */
 }
 
 .header2 sup {

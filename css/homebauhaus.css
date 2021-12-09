@@ -39,7 +39,7 @@ body {
 #TDM {
   color: black;
    background-color: #BF3F34;
-   border: 3px solid black;
+   /* border: 3px solid black; */
   text-transform: lowercase;
 }
 
@@ -47,7 +47,7 @@ body {
 #issuesnav {
   color: white;
   background-color: rgb(33, 64, 154);
-  border: 3px solid black;
+  /* border: 3px solid black; */
   text-transform: lowercase;
 }
 
@@ -58,7 +58,7 @@ body {
   margin-left: 1em;
   border-radius: 4px;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   padding: 7px;
 }
 
@@ -75,38 +75,38 @@ body {
 button[name="medieval"] {
   color: black;
   background-color: rgb(255, 222, 23);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="belleepoque"] {
   color: white;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="bauhaus"] {
   color: black;
   background-color: #BF3F34;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="popart"] {
   color: white;
   background-color: rgb(33, 64, 154);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="cioe"] {
   color: white;
   color: black;
   background-color: rgb(255, 222, 23);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 button[name="futuristic"] {
   color: black;
    background-color: #BF3F34;
-   border: 3px solid black;
+   /* border: 3px solid black; */
 }
 
 button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
@@ -223,7 +223,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   writing-mode: vertical-lr;
   position: absolute;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   padding: 10px;
 
 }
@@ -259,6 +259,12 @@ img {
   padding: 10px;
 }
 
+figcaption {
+  color: black;
+
+}
+
+
 
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");
@@ -292,7 +298,7 @@ img {
  font-family: 'Bauhaus';
  text-transform: lowercase;
   margin-right: 1em;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   text-align: center;
   font-size: 20px;
 }
@@ -339,32 +345,32 @@ border-bottom: transparent;
 
 #nav-1480-tab:hover, #nav-1480-tab:focus {
   background-color: rgb(255, 222, 23);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 #nav-1880-tab:hover, #nav-1880-tab:focus {
   color: white;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 #nav-1920-tab:hover, #nav-1920-tab:focus {
   background-color: #BF3F34;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 #nav-1960-tab:hover, #nav-1960-tab:focus {
   color: white;
   background-color: rgb(33, 64, 154);
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 #nav-1990-tab:hover, #nav-1990-tab:focus {
   color: white;
   background-color: black;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 #nav-2030-tab:hover, #nav-2030-tab:focus {
   background-color: #BF3F34;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 /* end buttons slider issues */

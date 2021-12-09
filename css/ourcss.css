@@ -43,10 +43,13 @@ img {
 width: 80%;
 height: auto;
 padding: 10px;
-margin: 10px;
 }
 
 .images {
+  padding: 10px;
+}
+
+.palette {
   padding: 10px;
 }
 
