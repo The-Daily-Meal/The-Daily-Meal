@@ -329,6 +329,16 @@ p{
 .nav-tabs{
   border:none;
   margin-left: 30%;
+
+}
+#nav-1480-tab .nav-link, #nav-1960-tab .nav-link, #nav-1880-tab .nav-link, #nav-1990-tab .nav-link, #nav-1920-tab .nav-link, #nav-2030-tab .nav-link{
+  transition: all .2s ease-in-out;
+}
+.nav-link:hover{
+    transform: scale(1.2);
+}
+#disclaimer:hover{
+    transform: none;
 }
 .tab-pane p{
   margin: 5%;
@@ -345,4 +355,12 @@ p{
   height: 70vh;
   top: 2rem;
   bottom: 4.5rem;
+}
+.tab-pane h3, .tab-pane h4{
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: "RampartOne";
+  text-transform: uppercase;
+  color: purple;
+
 }

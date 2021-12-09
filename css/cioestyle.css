@@ -134,12 +134,12 @@ p{
 p::first-letter{
   float: left;
   font-style: normal;
-  font-size:350%;
+  font-size:370%;
   color: #DB207E;
   font-family: ArchivoBlack;
   font-weight: lighter;
-  line-height: 0.65;
-  padding: 5px;
+  line-height: 0.78;
+  padding: 4px;
 }
 
 img{
@@ -163,22 +163,22 @@ img{
   padding: 0;
 }
 .dropdown-item:hover, #disclaimer:hover, #disclaimer:focus {
-  background-color: #FF00EC;
+  background-color: #FF0DC8   ;
   color: yellow;
 }
 .dropdown-item:focus{
-  background-color: #FF00EC;
+  background-color: #FF0DC8   ;
 }
 .btn:hover{
-  background-color: #FF00EC;
+  background-color: #FF0DC8   ;
   color: yellow;
 }
 
 .dropdown-toggle:hover{
-  background-color: #FF00EC;
+  background-color: #FF0DC8   ;
 }
 .dropdown-toggle:focus, .dropdown-menu:focus{
-  background-color: #FF00EC;
+  background-color: #FF0DC8   ;
   color: black;
 }
 
