@@ -40,6 +40,7 @@ body {
   color: black;
    background-color: #BF3F34;
    border: 3px solid black;
+  text-transform: lowercase;
 }
 
 
@@ -47,6 +48,7 @@ body {
   color: white;
   background-color: rgb(33, 64, 154);
   border: 3px solid black;
+  text-transform: lowercase;
 }
 
 #disclaimer {
