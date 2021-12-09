@@ -255,10 +255,10 @@ p{
   background-image: url('../imgs/belleepoquebackgrounds/c54796ca2c705661effbd1b45b8a335d.jpeg');
   background-size: cover;
   padding: 1rem 1rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: "Legrand";
   padding: 6%;
-  color: black;
+  color: white;
   filter: brightness(90%);
   margin-left: 10%;
 }
@@ -278,4 +278,75 @@ p{
     background-image: url('../imgs/belleepoquebackgrounds/png-clipart-eight-assorted-logos-collage-ornament-art-nouveau-art-deco-miscellaneous-heart-thumbnail.png');
     background-blend-mode: hard-light;
     transform: rotate(270deg);
+}
+/*documentation*/
+.nav-tabs{
+  border:none;
+  margin-left: 30%;
+  background-color: none;
+}
+.nav-link .active{
+
+  background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
+}
+#nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
+  color: #8B0000;
+  font-family: "Legrand";
+  background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
+}
+#nav-1480-tab:hover, #nav-1480-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nav-1880-tab:hover, #nav-1880-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nav-1920-tab:hover, #nav-1920-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#nav-1960-tab:hover, #nav-1960-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#nav-1990-tab:hover, #nav-1990-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#nav-2030-tab:hover, #nav-2030-tab:focus {
+  background-color: #AAB996;
+  border: 3px solid #8B0000;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#documentation .carousel-caption{
+  height: 70vh;
+  top: 2rem;
+  bottom: 4.5rem;
 }
