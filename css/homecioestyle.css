@@ -344,6 +344,10 @@ p{
   margin: 5%;
   margin-bottom: 10%;
 }
+.palette{
+  margin: 5%;
+  margin-bottom: 10%;
+}
 #documentation p{
   margin: 5%;
 }
@@ -363,4 +367,8 @@ p{
   text-transform: uppercase;
   color: purple;
 
+}
+.images{
+  margin-left: 20%;
+  margin-right: 10%;
 }
