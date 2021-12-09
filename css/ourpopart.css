@@ -187,7 +187,7 @@ button[name="futuristic"] {
   font-family: 'P22 Pop Art Comic Bold Italic';
   font-size: 20px;
   color: black;
-  background-color: white;
+  background-color: #f2e81c;
   border: 3px solid black;
   text-align: left;
   display: inline-block;
@@ -201,7 +201,7 @@ button[name="futuristic"] {
 .subsection_heading {
   font-family: 'P22 Pop Art Comic';
   color: black;
-  background-color: white;
+  background-color: #f2e81c;
   border: 3px solid black;
   font-size: 18px;
   display: inline-block;
