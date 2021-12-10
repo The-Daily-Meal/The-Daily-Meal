@@ -228,8 +228,20 @@ button[name="futuristic"] {
   background-color: white;
 }
 
+
 a {
+  color: black;
+  font-family: "P22 Pop Art Comic Bold Italic";
+  column-count: 1;
   word-break: break-all;
+}
+
+a:hover {
+  color: #d98fc5;
+}
+
+#disclaimer {
+  font-family: 'Badaboom BB';
 }
 
 .text p {
@@ -237,11 +249,6 @@ a {
   text-align: left;
 }
 
-
-a {
-  color: black;
-  column-count: 1;
-}
 
 .text h5 {
   font-size: 14px;

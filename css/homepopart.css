@@ -239,6 +239,18 @@ button[name="futuristic"] {
 .tab-pane p {
 padding: 10px;
 }
+
+a {
+  color: black;
+  font-family: "P22 Pop Art Comic Bold Italic";
+}
+
+a:hover {
+  color: #d98fc5;
+}
+#disclaimer {
+  font-family: 'Badaboom BB';
+}
 figcaption {
   background-color: #f2e81c;
   padding: 5px;
