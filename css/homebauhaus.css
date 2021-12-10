@@ -30,8 +30,8 @@ body {
   margin: auto;
   margin-left: 10%;
   margin-right: 10%;
-  background-image:url('../imgs/bauhaushome/sfondo5.jpg');
   background-image: url('../imgs/bauhaushome/sfondo5.jpg');
+  background-color: black;
   background-size: contain;
   text-transform: lowercase;
 }
@@ -210,6 +210,8 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
 }
 
 
+
+
 #maintitle {
   font-size: 60px;
   text-align: left;
@@ -337,12 +339,8 @@ justify-content: end;
 border-bottom: transparent;
 }
 
-.nav-tabs{
-  border:none;
-  background-image: url("../imgs/bauhaushome/navbar.png");
-}
 .nav-link .active{
-  background-image: url("../imgs/bauhaushome/navbar.png");
+background: url("../imgs/bauhaushome/navbar.png");
 }
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {

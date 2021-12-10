@@ -326,8 +326,9 @@ figcaption {
 .nav-tabs{
   border:none;
 }
-.nav-link .active{
-  background-image: url('../imgs/popartbackgrounds/blue.jpg');
+
+button[class="nav-link active"] {
+  background-color: black;
 }
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
