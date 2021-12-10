@@ -362,7 +362,7 @@ a:hover {
   grid-row: 7;
   align-self: end;
   z-index: -1;
-  /* border: 3px solid black; */
+  border: 3px solid black;
 }
 
 .header .top_bar3 {
