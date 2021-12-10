@@ -229,14 +229,16 @@ button[name="futuristic"] {
   font-size: 15px;
   text-align: center;
   color: black;
-  font-weight: bold;
   background-color: white;
-  display: inline-block;
   border: 1px solid black;
-  border-radius: 25px 30px 40px 20px;
-  text-align: right;
+  border-radius: 25px 30px 40px 20px;ù
+  padding: 1em;
+  display: inline-block;
 }
 
+.tab-pane p {
+padding: 10px;
+}
 figcaption {
   background-color: #f2e81c;
   padding: 5px;
@@ -305,6 +307,10 @@ figcaption {
   background-position: center;
 }
 
+/* buttons slider issues */
+
+/* buttons tab pane issues */
+
 .nav-tabs{
   border:none;
 }
@@ -331,4 +337,4 @@ figcaption {
   margin-top: 1em;
 }
 
-/* end buttons slider issues */
+/* buttons tab pane issues */
