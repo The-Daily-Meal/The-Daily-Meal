@@ -99,3 +99,8 @@
 .nav-link{
   color:inherit;
 }
+
+
+.tab-pane {
+  margin-top: 1em;
+}

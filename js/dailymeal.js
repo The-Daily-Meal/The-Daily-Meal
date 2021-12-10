@@ -52,7 +52,7 @@ function changestyle(name) {
 
   /*for the bauhaus style, add decorations for the headers of the articles*/
   if (name == "ourbauhaus.css"){
-    $("div.header").append('<b class="vertical_bar1"></b><b class="bottom_bar2"></b><b class="top_bar3"></b><b class="circle1"></b><b class="square"></b>');
+    $("div.header").append('<b class="vertical_bar1"></b><b class="bottom_bar2"></b><b class="top_bar3"></b><b class="circle1"></b><b class="square"></b><b class="newbar"></b>');
   }
   /*otherwise remove it*/
   else{
@@ -177,7 +177,7 @@ $(document).ready(function(){
 
   /*for the bauhaus style, add decorations for the headers of the articles*/
   else if (document.getElementById("whichstyle").getAttribute("href")=="css/ourbauhaus.css") {
-    $("div.header").append('<b class="vertical_bar1"></b><b class="bottom_bar2"></b><b class="top_bar3"></b><b class="circle1"></b><b class="square"></b>');
+    $("div.header").append('<b class="vertical_bar1"></b><b class="bottom_bar2"></b><b class="top_bar3"></b><b class="circle1"></b><b class="square"></b><b class="newbar"></b>');
   }
 
   /*for the futuristic immersive style*/

@@ -182,10 +182,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   border-radius: 10px;
 }
 
-.carousel-caption p{
-  border-left:0.3rem solid black;
-  padding-left:0.5rem;
-}
+
 .carousel-caption h1 {
   font-size: 50px;
   color: black;
@@ -210,7 +207,6 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   background-color: black;
   padding: 5px;
   margin-left: 200px;
-  display: inline-block;
 }
 
 
@@ -233,6 +229,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   text-align: justify;
   color: black;
   margin-left: 200px;
+  margin-top: 1em;
 }
 
 .fonts, .layout, .colors, .fonts{
@@ -331,12 +328,22 @@ figcaption {
   text-align: center;
 }
 
+.tab-pane {
+  margin-top: 1em;
+}
+
 #nav-tab {
 justify-content: end;
 border-bottom: transparent;
 }
 
-
+.nav-tabs{
+  border:none;
+  background-image: url("../imgs/bauhaushome/navbar.png");
+}
+.nav-link .active{
+  background-image: url("../imgs/bauhaushome/navbar.png");
+}
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
   color: black;

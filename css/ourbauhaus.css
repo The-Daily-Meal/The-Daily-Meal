@@ -351,7 +351,6 @@ a:hover {
   background-color: rgb(33, 64, 154);
   grid-column: 1;
   grid-row: 3 / span 6;
-  /* border: 3px solid black; */
 }
 .header .bottom_bar2 {
   display: block;
@@ -364,6 +363,7 @@ a:hover {
   z-index: -1;
   border: 3px solid black;
 }
+
 
 .header .top_bar3 {
  display: block;
@@ -410,6 +410,10 @@ a:hover {
 }
 .header2 h3 {
   font-size: 15px;
+}
+
+.header2 a {
+  font-size: 12px;
 }
 
 

@@ -40,7 +40,7 @@ body {
   margin-left: 5%;
   margin-right:5%;
   background-image: url('../imgs/popartbackgrounds/navbar.png');
-  background-size: cover;
+  background-size: contain;
   font-family: 'P22 Pop Art Comic';
 }
 
@@ -151,8 +151,8 @@ button[name="futuristic"] {
 }
 
 #thedailymeal {
- background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home2.jpg');
-  background-size: cover;
+ background: linear-gradient(rgba(236,236,236,.5), rgba(236,236,236,.5)),url('../imgs/popartbackgrounds/colors.jpg');
+  background-size: contain;
 }
 
 
@@ -161,8 +161,14 @@ button[name="futuristic"] {
 }
 
 #documentation {
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url('../imgs/popartbackgrounds/home4.jpeg');
-  background-size: cover;
+  background: linear-gradient(rgba(236,236,236,.5), rgba(236,236,236,.5)),url('../imgs/popartbackgrounds/colors.jpg');
+  background-size: contain;
+}
+
+#doc {
+
+  padding: 1em;
+  border-radius: 10px;
 }
 
 #team {
@@ -204,7 +210,7 @@ button[name="futuristic"] {
 }
 
 .carousel-caption h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "BadaBoom BB";
   color: black;
 }
@@ -213,7 +219,10 @@ button[name="futuristic"] {
   font-size: 25px;
   font-family: "P22 Pop Art Comic Bold Italic";
   color: black;
-  padding: 5px;
+  background-color: #f2e81c;
+  padding: 3px;
+  border: 3px solid black;
+  display: inline-block;
 }
 
 .carousel-caption p {
@@ -228,6 +237,14 @@ button[name="futuristic"] {
   text-align: right;
 }
 
+figcaption {
+  background-color: #f2e81c;
+  padding: 5px;
+  margin: 10px;
+  border: 3px solid black;
+  display: inline-block;
+}
+
 #maintitle {
   font-size: 100px;
   text-align: center;
@@ -237,7 +254,7 @@ button[name="futuristic"] {
   color: black;
 }
 
-#docheading {
+.documentation {
   font-family: 'BadaBoom BB';
  color: black;
  font-size: 70px;
@@ -288,6 +305,13 @@ button[name="futuristic"] {
   background-position: center;
 }
 
+.nav-tabs{
+  border:none;
+}
+.nav-link .active{
+  background-image: url('../imgs/popartbackgrounds/blue.jpg');
+}
+
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
   color: black;
   font-family: "BadaBoom BB";
@@ -298,12 +322,13 @@ button[name="futuristic"] {
   margin-bottom: 10px;
 }
 
-
 .nav-link:hover, .nav-link:focus  {
   color: black;
   background-color: #df0107;
 }
 
-
+.tab-pane {
+  margin-top: 1em;
+}
 
 /* end buttons slider issues */
