@@ -282,7 +282,7 @@ $(document).ready(function(){
           $("#article1").css('opacity', '0.3');
           $("#article1body").css('opacity', '0.3');
           $(".metadata1 input[type='checkbox']").attr("disabled", true);
-        //  $(".metadata1 input[type='checkbox']").slideToggle("disabled", true);
+          $(".metadata1 input[type='checkbox']").attr("checked", false);
     }
         else if($(this).prop("checked") == true){
           $("#article1").css('opacity', '1');
@@ -296,6 +296,8 @@ $(document).ready(function(){
         $("#article2").css('opacity', '0.3');
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
+        $(".metadata2 input[type='checkbox']").attr("checked", false);
+
       //  $(".metadata2 input[type='checkbox']").slideToggle('blocked', true);
   }
       else if($(this).prop("checked") == true){
@@ -310,6 +312,7 @@ $(document).ready(function(){
           $("#article3").css('opacity', '0.3');
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
+          $(".metadata3 input[type='checkbox']").attr("checked", false);
       //    $(".metadata3 input[type='checkbox']").slideToggle('blocked', true);
         }
         else if($(this).prop("checked") == true){
