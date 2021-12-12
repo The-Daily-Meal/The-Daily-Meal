@@ -151,7 +151,6 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   height:80vh;
   margin:auto;
   padding: 0;
-
 }
 
 .carousel-indicators [data-bs-target]{
@@ -214,7 +213,6 @@ p{
   font-family: DidactGothic;
   color: black;
   margin-right: 60%;
-  /*padding: 8px;*/
 }
 
 #maintitle {
@@ -323,9 +321,10 @@ p{
     color: black;
     font-family: "RampartOne";
 }
-.tab-content p{
-  margin: 5%;
+.tab-content p, .images{
+  margin-top: 5%;
 }
+
 .nav-tabs{
   border:none;
   margin-left: 30%;
@@ -342,14 +341,16 @@ p{
 }
 .tab-pane p{
   margin: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 0;
+  padding: 0.5rem;
 }
 .palette{
   margin: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 0;
 }
 #documentation p{
   margin: 5%;
+  margin-bottom: 0;
 }
 #documentation h1, #documentation h2{
   margin-right: 30%;
@@ -361,7 +362,7 @@ p{
   bottom: 4.5rem;
 }
 .tab-pane h3, .tab-pane h4{
-  padding-top: 0.5rem;
+  padding-top: 2rem;
   text-align: center;
   font-family: "RampartOne";
   text-transform: uppercase;
@@ -369,6 +370,18 @@ p{
 
 }
 .images{
-  margin-left: 20%;
+  margin: 4%;
+  margin-bottom: 0;
+}
+figcaption{
+  color: purple;
+  margin: 0;
+  margin-left: 13%;
+}
+.layoutimg{
   margin-right: 10%;
+  margin-left: 20%;
+}
+.logo{
+  margin: 0;
 }

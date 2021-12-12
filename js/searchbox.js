@@ -235,7 +235,7 @@ $(document).ready(function(){
           {
           $("#article1 span").attr("about").replace(/\s/g, "");
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
-          $("span[about="+name+"]").show("fast");
+          $("#span[about="+name+"]").slideDown("fast");
             alert('wewe');
         }
         else if($(this).prop("checked") == false){
