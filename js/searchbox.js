@@ -226,18 +226,16 @@ $(document).ready(function(){
 });
 /* heads and body, end third article */
 
-
 /* metadata: change background color */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name").replace(/\s+/g, "").toLowerCase();
-        if ($(this).prop("checked") == true)
+      var about = $("#article1 span").attr("about").replace(/\s+/g, "").toLowerCase();
+        if (($(this).prop("checked") == true) && ($(about) == $(name)))
           {
-          $("#article1 span").attr("about").replace(/\s+/g, "").toLowerCase();
-          $("#article1 span[about="+name+"]").css('background-color', 'yellow');
+          alert(name);
         }
         else if($(this).prop("checked") == false){
-          $("#article1 span").attr("about").replace(/\s/g, "");
           $("#article1 span[about="+name+"]").css('background-color', 'transparent');
         }
     });
@@ -257,7 +255,10 @@ $(document).ready(function(){
       var name = $(this).attr("name");
         if ($(this).prop("checked") == true)
           {
-          $("#article3 span[about="+name+"]").css('background-color', 'yellow');
+          var yu = $("#article3 span[about="+name+"]").css('background-color', 'yellow');
+          $('.text').animate({
+            scrollTop: $(yu).offset().top,
+            }, 2000);
           }
         else if($(this).prop("checked") == false){
           $("#article3 span[about="+name+"]").css('background-color', 'transparent');
