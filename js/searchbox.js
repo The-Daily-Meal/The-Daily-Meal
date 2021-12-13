@@ -235,8 +235,8 @@ $(document).ready(function(){
           {
           $("#article1 span").attr("about").replace(/\s/g, "");
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
-          $("#span[about="+name+"]").slideDown("fast");
-            alert('wewe');
+          //$("#span[about="+name+"]").slideDown("fast");
+          //  alert('wewe');
         }
         else if($(this).prop("checked") == false){
           $("#article1 span").attr("about").replace(/\s/g, "");
@@ -268,22 +268,18 @@ $(document).ready(function(){
           //    $('#body-sectionsArt1 input[type="checkbox"]').css('opacity', '0.3');
           //  }
           //});
-
     });
-
-
-
-
 
 
 /* metadata: opacity on unselected articles */
     $('input[name="check1"]').click(function(){
         if($(this).prop("checked") == false){
-          $('#article1').css('background-color', 'transparent');
+          //$("#article1").css('background-color', '');
           $("#article1").css('opacity', '0.3');
           $("#article1body").css('opacity', '0.3');
           $(".metadata1 input[type='checkbox']").attr("disabled", true);
           $(".metadata1 input[type='checkbox']").attr("checked", false);
+          $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false);
     }
         else if($(this).prop("checked") == true){
           $("#article1").css('opacity', '1');
@@ -298,6 +294,7 @@ $(document).ready(function(){
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").attr("checked", false);
+        $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
 
       //  $(".metadata2 input[type='checkbox']").slideToggle('blocked', true);
   }
@@ -314,6 +311,7 @@ $(document).ready(function(){
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
           $(".metadata3 input[type='checkbox']").attr("checked", false);
+          $(".body-sectionsArt3 input[type='checkbox']").attr("checked", false);
       //    $(".metadata3 input[type='checkbox']").slideToggle('blocked', true);
         }
         else if($(this).prop("checked") == true){
