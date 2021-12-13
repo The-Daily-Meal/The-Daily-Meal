@@ -4,24 +4,12 @@
   src: url("../fonts/immerseave/MontserratAlternates-Regular.ttf");
 }
 @font-face{
-  font-family:MontserratAlternates-SemiBold;
-  src: url("../fonts/immerseave/MontserratAlternates-SemiBold.ttf");
-}
-@font-face{
-  font-family:MontserratSubrayada;
-  src: url("../fonts/immerseave/MontserratSubrayada-Regular.ttf");
-}
-@font-face{
   font-family:Montserrat;
   src: url("../fonts/immerseave/Montserrat-Regular.ttf");
 }
 @font-face{
   font-family:Montserrat-Italic;
   src: url("../fonts/immerseave/Montserrat-Italic.ttf");
-}
-@font-face{
-  font-family:Montserrat-SemiBold;
-  src: url("../fonts/immerseave/Montserrat-SemiBold.ttf");
 }
 @font-face{
   font-family:ShaddedSouth;
@@ -53,12 +41,10 @@ body{
   padding-right: 5%;
   height:10vh;
 }
-.navbar .btn{
+.navbar .btn, #nav-1480-tab, #nav-1920-tab, #nav-1990-tab{
   background-image: linear-gradient(
    to right,
-   #462523 0,
-           #cb9b51 22%,
-   #f6e27a 45%,
+   #462523 0, #cb9b51 22%, #f6e27a 45%,
    #f6f2c0 50%,
    #f6e27a 55%,
    #cb9b51 78%,
@@ -67,11 +53,14 @@ body{
    color:transparent;
      -webkit-background-clip:text;
 }
-.navbar a, .navbar .btn[name="belleepoque"], .navbar .btn[name="popart"], .navbar .btn[name="futuristic"]{
+.navbar a, .navbar .btn[name="belleepoque"], .navbar .btn[name="popart"], .navbar .btn[name="futuristic"], #nav-1880-tab, #nav-1960-tab, #nav-2030-tab{
   background-image: linear-gradient(101deg, rgba(57,57,57,1) 0%, rgba(187,185,185,1) 30%, rgba(251,251,251,1) 50%, rgba(187,185,185,1) 70%, rgba(98,98,98,1) 100%);
   color:transparent;
     -webkit-background-clip:text;}
-.navbar .btn:hover, .navbar li:hover, .navbar a:hover{
+.navbar .btn:hover, .navbar li:hover, .navbar a:hover, .nav .nav-link:hover{
+  color:#fff;
+}
+#nav-1480-tab:hover, #nav-1920-tab:hover, #nav-1990-tab:hover, #nav-1880-tab:hover, #nav-1960-tab:hover, #nav-2030-tab:hover{
   color:#fff;
 }
 .dropdown{
@@ -98,26 +87,31 @@ body{
   opacity:0.2;
 }
 .carousel-caption {
-  color:#4D3D23;
-  bottom: auto;
-  height: 80vh;
+  color:white;
+  height: 70vh;
   overflow-y:scroll;
   overflow-x:hidden;
+  transition: all .2s ease-in-out;
+  opacity: 0.7;
+  background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+  margin:1rem;;
+  padding:1em;
+  border-radius:20px;
+  box-shadow: 0.5rem 0.3rem 1rem #33ccff;
+  bottom: auto;
+}
+.carousel-caption:hover{
+  transform: scale(1.1);
+  opacity: 1.0;
+}
+p{
+  font-family:Montserrat;
+  text-align:justify;
 }
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
   display:none;
-}
-
-::-webkit-scrollbar:hover{
-  display:inherit;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-
 }
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/immerseave/trout-sillouette.svg");
@@ -450,8 +444,9 @@ h1, h2, h3, h4, h5{
   outline:0;
 }
 
-.slider-btn{
+#issuesalign{
   text-align:center;
+  padding:0em;
 }
 .slider-btn .btn-1, .slider-btn .btn-2, .slider-btn .btn-3{
   background-color:transparent;
@@ -495,9 +490,18 @@ h1, h2, h3, h4, h5{
 #turnsound:hover{
   color:white;
 }
-img{
-  width: 100%;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
+.nav.nav-tabs{
+  border-bottom:none;
+  justify-content: center;
+  background: radial-gradient(circle, #4b6cb7 0%, #182848 100%);
+  border-radius:20px;
+  margin-left: 20%;
+  margin-right:20%;
+}
+.nav-tabs .nav-link.active{
+  color:white;
+  border-radius: 0.25em;
+}
+h3, h4, h5, h6{
+  padding-top:1rem;
 }

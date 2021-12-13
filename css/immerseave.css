@@ -5,24 +5,12 @@
   src: url("../fonts/immerseave/MontserratAlternates-Regular.ttf");
 }
 @font-face{
-  font-family:MontserratAlternates-SemiBold;
-  src: url("../fonts/immerseave/MontserratAlternates-SemiBold.ttf");
-}
-@font-face{
-  font-family:MontserratSubrayada;
-  src: url("../fonts/immerseave/MontserratSubrayada-Regular.ttf");
-}
-@font-face{
   font-family:Montserrat;
   src: url("../fonts/immerseave/Montserrat-Regular.ttf");
 }
 @font-face{
   font-family:Montserrat-Italic;
   src: url("../fonts/immerseave/Montserrat-Italic.ttf");
-}
-@font-face{
-  font-family:Montserrat-SemiBold;
-  src: url("../fonts/immerseave/Montserrat-SemiBold.ttf");
 }
 @font-face{
   font-family:ShaddedSouth;
@@ -417,9 +405,9 @@ a:hover {
 }
 .article img{
   width: 100%;
+  width: fill-available;
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
   transition: all .2s ease-in-out;
   margin-bottom: 1rem;
   border-radius: 20px;
