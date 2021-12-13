@@ -20,9 +20,10 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
   cursor: url("FeatherQuill.cur"), pointer;
-  color:#4D3D23;
+  color:#4F3317;
   height:100vh;
   overflow:hidden;
+  line-height:1.2em;
 }
 a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover{
   cursor: url("Feather Quill Writing.cur"), pointer;
@@ -48,7 +49,7 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
 .navbar-nav .btn:hover{
   background-color:inherit;
 }
-.dropdown-item:hover{
+.dropdown-item:hover, .nav-item .btn:hover, .nav-item .nav-link:hover{
   color:white;
   background-color:inherit;
 }
@@ -74,12 +75,12 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   width:200%;
 }
 .carousel-caption {
-  text-align:center;
-  color:#4D3D23;
+  text-align:justify;
   bottom:auto;
   height:80vh;
   overflow-y:scroll;
   overflow-x:hidden;
+  color:#4F3317;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -117,16 +118,24 @@ h1{
   margin:0;
 }
 p::first-letter{
-  font-size:200%;
+  font-size:380%;
+  letter-spacing:2px;
   font-family: Mayflower Antique;
   color: #E13030;
-  line-height: 0.6;
+  line-height: 0.9;
+  float:left;
+}
+p:nth-of-type(even)::first-letter{
+  color:#2727A8;
 }
 h1, h2, h3, h4{
   font-family:Mayflower Antique;
   color: #E13030;
   margin:0;
   text-transform: uppercase;
+  text-align: center;
+}
+.slider-btn{
   text-align: center;
 }
 .slider-btn .btn{
@@ -159,4 +168,24 @@ h1, h2, h3, h4{
 #maintitle{
   padding-top:2rem;
   font-size:3rem;
+}
+#nav-tabContent{
+  margin-top:2em;
+}
+a{
+  color: #E13030;
+}
+.nav.nav-tabs{
+  border-bottom:1px solid #4F3317;
+}
+.nav .nav-link.active{
+  color:inherit;
+  background-color:rgba(124, 80, 36, 0.2);
+  border-color:#4F3317;
+}
+.nav .nav-link{
+  color:inherit;
+}
+.nav .nav-link:hover{
+  border-color:#4F3317;
 }
