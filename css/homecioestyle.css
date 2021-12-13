@@ -361,7 +361,7 @@ p{
   top: 2rem;
   bottom: 4.5rem;
 }
-.tab-pane h3, .tab-pane h4{
+.tab-pane h3, .tab-pane h4, h5{
   padding-top: 2rem;
   text-align: center;
   font-family: "RampartOne";
