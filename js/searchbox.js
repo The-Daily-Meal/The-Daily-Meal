@@ -274,7 +274,7 @@ $(document).ready(function(){
 /* metadata: opacity on unselected articles */
     $('input[name="check1"]').click(function(){
         if($(this).prop("checked") == false){
-          //$("#article1").css('background-color', '');
+          $("#article1 [style='background-color: yellow;']").css('background-color', 'transparent');
           $("#article1").css('opacity', '0.3');
           $("#article1body").css('opacity', '0.3');
           $(".metadata1 input[type='checkbox']").attr("disabled", true);
@@ -290,6 +290,7 @@ $(document).ready(function(){
       });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
+        $("#article2 [style='background-color: yellow;']").css('background-color', 'transparent');
         $("#article2").css('opacity', '0.3');
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
@@ -307,6 +308,7 @@ $(document).ready(function(){
   });
         $('input[name="check3"]').click(function(){
         if($(this).prop("checked") == false){
+          $("#article3 [style='background-color: yellow;']").css('background-color', 'transparent');
           $("#article3").css('opacity', '0.3');
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);

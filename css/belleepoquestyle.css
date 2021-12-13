@@ -42,6 +42,11 @@
   src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.ttf') format('ttf');
   src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.woff') format('woff');
 }
+@font-face {
+  font-family: Soria;
+  src: url('../fonts/belleepoque/soria-font.ttf') format('ttf');
+  src:url('../fonts/belleepoque/transfonter.org-20211213-154849/Soria-Soria.woff') format('woff');
+}
 html{
   cursor: url("Red rose.cur"), pointer;
 }
@@ -52,7 +57,7 @@ body{
   margin: auto;
   margin-left: 7%;
   margin-right: 7%;
-  font-family: GlassAntiqua;
+  font-family: "GlassAntiqua";
   font-size: 18px;
   background-image: url("../imgs/belleepoquebackgrounds/4cf39fe0f3713be1560b744ca785f8bf.jpeg");
   background-image: url("../imgs/belleepoquebackgrounds/194151.jpeg");
@@ -78,7 +83,6 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 
 h1,h2,h3,h4{
   font-family: "Legrand";
-  text-transform: uppercase;
   color: #8B0000;
   text-align: left;
 }
@@ -211,10 +215,20 @@ color: #DCBA00;
   background-repeat: repeat;
 }
 .images, .images_hist{
-  padding: 10px;
-  padding-left: 5px;
+  padding: 15px;
+/*  padding-left: 5px;*/
   filter: grayscale(85%);
+  border-radius: 10px 10px 10px 10px;
+  border: black double;
+  margin-bottom: 5%;
+  /*background-color: #F4F2D4;*/
 }
+figcaption{
+  padding: 15px;
+  border-radius: 10px 10px 10px 10px;
+  border: black double;
+}
+
 .table {
   padding-bottom: 5px;
   padding-right: 5px;
