@@ -8,6 +8,12 @@ function keepstyle(whichstyle){
 function chooseslide(numslide){
   sessionStorage.setItem("slide", numslide);
 };
+function scrollUp(){
+  $(".panel-body").slideUp("slow");
+  $(".article").animate({scrollTop:0}, 1000);
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 /*function dedicated to the rain functionality of the immerseave style - inspired by https://webdesigntips.blog/videos/pure-css-rain-animation-with-lighting-rain-effect-with-html5-and-css3-no-javascript/ by Amit Ghosh*/
 function makeitrain(){
   /*checking if the rain button is set on rain or not*/
