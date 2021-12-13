@@ -24,7 +24,9 @@ $(document).ready(function(){
     $('.carousel-item').removeClass("active");
     $('.carousel-item:nth-of-type('+num+')').addClass("active");
     $('.carousel-indicators > button').removeClass("active");
+    $('.carousel-indicators > button').removeAttr("aria-current");
     $('.carousel-indicators > button:nth-of-type('+num+')').addClass('active');
+    $('.carousel-indicators > button:nth-of-type('+num+')').attr('aria-current', 'true');
     sessionStorage.removeItem('slide');
   }
 
