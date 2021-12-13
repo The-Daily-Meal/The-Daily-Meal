@@ -230,13 +230,11 @@ $(document).ready(function(){
 /* metadata: change background color */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
-      var name = $(this).attr("name").replace(/\s/g, "");
+      var name = $(this).attr("name").replace(/\s+/g, "").toLowerCase();
         if ($(this).prop("checked") == true)
           {
-          $("#article1 span").attr("about").replace(/\s/g, "");
+          $("#article1 span").attr("about").replace(/\s+/g, "").toLowerCase();
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
-          $("#span[about="+name+"]").slideDown("fast");
-            alert('wewe');
         }
         else if($(this).prop("checked") == false){
           $("#article1 span").attr("about").replace(/\s/g, "");
