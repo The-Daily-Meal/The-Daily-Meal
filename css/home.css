@@ -173,3 +173,7 @@
   background-color: #56BECE;
   color: white;
 }
+button{
+  border: none;
+  background-color: inherit;
+}
