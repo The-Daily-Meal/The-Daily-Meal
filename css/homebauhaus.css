@@ -234,7 +234,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   margin-top: 1em;
 }
 
-.fonts, .layout, .colors, .fonts{
+.fonts, .layout, .colors, .fonts, .navbar, .coverpage {
   margin: 0px;
 }
 
