@@ -327,18 +327,22 @@ figcaption {
   border:none;
 }
 
-button[class="nav-link active"] {
-  background-color: black;
-}
+
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
   color: black;
   font-family: "BadaBoom BB";
   border: 3px solid black;
+  border-radius:  70px 70px 70px 80px;
+  background-image: url('../imgs/popartbackgrounds/navbar.png');
 }
 
 .nav-tab {
   margin-bottom: 10px;
+}
+
+#nav-tab {
+  justify-content: center;
 }
 
 .nav-link:hover, .nav-link:focus  {
