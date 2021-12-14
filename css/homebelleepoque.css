@@ -110,13 +110,14 @@ color: #DCBA00;
 #disclaimer{
   border: solid 1px #DCBA00;
 }
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-menu:hover, .dropdown-menu:focus,  #TDM:focus, #issuesnav:focus, #TDM:hover, #issuesnav:hover{
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus,  #TDM:focus, #issuesnav:focus, #TDM:hover, #issuesnav:hover{
 background-image: url('../imgs/belleepoquebackgrounds/—Pngtree—vector gold frame_5054258.png');
 background-size: cover;
 background-color: #8B0000;
 color: #DCBA00;
 
   }
+
 .btn{
   color: white;
 }
@@ -134,6 +135,7 @@ color: #DCBA00;
 .dropdown-menu, .dropdown-item{
   background-color: #8B0000;
   color: white;
+  padding-top: 0.5em;
 }
 
 .collapse{

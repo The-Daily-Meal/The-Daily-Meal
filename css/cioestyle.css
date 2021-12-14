@@ -136,7 +136,7 @@ p::first-letter{
   font-style: normal;
   font-size:370%;
   color: #DB207E;
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   font-weight: lighter;
   line-height: 0.78;
   padding: 4px;
@@ -332,4 +332,12 @@ ul, ol{
   font-size: 16px;
   color: #FFFF10;
   border: solid 3px #27FF27;
+}
+#scrollUp{
+  border: double black;
+  font-family: "RampartOne";
+  background-color: #8BEE03;
+}
+#scrollUp:hover{
+  background-color: #FF0DC8;
 }
