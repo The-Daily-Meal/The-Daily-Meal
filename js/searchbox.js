@@ -231,9 +231,9 @@ $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name").replace(/\s+/g, "").toLowerCase();
         if ($(this).prop("checked") == true)
-          {
+          {/*
           $("#article1 span[class='mention components']").attr("about").replace(/\s+/g, "").toLowerCase();
-          alert($(this));
+          alert(name);*/
         }
         else if($(this).prop("checked") == false){
           $("#article1 span[about="+name+"]").css('background-color', 'transparent');
@@ -256,19 +256,13 @@ $(document).ready(function(){
         if ($(this).prop("checked") == true)
           {
           var yu = $("#article3 span[about="+name+"]").css('background-color', 'yellow');
-          $('.text').animate({
+          /*$('.text').animate({
             scrollTop: $(yu).offset().top,
-            }, 2000);
+          }, 2000);*/
           }
         else if($(this).prop("checked") == false){
           $("#article3 span[about="+name+"]").css('background-color', 'transparent');
         }
-        //$('#body-sectionsArt1 input[type="checkbox"]').click(function(){
-          //  if ($(this).prop("checked") == true)
-          //    {
-          //    $('#body-sectionsArt1 input[type="checkbox"]').css('opacity', '0.3');
-          //  }
-          //});
     });
 
 
@@ -328,34 +322,40 @@ $(document).ready(function(){
 
 /* metadata: scroll to different section (work in progress) */
 $(document).ready(function(){
-    $('#article1body input[type="checkbox"]').click(function(){
-      var scrollTo = $(this).attr("name");
+    $('#article1body .body-sectionsArt1 input[type="checkbox"]').click(function(){
+      var section = $(this).attr("name");
         if ($(this).prop("checked") == true)
           {
-          $("#article1 [id="+scrollTo+"]").css('background-color', 'yellow');
+          $("#article1 [id="+section+"]").css('background-color', 'yellow');
+          var topPos = document.getElementById(section).offsetTop;
+          $("#article1").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
         }
         else if($(this).prop("checked") == false){
-          $("#article1 [id="+scrollTo+"]").css('background-color', 'transparent');
+          $("#article1 [id="+section+"]").css('background-color', 'transparent');
         }
     });
-    $('#article2body input[type="checkbox"]').click(function(){
-      var scrollTo = $(this).attr("name");
+    $('#article2body .body-sectionsArt2 input[type="checkbox"]').click(function(){
+      var section = $(this).attr("name");
         if ($(this).prop("checked") == true)
           {
-          $("#article2 [id="+scrollTo+"]").css('background-color', 'yellow');
+          $("#article2 [id="+section+"]").css('background-color', 'yellow');
+          var topPos = document.getElementById(section).offsetTop;
+          $("#article2").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
         }
         else if($(this).prop("checked") == false){
-          $("#article2 [id="+scrollTo+"]").css('background-color', 'transparent');
+          $("#article2 [id="+section+"]").css('background-color', 'transparent');
         }
     });
-    $('#article3body input[type="checkbox"]').click(function(){
-      var scrollTo = $(this).attr("name");
+    $('#article3body .body-sectionsArt3 input[type="checkbox"]').click(function(){
+      var section = $(this).attr("name");
         if ($(this).prop("checked") == true)
           {
-          $("#article3 [id="+scrollTo+"]").css('background-color', 'yellow');
+          $("#article3 [id="+section+"]").css('background-color', 'yellow');
+          var topPos = document.getElementById(section).offsetTop;
+          $("#article3").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
         }
         else if($(this).prop("checked") == false){
-          $("#article3 [id="+scrollTo+"]").css('background-color', 'transparent');
+          $("#article3 [id="+section+"]").css('background-color', 'transparent');
         }
     });
 });

@@ -187,6 +187,3 @@ a{
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-#scrollUp:focus{
-  outline:0;
-}
