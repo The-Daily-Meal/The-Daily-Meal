@@ -332,11 +332,14 @@ ul, ol{
   border: solid 3px #27FF27;
 }
 #scrollUp{
-  border: double black;
-  font-family: "RampartOne";
-  background-color: #8BEE03;
+  height: 40px;
+  width: 40px;
+  color: transparent;
+  background-image: url('../imgs/cioebackgrounds/icons8-next-200.png');
+  background-size: cover;
+  transform: rotate(270deg);
 }
-#scrollUp:hover{
+#scrollUp:hover, #scrollUp:focus{
   background-color: #FF0DC8;
 }
 .modal{

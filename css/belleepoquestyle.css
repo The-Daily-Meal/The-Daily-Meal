@@ -355,18 +355,15 @@ th{
 }
 .modal-body{
   background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
-
 }
 .modal-body p{
   color: black;
   padding: 10px;
-  margin: 5%;
   font-size: 16px;
   font-family: "Legrand";
   text-align: justify;
   border: double 5px #8B0000;
   border-radius: 10px 10px 0px 0px;
-
 }
 
 .modal-footer {
