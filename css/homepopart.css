@@ -63,11 +63,12 @@ border: none;
 }
 
 
-#issuesnav {
+#issuesnav, #disclaimer {
   color: black;
   border: none;
 background-image: url('../imgs/popartbackgrounds/navbar.png');
 background-size: cover;
+font-family: 'Badaboom BB';
 }
 
 
@@ -248,9 +249,7 @@ a {
 a:hover {
   color: #d98fc5;
 }
-#disclaimer {
-  font-family: 'Badaboom BB';
-}
+
 figcaption {
   background-color: #f2e81c;
   padding: 5px;

@@ -230,10 +230,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
       var name = $(this).attr("name").replace(/\s+/g, "").toLowerCase();
-      var about = $("#article1 span").attr("about").replace(/\s+/g, "").toLowerCase();
-        if (($(this).prop("checked") == true) && ($(about) == $(name)))
+        if ($(this).prop("checked") == true)
           {
-          alert(name);
+          $("#article1 span[class='mention components']").attr("about").replace(/\s+/g, "").toLowerCase();
+          alert($(this));
         }
         else if($(this).prop("checked") == false){
           $("#article1 span[about="+name+"]").css('background-color', 'transparent');

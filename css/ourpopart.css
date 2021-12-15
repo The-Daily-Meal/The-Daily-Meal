@@ -66,11 +66,12 @@ border: none;
 }
 
 
-#issuesnav {
+#issuesnav, #disclaimer {
   color: black;
   border: none;
 background-image: url('../imgs/popartbackgrounds/navbar.png');
 background-size: cover;
+font-family: 'Badaboom BB';
 }
 
 
@@ -240,9 +241,6 @@ a:hover {
   color: #d98fc5;
 }
 
-#disclaimer {
-  font-family: 'Badaboom BB';
-}
 
 .text p {
   column-count: 2;
@@ -474,3 +472,21 @@ th{
 }
 
 /* end metadata panel */
+
+
+
+#scrollUp{
+  background-color: transparent;
+  background-image: url("../imgs/popartbackgrounds/reshot.svg");
+  border:none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+}
+#scrollUp:focus, #scrollUp:hover {
+  outline:0;
+  border: transparent;
+}

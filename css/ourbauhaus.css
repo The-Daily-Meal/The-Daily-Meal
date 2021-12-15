@@ -449,3 +449,17 @@ a:hover {
   /* border: 1px solid black; */
   border: none;
 }/*yellow*/
+
+#scrollUp{
+  background-color: transparent;
+  background-image: url("../imgs/bauhaushome/down-arrow-from-a-cube-svgrepo-com.svg");
+  border:none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+#scrollUp:focus{
+  outline:0;
+}
