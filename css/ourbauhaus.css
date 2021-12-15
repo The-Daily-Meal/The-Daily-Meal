@@ -52,7 +52,7 @@ body {
 #TDM {
   color: black;
    background-color: #BF3F34;
-   /* border: 3px solid black; */
+   border: transparent;
    text-transform: lowercase;
 }
 
@@ -71,7 +71,7 @@ body {
 #issuesnav {
   color: white;
   background-color: rgb(33, 64, 154);
-  /* border: 3px solid black; */
+  border: transparent;
   text-transform: lowercase;
 }
 
@@ -462,4 +462,29 @@ a:hover {
 }
 #scrollUp:focus{
   outline:0;
+}
+
+
+.modal-header{
+  padding: 1em;
+  background-image: url('../imgs/bauhaushome/navbar.png');
+}
+
+.modal-header h2 {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  text-align: left;
+  padding: 5px;
+}
+
+.modal-body{
+  background-color: #f2e81c;
+    background-image: url('../imgs/bauhaushome/navbar.png');
+}
+.modal-body p{
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  text-align: justify;
 }
