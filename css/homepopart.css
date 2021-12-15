@@ -320,13 +320,30 @@ figcaption {
 
 /* buttons slider issues */
 
+.modal-header{
+  padding: 2px 16px;
+  background-image: url('../imgs/popartbackgrounds/navbar.png');
+  color: black;
+  text-align: left;
+}
+
+.modal-body{
+  background-color: #f2e81c;
+}
+.modal-body p{
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'P22 Pop Art Comic';
+  text-align: justify;
+}
+
+
 /* buttons tab pane issues */
 
 .nav-tabs{
   border:none;
 }
-
-
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
   color: black;
