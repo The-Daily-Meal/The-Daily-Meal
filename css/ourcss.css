@@ -140,5 +140,14 @@ h5{
 }
 button{
   border: none;
-  background-color: inherit; 
+  background-color: inherit;
+}
+
+#wikipedia {
+  background-color: transparent;
+  background-image: url("../imgs/wcircle.svg");
+  border:none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
 }

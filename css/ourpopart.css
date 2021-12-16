@@ -491,6 +491,15 @@ th{
   border: transparent;
 }
 
+#wikipedia {
+  background-color: transparent;
+  background-image: url("../imgs/wcircle.svg");
+  border:none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
+
 
 
 .modal-header{
