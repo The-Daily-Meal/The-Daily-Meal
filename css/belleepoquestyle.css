@@ -25,10 +25,10 @@
   /*src: url('./fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff2') format('woff2');*/
 }
 @font-face {
-  font-family: FloralCapsNouveau;
-  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
-  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
-  /*src: url('./fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff2') format('woff2');*/
+  font-family: Kramer;
+  src: url('../fonts/belleepoque/kramer/Kramer.ttf') format('ttf');
+  src: url('../fonts/belleepoque/kramer/transfonter.org-20211216-095336/Kramer-Regular.woff') format('woff');
+  src: url('../fonts/belleepoque/kramer/transfonter.org-20211216-095336/Kramer-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: Legrand;
@@ -47,6 +47,12 @@
   src: url('../fonts/belleepoque/soria-font.ttf') format('ttf');
   src:url('../fonts/belleepoque/transfonter.org-20211213-154849/Soria-Soria.woff') format('woff');
 }
+@font-face {
+  font-family: Armoire;
+  src: url('../fonts/belleepoque/armoire-1.0-book-TRIAL.otf') format('otf');
+  src: url('../fonts/belleepoque/transfonter.org-20211216-094352/Armoire10TRIAL-Book.ttf') format('ttf');
+  src: url('../fonts/belleepoque/transfonter.org-20211216-094352/Armoire10TRIAL-Book.woff') format('woff');
+}
 html{
   cursor: url("Red rose.cur"), pointer;
 }
@@ -64,7 +70,6 @@ body{
   background-size: 350px;
   background-repeat: repeat;
   background-attachment: fixed;
-
 
 }
 
@@ -117,7 +122,7 @@ h5{
 }
 
 #article2,#article3{
-  border-left: thin solid #8B0000;
+  border-left: double #8B0000;
 }
 
 /* width */
@@ -144,13 +149,17 @@ h5{
 
 p::first-letter{
   float:left;
-  font-size:200%;
+  font-size:340%;
   color: black;
-    font-family: FloralCapsNouveau;
-    font-weight:normal;
-    line-height: 0.75;
+  font-family: "Kramer";
+  font-weight: lighter;
+  line-height: 0.84;
+  padding: 1px;
+  color: #8B0000;
 }
-
+i{
+  font-style: normal;
+}
 img{
   max-width: 300px;
 }
@@ -217,17 +226,13 @@ color: #DCBA00;
 }
 .images, .images_hist{
   padding: 15px;
-/*  padding-left: 5px;*/
   filter: grayscale(85%);
-  border-radius: 10px 10px 10px 10px;
   border: black double;
   margin-bottom: 5%;
-  /*background-color: #F4F2D4;*/
 }
 figcaption{
-  padding: 15px;
-  border-radius: 10px 10px 10px 10px;
-  border: black double;
+  border-top: black double;
+  border-bottom: black double;
 }
 
 .table {
@@ -243,14 +248,21 @@ th{
 }
 .panel-heading{
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
-  border: 1px solid #8B0000;
+  border-top: double #8B0000;
+  border-bottom: double #8B0000;
+  border-left: none;
+  border-right: none;
+  font-family: "Armoire";
+  text-transform: uppercase;
 }
 .panel-body{
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   border: transparent;
-  border: 1px solid #8B0000;
+  border: double #8B0000;
   border-right: none;
   border-top: none;
+  /*font-family: "Armoire";
+  text-transform: uppercase;*/
 
 }
 .header{

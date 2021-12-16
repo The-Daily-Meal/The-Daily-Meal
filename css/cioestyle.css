@@ -340,7 +340,7 @@ ul, ol{
   transform: rotate(270deg);
 }
 #scrollUp:hover, #scrollUp:focus{
-  background-color: #FF0DC8;
+  background-color: #8BEE03;
 }
 .modal{
   display: none; /* Hidden by default */
