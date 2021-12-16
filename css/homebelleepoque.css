@@ -365,6 +365,9 @@ h1 #maintitle{
   top: 2rem;
   bottom: 4.5rem;
 }
+figcaption{
+  color: black; 
+}
 /*disclaimer*/
 .modal{
   display: none; /* Hidden by default */
