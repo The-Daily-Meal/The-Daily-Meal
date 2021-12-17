@@ -234,6 +234,7 @@ $(document).ready(function(){
           {
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
           $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
+          //$("#article1body [class~=sub]").attr('checked', true);
         }
         else if($(this).prop("checked") == false){
           $("#article1 span[about="+name+"]").css('background-color', 'transparent');
