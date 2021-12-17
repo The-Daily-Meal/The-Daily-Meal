@@ -236,6 +236,19 @@ p{
   line-height: 20px;
 
 }
+h5{
+  font-family: "Legrand";
+  color: #8B0000;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
 
 #maintitle{
   font-size: 145px;
@@ -459,4 +472,16 @@ figcaption{
 button{
   border: none;
   background-color: inherit;
+}
+/*team*/
+.card-img-top{
+	border-radius:70%;
+  padding-top: 1rem;
+  filter: grayscale(65%);
+}
+.card{
+  background-color: #8ea96f;
+}
+.card-text{
+  background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
 }
