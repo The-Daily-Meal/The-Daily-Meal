@@ -459,8 +459,9 @@ figcaption{
   color: black;
   padding: 4px;
   font-size: 16px;
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   text-align: justify;
+  line-height: 20px; 
 
 }
 

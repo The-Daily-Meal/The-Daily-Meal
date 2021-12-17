@@ -378,10 +378,11 @@ th{
   color: black;
   padding: 10px;
   font-size: 16px;
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   text-align: justify;
   border: double 5px #8B0000;
   border-radius: 10px 10px 0px 0px;
+  line-height: 20px; 
 }
 
 .modal-footer {
