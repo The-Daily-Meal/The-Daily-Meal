@@ -220,8 +220,6 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   -webkit-text-stroke-color: black;
   writing-mode: vertical-lr;
   position: absolute;
-  background-color: black;
-  /* border: 3px solid black; */
   padding: 10px;
 
 }
@@ -262,8 +260,6 @@ figcaption {
   color: black;
 
 }
-
-
 
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");
@@ -402,4 +398,14 @@ background: url("../imgs/bauhaushome/navbar.png");
   padding: 10px;
   font-size: 16px;
   text-align: justify;
+}
+
+
+.card {
+  margin-top:150px;
+  color: black;
+}
+
+.card p {
+  margin-left:0px;
 }
