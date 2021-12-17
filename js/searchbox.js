@@ -247,8 +247,8 @@ $(document).ready(function(){
           {
           $("#article2 span[about="+name+"]").css('background-color', 'yellow');
           $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
-          $('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
-          $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);
+          /*$('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
+          $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);*/
         }
         else if($(this).prop("checked") == false){
           $("#article2 span[about="+name+"]").css('background-color', 'transparent');
