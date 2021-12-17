@@ -408,12 +408,19 @@ a:hover {
 .header2 h6 {
   font-size: 10px;
 }
-.header2 h3 {
+.header2 #copy {
   font-size: 15px;
+  border-top: 4px solid black;
+  margin-top: 10px
 }
-
 .header2 a {
   font-size: 12px;
+}
+
+.header2 #copy2 {
+  font-size: 14px;
+  border-top: 4px solid black;
+  margin-top: 10px;
 }
 
 

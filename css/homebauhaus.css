@@ -409,3 +409,12 @@ background: url("../imgs/bauhaushome/navbar.png");
 .card p {
   margin-left:0px;
 }
+
+.card h5 {
+  font-size: 25px;
+  font-family: "Bauhaus";
+  color: white;
+  background-color: black;
+  padding: 3px;
+  display: inline-block;
+}
