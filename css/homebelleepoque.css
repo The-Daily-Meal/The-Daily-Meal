@@ -225,14 +225,16 @@ color: #DCBA00;
 }
 
 p{
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   font-size: 20px;
   color: black;
   padding: 10px;
-  text-align: center;
+  text-align: justify;
   font-style: normal;
   border: double 5px #8B0000;
   border-radius: 10px 10px 0px 0px;
+  line-height: 20px;
+
 }
 
 #maintitle{
@@ -252,9 +254,6 @@ p{
   background-size: 330px;
   padding: 6%;
   border: solid 20px #AAB996;
-}
-h1 #maintitle{
-  opacity: 0.1;
 }
 
 .btn-1, .btn-2, .btn-3{
@@ -366,7 +365,7 @@ h1 #maintitle{
   bottom: 4.5rem;
 }
 figcaption{
-  color: black; 
+  color: black;
 }
 /*disclaimer*/
 .modal{
