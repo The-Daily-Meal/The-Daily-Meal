@@ -181,3 +181,34 @@ button{
 .card {
   color: black;
 }
+
+.social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  transition: color 0.3s;
+  margin: 0 3px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0,206,209,1);
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.team .member .social a:hover {
+  background: #2D99AB;
+}
