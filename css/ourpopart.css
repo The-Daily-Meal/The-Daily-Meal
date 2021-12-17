@@ -241,6 +241,10 @@ a:hover {
   color: #d98fc5;
 }
 
+.header2 a:hover {
+  color: #008ee7;
+}
+
 
 .text p {
   column-count: 2;
