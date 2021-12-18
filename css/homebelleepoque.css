@@ -173,9 +173,10 @@ color: #DCBA00;
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:left;
-  height:80vh;
+  height:70vh;
   margin:auto;
   padding: 0px;
+  top: 2rem;
 }
 
 .carousel-indicators [data-bs-target]{
@@ -319,7 +320,7 @@ h3{
   font-size: 27px;
 }
 h4{
-  font-size: 23px; 
+  font-size: 23px;
 }
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
@@ -491,4 +492,10 @@ button{
 }
 .card-text{
   background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
+}
+.layoutimg{
+  padding:15px;
+}
+#issues p{
+  margin-top: 2%;
 }
