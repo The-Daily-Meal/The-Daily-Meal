@@ -226,6 +226,7 @@ $(document).ready(function(){
 });
 /* heads and body, end third article */
 
+
 /* metadata: change background color */
 $(document).ready(function(){
     $('#article1body input[type="checkbox"]').click(function(){
@@ -234,6 +235,7 @@ $(document).ready(function(){
           {
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
           $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
+
           var topPos = $("#article1 span[about="+name+"]:first").offset().top;
           alert(name + " "+topPos);
           $("#article1").animate({scrollTop:topPos}, 1000);
@@ -251,6 +253,8 @@ $(document).ready(function(){
           $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
           var topPos = $("#article2 span[about="+name+"]:first").offset().top;
           $("#article2").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
+          $('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
+          $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);
         }
         else if($(this).prop("checked") == false){
           $("#article2 span[about="+name+"]").css('background-color', 'transparent');

@@ -173,9 +173,10 @@ color: #DCBA00;
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:left;
-  height:80vh;
+  height:70vh;
   margin:auto;
   padding: 0px;
+  top: 2rem;
 }
 
 .carousel-indicators [data-bs-target]{
@@ -225,14 +226,29 @@ color: #DCBA00;
 }
 
 p{
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   font-size: 20px;
   color: black;
   padding: 10px;
-  text-align: center;
+  text-align: justify;
   font-style: normal;
   border: double 5px #8B0000;
   border-radius: 10px 10px 0px 0px;
+  line-height: 20px;
+
+}
+h5{
+  font-family: "Legrand";
+  color: #8B0000;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px;
+  background-image: url('../imgs/belleepoquebackgrounds/pngkit_belle-png_1957755-removebg-preview.png');
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 #maintitle{
@@ -252,9 +268,6 @@ p{
   background-size: 330px;
   padding: 6%;
   border: solid 20px #AAB996;
-}
-h1 #maintitle{
-  opacity: 0.1;
 }
 
 .btn-1, .btn-2, .btn-3{
@@ -302,6 +315,12 @@ h1 #maintitle{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
   margin-top: 5%;
+}
+h3{
+  font-size: 27px;
+}
+h4{
+  font-size: 23px;
 }
 
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
@@ -366,7 +385,7 @@ h1 #maintitle{
   bottom: 4.5rem;
 }
 figcaption{
-  color: black; 
+  color: black;
 }
 /*disclaimer*/
 .modal{
@@ -447,8 +466,9 @@ figcaption{
   color: black;
   padding: 4px;
   font-size: 16px;
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   text-align: justify;
+  line-height: 20px;
 
 }
 
@@ -460,4 +480,22 @@ figcaption{
 button{
   border: none;
   background-color: inherit;
+}
+/*team*/
+.card-img-top{
+	border-radius:70%;
+  padding-top: 1rem;
+  filter: grayscale(65%);
+}
+.card{
+  background-color: #8ea96f;
+}
+.card-text{
+  background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
+}
+.layoutimg{
+  padding:15px;
+}
+#issues p{
+  margin-top: 2%;
 }

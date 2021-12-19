@@ -127,7 +127,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 #team{
-  background-image: url('../imgs/cioebackgrounds/teamcover1.png');
+  background-image: url('../imgs/cioebackgrounds/documentationpage.png');
 }
 
 .carousel-item::before {
@@ -470,7 +470,6 @@ figcaption{
   font-size: 16px;
   font-family: "Helvetica";
   background-color: #F3CFFE;
-  text-align: justify;
   border: 2px solid #DB207E;
   column-count: 2;
   font-weight: lighter;
@@ -491,12 +490,38 @@ figcaption{
     padding: 4px;
 
 }
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #56BECE;
-  color: white;
-}
+
 button{
   border: none;
   background-color: inherit;
+}
+.card{
+  padding-top: 20px;
+  height:60vh;
+  border-radius: 10px;
+  border: double black;
+  background-color: #94F489;
+  transition: all .2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-img-top{
+  padding: 20px;
+}
+.card-body p{
+  width:100%;
+  padding: 4px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  background-color: #F3CFFE;
+  font-weight: lighter;
+  text-align: justify;
+  word-wrap: break-word;
+  letter-spacing: -1px;
+  line-height: 20px;
+  margin: 0%;
+}
+#issues p{
+  margin-top: 2%;
 }

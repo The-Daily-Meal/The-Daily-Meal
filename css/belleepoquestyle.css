@@ -65,12 +65,13 @@ body{
   margin-right: 7%;
   font-family: "GlassAntiqua";
   font-size: 18px;
-  background-image: url("../imgs/belleepoquebackgrounds/4cf39fe0f3713be1560b744ca785f8bf.jpeg");
   background-image: url("../imgs/belleepoquebackgrounds/194151.jpeg");
   background-size: 350px;
   background-repeat: repeat;
   background-attachment: fixed;
-
+    word-wrap: break-word;
+    line-height: 20px;
+    letter-spacing: 0px;
 }
 
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -87,7 +88,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 }
 
 h1,h2,h3,h4{
-  font-family: "Legrand";
+  font-family: "BoecklinsUniverse";
   color: #8B0000;
   text-align: left;
 }
@@ -104,7 +105,7 @@ h3 {
   font-size:18px;
 }
 h5{
-  font-family: "Legrand";
+  font-family: "BoecklinsUniverse";
   text-transform: uppercase;
   color: #8B0000;
   font-size:15px;
@@ -288,11 +289,16 @@ th{
   border: none;
 }
 #scrollUp{
-  background-image: url('../imgs/belleepoquebackgrounds/194151.jpeg');
-  background-size: 200px;
+  background-image: url('../imgs/belleepoquebackgrounds/png-clipart-eight-assorted-logos-collage-ornament-art-nouveau-art-deco-miscellaneous-heart-thumbnail.png');
+  height: 30px;
+  width: 50px;
+  color: transparent;
+  background-color: transparent;
+  background-size: cover;
+  transform: rotate(180deg);
 }
-#scrollUp:hover{
-  background-color: #FF0DC8;
+#scrollUp:hover, #scrollUp:focus{
+  background-color: #DCBA00;
 }
 /*disclaimer*/
 .modal{
@@ -372,10 +378,11 @@ th{
   color: black;
   padding: 10px;
   font-size: 16px;
-  font-family: "Legrand";
+  font-family: "GlassAntiqua";
   text-align: justify;
   border: double 5px #8B0000;
   border-radius: 10px 10px 0px 0px;
+  line-height: 20px; 
 }
 
 .modal-footer {

@@ -220,8 +220,6 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   -webkit-text-stroke-color: black;
   writing-mode: vertical-lr;
   position: absolute;
-  background-color: black;
-  /* border: 3px solid black; */
   padding: 10px;
 
 }
@@ -262,8 +260,6 @@ figcaption {
   color: black;
 
 }
-
-
 
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");
@@ -380,9 +376,29 @@ background: url("../imgs/bauhaushome/navbar.png");
 }
 /* end buttons slider issues */
 
-.modal-header{
-  padding: 1em;
+.modal-content {
+  position: relative;
   background-image: url('../imgs/bauhaushome/navbar.png');
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
 .modal-header h2 {
@@ -393,13 +409,27 @@ background: url("../imgs/bauhaushome/navbar.png");
   padding: 5px;
 }
 
-.modal-body{
-  background-color: #f2e81c;
-    background-image: url('../imgs/bauhaushome/navbar.png');
-}
 .modal-body p{
   color: black;
   padding: 10px;
   font-size: 16px;
   text-align: justify;
+}
+
+.card {
+  margin-top:150px;
+  color: black;
+}
+
+.card p {
+  margin-left:0px;
+}
+
+.card h5 {
+  font-size: 25px;
+  font-family: "Bauhaus";
+  color: white;
+  background-color: black;
+  padding: 3px;
+  display: inline-block;
 }
