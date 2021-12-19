@@ -234,6 +234,9 @@ $(document).ready(function(){
           {
           $("#article1 span[about="+name+"]").css('background-color', 'yellow');
           $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
+          var topPos = $("#article1 span[about="+name+"]:first").offset().top;
+          alert(name + " "+topPos);
+          $("#article1").animate({scrollTop:topPos}, 1000);
         }
         else if($(this).prop("checked") == false){
           $("#article1 span[about="+name+"]").css('background-color', 'transparent');
@@ -246,6 +249,8 @@ $(document).ready(function(){
           {
           $("#article2 span[about="+name+"]").css('background-color', 'yellow');
           $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
+          var topPos = $("#article2 span[about="+name+"]:first").offset().top;
+          $("#article2").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
         }
         else if($(this).prop("checked") == false){
           $("#article2 span[about="+name+"]").css('background-color', 'transparent');
@@ -258,6 +263,8 @@ $(document).ready(function(){
           {
           $("#article3 span[about="+name+"]").css('background-color', 'yellow');
           $("#article3 span[class~="+name+"]").css('background-color', 'yellow');
+          var topPos = $("#article3 span[about="+name+"]:first").offset().top;
+          $("#article3").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
           }
         else if($(this).prop("checked") == false){
           $("#article3 span[about="+name+"]").css('background-color', 'transparent');
@@ -320,7 +327,7 @@ $(document).ready(function(){
   });
 });
 
-/* metadata: scroll to different section (work in progress) */
+/* metadata: scroll to different section */
 $(document).ready(function(){
     $('#article1body .body-sectionsArt1 input[type="checkbox"]').click(function(){
       var section = $(this).attr("name");
