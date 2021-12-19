@@ -423,6 +423,10 @@ a:hover {
   background-color:rgba(65,72,234,0.5);
   border: none;
 }
+h1, h2, h3, h4{
+   font-family:AeroviasBrasil;
+   color: #9853b7;
+ }
 .header h1 {
   font-size: 35px;
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -471,9 +475,6 @@ a:hover {
    font-size: 15px;
    color:#c34d96;
    font-family: AeroviasBrasil;
- }
- .text h1, .text h2, .text h3, .text h4{
-   font-family:MontserratAlternates-Regular;
  }
  .text {
    font-family: Montserrat;
