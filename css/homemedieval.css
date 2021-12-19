@@ -43,6 +43,9 @@ a:hover, .btn:hover, .carousel-indicators [data-bs-target]:hover, li:hover, .car
   background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
   color:#4F3317;
 }
+.btn{
+  color:#4F3317;
+}
 .navbar-nav .btn{
   background-color:inherit;
 }
@@ -194,4 +197,80 @@ a{
 }
 .nav .nav-link:hover{
   border-color:#4F3317;
+}
+.card{
+  border: 1.5px solid #4F3317;
+  background:transparent;
+  background-color:rgba(124, 80, 36, 0.2);
+}
+/*disclaimer*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background:transparent;
+  background-color:rgba(124, 80, 36, 0.2);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1.5px solid #4F3317;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  background-image: url("../imgs/MedievalBackgrounds/old-parchment.jpg");
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #4F3317;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgba(124, 80, 36, 0.4);
+  border-bottom: 1px solid #4F3317;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.slider-btn p::first-letter{
+  float:inherit;
+}
+img{
+  opacity:0.8;
+  filter: sepia(20%);
 }
