@@ -375,10 +375,19 @@ p{
 }
 figcaption{
   color: purple;
+  margin-right: 10%;
+  margin-left: 20%;
+  background-color: #E5C8FF;
+  border-radius: 10px 10px 10px 10px;
+  width: 220px;
 }
 .layoutimg{
   margin-right: 10%;
   margin-left: 20%;
+}
+.layoutarticle{
+    margin-right: 10%;
+    margin-left: 28%;
 }
 .logo{
   margin: 0;

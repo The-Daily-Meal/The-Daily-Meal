@@ -499,13 +499,20 @@ button{
 /*documentation*/
 .layoutimg{
   padding:15px;
-  margin: 5%;
-  border: double black;
 }
 .principal{
-  height: 400px;
   margin-left: 35%;
 }
 #issues p{
   margin-top: 2%;
+}
+figcaption{
+  border: double black;
+  margin: 5px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  width: 220px;
+}
+.layoutarticle{
+  margin-left: 28%; 
 }
