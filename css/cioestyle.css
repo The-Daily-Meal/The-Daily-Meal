@@ -85,12 +85,13 @@ h3{
 
 
 }
-h6{
+h6, h5{
   font-family: ArchivoBlack;
   color: #0088EC;
   font-size:12px;
   text-align: left;
 }
+
 .article{
   overflow-y:scroll;
   overflow-x: hidden;

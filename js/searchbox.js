@@ -226,10 +226,27 @@ $(document).ready(function(){
   /* heads and body, end third article */
 
   /* metadata: change background color */
-  $('#article1body .metadata input[type="checkbox"]').click(function(){
+  /*$('#article1body .metadata input[type="checkbox"]').click(function(){
+          var name = $(this).attr("name");
+          if ($(this).prop("checked") == true)
+        {
+            alert("hello");
+            $(this).slideDown(2000).slideUp("disabled", true);
+            //$(this).slideToggle("disabled", true);
+          }
+        else if ($(this).prop("checked") == false){
+          $(this).slideToggle("disabled",false);
+    }
+  }); funzione per bloccare lo slide down */
+$('#article1body .metadata input[type="checkbox"]').click(function(){
     var name = $(this).attr("name");
       if ($(this).prop("checked") == true)
         {
+        //$("#article1body [class^='headArt1-'] ~ [class^='bodyArt1-'] > input[type='checkbox']").prop('checked', true);
+        $("#article1body [class^='headArt1-']").nextUntil("[class^='headArt1-']").find(':checkbox').prop('checked', true);
+        //$("#article1body [class^='headArt1-']").siblings().prop('checked', true);
+
+
         $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
         var topPos = $("#article1 span[about="+name+"]:first").offset().top;

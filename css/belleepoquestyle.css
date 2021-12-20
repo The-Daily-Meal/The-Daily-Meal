@@ -104,7 +104,7 @@ h2{
 h3 {
   font-size:18px;
 }
-h5{
+h5, h6{
   font-family: "BoecklinsUniverse";
   text-transform: uppercase;
   color: #8B0000;
@@ -415,4 +415,7 @@ button{
   background-size: contain;
   background-repeat: no-repeat;
   color:transparent;
+}
+a{
+  color: black;
 }
