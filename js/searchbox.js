@@ -223,78 +223,75 @@ $(document).ready(function(){
   $(".headArt3-9").click(function(){
     $(".bodyArt3-9").slideToggle("slow");
   });
-});
-/* heads and body, end third article */
+  /* heads and body, end third article */
+
+  /* metadata: change background color */
+  $('#article1body .metadata input[type="checkbox"]').click(function(){
+    var name = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article1 span[about="+name+"]").css('background-color', 'yellow');
+        $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
+        var topPos = $("#article1 span[about="+name+"]:first").offset().top;
+        var scrolled = $("#article1").scrollTop();
+        $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000);
+      }
+      else if($(this).prop("checked") == false){
+        $("#article1 span[about="+name+"]").css('background-color', 'transparent');
+        $("#article1 span[class~="+name+"]").css('background-color', 'transparent');
+      }
+  });
+  $('#article2body .metadata input[type="checkbox"]').click(function(){
+    var name = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article2 span[about="+name+"]").css('background-color', 'yellow');
+        $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
+        var topPos = $("#article2 span[about="+name+"]:first").offset().top;
+        var scrolled = $("#article2").scrollTop();
+        $("#article2").animate({scrollTop:scrolled + topPos-$("#article2").parent().offset().top}, 1000);
+        $('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
+        $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);
+      }
+      else if($(this).prop("checked") == false){
+        $("#article2 span[about="+name+"]").css('background-color', 'transparent');
+        $("#article2 span[class~="+name+"]").css('background-color', 'transparent');
+      }
+  });
+  $('#article3body .metadata input[type="checkbox"]').click(function(){
+    var name = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article3 span[about="+name+"]").css('background-color', 'yellow');
+        $("#article3 span[class~="+name+"]").css('background-color', 'yellow');
+        var topPos = $("#article3 span[about="+name+"]:first").offset().top;
+        var scrolled = $("#article3").scrollTop();
+        $("#article3").animate({scrollTop:scrolled + topPos-$("#article3").parent().offset().top}, 1000);
+        }
+      else if($(this).prop("checked") == false){
+        $("#article3 span[about="+name+"]").css('background-color', 'transparent');
+        $("#article3 span[class~="+name+"]").css('background-color', 'transparent');
+      }
+  });
 
 
-/* metadata: change background color */
-$(document).ready(function(){
-    $('#article1body .metadata input[type="checkbox"]').click(function(){
-      var name = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article1 span[about="+name+"]").css('background-color', 'yellow');
-          $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
-          var topPos = $("#article1 span[about="+name+"]:first").offset().top;
-          var scrolled = $("#article1").scrollTop();
-          $("#article1").animate({scrollTop:scrolled + topPos-((window.innerHeight/10)*6.7)}, 1000);
-        }
-        else if($(this).prop("checked") == false){
-          $("#article1 span[about="+name+"]").css('background-color', 'transparent');
-          $("#article1 span[class~="+name+"]").css('background-color', 'transparent');
-        }
+  /* metadata: opacity on unselected articles */
+  $('input[name="check1"]').click(function(){
+      if($(this).prop("checked") == false){
+        $("#article1 [style='background-color: yellow;']").css('background-color', 'transparent');
+        $("#article1").css('opacity', '0.3');
+        $("#article1body").css('opacity', '0.3');
+        $(".metadata1 input[type='checkbox']").attr("disabled", true);
+        $(".metadata1 input[type='checkbox']").attr("checked", false);
+        $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false);
+  }
+      else if($(this).prop("checked") == true){
+        $("#article1").css('opacity', '1');
+        $("#article1body").css('opacity', '1');
+        $(".metadata1 input[type='checkbox']").attr("disabled", false);
+      //  $(".metadata1 input[type='checkbox']").slideToggle("disabled", false);
+      }
     });
-    $('#article2body .metadata input[type="checkbox"]').click(function(){
-      var name = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article2 span[about="+name+"]").css('background-color', 'yellow');
-          $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
-          var topPos = $("#article2 span[about="+name+"]:first").offset().top;
-          var scrolled = $("#article2").scrollTop();
-          $("#article2").animate({scrollTop:scrolled + topPos-((window.innerHeight/10)*6.7)}, 1000);
-          $('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
-          $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);
-        }
-        else if($(this).prop("checked") == false){
-          $("#article2 span[about="+name+"]").css('background-color', 'transparent');
-          $("#article2 span[class~="+name+"]").css('background-color', 'transparent');
-        }
-    });
-    $('#article3body .metadata input[type="checkbox"]').click(function(){
-      var name = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article3 span[about="+name+"]").css('background-color', 'yellow');
-          $("#article3 span[class~="+name+"]").css('background-color', 'yellow');
-          var topPos = $("#article3 span[about="+name+"]:first").offset().top;
-          var scrolled = $("#article3").scrollTop();
-          $("#article3").animate({scrollTop:scrolled + topPos-((window.innerHeight/10)*6.7)}, 1000);
-          }
-        else if($(this).prop("checked") == false){
-          $("#article3 span[about="+name+"]").css('background-color', 'transparent');
-          $("#article3 span[class~="+name+"]").css('background-color', 'transparent');
-        }
-    });
-
-
-/* metadata: opacity on unselected articles */
-    $('input[name="check1"]').click(function(){
-        if($(this).prop("checked") == false){
-          $("#article1 [style='background-color: yellow;']").css('background-color', 'transparent');
-          $("#article1").css('opacity', '0.3');
-          $("#article1body").css('opacity', '0.3');
-          $(".metadata1 input[type='checkbox']").attr("disabled", true);
-          $(".metadata1 input[type='checkbox']").attr("checked", false);
-          $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false);
-    }
-        else if($(this).prop("checked") == true){
-          $("#article1").css('opacity', '1');
-          $("#article1body").css('opacity', '1');
-          $(".metadata1 input[type='checkbox']").attr("disabled", false);
-        //  $(".metadata1 input[type='checkbox']").slideToggle("disabled", false);
-        }
-      });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
         $("#article2 [style='background-color: yellow;']").css('background-color', 'transparent');
@@ -330,44 +327,80 @@ $(document).ready(function(){
       //    $(".metadata3 input[type='checkbox']").slideToggle('blocked', false);
     }
   });
-});
 
-/* metadata: scroll to different section */
-$(document).ready(function(){
-    $('#article1body .body-sectionsArt1 input[type="checkbox"]').click(function(){
-      var section = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article1 [id="+section+"]").css('background-color', 'yellow');
-          var topPos = document.getElementById(section).offsetTop;
-          $("#article1").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
-        }
-        else if($(this).prop("checked") == false){
-          $("#article1 [id="+section+"]").css('background-color', 'transparent');
-        }
-    });
-    $('#article2body .body-sectionsArt2 input[type="checkbox"]').click(function(){
-      var section = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article2 [id="+section+"]").css('background-color', 'yellow');
-          var topPos = document.getElementById(section).offsetTop;
-          $("#article2").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
-        }
-        else if($(this).prop("checked") == false){
-          $("#article2 [id="+section+"]").css('background-color', 'transparent');
-        }
-    });
-    $('#article3body .body-sectionsArt3 input[type="checkbox"]').click(function(){
-      var section = $(this).attr("name");
-        if ($(this).prop("checked") == true)
-          {
-          $("#article3 [id="+section+"]").css('background-color', 'yellow');
-          var topPos = document.getElementById(section).offsetTop;
-          $("#article3").animate({scrollTop:topPos-((window.innerHeight/10)*6.7)}, 1000);
-        }
-        else if($(this).prop("checked") == false){
-          $("#article3 [id="+section+"]").css('background-color', 'transparent');
-        }
-    });
+  /* metadata: scroll to different section */
+  $('#article1body .body-sectionsArt1 input[type="checkbox"]').click(function(){
+    var section = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article1 [id="+section+"]").css('background-color', 'yellow');
+        var topPos = document.getElementById(section).offsetTop;
+        $("#article1").animate({scrollTop:topPos-$("#article1").parent().offset().top}, 1000);
+      }
+      else if($(this).prop("checked") == false){
+        $("#article1 [id="+section+"]").css('background-color', 'transparent');
+      }
+  });
+  $('#article2body .body-sectionsArt2 input[type="checkbox"]').click(function(){
+    var section = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article2 [id="+section+"]").css('background-color', 'yellow');
+        var topPos = document.getElementById(section).offsetTop;
+        $("#article2").animate({scrollTop:topPos-$("#article2").parent().offset().top}, 1000);
+      }
+      else if($(this).prop("checked") == false){
+        $("#article2 [id="+section+"]").css('background-color', 'transparent');
+      }
+  });
+  $('#article3body .body-sectionsArt3 input[type="checkbox"]').click(function(){
+    var section = $(this).attr("name");
+      if ($(this).prop("checked") == true)
+        {
+        $("#article3 [id="+section+"]").css('background-color', 'yellow');
+        var topPos = document.getElementById(section).offsetTop;
+        $("#article3").animate({scrollTop:topPos-$("#article3").parent().offset().top}, 1000);
+      }
+      else if($(this).prop("checked") == false){
+        $("#article3 [id="+section+"]").css('background-color', 'transparent');
+      }
+  });
+
+  /*metadata: click on an element in the article and open the metadata panel*/
+  $('#article1 span[about]').click(function(){
+    var name = $(this).attr('about');
+    var checkname = $("#article1body [name="+name+"]");
+    checkname.attr("checked", true);
+    $("#article1 span[about="+name+"]").css('background-color', 'yellow');
+    $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
+    checkname.parentsUntil(".panel-body").slideDown("slow");
+    $(".panel-body").slideDown("slow");
+    var topPos = checkname.offset().top;
+    var scrolled = $("#article1body").scrollTop();
+    $("#article1body").animate({scrollTop:scrolled + topPos- $("#article1body").parent().offset().top}, 1000);
+  });
+  $('#article2 span[about]').click(function(){
+    var name = $(this).attr('about');
+    var checkname = $("#article2body [name="+name+"]");
+    checkname.attr("checked", true);
+    $("#article2 span[about="+name+"]").css('background-color', 'yellow');
+    $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
+    checkname.parentsUntil(".panel-body").slideDown("slow");
+    $(".panel-body").slideDown("slow");
+    var topPos = checkname.offset().top;
+    var scrolled = $("#article2body").scrollTop();
+    $("#article2body").animate({scrollTop:scrolled + topPos- $("#article2body").parent().offset().top}, 1000);
+  });
+  $('#article3 span[about]').click(function(){
+    var name = $(this).attr('about');
+    var checkname = $("#article3body [name="+name+"]");
+    checkname.attr("checked", true);
+    $("#article3 span[about="+name+"]").css('background-color', 'yellow');
+    $("#article3 span[class~="+name+"]").css('background-color', 'yellow');
+    checkname.parentsUntil(".panel-body").slideDown("slow");
+    $(".panel-body").slideDown("slow");
+    var topPos = checkname.offset().top;
+    var scrolled = $("#article3body").scrollTop();
+    $("#article3body").animate({scrollTop:scrolled + topPos- $("#article3body").parent().offset().top}, 1000);
+  });
 });
