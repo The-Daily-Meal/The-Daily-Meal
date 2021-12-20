@@ -198,6 +198,18 @@ a{
   background-repeat: no-repeat;
   color:transparent;
 }
+
+#source {
+  background-color: transparent;
+  background-image: url("../imgs/iconlens.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
 /*disclaimer*/
 .modal {
   display: none; /* Hidden by default */
