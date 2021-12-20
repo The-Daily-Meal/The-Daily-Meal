@@ -493,8 +493,18 @@ button{
 .card-text{
   background-image: url('../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg');
 }
+.cardtitleconsti{
+  background-image: none;
+}
+/*documentation*/
 .layoutimg{
   padding:15px;
+  margin: 5%;
+  border: double black;
+}
+.principal{
+  height: 400px;
+  margin-left: 35%;
 }
 #issues p{
   margin-top: 2%;
