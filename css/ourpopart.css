@@ -499,6 +499,8 @@ th{
   background-color: transparent;
   background-image: url("../imgs/wcircle.svg");
   border:none;
+  height: 22px;
+  width: 22px;
   background-size: contain;
   background-repeat: no-repeat;
   color:transparent;
