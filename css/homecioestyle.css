@@ -503,6 +503,9 @@ button{
   background-color: #94F489;
   transition: all .2s ease-in-out;
 }
+.cardconsti{
+  height: auto;
+}
 .card:hover{
     transform: scale(1.05);
 }
@@ -524,4 +527,7 @@ button{
 }
 #issues p{
   margin-top: 2%;
+}
+.principal{
+  margin-left: 35%;
 }
