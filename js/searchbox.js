@@ -249,9 +249,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
         $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
-        var topPos = $("#article1 span[about="+name+"]:first").offset().top;
-        var scrolled = $("#article1").scrollTop();
-        $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000);
+        if ($("#article1 span[about="+name+"]").length){
+          var topPos = $("#article1 span[about="+name+"]:first").offset().top;
+          var scrolled = $("#article1").scrollTop();
+          $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000);
+        }
       }
       else if($(this).prop("checked") == false){
         $("#article1 span[about="+name+"]").css('background-color', 'transparent');
@@ -264,9 +266,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         {
         $("#article2 span[about="+name+"]").css('background-color', 'yellow');
         $("#article2 span[class~="+name+"]").css('background-color', 'yellow');
-        var topPos = $("#article2 span[about="+name+"]:first").offset().top;
-        var scrolled = $("#article2").scrollTop();
-        $("#article2").animate({scrollTop:scrolled + topPos-$("#article2").parent().offset().top}, 1000);
+        if ($("#article2 span[about="+name+"]").length){
+          var topPos = $("#article2 span[about="+name+"]:first").offset().top;
+          var scrolled = $("#article2").scrollTop();
+          $("#article2").animate({scrollTop:scrolled + topPos-$("#article2").parent().offset().top}, 1000);
+        }
         $('#article2body > div[class~="body"] input[type="checkbox"]').prop('checked', true);
         $('#article2body div[class~="body"] + div[class="subBody"] input[type="checkbox"]').prop('checked', true);
       }
@@ -281,10 +285,12 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         {
         $("#article3 span[about="+name+"]").css('background-color', 'yellow');
         $("#article3 span[class~="+name+"]").css('background-color', 'yellow');
-        var topPos = $("#article3 span[about="+name+"]:first").offset().top;
-        var scrolled = $("#article3").scrollTop();
-        $("#article3").animate({scrollTop:scrolled + topPos-$("#article3").parent().offset().top}, 1000);
+        if ($("#article3 span[about="+name+"]").length){
+          var topPos = $("#article3 span[about="+name+"]:first").offset().top;
+          var scrolled = $("#article3").scrollTop();
+          $("#article3").animate({scrollTop:scrolled + topPos-$("#article3").parent().offset().top}, 1000);
         }
+      }
       else if($(this).prop("checked") == false){
         $("#article3 span[about="+name+"]").css('background-color', 'transparent');
         $("#article3 span[class~="+name+"]").css('background-color', 'transparent');
@@ -419,5 +425,12 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     var topPos = checkname.offset().top;
     var scrolled = $("#article3body").scrollTop();
     $("#article3body").animate({scrollTop:scrolled + topPos- $("#article3body").parent().offset().top}, 1000);
+  });
+
+  /*Selects all descendants of a category -> WORK IN progress*/
+  $('#article1body .metadata input[type="checkbox"]').click(function(){
+    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
+      $(this).parent().next().find(":checkbox").prop('checked', true);
+    }
   });
 });
