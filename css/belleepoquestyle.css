@@ -55,14 +55,14 @@
 }
 html{
   cursor: url("Red rose.cur"), pointer;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 body{
   height:100vh;
   overflow: hidden;
   margin: auto;
-  margin-left: 7%;
-  margin-right: 7%;
   font-family: "GlassAntiqua";
   font-size: 18px;
   background-image: url("../imgs/belleepoquebackgrounds/194151.jpeg");
