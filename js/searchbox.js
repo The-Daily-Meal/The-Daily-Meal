@@ -243,7 +243,6 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
       if ($(this).prop("checked") == true)
         {
         //$("#article1body [class^='headArt1-'] ~ [class^='bodyArt1-'] > input[type='checkbox']").prop('checked', true);
-        $("#article1body [class^='headArt1-']").nextUntil("[class^='headArt1-']").find(':checkbox').prop('checked', true);
         //$("#article1body [class^='headArt1-']").siblings().prop('checked', true);
 
 
