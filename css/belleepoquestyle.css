@@ -55,8 +55,6 @@
 }
 html{
   cursor: url("Red rose.cur"), pointer;
-  margin-left: 7%;
-  margin-right: 7%;
 }
 
 body{
@@ -72,6 +70,8 @@ body{
     word-wrap: break-word;
     line-height: 20px;
     letter-spacing: 0px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -82,7 +82,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   width: 100%;
   background-color:#FEF3CE;
   padding: 2em;
-  margin: auto;
+  margin-right: 7%;
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   padding-bottom:2em;
 }
