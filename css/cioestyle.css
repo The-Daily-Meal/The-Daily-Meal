@@ -41,7 +41,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   margin: auto;
   background-image: url("../imgs/cioebackgrounds/depositphotos_3146312-stock-photo-white-paper.jpeg");
   filter: brightness(105%); -webkit-filter: brightness(105%);
-  max-width: 1320px; 
+  max-width: 1300px; 
 }
 
 h1,h2{
