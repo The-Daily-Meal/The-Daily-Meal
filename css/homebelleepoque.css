@@ -252,7 +252,7 @@ h5{
 }
 
 #maintitle{
-  font-size: 145px;
+  font-size: 9rem;
   color: #A88E00;
   color: #D3A900;
   font-family: "ArtNouveauCafe";
@@ -265,7 +265,7 @@ h5{
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #8B0000;
-  background-size: 330px;
+  background-size: 21rem;
   padding: 6%;
   border: solid 20px #AAB996;
 }
