@@ -87,40 +87,34 @@ body {
 button[name="medieval"] {
   color: black;
   background-color: rgb(255, 222, 23);
-  /* border: 3px solid black; */
 }
 
 
 button[name="belleepoque"] {
   color: white;
   background-color: black;
-  /* border: 3px solid black; */
 }
 
 
 button[name="bauhaus"] {
   color: black;
   background-color: #BF3F34;
-  /* border: 3px solid black; */
 }
 
 
 button[name="popart"] {
   color: white;
   background-color: rgb(33, 64, 154);
-  /* border: 3px solid black; */
 }
 
 button[name="cioe"] {
   color: white;
   background-color: black;
-  /* border: 3px solid black; */
 }
 
 button[name="futuristic"] {
   color: black;
    background-color: #BF3F34;
-   /* border: 3px solid black; */
 }
 
 button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
@@ -374,7 +368,6 @@ a:hover {
  grid-row: 1;
  align-self: end;
  z-index: -1;
- /* border: 3px solid black; */
 }
 
 .header .circle1 {
@@ -385,7 +378,6 @@ a:hover {
   grid-column: 6 / span 5;
   grid-row: 4;
   align-self: center;
-  /* border: 3px solid black; */
   transform: rotate(-90deg);
 }
 
@@ -399,7 +391,7 @@ a:hover {
  grid-row: 4;
  align-self: center;
  z-index: -1;
- /* border: 3px solid black; */
+
 }
 
 .header2 sup {
@@ -438,14 +430,12 @@ a:hover {
   padding: 3px;
   text-align: center;
   background-color: #BF3F34;
-  /* border: 1px solid black; */
   border: none;
 }/*red*/
 .headArt1-2, .headArt1-5,.headArt2-2, .headArt2-5, .headArt3-2, .headArt3-5, #headp1-cuisinetype1, #headp2-cuisinetype2, #headp3-diets3, #headic3-companies3 {
   padding: 3px;
   text-align: center;
   background-color: rgb(33, 64, 154);
-  /* border: 1px solid black; */
   border: none;
 }/*blu*/
 
@@ -453,7 +443,6 @@ a:hover {
   padding: 3px;
   text-align: center;
   background-color: rgb(255, 222, 23);
-  /* border: 1px solid black; */
   border: none;
 }/*yellow*/
 
