@@ -355,7 +355,7 @@ p{
   margin: 5%;
   margin-bottom: 0;
 }
-#documentation h1, #documentation h2{
+#documentation h1, #documentation h2, #team h1{
   margin-right: 30%;
   margin-left: 30%;
 }
@@ -541,6 +541,9 @@ button{
 }
 .principal{
   margin-left: 35%;
+}
+figcaption.principal{
+  width: 300px;
 }
 .roylich{
   margin-left: 34%;
