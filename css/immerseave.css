@@ -618,6 +618,16 @@ h1, h2, h3, h4{
   background-repeat: no-repeat;
   color:transparent;
 }
+#github {
+  color: white;
+  background-image: url("../imgs/github.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*disclaimer*/
 .modal {
   display: none; /* Hidden by default */

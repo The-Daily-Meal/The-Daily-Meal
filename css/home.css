@@ -212,3 +212,15 @@ button{
 .team .member .social a:hover {
   background: #2D99AB;
 }
+
+#github {
+  background-color: transparent;
+  background-image: url("../imgs/github.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
