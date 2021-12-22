@@ -192,8 +192,8 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
   /*Selects all descendants of a category and block panel when checked */
   $('.metadata input[type="checkbox"]').click(function(){
-    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
-      $(this).parent().next().find(":checkbox").prop('checked', true);
+    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){ //if the checkbox is checked and the parent of the checkbox includes "head"
+      $(this).parent().next().find(":checkbox").prop('checked', true); //select the sibling of the parent (body) and check all his descendants
         }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', false);
