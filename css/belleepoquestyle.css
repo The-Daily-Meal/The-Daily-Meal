@@ -119,11 +119,11 @@ h5, h6{
 
 p::first-letter{
   float:left;
-  font-size:340%;
+  font-size:350%;
   color: black;
   font-family: "Kramer";
   font-weight: lighter;
-  line-height: 0.84;
+  line-height: 0.85;
   padding: 1px;
   color: #8B0000;
 }
