@@ -341,7 +341,7 @@ p{
     transform: scale(1.2);
 }
 #disclaimer:hover{
-    transform: none;
+  transform: none;
 }
 .tab-pane p{
   margin: 5%;
@@ -446,7 +446,6 @@ figcaption{
   font-weight: bold;
   transition: all .2s ease-in-out;
 }
-
 
 .close:hover,
 .close:focus {
