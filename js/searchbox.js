@@ -18,7 +18,7 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         if ($("#article1 span[about="+name+"]").length){   //check if the element exists
           var topPos = $("#article1 span[about="+name+"]:first").offset().top; //take the first instance, give me the coordinates of the top of the element
           var scrolled = $("#article1").scrollTop();  //recover the position of the scrollbar (hidden)
-          $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000); //parent (col-4)
+          $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000); //parent = col-4
         }
       }
       else if($(this).prop("checked") == false){
