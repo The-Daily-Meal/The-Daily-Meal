@@ -299,7 +299,6 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $("#article1").css('opacity', '1');
         $("#article1body").css('opacity', '1');
         $(".metadata1 input[type='checkbox']").attr("disabled", false);
-      //  $(".metadata1 input[type='checkbox']").slideToggle("disabled", false);
       }
     });
     $('input[name="check2"]').click(function(){
@@ -311,13 +310,13 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $(".metadata2 input[type='checkbox']").attr("checked", false);
         $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
 
-      //  $(".metadata2 input[type='checkbox']").slideToggle('blocked', true);
+
   }
       else if($(this).prop("checked") == true){
         $("#article2").css('opacity', '1');
         $("#article2body").css('opacity', '1');
         $(".metadata2 input[type='checkbox']").attr("disabled", false);
-      //  $(".metadata2 input[type='checkbox']").slideToggle('blocked', false);
+
     }
   });
         $('input[name="check3"]').click(function(){
@@ -328,13 +327,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
           $(".metadata3 input[type='checkbox']").attr("checked", false);
           $(".body-sectionsArt3 input[type='checkbox']").attr("checked", false);
-      //    $(".metadata3 input[type='checkbox']").slideToggle('blocked', true);
         }
         else if($(this).prop("checked") == true){
           $("#article3").css('opacity', '1');
           $("#article3body").css('opacity', '1');
           $(".metadata3 input[type='checkbox']").attr("disabled", false);
-      //    $(".metadata3 input[type='checkbox']").slideToggle('blocked', false);
     }
   });
 
@@ -427,7 +424,7 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     $("#article3body").animate({scrollTop:scrolled + topPos- $("#article3body").parent().offset().top}, 1000);
   });
 
-  /*Selects all descendants of a category -> WORK IN progress*/
+  /*Selects all descendants of a category and block panel when checked */
   $('.metadata input[type="checkbox"]').click(function(){
     if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', true);
@@ -448,6 +445,4 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
       }
     }
   });
-
-  /**/
 });
