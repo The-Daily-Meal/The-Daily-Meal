@@ -256,7 +256,7 @@ h5{
   font-size: 1.15rem;
   font-family: "Legrand";
   padding-top: 4rem;
-  margin-top: 4rem; 
+  margin-top: 4rem;
   color: white;
   filter: brightness(90%);
   margin-left: 11%;
@@ -499,4 +499,16 @@ figcaption{
 }
 .roylich{
   margin-left: 33%;
+}
+
+#github {
+  background-color: transparent;
+  background-image: url("../imgs/github.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
 }

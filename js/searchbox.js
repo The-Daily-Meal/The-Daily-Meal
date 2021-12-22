@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".panel-heading").click(function(){
     $(".panel-body").slideToggle("slow");
   });
-  $(".panel-body [class*='head' i]").click(function(){
+  $(".panel-body [class*='head' i]").click(function(){  //[class*='head' i]=matches every element whose attribute value containing a specified value. i=case insensitive
     $(this).next().slideToggle("slow");
   });
 /* end panel and sections of the articles */
@@ -13,12 +13,12 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     var name = $(this).attr("name");
       if ($(this).prop("checked") == true)
         {
-        $("#article1 span[about="+name+"]").css('background-color', '#ffb370');
-        $("#article1 span[class~="+name+"]").css('background-color', '#ffb370');
+        $("#article1 span[about="+name+"]").css('background-color', '#ffb370');  //give me all the instances where the value of about==value of name
+        $("#article1 span[class~="+name+"]").css('background-color', '#ffb370'); //example: name="flour", about="food ingredients flour"-->give me all the instances where flour (name value), is contained in the class.
         if ($("#article1 span[about="+name+"]").length){   //check if the element exists
           var topPos = $("#article1 span[about="+name+"]:first").offset().top; //take the first instance, give me the coordinates of the top of the element
           var scrolled = $("#article1").scrollTop();  //recover the position of the scrollbar (hidden)
-          $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000); //parent (col-4)
+          $("#article1").animate({scrollTop:scrolled + topPos-$("#article1").parent().offset().top}, 1000); //parent = col-4
         }
       }
       else if($(this).prop("checked") == false){
@@ -66,47 +66,53 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
 /* metadata: opacity on unselected articles */
   $('input[name="check1"]').click(function(){
-      if($(this).prop("checked") == false){
-        $("#article1 [style='background-color: #ffb370;']").css('background-color', 'transparent');  //remove highlight
-        $("#article1").css('opacity', '0.3');
-        $("#article1body").css('opacity', '0.3');
-        $(".metadata1 input[type='checkbox']").attr("disabled", true);
-        $(".metadata1 input[type='checkbox']").attr("checked", false);
-        $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false);
+      if($(this).prop("checked") == false){  //if the article has been unchecked
+        $("#article1 [style]").css('background-color', 'transparent');  // then, remove all the highlighting performed on the metadata and add a background transparent
+        $("#article1").css('opacity', '0.3'); //give opacity on the unchecked article (it remains readable)
+        $("#article1body").css('opacity', '0.3'); //give opacity on the searchbox too
+        $(".metadata1 input[type='checkbox']").attr("disabled", true); //disable any operation on the checkboxes of the unselected article
+        $(".metadata1 input[type='checkbox']").attr("checked", false); //remove the check on all the metadata previously checked
+        $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", true);//disable any operation on the checkboxes of the sections of the unselected article
+        $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false); //set to unchecked all the sections of the unselected article
   }
-      else if($(this).prop("checked") == true){
-        $("#article1").css('opacity', '1');
-        $("#article1body").css('opacity', '1');
-        $(".metadata1 input[type='checkbox']").attr("disabled", false);
+      else if($(this).prop("checked") == true){ //if the article has been checked
+        $("#article1").css('opacity', '1'); //then, reset the opacity to the normal condition on the article
+        $("#article1body").css('opacity', '1'); // and on the searchbox
+        $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", false); //reactivate the checkboxes in the sections part
+        $(".metadata1 input[type='checkbox']").attr("disabled", false); //and in the metadata part of the searchbox
       }
     });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
-        $("#article2 [style='background-color: #ffb370;']").css('background-color', 'transparent');
+        $("#article2 [style]").css('background-color', 'transparent');
         $("#article2").css('opacity', '0.3');
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").attr("checked", false);
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", true);
         $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
   }
       else if($(this).prop("checked") == true){
         $("#article2").css('opacity', '1');
         $("#article2body").css('opacity', '1');
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", false);
         $(".metadata2 input[type='checkbox']").attr("disabled", false);
     }
   });
         $('input[name="check3"]').click(function(){
         if($(this).prop("checked") == false){
-          $("#article3 [style='background-color: #ffb370;']").css('background-color', 'transparent');
+          $("#article3 [style]").css('background-color', 'transparent');
           $("#article3").css('opacity', '0.3');
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
           $(".metadata3 input[type='checkbox']").attr("checked", false);
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", true);
           $(".body-sectionsArt3 input[type='checkbox']").attr("checked", false);
         }
         else if($(this).prop("checked") == true){
           $("#article3").css('opacity', '1');
           $("#article3body").css('opacity', '1');
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", false);
           $(".metadata3 input[type='checkbox']").attr("disabled", false);
     }
   });
@@ -192,8 +198,8 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
   /*Selects all descendants of a category and block panel when checked */
   $('.metadata input[type="checkbox"]').click(function(){
-    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
-      $(this).parent().next().find(":checkbox").prop('checked', true);
+    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){ //if the checkbox is checked and the parent of the checkbox includes "head"
+      $(this).parent().next().find(":checkbox").prop('checked', true); //select the sibling of the parent (body) and check all his descendants
         }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', false);

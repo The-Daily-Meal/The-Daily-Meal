@@ -12,8 +12,8 @@
 @font-face {
   font-family: Helvetica;
   src: url('../fonts/cioefonts/Helvetica.ttf') format('ttf');
-
 }
+
 body{
   height:100vh;
   overflow: hidden;
@@ -442,6 +442,17 @@ button{
 #source{
   background-color: transparent;
   background-image: url("../imgs/iconlens.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
+#github {
+  background-color: transparent;
+  background-image: url("../imgs/github.svg");
   border:none;
   margin-left: 3px;
   height: 20px;
