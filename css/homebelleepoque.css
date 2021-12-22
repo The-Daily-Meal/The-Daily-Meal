@@ -49,7 +49,9 @@ html{
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("pink rose.cur"), pointer;
 }
-
+a{
+  color: #8B0000;
+}
 body{
   height: 100vh;
   overflow: hidden;
@@ -283,7 +285,7 @@ h5{
 }
 
 a{
-  text-align: center; 
+  text-align: center;
 }
 .slider-btn:hover, .slider-btn:focus{
   color: #D3A900;

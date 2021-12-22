@@ -32,6 +32,12 @@ html{
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("Hamburger.cur"), pointer;
 }
+a{
+  color: purple;
+}
+b{
+  color:purple;
+}
 .navbar {
   padding-left: 5%;
   padding-right: 4%;
@@ -80,13 +86,6 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   border-radius: 10px 10px 10px 10px;
   background-color: yellow;
   padding: 10px;
-}
-
-#navbar{
-  border: double black;
-  border-radius: 10px 10px 10px 10px;
-  background-color: yellow;
-  padding: 17px;
 }
 
 .btn{
@@ -138,7 +137,6 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   left: 0;
   bottom: 0;
   right: 0;
-  /*background: #8BEE03;*/
   opacity: 0;
 }
 
@@ -199,7 +197,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   margin-right: 60%;
 }
 
-.carousel-caption h2 {
+.carousel-caption h2{
   font-size: 50px;
   font-family: "HiddencocktailsItalicShadow";
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -210,21 +208,25 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
 
 p{
   font-size: 30px;
-  font-family: DidactGothic;
+  font-family: "Helvetica";
+  font-weight: lighter;
   color: black;
   margin-right: 60%;
+  word-wrap: break-word;
+  line-height: 20px;
+  letter-spacing: -1px;
 }
 
 #maintitle {
   font-size: 6.5rem;
   background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
   background-size: cover;
-  font-style: "HiddencocktailsItalicShadow";
+  font-family: "HiddencocktailsItalicShadow";
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .carousel-caption p{
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 18px;
   text-align: justify;
   border: solid 5px #E469F7;;
@@ -232,10 +234,11 @@ p{
   background-color: #94F489;
   padding: 0.5rem;
   line-height: 25px;
-
-
 }
-
+#subtitle{
+  width: 400px;
+  font-size: 3.5rem;
+}
 .slider-btn {
   margin-top: 40px;
 }
