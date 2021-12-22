@@ -599,7 +599,7 @@ h3, h4, h5, h6{
   opacity: 1.0;
 }
 #github {
-  background-color: transparent;
+  color: white;
   background-image: url("../imgs/github.svg");
   border:none;
   margin-left: 3px;
@@ -607,5 +607,4 @@ h3, h4, h5, h6{
   width: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  color:transparent;
 }
