@@ -2,27 +2,12 @@
   font-family: GlassAntiqua;
   src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.ttf') format('ttf');
   src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff') format('woff');
-  /*src: url('./fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff2') format('woff2');*/
-
-}
-@font-face {
-  font-family: Milonga;
-  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.ttf') format('ttf');
-  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.woff') format('woff');
-  /*src: url('./fonts/belleepoque/Milonga/Milonga-Regular.woff2') format('woff2');*/
 }
 
-@font-face {
-  font-family: Amarante;
-  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.ttf') format('ttf');
-  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.woff') format('woff');
-  /*src: url('./fonts/belleepoque/Amarante/Amarante-Regular.woff2') format('woff2');*/
-}
 @font-face {
   font-family: BoecklinsUniverse;
   src: url('../fonts/belleepoque/boecklins-universe/Boecklins Universe.ttf') format('ttf');
   src: url('../fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff') format('woff');
-  /*src: url('./fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff2') format('woff2');*/
 }
 @font-face {
   font-family: Kramer;
@@ -30,23 +15,7 @@
   src: url('../fonts/belleepoque/kramer/transfonter.org-20211216-095336/Kramer-Regular.woff') format('woff');
   src: url('../fonts/belleepoque/kramer/transfonter.org-20211216-095336/Kramer-Regular.woff2') format('woff2');
 }
-@font-face {
-  font-family: Legrand;
-  src: url('../fonts/belleepoque/Legrand-0l8d.ttf') format('ttf');
-  src: url('../fonts/belleepoque/Legrand.woff') format('woff');
-  src: url('../fonts/belleepoque/Legrand.woff2') format('woff2');
-}
 
-@font-face {
-  font-family: ArtNouveauCafe;
-  src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.ttf') format('ttf');
-  src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.woff') format('woff');
-}
-@font-face {
-  font-family: Soria;
-  src: url('../fonts/belleepoque/soria-font.ttf') format('ttf');
-  src:url('../fonts/belleepoque/transfonter.org-20211213-154849/Soria-Soria.woff') format('woff');
-}
 @font-face {
   font-family: Armoire;
   src: url('../fonts/belleepoque/armoire-1.0-book-TRIAL.otf') format('otf');
@@ -84,7 +53,7 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   padding: 2em;
   background-image: url("../imgs/belleepoquebackgrounds/7f631d3c8110b16c90295f98e5a3476d.jpeg");
   padding-bottom:2em;
-  max-width: 2000px; 
+  max-width: 2000px;
 }
 
 h1,h2,h3,h4{
@@ -262,8 +231,6 @@ th{
   border: double #8B0000;
   border-right: none;
   border-top: none;
-  /*font-family: "Armoire";
-  text-transform: uppercase;*/
 
 }
 .header{
