@@ -278,7 +278,7 @@ h5{
   padding: 1rem;
   font-size: 1.15rem;
   font-family: "Legrand";
-  padding: 6%;
+  padding-top: 4rem; 
   color: white;
   filter: brightness(90%);
   margin-left: 11%;
@@ -287,6 +287,7 @@ h5{
 a{
   text-align: center;
 }
+
 .slider-btn:hover, .slider-btn:focus{
   color: #D3A900;
 }
