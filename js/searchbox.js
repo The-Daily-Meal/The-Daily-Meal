@@ -66,18 +66,20 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
 /* metadata: opacity on unselected articles */
   $('input[name="check1"]').click(function(){
-      if($(this).prop("checked") == false){
-        $("#article1 [style='background-color: #ffb370;']").css('background-color', 'transparent');  //remove highlight
-        $("#article1").css('opacity', '0.3');
-        $("#article1body").css('opacity', '0.3');
-        $(".metadata1 input[type='checkbox']").attr("disabled", true);
-        $(".metadata1 input[type='checkbox']").attr("checked", false);
-        $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false);
+      if($(this).prop("checked") == false){  //if the article has been unchecked
+        $("#article1 [style='background-color: #ffb370;']").css('background-color', 'transparent');  // then, remove all the highlighting performed on the metadata and add a background transparent
+        $("#article1").css('opacity', '0.3'); //give opacity on the unchecked article (it remains readable)
+        $("#article1body").css('opacity', '0.3'); //give opacity on the searchbox too
+        $(".metadata1 input[type='checkbox']").attr("disabled", true); //disable any operation on the checkboxes of the unselected article
+        $(".metadata1 input[type='checkbox']").attr("checked", false); //remove the check on all the metadata previously checked
+        $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", true);//disable any operation on the checkboxes of the sections of the unselected article
+        $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false); //set to unchecked all the sections of the unselected article
   }
-      else if($(this).prop("checked") == true){
-        $("#article1").css('opacity', '1');
-        $("#article1body").css('opacity', '1');
-        $(".metadata1 input[type='checkbox']").attr("disabled", false);
+      else if($(this).prop("checked") == true){ //if the article returns selected through the checkbox
+        $("#article1").css('opacity', '1'); // //then, reset opacity to normal conditions into the article
+        $("#article1body").css('opacity', '1'); // and in the searchbox
+        $(".metadata1 input[type='checkbox']").attr("disabled", false); //reactivate all the checkboxes of the searchbox
+        $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", false); //reactivate all the checkboxes on the sections
       }
     });
     $('input[name="check2"]').click(function(){
@@ -87,12 +89,14 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").attr("checked", false);
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", true);
         $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
   }
       else if($(this).prop("checked") == true){
         $("#article2").css('opacity', '1');
         $("#article2body").css('opacity', '1');
         $(".metadata2 input[type='checkbox']").attr("disabled", false);
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", false);
     }
   });
         $('input[name="check3"]').click(function(){
@@ -102,12 +106,14 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
           $(".metadata3 input[type='checkbox']").attr("checked", false);
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", true);
           $(".body-sectionsArt3 input[type='checkbox']").attr("checked", false);
         }
         else if($(this).prop("checked") == true){
           $("#article3").css('opacity', '1');
           $("#article3body").css('opacity', '1');
           $(".metadata3 input[type='checkbox']").attr("disabled", false);
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", false);
     }
   });
   /* metadata: end opacity on unselected articles */
