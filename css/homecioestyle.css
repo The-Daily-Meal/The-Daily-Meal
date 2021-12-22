@@ -2,12 +2,6 @@
   font-family: ArchivoBlack;
   src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
   src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
-
-}
-@font-face {
-  font-family: DidactGothic;
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -36,7 +30,7 @@ a{
   color: purple;
 }
 b{
-  color:purple;
+  color: #9764FE;
 }
 .navbar {
   padding-left: 5%;
@@ -390,6 +384,7 @@ figcaption{
   background-color: #E5C8FF;
   border-radius: 10px 10px 10px 10px;
   width: 220px;
+  font-family: "Helvetica";
 }
 .layoutimg{
   margin-right: 10%;
@@ -520,20 +515,18 @@ button{
   /*padding-right: 0.5rem;
   padding-left: 0.5rem;*/
   padding-bottom: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
 
 }
 .card1{
-transform: rotate(8deg);
 border: solid 5px purple;
 background-color: #F89FFE;
 }
 .card2{
-  transform: rotate(-7deg);
   border: solid 5px orange;
   background-color: #FECA4E;
 }
 .card3{
-  transform: rotate(8deg);
   border: solid 5px green;
   backgroun-color: #25D560;
 }
@@ -541,7 +534,7 @@ background-color: #F89FFE;
   height: auto;
 }
 .card:hover{
-    transform: scale(1.00);
+    transform: scale(1.03);
 }
 .card-img-top{
   padding: 20px;

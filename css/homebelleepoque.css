@@ -2,28 +2,11 @@
   font-family: GlassAntiqua;
   src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.ttf') format('ttf');
   src: url('../fonts/belleepoque/glass-antiqua/GlassAntiqua-Regular.woff') format('woff');
-
-}
-@font-face {
-  font-family: Milonga;
-  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.ttf') format('ttf');
-  src: url('../fonts/belleepoque/Milonga/Milonga-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: Amarante;
-  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.ttf') format('ttf');
-  src: url('../fonts/belleepoque/Amarante/Amarante-Regular.woff') format('woff');
 }
 @font-face {
   font-family: BoecklinsUniverse;
   src: url('../fonts/belleepoque/boecklins-universe/Boecklins Universe.ttf') format('ttf');
   src: url('../fonts/belleepoque/boecklins-universe/BoecklinsUniverse.woff') format('woff');
-}
-@font-face {
-  font-family: FloralCapsNouveau;
-  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.ttf') format('ttf');
-  src: url('../fonts/belleepoque/floralcapsnouveau/FloralCapsNouveau.woff') format('woff');
 }
 @font-face {
   font-family: Legrand;
@@ -35,11 +18,6 @@
   font-family: ArtNouveauCafe;
   src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.ttf') format('ttf');
   src: url('../fonts/belleepoque/p22-art-nouveau-cafe/transfonter.org-20211130-105901/P22ArtNouveauCafe.woff') format('woff');
-}
-@font-face {
-  font-family: Soria;
-  src: url('../fonts/belleepoque/soria-font.ttf') format('ttf');
-  src:url('../fonts/belleepoque/transfonter.org-20211213-154849/Soria-Soria.woff') format('woff');
 }
 
 html{
@@ -139,7 +117,6 @@ color: #DCBA00;
 }
 
 .collapse{
-  /*background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');*/
   background-size: 300px;
   background-position: center;
   background-repeat: repeat;
@@ -278,7 +255,8 @@ h5{
   padding: 1rem;
   font-size: 1.15rem;
   font-family: "Legrand";
-  padding: 6%;
+  padding-top: 4rem;
+  margin-top: 4rem; 
   color: white;
   filter: brightness(90%);
   margin-left: 11%;
@@ -287,6 +265,7 @@ h5{
 a{
   text-align: center;
 }
+
 .slider-btn:hover, .slider-btn:focus{
   color: #D3A900;
 }

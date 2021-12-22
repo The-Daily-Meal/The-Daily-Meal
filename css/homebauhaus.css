@@ -1,5 +1,4 @@
 /* fonts */
-
 @font-face {
     font-family: 'Futura Bk';
     src: url('../fonts/bauhaus/Futura-Book.woff2') format('woff2'),
@@ -19,11 +18,8 @@
     font-style: italic;
     font-display: swap;
 }
-
 /* end fonts */
-
 /* body and navbar */
-
 body {
   height: 100vh;
   overflow: hidden;
@@ -35,22 +31,18 @@ body {
   background-size: contain;
   text-transform: lowercase;
 }
-
 #TDM {
   color: black;
    background-color: #BF3F34;
   border: transparent;
   text-transform: lowercase;
 }
-
-
 #issuesnav {
   color: white;
   background-color: rgb(33, 64, 154);
   border: transparent;
   text-transform: lowercase;
 }
-
 #disclaimer {
   color: white;
   background-color: none;
@@ -61,58 +53,48 @@ body {
   border: transparent;
   padding: 7px;
 }
-
 .nav-item {
   margin-right: 1em;
   text-transform: lowercase;
 }
-
 .dropdown {
   padding-right: 1em;
   text-transform: lowercase;
 }
-
 button[name="medieval"] {
   color: black;
   background-color: rgb(255, 222, 23);
-  /* border: 3px solid black; */
 }
 
 button[name="belleepoque"] {
   color: white;
   background-color: black;
-  /* border: 3px solid black; */
 }
 
 button[name="bauhaus"] {
   color: black;
   background-color: #BF3F34;
-  /* border: 3px solid black; */
 }
 
 button[name="popart"] {
   color: white;
   background-color: rgb(33, 64, 154);
-  /* border: 3px solid black; */
 }
 
 button[name="cioe"] {
   color: white;
   color: black;
   background-color: rgb(255, 222, 23);
-  /* border: 3px solid black; */
 }
 
 button[name="futuristic"] {
   color: black;
    background-color: #BF3F34;
-   /* border: 3px solid black; */
 }
 
 button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
   color: white;
 }
-
 .navbar {
   text-transform: lowercase;
   padding-left: 0%;
@@ -164,9 +146,7 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   height:80vh;
   margin:auto;
   padding: 0px;
-
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -207,7 +187,6 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   padding: 5px;
 }
 
-
 #maintitle {
   font-size: 60px;
   text-align: left;
@@ -235,7 +214,6 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   margin: 0px;
 }
 
-
 .images {
   padding: 10px;
  }
@@ -258,9 +236,7 @@ img {
 
 figcaption {
   color: black;
-
 }
-
 .carousel-indicators [data-bs-target]{
   background-image: url("../imgs/bauhaushome/triangle.svg");
   height:20px;
@@ -322,58 +298,48 @@ figcaption {
   height: 150px;
   text-align: center;
 }
-
+/* buttons slider issues */
+/*documentation*/
 .tab-pane {
   margin-top: 1em;
 }
-
 #nav-tab {
 border-bottom: transparent;
 }
-
 .nav-link .active{
 background: url("../imgs/bauhaushome/navbar.png");
 }
-
 #nav-1480-tab, #nav-1880-tab, #nav-1920-tab, #nav-1960-tab, #nav-1990-tab, #nav-2030-tab {
   color: black;
   font-family: "Bauhaus";
 }
-
 #nav-1480-tab:hover, #nav-1480-tab:focus {
   background-color: rgb(255, 222, 23);
 }
-
 #nav-1480-tab {
   background-color: inherit;
   border:none;
 }
-
 #nav-1880-tab:hover, #nav-1880-tab:focus {
   color: white;
   background-color: black;
 }
-
 #nav-1920-tab:hover, #nav-1920-tab:focus {
   background-color: #BF3F34;
 }
 #nav-1960-tab:hover, #nav-1960-tab:focus {
   color: white;
   background-color: rgb(33, 64, 154);
-  /* border: 3px solid black; */
 }
 #nav-1990-tab:hover, #nav-1990-tab:focus {
   color: white;
   background-color: black;
-  /* border: 3px solid black; */
 }
-
 #nav-2030-tab:hover, #nav-2030-tab:focus {
   background-color: #BF3F34;
-  /* border: 3px solid black; */
 }
-/* end buttons slider issues */
-
+/*documentation*/
+/*disclaimer*/
 .modal-content {
   position: relative;
   background-image: url('../imgs/bauhaushome/navbar.png');
@@ -387,18 +353,15 @@ background: url("../imgs/bauhaushome/navbar.png");
   animation-name: animatetop;
   animation-duration: 0.4s
 }
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
-
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
-
 .modal-header h2 {
   color: white;
   background-color: black;
@@ -406,18 +369,17 @@ background: url("../imgs/bauhaushome/navbar.png");
   text-align: left;
   padding: 5px;
 }
-
 .modal-body p{
   color: black;
   padding: 10px;
   font-size: 16px;
   text-align: justify;
 }
-
+/*disclaimer*/
+/*team cards*/
 .card p {
   margin-left:0px;
 }
-
 .card h5 {
   font-size: 25px;
   font-family: "Bauhaus";
@@ -426,3 +388,4 @@ background: url("../imgs/bauhaushome/navbar.png");
   padding: 3px;
   display: inline-block;
 }
+/*team cards*/

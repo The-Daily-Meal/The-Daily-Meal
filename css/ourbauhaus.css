@@ -18,7 +18,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 /* end fonts */
 /* body and navbar */
 
@@ -33,7 +32,6 @@ body {
   background-color: #f6f2e6;
   text-transform: lowercase;
 }
-
 .navbar{
   padding-left: 7%;
   padding-right:7%;
@@ -44,7 +42,6 @@ body {
   font-size: 15px;
   height: 10vh;
 }
-
 .navbar .nav-link {
   margin: 2px;
 }
@@ -55,7 +52,6 @@ body {
    border: transparent;
    text-transform: lowercase;
 }
-
 #disclaimer {
   color: white;
   background-color: none;
@@ -66,64 +62,47 @@ body {
   border: transparent;
   padding: 7px;
 }
-
-
 #issuesnav {
   color: white;
   background-color: rgb(33, 64, 154);
   border: transparent;
   text-transform: lowercase;
 }
-
 .nav-item {
   margin-right: 1em;
 }
-
 .dropdown {
   padding-right: 1em;
 }
-
-
 button[name="medieval"] {
   color: black;
   background-color: rgb(255, 222, 23);
 }
-
-
 button[name="belleepoque"] {
   color: white;
   background-color: black;
 }
-
-
 button[name="bauhaus"] {
   color: black;
   background-color: #BF3F34;
 }
-
-
 button[name="popart"] {
   color: white;
   background-color: rgb(33, 64, 154);
 }
-
 button[name="cioe"] {
   color: white;
   background-color: black;
 }
-
 button[name="futuristic"] {
   color: black;
    background-color: #BF3F34;
 }
-
 button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart"]:hover  {
   color: white;
 }
 /* end body and navbar */
-
 /* articles structure*/
-
 .article{
   overflow-y:scroll;
   overflow-x:hidden;
@@ -132,13 +111,11 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
   margin:auto;
   padding: 0px;
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
   display:none;
 }
-
 ::-webkit-scrollbar:hover{
   display:inherit;
 }
@@ -146,42 +123,29 @@ button[name="belleepoque"]:hover, button[name="cioe"]:hover, button[name="popart
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
 }
-
 .text {
   text-align: justify;
   width: 90%;
-  height: 100%;
 }
-
 /* articles settings*/
-
-
 h1 {
     font-family: 'Bauhaus';
 		text-transform: lowercase;
 		font-size: 4rem;
 		display: inline;
 }
-
 h2, h3, h4 {
   font-family: 'Bauhaus';
   text-transform: lowercase;
 }
-
 h4 {
   font-size: 18px;
-}
-
-.source {
-font-size: 10px;
 }
 
 .section_heading {
@@ -202,60 +166,12 @@ font-size: 10px;
   font-size: 18px;
   width: 100%;
 }
-
-.table {
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-.table header {
-  font-size: 12px;
-}
-
-  img {
-  height: auto;
-  max-width: 95%;
-  filter:brightness(70%) contrast(100%) saturate(0%) brightness(150%);
-  border-radius: 50%;
-  height: 350px;
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-figure {
-  text-align: center;
-}
-
-.images_hist {
-  height: auto;
-  max-width: 100%;
-  filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
-  border-radius: 0%;
-}
-
-#nocircle1, #nocircle2, #nocircle3, #nocircle4, #nocircle5 {
-  height: auto;
-  max-width: 80%;
-  filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
-  border-radius: 0%;
-  align: left;
-}
-
-.blockquote, .header2, blockquote  {
-	border-left:0.7rem solid black;
-	font-size:1.1rem;
-	padding-left:0.4rem;
-}
-
 .section_abstract {
   padding: 1em;
   border-top: 0.4rem solid black;
   border-right: 0.4rem solid black;
 	font-size: 12px;
 }
-
 .section p:nth-child(odd) {
   padding: 1em;
   border-top: 0.4rem solid black;
@@ -279,6 +195,52 @@ border-radius: 7.5px;
 background-color: black;
 margin-right: 10px;
 }
+.source {
+font-size: 10px;
+}
+
+.table {
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.table header {
+  font-size: 12px;
+}
+
+  img {
+  height: auto;
+  max-width: 95%;
+  filter:brightness(70%) contrast(100%) saturate(0%) brightness(150%);
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.images_hist {
+  height: auto;
+  max-width: 100%;
+  filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
+  border-radius: 0%;
+}
+figure {
+  text-align: center;
+}
+#nocircle1, #nocircle2, #nocircle3, #nocircle4, #nocircle5 {
+  height: auto;
+  max-width: 80%;
+  filter:brightness(70%) contrast(150%) saturate(0%) brightness(150%);
+  border-radius: 0%;
+  align: left;
+}
+
+.blockquote, .header2, blockquote  {
+	border-left:0.7rem solid black;
+	font-size:1.1rem;
+	padding-left:0.4rem;
+}
 
 a {
   color: black
@@ -287,11 +249,8 @@ a {
 a:hover {
   color: #bf3f34;
 }
-
 /*end articles */
-
 /*header */
-
  .header {
 	 width: 100%;
 	 height: 100%;
@@ -364,8 +323,6 @@ a:hover {
   z-index: -1;
   border: 3px solid black;
 }
-
-
 .header .top_bar3 {
  display: block;
  width: 100%;
@@ -376,7 +333,6 @@ a:hover {
  align-self: end;
  z-index: -1;
 }
-
 .header .circle1 {
   display: block;
   width: 100%;
@@ -387,7 +343,6 @@ a:hover {
   align-self: center;
   transform: rotate(-90deg);
 }
-
 .header .square {
  display: block;
  width: 6em;
@@ -398,9 +353,7 @@ a:hover {
  grid-row: 4;
  align-self: center;
  z-index: -1;
-
 }
-
 .header2 sup {
   font-size: 10px;
 }
@@ -415,24 +368,24 @@ a:hover {
 .header2 a {
   font-size: 12px;
 }
-
 .header2 #copy2 {
   font-size: 14px;
   border-top: 4px solid black;
   margin-top: 10px;
 }
 
-
 /* end header */
-
 /* metadata panel */
+
+.panel-heading {
+  width: 97%;
+}
 .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3 {
   background-color: black;
   background-size: cover;
   color: white;
   border: none;
 }
-
 .headArt1-1, .headArt1-4, .headArt2-1, .headArt2-4, .headArt3-1, .headArt3-4,  #headp3-elements3, #headp1-climatechange1, #headp1-animals1, #headp2-report2, #headp3-cuisinetype3, #headic3-places3 {
   padding: 3px;
   text-align: center;
@@ -452,7 +405,8 @@ a:hover {
   background-color: rgb(255, 222, 23);
   border: none;
 }/*yellow*/
-
+/* metadata panel */
+/* scrollUp */
 #scrollUp{
   background-color: transparent;
   background-image: url("../imgs/bauhaushome/down-arrow-from-a-cube-svgrepo-com.svg");
@@ -466,7 +420,8 @@ a:hover {
 #scrollUp:focus{
   outline:0;
 }
-
+/* scrollUp */
+/* sources */
 #wikipedia {
   background-color: transparent;
   background-image: url("../imgs/wcircle.svg");
@@ -489,7 +444,8 @@ a:hover {
   background-repeat: no-repeat;
   color:transparent;
 }
-
+/* sources */
+/* disclaimer */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -544,3 +500,4 @@ a:hover {
   font-size: 16px;
   text-align: justify;
 }
+/* disclaimer */
