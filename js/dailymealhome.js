@@ -83,7 +83,6 @@ function makeitrain(){
   if(document.getElementById("makeitrain").getAttribute("rain")=="no"){
     /*set the storm gif as background of the page and change the color of the text*/
     $("#content").css("background-image", "url('imgs/immerseave/storm.gif')");
-    $("p").css("color", "white");
     /*change the value of the rain button*/
     document.getElementById("makeitrain").setAttribute("rain", "yes");
     /*display the rain*/
@@ -97,7 +96,6 @@ function makeitrain(){
   else{
     /*change the background gif back to quiet sea and change the color of the text*/
     $("#content").css("background-image", "url('imgs/immerseave/4TF4.gif')");
-    $("p").css("color", "black");
     /*change the value of the rain button*/
     document.getElementById("makeitrain").setAttribute("rain", "no");
     /*hide the rain*/
