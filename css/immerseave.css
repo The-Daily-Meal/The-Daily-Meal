@@ -39,9 +39,9 @@ html{
   overflow-y:scroll;
   overflow-x:hidden;
   text-align:justify;
-  height:90vh;
+  height:80vh;
   margin:auto;
-  padding:2rem;
+  padding:1.5rem;
 }
 
 /* width */
