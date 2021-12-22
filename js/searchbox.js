@@ -414,14 +414,13 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
   $('.metadata input[type="checkbox"]').click(function(){
     if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', true);
-      //$(this).parent().off('click');
-      //$(this).parent().next().slideDown('slow');
+      $(this).parent().off('click');
+      $(this).parent().next().slideDown('slow');
 
     }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', false);
-      //$(this).parent().on('click');
-      //$(this).parent().next().slideToggle('slow');
+      $(this).parent().next().slideToggle('slow');
     }
   });
 });
