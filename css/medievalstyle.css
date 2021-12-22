@@ -212,6 +212,17 @@ a{
   background-repeat: no-repeat;
   color:transparent;
 }
+#github {
+  background-color: transparent;
+  background-image: url("../imgs/github.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
 /*disclaimer*/
 .modal {
   display: none; /* Hidden by default */

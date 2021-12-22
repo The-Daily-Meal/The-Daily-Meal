@@ -274,3 +274,14 @@ img{
   opacity:0.8;
   filter: sepia(20%);
 }
+#github {
+  background-color: transparent;
+  background-image: url("../imgs/github.svg");
+  border:none;
+  margin-left: 3px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:transparent;
+}
