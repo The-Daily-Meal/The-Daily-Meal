@@ -67,7 +67,7 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 /* metadata: opacity on unselected articles */
   $('input[name="check1"]').click(function(){
       if($(this).prop("checked") == false){  //if the article has been unchecked
-        $("#article1 [style='background-color: #ffb370;']").css('background-color', 'transparent');  // then, remove all the highlighting performed on the metadata and add a background transparent
+        $("#article1 [style]").css('background-color', 'transparent');  // then, remove all the highlighting performed on the metadata and add a background transparent
         $("#article1").css('opacity', '0.3'); //give opacity on the unchecked article (it remains readable)
         $("#article1body").css('opacity', '0.3'); //give opacity on the searchbox too
         $(".metadata1 input[type='checkbox']").attr("disabled", true); //disable any operation on the checkboxes of the unselected article
@@ -84,7 +84,7 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     });
     $('input[name="check2"]').click(function(){
       if($(this).prop("checked") == false){
-        $("#article2 [style='background-color: #ffb370;']").css('background-color', 'transparent');
+        $("#article2 [style]").css('background-color', 'transparent');
         $("#article2").css('opacity', '0.3');
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
@@ -101,7 +101,7 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
   });
         $('input[name="check3"]').click(function(){
         if($(this).prop("checked") == false){
-          $("#article3 [style='background-color: #ffb370;']").css('background-color', 'transparent');
+          $("#article3 [style]").css('background-color', 'transparent');
           $("#article3").css('opacity', '0.3');
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
