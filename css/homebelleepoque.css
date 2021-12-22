@@ -117,7 +117,6 @@ color: #DCBA00;
 }
 
 .collapse{
-  /*background-image: url('../imgs/belleepoquebackgrounds/15cb3162e2a6860fea840c8ccb442fb0.jpeg');*/
   background-size: 300px;
   background-position: center;
   background-repeat: repeat;
@@ -257,6 +256,7 @@ h5{
   font-size: 1.15rem;
   font-family: "Legrand";
   padding-top: 4rem;
+  margin-top: 4rem; 
   color: white;
   filter: brightness(90%);
   margin-left: 11%;
