@@ -309,14 +309,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").attr("checked", false);
         $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
-
-
   }
       else if($(this).prop("checked") == true){
         $("#article2").css('opacity', '1');
         $("#article2body").css('opacity', '1');
         $(".metadata2 input[type='checkbox']").attr("disabled", false);
-
     }
   });
         $('input[name="check3"]').click(function(){
@@ -342,11 +339,17 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         {
         var topPos = document.getElementById(section).offsetTop;
         $("#article1").animate({scrollTop:topPos-$("#article1").parent().offset().top}, 1000);
-        $("#article1 [id="+section+"]").css('background-color', 'rgba(173, 217, 203, 0.7)');
-        timeout = setTimeout(function(){
-           $("#article1 [id="+section+"]").css('background-color', 'transparent');
-         }, 5000);
-
+        $("#article1 [id="+section+"]").fadeIn(function()
+        {
+                $(this).animate({
+                   backgroundColor: "yellow"
+                }, 'slow');
+             },
+             function() {
+                $(this).animate({
+                   backgroundColor: "transparent"
+                }, 'slow');
+             });
       }
       else if($(this).prop("checked") == false){
         $("#article1 [id="+section+"]").css('background-color', 'transparent');
@@ -364,7 +367,6 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
             $("#article2 [id="+section+"]").css('background-color', 'transparent');
            });
            });
-
       }
       else if($(this).prop("checked") == false){
         $("#article2 [id="+section+"]").css('background-color', 'transparent');
@@ -376,10 +378,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         {
         var topPos = document.getElementById(section).offsetTop;
         $("#article3").animate({scrollTop:topPos-$("#article3").parent().offset().top}, 1000);
+        originalColor = $("#article3 [id="+section+"]").css("background");
         $("#article3 [id="+section+"]").css('background-color', 'rgba(173, 217, 203, 0.7)');
-        timeout = setTimeout(function(){
-           $("#article3 [id="+section+"]").css('background-color', 'transparent');
-         }, 5000);
+          setTimeout(function(){
+            $("#article3 [id="+section+"]").css('background', originalColor);
+         }, x);
       }
       else if($(this).prop("checked") == false){
         $("#article3 [id="+section+"]").css('background-color', 'transparent');
@@ -429,10 +432,8 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', true);
       if ($(this).parent().next().is(":visible")){
-        $(this).parent().off("click");
-        $(this).parent().find("label").click(function(){
-          $(this).parent().next().slideToggle("slow");
-        });
+        $(this).parent().off('click');
+        $(this).parent().next().slideDown('slow');
       }
     }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
