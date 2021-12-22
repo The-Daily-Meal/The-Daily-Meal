@@ -363,8 +363,10 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $("#article2").animate({scrollTop:topPos-$("#article2").parent().offset().top}, 1000);
         $("#article2 [id="+section+"]").css('background-color', 'rgba(173, 217, 203, 0.7)');
         timeout = setTimeout(function(){
-           $("#article2 [id="+section+"]").css('background-color', 'transparent');
-         }, 5000);
+           $("#article2 [id="+section+"]").fadeTo(3000, function(){
+            $("#article2 [id="+section+"]").css('background-color', 'transparent');
+           });
+           });
 
       }
       else if($(this).prop("checked") == false){
