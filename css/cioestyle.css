@@ -27,7 +27,6 @@ body{
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   cursor: url("Hamburger.cur"), pointer;
 }
-
 .container{
   width: 100%;
   background-color: white;
@@ -68,16 +67,18 @@ h2{
   border: 2px solid #0088EC;
   border-radius: 0px 10px 0px 0px;
   text-transform: uppercase;
-
 }
+
 h3{
   font-family: "ArchivoBlack";
   text-transform: uppercase;
   color: #0088EC;
   font-size:14px;
   text-align: left;
+}
 
-
+b{
+  color: #0088EC;
 }
 h6, h5{
   font-family: "ArchivoBlack";
@@ -279,10 +280,8 @@ ul, ol{
   background-color: pink;
   color: #DB207E;
   font-weight: bold;
-
-/*  background-image: url('../imgs/cioebackgrounds/4bh3oq2krtm31.png');
-  background-size: cover;*/ /*boh?????*/
 }
+
 .check1, .check2, .check3{
   font-size: 16px;
   text-transform: uppercase;
@@ -363,7 +362,7 @@ ul, ol{
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
@@ -385,7 +384,6 @@ ul, ol{
   font-weight: bold;
   transition: all .2s ease-in-out;
 }
-
 
 .close:hover,
 .close:focus {
