@@ -34,29 +34,12 @@ body{
   padding:0.5em;
 }
 
-/* width */
+/* hide scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   display:none;
 }
-/*
-::-webkit-scrollbar:hover{
-  display:inherit;
-}
 
- Track
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-
-}*/
-
-/* Handle
-::-webkit-scrollbar-thumb {
-  background: grey;
-  border-radius: 10px;
-}
-*/
 a:hover{
   cursor: url("Feather Quill Writing.cur"), pointer;
 }

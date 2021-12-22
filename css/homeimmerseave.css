@@ -51,12 +51,15 @@ body{
    #462523 100%
    );
    color:transparent;
-     -webkit-background-clip:text;
+   background-clip:text;
+   -webkit-background-clip:text;
 }
 .navbar a, .navbar .btn[name="belleepoque"], .navbar .btn[name="popart"], .navbar .btn[name="futuristic"], #nav-1880-tab, #nav-1960-tab, #nav-2030-tab{
   background-image: linear-gradient(101deg, rgba(57,57,57,1) 0%, rgba(187,185,185,1) 30%, rgba(251,251,251,1) 50%, rgba(187,185,185,1) 70%, rgba(98,98,98,1) 100%);
   color:transparent;
-    -webkit-background-clip:text;}
+  background-clip:text;
+  -webkit-background-clip:text;
+}
 .navbar .btn:hover, .navbar li:hover, .navbar a:hover, .nav .nav-link:hover{
   color:#fff;
 }
@@ -67,7 +70,6 @@ body{
   margin-right:1em;
 }
 #TDM, #issuesnav, #makeitrain {
-  background-color:rgba(65,72,234,0.5);
   border: none;
 }
 .dropdown-menu{
@@ -108,7 +110,7 @@ p{
   font-family:Montserrat;
   text-align:justify;
 }
-/* width */
+/* remove scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   display:none;
@@ -127,8 +129,9 @@ h1, h2, h3, h4, h5{
 .item_heading{
   font-size: 70px;
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 80%);
-   color:transparent;
-     -webkit-background-clip:text;
+  color:transparent;
+  background-clip:text;
+    -webkit-background-clip:text;
   transition: all .2s ease-in-out;
   text-align:center;
   font-family: ShaddedSouth;
@@ -233,34 +236,6 @@ h1, h2, h3, h4, h5{
 	animation-delay: 7s;
 }
 
-.os-phrases h2:nth-child(4) > span > span > span {
-	-webkit-animation-delay: 11s;
-	-moz-animation-delay: 11s;
-	animation-delay: 11s;
-}
-
-.os-phrases h2:nth-child(5) > span > span > span {
-	font-size: 150px;
-	-webkit-animation-delay: 16s;
-	-moz-animation-delay: 16s;
-	animation-delay: 16s;
-	-webkit-animation-duration: 4s;
-	-moz-animation-duration: 4s;
-	animation-duration: 4s;
-}
-
-.os-phrases h2:nth-child(6) > span > span > span {
-	-webkit-animation-delay: 30s;
-	-moz-animation-delay: 30s;
-	animation-delay: 30s;
-}
-
-.os-phrases h2:nth-child(7) > span > span > span {
-	-webkit-animation-delay: 34s;
-	-moz-animation-delay: 34s;
-	animation-delay: 34s;
-}
-
 @-webkit-keyframes OpeningSequence {
 	0% {
 		text-shadow: 0 0 50px #fff;
@@ -337,13 +312,6 @@ h1, h2, h3, h4, h5{
 		transform: translateZ(130px);
 		pointer-events: none;
 	}
-}
-
-.os-phrases h2:nth-child(8) > span > span > span {
-	font-size: 30px;
-	-webkit-animation: FadeIn 4s linear 40s forwards;
-	-moz-animation: FadeIn 4s linear 40s forwards;
-	animation: FadeIn 4s linear 40s forwards;
 }
 
 @-webkit-keyframes FadeIn {
@@ -448,6 +416,7 @@ h1, h2, h3, h4, h5{
   text-align:center;
   padding:0em;
 }
+
 .slider-btn .btn-1, .slider-btn .btn-2, .slider-btn .btn-3{
   background-color:transparent;
   background-image:url("../imgs/immerseave/hamburger.png");

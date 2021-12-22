@@ -21,49 +21,16 @@
   src: url("../fonts/immerseave/AeroviasBrasilNF.ttf");
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
-
-
 html{
   height:100vh;
   overflow: hidden;
   margin:auto;
 }
 
-.article{
-  overflow-y:scroll;
-  overflow-x:hidden;
-  text-align:justify;
-  height:80vh;
-  margin:auto;
-  padding:1.5rem;
-}
-
-/* width */
+/* hide scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   display:none;
-}
-
-::-webkit-scrollbar:hover{
-  display:inherit;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: grey;
-  border-radius: 10px;
 }
 
 body{
@@ -96,36 +63,6 @@ a {
 
 a:hover {
 	color: #fff;
-}
-
-/* Header Style */
-.codrops-top {
-	text-transform: uppercase;
-	position: relative;
-	z-index: 1000;
-	font-size: 0.68rem;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	line-height: 2.2;
-}
-
-.codrops-top a {
-	padding: 0 1rem;
-	letter-spacing: 0.1rem;
-	color: rgba(255,255,255,0.2);
-	display: inline-block;
-}
-
-.codrops-top a:hover {
-	color: rgba(255,255,255,0.9);
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
-	float: left;
-	display: block;
 }
 
 .os-phrases h2 {
@@ -209,34 +146,6 @@ a:hover {
 	animation-delay: 7s;
 }
 
-.os-phrases h2:nth-child(4) > span > span > span {
-	-webkit-animation-delay: 11s;
-	-moz-animation-delay: 11s;
-	animation-delay: 11s;
-}
-
-.os-phrases h2:nth-child(5) > span > span > span {
-	font-size: 150px;
-	-webkit-animation-delay: 16s;
-	-moz-animation-delay: 16s;
-	animation-delay: 16s;
-	-webkit-animation-duration: 4s;
-	-moz-animation-duration: 4s;
-	animation-duration: 4s;
-}
-
-.os-phrases h2:nth-child(6) > span > span > span {
-	-webkit-animation-delay: 30s;
-	-moz-animation-delay: 30s;
-	animation-delay: 30s;
-}
-
-.os-phrases h2:nth-child(7) > span > span > span {
-	-webkit-animation-delay: 34s;
-	-moz-animation-delay: 34s;
-	animation-delay: 34s;
-}
-
 @-webkit-keyframes OpeningSequence {
 	0% {
 		text-shadow: 0 0 50px #fff;
@@ -315,13 +224,6 @@ a:hover {
 	}
 }
 
-.os-phrases h2:nth-child(8) > span > span > span {
-	font-size: 30px;
-	-webkit-animation: FadeIn 4s linear 40s forwards;
-	-moz-animation: FadeIn 4s linear 40s forwards;
-	animation: FadeIn 4s linear 40s forwards;
-}
-
 @-webkit-keyframes FadeIn {
 	0% {
 		opacity: 0;
@@ -363,6 +265,10 @@ a:hover {
 }
 
 .article{
+  overflow-y:scroll;
+  overflow-x:hidden;
+  text-align:justify;
+  margin:auto;
   height:80vh;
   transition: all .2s ease-in-out;
   opacity: 0.7;
@@ -394,12 +300,15 @@ a:hover {
    #462523 100%
    );
    color:transparent;
-     -webkit-background-clip:text;
+   background-clip:text;
+    -webkit-background-clip:text;
 }
 .navbar a, .navbar .btn[name="belleepoque"], .navbar .btn[name="popart"], .navbar .btn[name="futuristic"]{
   background-image: linear-gradient(101deg, rgba(57,57,57,1) 0%, rgba(187,185,185,1) 30%, rgba(251,251,251,1) 50%, rgba(187,185,185,1) 70%, rgba(98,98,98,1) 100%);
   color:transparent;
-    -webkit-background-clip:text;}
+  background-clip:text;
+  -webkit-background-clip:text;
+}
 .navbar .btn:hover, .navbar li:hover, .navbar a:hover{
   color:#fff;
 }
@@ -420,7 +329,6 @@ a:hover {
   margin-right:1rem;
 }
 #TDM, #issuesnav, #makeitrain {
-  background-color:rgba(65,72,234,0.5);
   border: none;
 }
 h1, h2, h3, h4{
@@ -431,7 +339,8 @@ h1, h2, h3, h4{
   font-size: 35px;
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
    color:transparent;
-     -webkit-background-clip:text;
+   background-clip:text;
+    -webkit-background-clip:text;
   transition: all .2s ease-in-out;
   text-align:center;
   font-family: ShaddedSouth;
