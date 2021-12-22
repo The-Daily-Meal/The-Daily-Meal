@@ -74,9 +74,7 @@ body{
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
@@ -275,16 +273,18 @@ h5{
   height: 30vh;
   background-image: url('../imgs/belleepoquebackgrounds/c54796ca2c705661effbd1b45b8a335d.jpeg');
   background-size: cover;
-  padding: 1rem 1rem;
+  padding: 1rem;
   font-size: 1.15rem;
   font-family: "Legrand";
   padding: 6%;
   color: white;
   filter: brightness(90%);
-  margin-left: 10%;
+  margin-left: 11%;
 }
 
-
+a{
+  text-align: center; 
+}
 .slider-btn:hover, .slider-btn:focus{
   color: #D3A900;
 }

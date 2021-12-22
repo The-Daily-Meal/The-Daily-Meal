@@ -226,26 +226,10 @@ $(document).ready(function(){
   /* heads and body, end third article */
 
   /* metadata: change background color */
-  /*$('#article1body .metadata input[type="checkbox"]').click(function(){
-          var name = $(this).attr("name");
-          if ($(this).prop("checked") == true)
-        {
-            alert("hello");
-            $(this).slideDown(2000).slideUp("disabled", true);
-            //$(this).slideToggle("disabled", true);
-          }
-        else if ($(this).prop("checked") == false){
-          $(this).slideToggle("disabled",false);
-    }
-  }); funzione per bloccare lo slide down */
 $('#article1body .metadata input[type="checkbox"]').click(function(){
     var name = $(this).attr("name");
       if ($(this).prop("checked") == true)
         {
-        //$("#article1body [class^='headArt1-'] ~ [class^='bodyArt1-'] > input[type='checkbox']").prop('checked', true);
-        //$("#article1body [class^='headArt1-']").siblings().prop('checked', true);
-
-
         $("#article1 span[about="+name+"]").css('background-color', 'yellow');
         $("#article1 span[class~="+name+"]").css('background-color', 'yellow');
         if ($("#article1 span[about="+name+"]").length){
@@ -430,15 +414,26 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
   $('.metadata input[type="checkbox"]').click(function(){
     if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', true);
-    //  $(this).animate(".slideToggle", function(){
-      //  ($(this).slideToggle("disabled", true));
-    //  });
+      $(this).parent().off("click");
+      ($(this).parent().next().slideDown("slow"));
     }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', false);
-      //  $(this).animate(".slideToggle", function(){
-        //  ($(this).slideToggle("slow", true));
-      //  });
+      $(this).parent().on('click');
+      ($(this).parent().next().slideUp("slow"));
+      $(this).parent().on('click');
+      ($(this).parent().next().slideDown("slow"));
     }
   });
 });
+/*$('.metadata input[type="checkbox"]').click(function(){
+    if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
+      $(this).parent().next().find(":checkbox").prop('checked', true);
+      $(this).parent().next().slideToggle('disabled', true).show();
+    }
+    else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
+      $(this).parent().next().find(":checkbox").prop('checked', false);
+      $(this).parent().next().slideToggle('disabled', false).hide();
+    }
+  });
+});*/

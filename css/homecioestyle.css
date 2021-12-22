@@ -233,6 +233,7 @@ p{
   padding: 0.5rem;
   line-height: 25px;
 
+
 }
 
 .slider-btn {
@@ -358,6 +359,9 @@ p{
 #documentation h1, #documentation h2, #team h1{
   margin-right: 30%;
   margin-left: 30%;
+}
+#team h1{
+  margin-bottom: 1em;
 }
 #documentation .carousel-caption{
   height: 70vh;
@@ -507,18 +511,35 @@ button{
   background-color: inherit;
 }
 .card{
-  padding-top: 20px;
-  height:60vh;
-  border-radius: 10px;
-  border: double black;
+  padding-top: 15px;
+  height: 50vh;
   background-color: #94F489;
   transition: all .2s ease-in-out;
+  /*padding-right: 0.5rem;
+  padding-left: 0.5rem;*/
+  padding-bottom: 0.5rem;
+
+}
+.card1{
+transform: rotate(8deg);
+border: solid 5px purple;
+background-color: #F89FFE;
+}
+.card2{
+  transform: rotate(-7deg);
+  border: solid 5px orange;
+  background-color: #FECA4E;
+}
+.card3{
+  transform: rotate(8deg);
+  border: solid 5px green;
+  backgroun-color: #25D560;
 }
 .cardconsti{
   height: auto;
 }
 .card:hover{
-    transform: scale(1.05);
+    transform: scale(1.00);
 }
 .card-img-top{
   padding: 20px;
