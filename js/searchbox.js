@@ -123,9 +123,9 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
     var section = $(this).attr("name");
       if ($(this).prop("checked") == true)
         {
-        var topPos = document.getElementById(section).offsetTop;
-        $("#article1").animate({scrollTop:topPos-$("#article1").parent().offset().top}, 1000);
-        $("#article1 [id="+section+"]").css('background-color', 'rgba(173, 217, 203, 0.7)');
+        var topPos = document.getElementById(section).offsetTop; //get the top of the section
+        $("#article1").animate({scrollTop:topPos-$("#article1").parent().offset().top}, 1000); //animate and scroll to the section
+        $("#article1 [id="+section+"]").css('background-color', 'rgba(173, 217, 203, 0.7)'); //add a background color with a little bit of transparency
       }
       else if($(this).prop("checked") == false){
         $("#article1 [id="+section+"]").css('background-color', 'transparent');
@@ -159,15 +159,15 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
 
   /*reverse search metadata: click on an element in the article and open the metadata panel*/
   $('#article1 span[about]').click(function(){
-    var name = $(this).attr('about');
-    var checkname = $("#article1body [name="+name+"]");
-    checkname.attr("checked", true);
-    $("#article1 span[about="+name+"]").css('background-color', '#ffb370');
-    $("#article1 span[class~="+name+"]").css('background-color', '#ffb370');
-    checkname.parentsUntil(".panel-body").slideDown("slow");
-    $(".panel-body").slideDown("slow");
-    var topPos = checkname.offset().top;
-    var scrolled = $("#article1body").scrollTop();
+    var name = $(this).attr('about'); //get the name of the about attribute in the markupped article
+    var checkname = $("#article1body [name="+name+"]"); //fin the corresponding checkbox in the searchbox
+    checkname.attr("checked", true); //check the checkbox
+    $("#article1 span[about="+name+"]").css('background-color', '#ffb370'); //highlight all same elements
+    $("#article1 span[class~="+name+"]").css('background-color', '#ffb370'); //highlight all same alements
+    checkname.parentsUntil(".panel-body").slideDown("slow"); //open all of the superclasses of this checkbox in the searchbox
+    $(".panel-body").slideDown("slow"); //if it wasn't opened, open the searchbox
+    var topPos = checkname.offset().top; //get the position of the checkbox inside the searchbox
+    var scrolled = $("#article1body").scrollTop(); //get the position of the scrollbar (hidden)
     $("#article1body").animate({scrollTop:scrolled + topPos- $("#article1body").parent().offset().top}, 1000); //scroll in the panel of the searchbox
   });
   $('#article2 span[about]').click(function(){

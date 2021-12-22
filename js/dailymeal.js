@@ -1,13 +1,16 @@
+/*store the current style before changing page*/
 function keepstyle(whichstyle){
-  var style= document.getElementById('whichstyle').getAttribute("href").replace(/ourcss|our|style|css\/|\.css/g, "");
+  var style= document.getElementById('whichstyle').getAttribute("href").replace(/ourcss|our|style|css\/|\.css/g, ""); //adapt to our different filenames
   if (style == "cioe"){
     style+="style";
   }
-  sessionStorage.setItem("currentstyle", style);
+  sessionStorage.setItem("currentstyle", style);//store the current style
 };
+/*store the requested slide of the carousel before changing page*/
 function chooseslide(numslide){
   sessionStorage.setItem("slide", numslide);
 };
+/*when clicking on the bottom left button, scroll all articles back up and hides the metadata panel*/
 function scrollUp(){
   $(".panel-body").slideUp("slow");
   $(".article").animate({scrollTop:0}, 1000);
@@ -44,6 +47,7 @@ function makeitrain(){
     document.getElementById("wavessound").setAttribute("src", "sounds/mixkit-small-waves-harbor-rocks-1208.wav");
   }
 }
+/*toggles the sound on the immerseave style when clicking on the soundon/soundoff button*/
 function toggleSound(){
   if(document.getElementById("wavessound").muted){
     document.getElementById("wavessound").muted = false;
@@ -54,6 +58,7 @@ function toggleSound(){
   $('#soundoff').toggle();
   $('#soundon').toggle();
 }
+/*change style and take care of particularities for each style*/
 function changestyle(name) {
 
   /*for the bauhaus style, add decorations for the headers of the articles*/
@@ -150,6 +155,7 @@ function changestyle(name) {
 };
 
 $(document).ready(function(){
+  /*recover the current style from the sessionStorage variable*/
   if (sessionStorage.getItem("currentstyle")){
     if (sessionStorage.getItem("currentstyle") == "cioestyle" || sessionStorage.getItem("currentstyle") == "immerseave"){
       var style = "css/"+sessionStorage.getItem("currentstyle")+".css";
