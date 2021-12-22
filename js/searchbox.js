@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".panel-heading").click(function(){
     $(".panel-body").slideToggle("slow");
   });
-  $(".panel-body [class*='head' i]").click(function(){
+  $(".panel-body [class*='head' i]").click(function(){  //[class*='head' i]=matches every element whose attribute value containing a specified value. i=case insensitive
     $(this).next().slideToggle("slow");
   });
 /* end panel and sections of the articles */
