@@ -431,15 +431,12 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
   $('.metadata input[type="checkbox"]').click(function(){
     if ($(this).prop("checked")==true && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', true);
-      if ($(this).parent().next().is(":visible")){
         $(this).parent().off('click');
         $(this).parent().next().slideDown('slow');
-      }
     }
     else if ($(this).prop("checked")==false && $(this).parent().attr("class").toLowerCase().includes("head")){
       $(this).parent().next().find(":checkbox").prop('checked', false);
       if ($(this).parent().next().is(":visible")){
-        $(this).parent().off("click");
         $(this).parent().find("label").click(function(){
           $(this).parent().next().slideToggle("slow");
         });
