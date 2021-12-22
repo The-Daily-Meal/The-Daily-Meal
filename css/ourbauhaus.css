@@ -376,6 +376,10 @@ a:hover {
 
 /* end header */
 /* metadata panel */
+
+.panel-heading {
+  width: 97%;
+}
 .head-sectionsArt1, .head-sectionsArt2, .head-sectionsArt3 {
   background-color: black;
   background-size: cover;
