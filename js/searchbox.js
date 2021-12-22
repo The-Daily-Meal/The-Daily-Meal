@@ -75,10 +75,11 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", true);//disable any operation on the checkboxes of the sections of the unselected article
         $(".body-sectionsArt1 input[type='checkbox']").attr("checked", false); //set to unchecked all the sections of the unselected article
   }
-      else if($(this).prop("checked") == true){
-        $("#article1").css('opacity', '1');
-        $("#article1body").css('opacity', '1');
-        $(".metadata1 input[type='checkbox']").attr("disabled", false);
+      else if($(this).prop("checked") == true){ //if the article has been checked
+        $("#article1").css('opacity', '1'); //then, reset the opacity to the normal condition on the article
+        $("#article1body").css('opacity', '1'); // and on the searchbox
+        $(".body-sectionsArt1 input[type='checkbox']").attr("disabled", false); //reactivate the checkboxes in the sections part
+        $(".metadata1 input[type='checkbox']").attr("disabled", false); //and in the metadata part of the searchbox
       }
     });
     $('input[name="check2"]').click(function(){
@@ -88,11 +89,13 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
         $("#article2body").css('opacity', '0.3');
         $(".metadata2 input[type='checkbox']").attr("disabled", true);
         $(".metadata2 input[type='checkbox']").attr("checked", false);
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", true);
         $(".body-sectionsArt2 input[type='checkbox']").attr("checked", false);
   }
       else if($(this).prop("checked") == true){
         $("#article2").css('opacity', '1');
         $("#article2body").css('opacity', '1');
+        $(".body-sectionsArt2 input[type='checkbox']").attr("disabled", false);
         $(".metadata2 input[type='checkbox']").attr("disabled", false);
     }
   });
@@ -103,11 +106,13 @@ $('#article1body .metadata input[type="checkbox"]').click(function(){
           $("#article3body").css('opacity', '0.3');
           $(".metadata3 input[type='checkbox']").attr("disabled", true);
           $(".metadata3 input[type='checkbox']").attr("checked", false);
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", true);
           $(".body-sectionsArt3 input[type='checkbox']").attr("checked", false);
         }
         else if($(this).prop("checked") == true){
           $("#article3").css('opacity', '1');
           $("#article3body").css('opacity', '1');
+          $(".body-sectionsArt3 input[type='checkbox']").attr("disabled", false);
           $(".metadata3 input[type='checkbox']").attr("disabled", false);
     }
   });
