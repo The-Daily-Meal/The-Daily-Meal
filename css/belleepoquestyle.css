@@ -36,11 +36,11 @@ body{
   background-size: 350px;
   background-repeat: repeat;
   background-attachment: fixed;
-    word-wrap: break-word;
-    line-height: 20px;
-    letter-spacing: 0px;
-    margin-left: 7%;
-    margin-right: 7%;
+  word-wrap: break-word;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -119,11 +119,11 @@ h5, h6{
 
 p::first-letter{
   float:left;
-  font-size:340%;
+  font-size:350%;
   color: black;
   font-family: "Kramer";
   font-weight: lighter;
-  line-height: 0.84;
+  line-height: 0.85;
   padding: 1px;
   color: #8B0000;
 }

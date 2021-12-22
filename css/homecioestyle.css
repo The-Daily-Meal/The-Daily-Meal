@@ -2,7 +2,6 @@
   font-family: ArchivoBlack;
   src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.ttf') format('ttf');
   src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
-
 }
 
 @font-face {
@@ -385,6 +384,7 @@ figcaption{
   background-color: #E5C8FF;
   border-radius: 10px 10px 10px 10px;
   width: 220px;
+  font-family: "Helvetica";
 }
 .layoutimg{
   margin-right: 10%;
