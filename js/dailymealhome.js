@@ -1,84 +1,18 @@
+/*store the current style before changing page*/
 function keepstyle(whichstyle){
-  var style= document.getElementById('whichstylehome').getAttribute("href").replace(/home|css\/|\.css/g, "");
+  var style= document.getElementById('whichstylehome').getAttribute("href").replace(/home|css\/|\.css/g, "");//adpat to our different filenames
   if (style == "cioe"){
     style+="style";
   }
   sessionStorage.setItem("currentstyle", style);
 }
-
+/*store the requested slide of the carousel before changing page*/
 function chooseslide(numslide){
   sessionStorage.setItem("slide", numslide);
 }
-$(document).ready(function(){
-  if (sessionStorage.getItem("currentstyle")){
-    var style = "css/home"+sessionStorage.getItem("currentstyle")+".css";
-    document.getElementById('whichstylehome').setAttribute("href", style);
-    sessionStorage.removeItem('currentstyle');
-  }
-  else{
-    document.getElementById('whichstylehome').setAttribute("href", 'css/home.css');
-  }
-
-  if (sessionStorage.getItem("slide")){
-    var num = sessionStorage.getItem("slide");
-    $('.carousel-item').removeClass("active");
-    $('.carousel-item:nth-of-type('+num+')').addClass("active");
-    $('.carousel-indicators > button').removeClass("active");
-    $('.carousel-indicators > button').removeAttr("aria-current");
-    $('.carousel-indicators > button:nth-of-type('+num+')').addClass('active');
-    $('.carousel-indicators > button:nth-of-type('+num+')').attr('aria-current', 'true');
-    sessionStorage.removeItem('slide');
-  }
-
-  if (document.getElementById("whichstylehome").getAttribute("href")=="css/homemedieval.css"){
-   $("#mainhometext").wrap("<div class='row' id='rowmed'></div>");
-   $("#mainhometext").wrap('<div class="col col-lg-9"></div>');
-   $("#rowmed").prepend('<div class="col-lg-2 d-none d-lg-block border-medieval"></div>');
-   $("#rowmed").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
-  }
-  else if (document.getElementById("whichstylehome").getAttribute("href")=="css/homeimmerseave.css"){
-   /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
-   $(".loadingscreen").remove();
-   $("#rain").remove();
-   $('#toremove1').remove();
-   $('#toremove2').remove();
-   $('#content').removeAttr("style");
-
-   /*adding an introductive loading screen, that contains the audio for this style*/
-   $(".content").addClass("d-none");
-   $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
-   $("body").click(function(){
-     document.getElementById('wavessound').play();
-   });
-   /*adding a button to mute the sound*/
-   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove2"><button  class="btn btn-secondary" type="button" id="turnsound" onclick="toggleSound()"><svg id="soundoff" display="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/></svg><svg id="soundon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg></button></div>');
-   /*adding a button for the rain functionality*/
-   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove1"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="no" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
-   /*rain, initialized as not displayed*/
-   $("body").prepend('<div class="content rain d-none" id="rain"></div>');
-
-
-   /*opening sequence, pen by Sebastian Schepis on CodePen https://codepen.io/sschepis/pen/uiHmr*/
-   $("#os-phrases > h2")
-     .css('opacity', 1).lettering( 'words' )
-     .children( "span" ).lettering()
-     .children( "span" ).lettering();
-    timeout = setTimeout(function(){
-       document.getElementById('loadingscreen').style.opacity=0;
-       $(".content").removeClass("d-none");
-       $("#rain").addClass("d-none");
-     }, 12000);
-   /*clearing the loadingscreen by a click of the user*/
-   $(".loadingscreen").click(function(){
-     clearTimeout(timeout);
-     document.getElementById('loadingscreen').style.opacity=0;
-     $(".content").removeClass("d-none");
-     $("#rain").addClass("d-none");
-   });
- }
-});
+/*change style and take care of particularities for each style*/
 function changestyle(name){
-
+  /*Add medieval border to the homepage*/
   if (name=='homemedieval.css' && document.getElementById('whichstylehome').getAttribute('href') != "css/homemedieval.css"){
     $("#mainhometext").wrap("<div class='row' id='rowmed'></div>");
     $("#mainhometext").wrap('<div class="col col-lg-9"></div>');
@@ -142,6 +76,7 @@ function changestyle(name){
   }
   document.getElementById('whichstylehome').setAttribute("href", "css/"+name);
 };
+
 /*function dedicated to the rain functionality of the immerseave style - inspired by https://webdesigntips.blog/videos/pure-css-rain-animation-with-lighting-rain-effect-with-html5-and-css3-no-javascript/ by Amit Ghosh*/
 function makeitrain(){
   /*checking if the rain button is set on rain or not*/
@@ -174,6 +109,7 @@ function makeitrain(){
     document.getElementById("wavessound").setAttribute("src", "sounds/mixkit-small-waves-harbor-rocks-1208.wav");
   }
 };
+/*toggles the sound on the immerseave style when clicking on the soundon/soundoff button*/
 function toggleSound(){
   if(document.getElementById("wavessound").muted){
     document.getElementById("wavessound").muted = false;
@@ -184,6 +120,78 @@ function toggleSound(){
   $('#soundoff').toggle();
   $('#soundon').toggle();
 };
+
+$(document).ready(function(){
+  /*recover the current style from the sessionStorage variable*/
+  if (sessionStorage.getItem("currentstyle")){
+    var style = "css/home"+sessionStorage.getItem("currentstyle")+".css";
+    document.getElementById('whichstylehome').setAttribute("href", style);
+    sessionStorage.removeItem('currentstyle');
+  }
+  else{
+    document.getElementById('whichstylehome').setAttribute("href", 'css/home.css');
+  }
+  /*recover the requested slide from the sessionStorage variable and adapt the carousel accordingly*/
+  if (sessionStorage.getItem("slide")){
+    var num = sessionStorage.getItem("slide");
+    $('.carousel-item').removeClass("active");
+    $('.carousel-item:nth-of-type('+num+')').addClass("active");
+    $('.carousel-indicators > button').removeClass("active");
+    $('.carousel-indicators > button').removeAttr("aria-current");
+    $('.carousel-indicators > button:nth-of-type('+num+')').addClass('active');
+    $('.carousel-indicators > button:nth-of-type('+num+')').attr('aria-current', 'true');
+    sessionStorage.removeItem('slide');
+  }
+  /*for the medieval style*/
+  if (document.getElementById("whichstylehome").getAttribute("href")=="css/homemedieval.css"){
+  /*Add medieval border to the homepage*/
+   $("#mainhometext").wrap("<div class='row' id='rowmed'></div>");
+   $("#mainhometext").wrap('<div class="col col-lg-9"></div>');
+   $("#rowmed").prepend('<div class="col-lg-2 d-none d-lg-block border-medieval"></div>');
+   $("#rowmed").append('<div class="col-lg-1 d-none d-lg-block border-medieval"></div>');
+  }
+  /*for the immerseave futuristic style*/
+  else if (document.getElementById("whichstylehome").getAttribute("href")=="css/homeimmerseave.css"){
+   /*removing the elements before adding them, in case the user clicks on this style, while already displayed*/
+   $(".loadingscreen").remove();
+   $("#rain").remove();
+   $('#toremove1').remove();
+   $('#toremove2').remove();
+   $('#content').removeAttr("style");
+
+   /*adding an introductive loading screen, that contains the audio for this style*/
+   $(".content").addClass("d-none");
+   $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><div class="os-phrases" id="os-phrases"><audio autoplay loop src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" id="wavessound"><source src="sounds/mixkit-small-waves-harbor-rocks-1208.wav" type="audio/wav">Your browser does not support the audio element.</audio><h2>Welcome</h2><h2>To The Daily Meal</h2></div></div>');
+   $("body").click(function(){
+     document.getElementById('wavessound').play();
+   });
+   /*adding a button to mute the sound*/
+   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove2"><button  class="btn btn-secondary" type="button" id="turnsound" onclick="toggleSound()"><svg id="soundoff" display="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/></svg><svg id="soundon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/></svg></button></div>');
+   /*adding a button for the rain functionality*/
+   $("#dropdownMenuButton2").after('<div class="justify-content px-4" id="toremove1"><button  class="btn btn-secondary" type="button" id="makeitrain" rain="no" onclick="makeitrain()"><img src="imgs/immerseave/clipart175629.png" style="width:25px;" id="makeitrainimg"></button></div>');
+   /*rain, initialized as not displayed*/
+   $("body").prepend('<div class="content rain d-none" id="rain"></div>');
+
+
+   /*opening sequence, pen by Sebastian Schepis on CodePen https://codepen.io/sschepis/pen/uiHmr*/
+   $("#os-phrases > h2")
+     .css('opacity', 1).lettering( 'words' )
+     .children( "span" ).lettering()
+     .children( "span" ).lettering();
+    timeout = setTimeout(function(){
+       document.getElementById('loadingscreen').style.opacity=0;
+       $(".content").removeClass("d-none");
+       $("#rain").addClass("d-none");
+     }, 12000);
+   /*clearing the loadingscreen by a click of the user*/
+   $(".loadingscreen").click(function(){
+     clearTimeout(timeout);
+     document.getElementById('loadingscreen').style.opacity=0;
+     $(".content").removeClass("d-none");
+     $("#rain").addClass("d-none");
+   });
+ }
+});
 // function for Disclaimer
 function disclaimer(){
       var modal = document.getElementById("myModal");
