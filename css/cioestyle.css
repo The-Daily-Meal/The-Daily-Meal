@@ -5,12 +5,6 @@
 
 }
 @font-face {
-  font-family: DidactGothic;
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
-}
-
-@font-face {
   font-family: RampartOne;
   src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.ttf') format('ttf');
   src: url('../fonts/cioefonts/Rampart_One/RampartOne-Regular.woff') format('woff');
@@ -24,7 +18,7 @@ body{
   height:100vh;
   overflow: hidden;
   margin: auto;
-  font-family: Helvetica;
+  font-family: "Helvetica";
   font-weight: lighter;
   font-size: 18px;
   background-color: #8BEE03;
@@ -41,11 +35,11 @@ a:hover, .btn:hover, .carousel-control-prev:hover, .carousel-control-next:hover{
   margin: auto;
   background-image: url("../imgs/cioebackgrounds/depositphotos_3146312-stock-photo-white-paper.jpeg");
   filter: brightness(105%); -webkit-filter: brightness(105%);
-  max-width: 1300px; 
+  max-width: 1300px;
 }
 
 h1,h2{
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   font-weight: lighter;
   text-transform: uppercase;
   color: #0088EC;
@@ -67,7 +61,7 @@ h2{
   background-color: #DAF7A6;
 }
 .section_heading, h4{
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   font-size:18px;
   color: #0088EC;
   background-color:#FF6CF8;
@@ -77,7 +71,7 @@ h2{
 
 }
 h3{
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   text-transform: uppercase;
   color: #0088EC;
   font-size:14px;
@@ -86,7 +80,7 @@ h3{
 
 }
 h6, h5{
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   color: #0088EC;
   font-size:12px;
   text-align: left;
@@ -149,7 +143,7 @@ img{
   padding-right: 4%;
   padding-bottom: 1%;
   padding-top: 1%;
-  font-family: RampartOne;
+  font-family: "RampartOne";
   background-image: url("../imgs/cioebackgrounds/comic-book-super-hero-background_105164-289.jpeg");
   background-size: cover;
   border-bottom: 3px solid purple;
@@ -245,7 +239,7 @@ tr:nth-child(even){
 th{
   background-color:#FF1B9E;
   font-weight: 300;
-  font-family: ArchivoBlack;
+  font-family: "ArchivoBlack";
   text-transform: uppercase;
   color: pink;
 }
@@ -436,7 +430,7 @@ button{
   background-color: inherit;
 }
 
-#wikipedia {
+#wikipedia{
   background-color: transparent;
   background-image: url("../imgs/wcircle.svg");
   border:none;
@@ -447,7 +441,7 @@ button{
   color:transparent;
 }
 
-#source {
+#source{
   background-color: transparent;
   background-image: url("../imgs/iconlens.svg");
   border:none;

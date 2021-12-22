@@ -4,11 +4,6 @@
   src: url('../fonts/cioefonts/Archivo_Black/ArchivoBlack-Regular.woff') format('woff');
 
 }
-@font-face {
-  font-family: DidactGothic;
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.ttf') format('ttf');
-  src: url('../fonts/cioefonts/Didact_Gothic/DidactGothic-Regular.woff') format('woff');
-}
 
 @font-face {
   font-family: RampartOne;
